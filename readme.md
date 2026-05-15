@@ -16,6 +16,9 @@ Alarkius is active on Reddit, YouTube, Discord, and also has his own LinkedIn </
 - [The Hibrythian Saga Music Channel](https://www.youtube.com/@thehibrythiansaga)
 ---
 ## Current Apps in the Making
+
+All Apps here will have the Apache 3.0 License
+
 ### Quillosofi - An All-in-One Writing App Free of Distractions
 
 Quillosofi is a hybrid app, a fusion of Notion, Word, and Sheets combined. This app has vaults that save your data locally to YOUR computer. No Cloud, No Organization. This app is Free and Open Source, with a donations setup to help fund the the domain that uses Spaceship's Domains for Quillosofi.com (https://www.quillosofi.com/) (Content on that website will be moving soon!)
