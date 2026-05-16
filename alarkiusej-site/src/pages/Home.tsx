@@ -40,13 +40,13 @@ export default function Home() {
   return (
     <div className="pt-16">
       {/* Hero */}
-      <section className="relative min-h-[80vh] flex items-center">
+      <section className="relative flex items-center">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-rose/5 rounded-full blur-3xl" />
           <div className="absolute bottom-1/3 left-1/4 w-72 h-72 bg-teal/4 rounded-full blur-3xl" />
         </div>
 
-        <div className="max-w-5xl mx-auto px-6 py-12 w-full">
+        <div className="max-w-5xl mx-auto px-6 py-16 w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Text */}
             <div>
@@ -134,7 +134,7 @@ export default function Home() {
       </div>
 
       {/* Current Projects */}
-      <section className="max-w-5xl mx-auto px-6 pt-10 pb-20">
+      <section className="max-w-5xl mx-auto px-6 pt-8 pb-20">
         <div className="mb-10">
           <p className="text-rose text-xs font-medium tracking-widest uppercase mb-2">Portfolio</p>
           <h2 className="font-serif text-3xl font-semibold text-text">Current Projects</h2>
