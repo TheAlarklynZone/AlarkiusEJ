@@ -12,14 +12,14 @@ const books = [
     volume: 'Book 1',
     status: 'Available Now',
     where: 'Barnes & Noble',
-    href: 'https://www.barnesandnoble.com',
+    href: 'https://www.barnesandnoble.com/s/the-hibrythian-saga',
   },
   {
     title: 'Hibryds — The Hibrythian Genesis of Everything',
     volume: 'Book 2',
     status: 'Available Now',
     where: 'Barnes & Noble',
-    href: 'https://www.barnesandnoble.com',
+    href: 'https://www.barnesandnoble.com/s/the-hibrythian-saga',
   },
 ]
 
@@ -152,7 +152,7 @@ export default function HibrythianSaga() {
                 </h3>
                 <p className="text-xs text-text-faint mb-4">Available at {book.where}</p>
                 <a
-                  href={book.href = "https://www.barnesandnoble.com/s/the-hibrythian-saga"}
+                  href={book.href}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 text-xs text-rose hover:text-rose-light transition-colors"
