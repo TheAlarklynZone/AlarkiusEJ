@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #191919;
+    color: #e8e3dc;
+    font-family: 'Inter', system-ui, sans-serif;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', Georgia, serif;
+    line-height: 1.2;
+    color: #e8e3dc;
+  }
+
+  ::selection {
+    background-color: rgba(201, 123, 115, 0.3);
+    color: #e8e3dc;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #191919;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #3a3a3a;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4a4a4a;
+  }
+}
+
+@layer components {
+  .callout {
+    @apply border border-border bg-surface-raised rounded-lg p-4 flex gap-3;
+  }
+
+  .callout-rose {
+    @apply border-rose/30 bg-rose-bg;
+  }
+
+  .callout-gold {
+    @apply border-gold/30 bg-gold-bg;
+  }
+
+  .section-divider {
+    @apply border-t border-border my-12;
+  }
+
+  .tag {
+    @apply inline-block px-3 py-1 rounded-full text-sm font-medium bg-surface-raised border border-border text-text-muted;
+  }
+
+  .tag-rose {
+    @apply border-rose/40 bg-rose-bg text-rose-light;
+  }
+
+  .tag-gold {
+    @apply border-gold/40 bg-gold-bg text-gold-light;
+  }
+
+  .page-container {
+    @apply max-w-4xl mx-auto px-6 py-16;
+  }
+
+  .page-hero {
+    @apply mb-12 pb-12 border-b border-border;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
