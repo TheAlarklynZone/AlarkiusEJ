@@ -1,9 +1,9 @@
 const liveTools = [
   {
     name: 'Quillosofi',
-    tagline: 'All-in-one AI writing & thinking studio',
+    tagline: 'All-in-one Writing & Studio',
     description:
-      'A free, open-source, dark-mode-first writing app for authors and worldbuilders. One document, two views — continuous Quillscript mode and paginated Quillginate mode — with zero data lost between them. Built for The Hibrythian Saga and The Naiseikai Universe.',
+      'A free, open-source, dark-mode-first Writing App for Authors, Worldbuilders or just Note Taking users! One document, two views — continuous Quillscript mode and paginated Quillginate Mode — with zero data lost between them.',
     status: 'Alpha — Active Development',
     statusColor: 'gold',
     platform: 'Windows · macOS · Linux (Electron)',
@@ -19,7 +19,7 @@ const liveTools = [
       'Run up to 5 named Discord Rich Presence profiles, toggle one active at a time, with a Discord-accurate live preview, auto-rotation scheduling, encrypted bot-token export, and seamless auto-updates from GitHub Releases.',
     status: 'Released — v1.9.9.3',
     statusColor: 'success',
-    platform: 'Windows (Electron)',
+    platform: 'Windows · macOS · Linux (Electron)',
     href: 'https://github.com/TheAlarklynZone/MultiRPCustomizer/releases',
     github: 'https://github.com/TheAlarklynZone/MultiRPCustomizer',
     icon: '🎮',
@@ -32,9 +32,9 @@ const upcomingTools = [
     name: 'Quilvar',
     tagline: 'Store your clips. Paste with precision.',
     description:
-      'A lightweight, cross-platform clipboard manager that lives in your system tray. Search your clip history, pin what matters, organize into Quivers, and summon it all with Shift+Alt+V. Never lose copied text again.',
+      'A lightweight, cross-platform clipboard manager that lives in your system tray and acts like an default app too. Search your clip history, pin what matters, organize into Quivers, and summon it all with Shift+Alt+V. Never lose copied text again.',
     platform: 'Windows · macOS · Linux (Tauri)',
-    github: 'https://github.com/TheAlarklynZone/Quilvar',
+    github: 'https://github.com/TheAlarklynZone/',
     icon: '📋',
     tags: ['Clipboard Manager', 'Desktop', 'Coming Soon'],
   },
@@ -44,7 +44,7 @@ const upcomingTools = [
     description:
       'A system-wide emoji, symbol & glyph picker that replaces the broken Win+. experience. One global chord summons a fast overlay — search emoji, kaomoji, IPA symbols, math glyphs, and more — and inserts directly into any active app, zero clipboard roundtrip.',
     platform: 'Windows · macOS · Linux (Tauri)',
-    github: 'https://github.com/TheAlarklynZone/Varmojii',
+    github: 'https://github.com/TheAlarklynZone/',
     icon: '✨',
     tags: ['Emoji Picker', 'Desktop', 'Coming Soon'],
   },
