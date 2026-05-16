@@ -128,6 +128,11 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Divider between hero and portfolio */}
+      <div className="max-w-5xl mx-auto px-6">
+        <div className="section-divider" />
+      </div>
+
       {/* Current Projects */}
       <section className="max-w-5xl mx-auto px-6 py-20">
         <div className="mb-10">
