@@ -8,18 +8,18 @@ const themes = [
 
 const books = [
   {
-    title: 'Hibryds — A Grand Voyage',
-    volume: 'Book 1',
+    title: 'Hibryds — The Hibrythian Genesis of Everything,
+    volume: 'Book 0 - The Genesis / Prequel',
     status: 'Available Now',
     where: 'Barnes & Noble',
-    href: 'https://www.barnesandnoble.com/s/the-hibrythian-saga',
+    href: 'https://www.barnesandnoble.com/w/hibryds-the-hibrythian-genesis-of-everything-alarkius-elvya-jay/1149652816?ean=9798994097687',
   },
   {
-    title: 'Hibryds — The Hibrythian Genesis of Everything',
-    volume: 'Book 2',
+    title: 'Hibryds — A Grand Voyage',
+    volume: 'Book 1 - The First Main Book',
     status: 'Available Now',
     where: 'Barnes & Noble',
-    href: 'https://www.barnesandnoble.com/s/the-hibrythian-saga',
+    href: 'https://www.barnesandnoble.com/w/hibryds-a-grand-voyage-book-1-alarkius-elvya-jay/1149652259?ean=9798994097670',
   },
 ]
 
