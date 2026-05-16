@@ -36,6 +36,7 @@ const PERSON_NODE = {
     "https://www.reddit.com/r/HibrydsCUniverse/",
     "https://www.linkedin.com/in/alarkiusej/",
     "https://github.com/AlarkiusJay",
+    "https://github.com/TheAlarklynZone",
     "https://modrinth.com/user/AlariaEJ",
     "https://www.barnesandnoble.com/s/alarkius-elvya-jay",
     "https://www.thehibrythiansaga.com/",
