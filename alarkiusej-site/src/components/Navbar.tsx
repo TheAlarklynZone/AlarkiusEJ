@@ -51,10 +51,12 @@ export default function Navbar() {
     setOpenDropdown(openDropdown === label ? null : label)
   }
 
+  const solidNav = scrolled || mobileOpen
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-ink/95 backdrop-blur-sm border-b border-border shadow-lg shadow-black/20' : 'bg-transparent'
+        solidNav ? 'bg-ink/95 backdrop-blur-sm border-b border-border shadow-lg shadow-black/20' : 'bg-transparent'
       }`}
     >
       <nav className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
