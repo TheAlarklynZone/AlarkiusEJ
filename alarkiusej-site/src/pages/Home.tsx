@@ -60,8 +60,8 @@ export default function Home() {
               </h1>
               <p className="text-text-muted text-lg mb-4 leading-relaxed">
                 Also known as <span className="text-text font-medium">AJ</span> or{' '}
-                <span className="text-text font-medium">AlarkiusEJ</span> — a fantasy-adventure
-                writer, composer, and worldbuilder who loves the thrill of excitement.
+                <span className="text-text font-medium">AlarkiusEJ</span> — A Fantasy-Adventure
+                Writer, Composer, and Worldbuilder who loves the thrill of excitement.
               </p>
               <div className="callout callout-rose mb-8">
                 <span className="text-lg flex-shrink-0">🎨</span>
