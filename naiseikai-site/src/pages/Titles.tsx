@@ -83,9 +83,15 @@ type AnyTitle = {
   subtitle?: string
 }
 
+const titleRoutes: Record<string, string> = {
+  tqctn: '/titles/tqctn',
+}
+
 function TitleCard({ t }: { t: AnyTitle }) {
-  return (
-    <div className={`border rounded-xl overflow-hidden bg-surface transition-all duration-300 hover:bg-surface-raised ${colorBorder[t.color]}`}
+  const route = titleRoutes[t.id]
+  const cardClass = `border rounded-xl overflow-hidden bg-surface transition-all duration-300 hover:bg-surface-raised ${colorBorder[t.color]} ${route ? 'cursor-pointer hover:border-opacity-80' : ''}`
+  const inner = (
+    <div className={cardClass}
       style={{ boxShadow: t.status === 'published' ? `0 0 20px rgba(0,229,255,0.08)` : undefined }}>
 
       {/* IMAGE PLACEHOLDER — drop your cover art here */}
@@ -119,9 +125,13 @@ function TitleCard({ t }: { t: AnyTitle }) {
             <span key={tag} className={colorTag[t.color]}>{tag}</span>
           ))}
         </div>
+        {route && (
+          <p className="text-[10px] font-mono text-text-faint mt-4 opacity-60">Click to explore →</p>
+        )}
       </div>
     </div>
   )
+  return route ? <Link to={route}>{inner}</Link> : inner
 }
 
 export default function Titles() {
