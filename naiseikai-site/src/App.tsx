@@ -11,6 +11,7 @@ import Songbook from './pages/Songbook'
 import Author from './pages/Author'
 import Characters from './pages/Characters'
 import TQCTN from './pages/TQCTN'
+import Nevertheless from './pages/Nevertheless'
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
             <Route path="/worldbuilding" element={<Worldbuilding />} />
             <Route path="/titles"        element={<Titles />} />
             <Route path="/titles/tqctn"  element={<TQCTN />} />
+            <Route path="/titles/nevertheless" element={<Nevertheless />} />
             <Route path="/characters"    element={<Characters />} />
             <Route path="/songbook"      element={<Songbook />} />
             <Route path="/author"        element={<Author />} />
