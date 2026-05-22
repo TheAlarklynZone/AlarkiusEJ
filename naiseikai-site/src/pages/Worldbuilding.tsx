@@ -39,13 +39,6 @@ const colorLabel: Record<string, string> = {
   pink:   'text-[#ffaad4]',
   amber:  'text-[#ffd080]',
 }
-const colorSign: Record<string, string> = {
-  cyan:   'neon-sign',
-  purple: 'neon-sign neon-sign-purple',
-  pink:   'neon-sign neon-sign-pink',
-  amber:  'neon-sign',
-}
-
 const beings = [
   { name: 'Shinobi', desc: 'Stealthy operatives, assassins, and spies who operate within hidden societies.' },
   { name: 'Yokai', desc: 'Ancient spiritual beings ranging from lesser spirits to powerful deities — now living alongside humans under legal protection.' },

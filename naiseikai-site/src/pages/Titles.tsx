@@ -72,18 +72,29 @@ const colorTag: Record<string, string> = {
   amber:  'tag tag-amber',
 }
 
-function TitleCard({ t }: { t: typeof publishedTitles[0] & { subtitle?: string } }) {
+type AnyTitle = {
+  id: string
+  title: string
+  status: string
+  color: string
+  tags: string[]
+  desc: string
+  vol?: string
+  subtitle?: string
+}
+
+function TitleCard({ t }: { t: AnyTitle }) {
   return (
     <div className={`border rounded-xl p-6 bg-surface transition-all duration-300 hover:bg-surface-raised ${colorBorder[t.color]}`}
       style={{ boxShadow: t.status === 'published' ? `0 0 20px rgba(0,229,255,0.08)` : undefined }}>
       <div className="flex items-start justify-between gap-3 mb-3">
         <div>
           <p className={`font-serif text-xl font-semibold mb-0.5 ${colorLabel[t.color]}`}>{t.title}</p>
-          {(t as typeof upcomingTitles[0]).subtitle && (
-            <p className="text-xs text-text-faint font-mono">{(t as typeof upcomingTitles[0]).subtitle}</p>
+          {t.subtitle && (
+            <p className="text-xs text-text-faint font-mono">{t.subtitle}</p>
           )}
-          {(t as typeof publishedTitles[0]).vol && (
-            <p className="text-xs text-text-faint font-mono">{(t as typeof publishedTitles[0]).vol}</p>
+          {t.vol && (
+            <p className="text-xs text-text-faint font-mono">{t.vol}</p>
           )}
         </div>
         <span className={`text-[10px] px-2 py-0.5 rounded-full border font-mono flex-shrink-0 ${
