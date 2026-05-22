@@ -132,7 +132,7 @@ function TitleCard({ t }: { t: AnyTitle }) {
       </div>
     </div>
   )
-  return route ? <Link to={route}>{inner}</Link> : inner
+  return route ? <Link to={route} className="block">{inner}</Link> : inner
 }
 
 export default function Titles() {
