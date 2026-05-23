@@ -5,7 +5,6 @@ import CitySkyline from './components/CitySkyline'
 import Home from './pages/Home'
 import Universe from './pages/Universe'
 import Lore from './pages/Lore'
-import Worldbuilding from './pages/Worldbuilding'
 import Titles from './pages/Titles'
 import Songbook from './pages/Songbook'
 import Author from './pages/Author'
@@ -26,7 +25,6 @@ export default function App() {
             <Route path="/"              element={<Home />} />
             <Route path="/universe"      element={<Universe />} />
             <Route path="/lore"          element={<Lore />} />
-            <Route path="/worldbuilding" element={<Worldbuilding />} />
             <Route path="/titles"        element={<Titles />} />
             <Route path="/titles/tqctn"  element={<TQCTN />} />
             <Route path="/titles/nevertheless" element={<Nevertheless />} />
