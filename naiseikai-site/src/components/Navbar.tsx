@@ -133,23 +133,23 @@ export default function Navbar() {
         {/* Mobile Hamburger */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="lg:hidden p-2 text-text-muted hover:text-text transition-colors"
+          className="lg:hidden p-3 -mr-1 text-text-muted hover:text-text transition-colors touch-manipulation"
           aria-label="Toggle menu"
         >
-          <div className={`w-5 h-0.5 bg-current transition-all duration-300 ${mobileOpen ? 'rotate-45 translate-y-1.5' : ''}`} />
-          <div className={`w-5 h-0.5 bg-current mt-1.5 transition-all duration-300 ${mobileOpen ? 'opacity-0' : ''}`} />
-          <div className={`w-5 h-0.5 bg-current mt-1.5 transition-all duration-300 ${mobileOpen ? '-rotate-45 -translate-y-1.5' : ''}`} />
+          <div className={`w-6 h-0.5 bg-current transition-all duration-300 ${mobileOpen ? 'rotate-45 translate-y-[7px]' : ''}`} />
+          <div className={`w-6 h-0.5 bg-current mt-1.5 transition-all duration-300 ${mobileOpen ? 'opacity-0 scale-x-0' : ''}`} />
+          <div className={`w-6 h-0.5 bg-current mt-1.5 transition-all duration-300 ${mobileOpen ? '-rotate-45 -translate-y-[7px]' : ''}`} />
         </button>
       </nav>
 
       {/* Mobile Menu */}
       {mobileOpen && (
         <div className="lg:hidden bg-[rgba(5,5,20,0.98)] backdrop-blur-md border-t border-[rgba(100,80,200,0.2)]">
-          <ul className="max-w-5xl mx-auto px-6 py-4 space-y-1">
+          <ul className="max-w-5xl mx-auto px-4 py-3 space-y-0.5">
             {navLinks.map((link) =>
               link.children ? (
                 <li key={link.label}>
-                  <span className="block px-3 py-2 text-xs text-text-faint uppercase tracking-widest font-mono">
+                  <span className="block px-3 pt-4 pb-1.5 text-[10px] text-text-faint uppercase tracking-widest font-mono">
                     {link.label}
                   </span>
                   {link.children.map((child) =>
@@ -159,7 +159,7 @@ export default function Navbar() {
                         href={child.path}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="block px-5 py-2 text-sm text-text-muted hover:text-[#00e5ff] transition-colors"
+                        className="block px-5 py-3.5 text-sm text-text-muted hover:text-[#00e5ff] transition-colors touch-manipulation"
                       >
                         {child.label}
                       </a>
@@ -167,8 +167,10 @@ export default function Navbar() {
                       <Link
                         key={child.path}
                         to={child.path}
-                        className={`block px-5 py-2 text-sm rounded-md transition-colors ${
-                          isActive(child.path) ? 'text-[#bf5fff]' : 'text-text-muted hover:text-text'
+                        className={`block px-5 py-3.5 text-sm rounded-lg transition-colors touch-manipulation ${
+                          isActive(child.path)
+                            ? 'text-[#bf5fff] bg-[rgba(191,95,255,0.08)]'
+                            : 'text-text-muted hover:text-text hover:bg-[rgba(255,255,255,0.04)]'
                         }`}
                       >
                         {child.label}
@@ -180,8 +182,10 @@ export default function Navbar() {
                 <li key={link.path}>
                   <Link
                     to={link.path!}
-                    className={`block px-3 py-2 text-sm rounded-md transition-colors ${
-                      isActive(link.path!) ? 'text-[#bf5fff]' : 'text-text-muted hover:text-text'
+                    className={`block px-3 py-3.5 text-sm rounded-lg transition-colors touch-manipulation ${
+                      isActive(link.path!)
+                        ? 'text-[#bf5fff] bg-[rgba(191,95,255,0.08)]'
+                        : 'text-text-muted hover:text-text hover:bg-[rgba(255,255,255,0.04)]'
                     }`}
                   >
                     {link.label}
