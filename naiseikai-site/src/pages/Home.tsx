@@ -112,8 +112,8 @@ export default function Home() {
       </section>
 
       {/* ── Quick nav cards ── */}
-      <section className="relative z-10 max-w-5xl mx-auto px-6 py-10 pb-56">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <section className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 py-10 pb-56">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
 
           <Link to="/universe" className="neon-card neon-card group block">
             <div className="mb-3">
