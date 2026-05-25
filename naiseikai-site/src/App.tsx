@@ -25,11 +25,11 @@ export default function App() {
             <Route path="/universe"      element={<Universe />} />
             <Route path="/lore"          element={<Lore />} />
             <Route path="/titles"        element={<Titles />} />
-            <Route path="/titles/tqctn"  element={<TQCTN />} />
-            <Route path="/titles/nevertheless" element={<Nevertheless />} />
-            <Route path="/titles/dullahan"     element={<Dullahan />} />
-            <Route path="/titles/lonely-android" element={<LonelyAndroid />} />
-            <Route path="/titles/gyakuten" element={<GyakuTen />} />
+            <Route path="/titles/KarasuToNinja-TQCTN" element={<TQCTN />} />
+            <Route path="/titles/SorenaoAne-Nevertheless" element={<Nevertheless />} />
+            <Route path="/titles/DuraDekiruKoi-Dullahan" element={<Dullahan />} />
+            <Route path="/titles/HitoJinzo2GF-LonelyAndroid" element={<LonelyAndroid />} />
+            <Route path="/titles/GyakuTEN-ParadoxicalReincarnation" element={<GyakuTen />} />
             <Route path="/songbook"      element={<Songbook />} />
             <Route path="/author"        element={<Author />} />
           </Routes>
