@@ -1,0 +1,1 @@
+$(cat /tmp/readme_clean.md)
