@@ -891,7 +891,7 @@ export default function LonelyAndroid() {
       <div className="flex flex-wrap gap-3">
         <Link to="/titles" className="btn-neon-cyan text-xs">← All Titles</Link>
         <Link to="/lore" className="btn-neon-purple text-xs">Lore &amp; Timeline →</Link>
-        <Link to="/characters" className="btn-neon-cyan text-xs">Characters →</Link>
+        
       </div>
 
     </div>
