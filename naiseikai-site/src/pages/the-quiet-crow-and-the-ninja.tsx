@@ -242,7 +242,7 @@ function OverviewTab() {
               <p>Premium Paperback — <span className="text-text">$17.99 USD</span> <span className="text-text-faint text-xs">(colored interior)</span></p>
             </div>
             <a
-              href="https://www.barnesandnoble.com/w/the-quiet-crow-the-ninja-alarkius-elvya-jay/1149627312?ean=9798994097649"
+              href="https://www.barnesandnoble.com/s/alarkius%20elvya%20jay"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-neon-cyan text-xs mt-4 inline-block"
