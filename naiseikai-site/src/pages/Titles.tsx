@@ -84,11 +84,11 @@ type AnyTitle = {
 }
 
 const titleRoutes: Record<string, string> = {
-  tqctn: '/titles/tqctn',
-  sorenaoane: '/titles/nevertheless',
-  dullahan: '/titles/dullahan',
-  'lonely-android': '/titles/lonely-android',
-  'gyakuten': '/titles/gyakuten',
+  tqctn: '/titles/KarasuToNinja-TQCTN',
+  sorenaoane: '/titles/SorenaoAne-Nevertheless',
+  dullahan: '/titles/DuraDekiruKoi-Dullahan',
+  'lonely-android': '/titles/HitoJinzo2GF-LonelyAndroid',
+  'gyakuten': '/titles/GyakuTEN-ParadoxicalReincarnation',
 }
 
 function TitleCard({ t }: { t: AnyTitle }) {
