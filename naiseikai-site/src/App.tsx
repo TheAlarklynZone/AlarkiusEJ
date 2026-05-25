@@ -8,11 +8,11 @@ import Lore from './pages/Lore'
 import Titles from './pages/Titles'
 import Songbook from './pages/Songbook'
 import Author from './pages/Author'
-import TQCTN from './pages/TQCTN'
-import Nevertheless from './pages/Nevertheless'
-import Dullahan from './pages/Dullahan'
-import LonelyAndroid from './pages/LonelyAndroid'
-import GyakuTen from './pages/GyakuTen'
+import TQCTN from './pages/KarasuToNinja-TQCTN'
+import Nevertheless from './pages/SorenaoAne-Nevertheless'
+import Dullahan from './pages/DuraDekiruKoi-Dullahan'
+import LonelyAndroid from './pages/HitoJinzo2GF-LonelyAndroid'
+import GyakuTen from './pages/GyakuTEN-ParadoxicalReincarnation'
 
 export default function App() {
   return (
