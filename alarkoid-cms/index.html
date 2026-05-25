@@ -52,7 +52,7 @@ button{cursor:pointer;background:none;border:none}
 .sb-body::-webkit-scrollbar{width:3px}.sb-body::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
 .sec-label{font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.15em;color:var(--faint);margin-bottom:var(--sp2);display:flex;align-items:center;justify-content:space-between}
 .ws-list{display:flex;flex-direction:column;gap:var(--sp2)}
-.ws-card{padding:var(--sp2) var(--sp3);border-radius:var(--rad-lg);border:1px solid var(--border);background:var(--surf2);cursor:pointer;transition:var(--tr);display:flex;align-items:center;gap:var(--sp2)}
+.ws-card{padding:var(--sp2) var(--sp3);border-radius:var(--rad-lg);border:1px solid var(--border);background:var(--surf2);cursor:pointer;transition:var(--tr);display:flex;align-items:center;gap:var(--sp2);user-select:none}
 .ws-card:hover{border-color:color-mix(in srgb,var(--pri) 55%, transparent);background:var(--pri-hi)}
 .ws-card.active{border-color:color-mix(in srgb,var(--pri) 65%, transparent);background:var(--pri-hi)}
 .ws-icon{width:26px;height:26px;border-radius:var(--rad-md);flex-shrink:0;display:grid;place-items:center;font-size:.8rem}
@@ -192,6 +192,15 @@ button{cursor:pointer;background:none;border:none}
 .t-naiseikai .site-block .block-body{font-family:var(--font-b);color:var(--tc-muted);display:block;width:100%;max-width:none;min-width:0}
 .t-naiseikai .site-block .block-body > *{max-width:none}
 .t-naiseikai .site-block .block-body p,.t-naiseikai .site-block .block-body div,.t-naiseikai .site-block .block-body ul,.t-naiseikai .site-block .block-body ol,.t-naiseikai .site-block .block-body blockquote,.t-naiseikai .site-block .block-body pre,.t-naiseikai .site-block .block-body h1,.t-naiseikai .site-block .block-body h2,.t-naiseikai .site-block .block-body h3{max-width:none;width:100%}
+
+/* ── IN-APP CONTEXT MENU ── */
+.ctx-menu{position:fixed;z-index:900;background:var(--surf);border:1px solid var(--border);border-radius:var(--rad-lg);box-shadow:var(--sh-lg);padding:.3rem;min-width:185px;display:none;flex-direction:column;backdrop-filter:blur(10px)}
+.ctx-menu.open{display:flex}
+.ctx-item{padding:.5rem .85rem;border-radius:var(--rad-md);font-size:var(--text-sm);text-align:left;color:var(--text);transition:var(--tr);display:flex;align-items:center;gap:.55rem;background:none;border:none;width:100%;cursor:pointer;line-height:1.2}
+.ctx-item:hover{background:var(--pri-hi);color:var(--pri)}
+.ctx-item.danger{color:#d163a7}
+.ctx-item.danger:hover{background:rgba(161,44,123,.14);color:#e080be}
+.ctx-div{height:1px;background:var(--border);margin:.25rem .5rem}
 </style>
 </head>
 <body>
@@ -243,6 +252,39 @@ button{cursor:pointer;background:none;border:none}
 
 <div class="toast" id="toast"></div>
 
+<!-- IN-APP RIGHT-CLICK CONTEXT MENU -->
+<div class="ctx-menu" id="ctxMenu" role="menu" aria-label="Workspace options">
+  <button class="ctx-item" id="ctxRename">✏️ Rename Workspace</button>
+  <div class="ctx-div"></div>
+  <button class="ctx-item danger" id="ctxDelete">✕ Remove Workspace</button>
+</div>
+
+<!-- ADD WORKSPACE MODAL -->
+<div id="addWSModal" style="position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:800;display:none;place-items:center">
+  <div style="background:var(--surf);border:1px solid var(--border);border-radius:var(--rad-xl);padding:1.5rem;width:min(360px,90vw);display:flex;flex-direction:column;gap:1rem;box-shadow:var(--sh-lg)">
+    <div>
+      <h3 style="font-size:var(--text-lg);font-weight:700;margin-bottom:.25rem">Add Workspace</h3>
+      <p style="color:var(--muted);font-size:var(--text-xs)">Dashboard only — no GitHub repos are created or modified.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:.25rem">
+      <label style="font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.12em;color:var(--faint)">Workspace Name</label>
+      <input id="wsNameIn" placeholder="e.g. The Hibrythian Saga" style="padding:.45rem .7rem;border-radius:var(--rad-md);border:1px solid var(--border);background:var(--surf2);color:var(--text);font-size:var(--text-sm);transition:var(--tr);width:100%;font-family:inherit"/>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:.25rem">
+      <label style="font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.12em;color:var(--faint)">URL / Domain</label>
+      <input id="wsUrlIn" placeholder="e.g. mysite.com" style="padding:.45rem .7rem;border-radius:var(--rad-md);border:1px solid var(--border);background:var(--surf2);color:var(--text);font-size:var(--text-sm);transition:var(--tr);width:100%;font-family:inherit"/>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:.4rem">
+      <label style="font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.12em;color:var(--faint)">Icon</label>
+      <div id="emojiPicker" style="display:flex;flex-wrap:wrap;gap:.3rem"></div>
+    </div>
+    <div style="display:flex;gap:.5rem;justify-content:flex-end;margin-top:.25rem">
+      <button class="btn ghost" onclick="closeAddWS()">Cancel</button>
+      <button class="btn primary" onclick="confirmAddWS()">Add Workspace</button>
+    </div>
+  </div>
+</div>
+
 <!-- PREVIEW OVERLAY -->
 <div class="preview-overlay" id="previewOverlay">
   <div class="preview-bar">
@@ -287,51 +329,14 @@ button{cursor:pointer;background:none;border:none}
       <!-- Workspaces -->
       <div>
         <div class="sec-label">Workspaces</div>
-        <div class="ws-list">
-          <div class="ws-card active" onclick="switchWS('hibrythia',this)">
-            <div class="ws-icon" style="background:rgba(199,154,72,.15)">🏰</div>
-            <div class="ws-info"><strong>Hibrythian Saga</strong><span>thehibrythiansaga.com</span></div>
-            <div class="ws-dot"></div>
-          </div>
-          <div class="ws-card" onclick="switchWS('naiseikai',this)">
-            <div class="ws-icon" style="background:rgba(136,144,232,.15)">🌌</div>
-            <div class="ws-info"><strong>Naiseikai Universe</strong><span>naiseikai.com</span></div>
-            <div class="ws-dot off"></div>
-          </div>
-          <div class="ws-card" onclick="switchWS('alarkiusej',this)">
-            <div class="ws-icon" style="background:rgba(76,175,125,.15)">✍️</div>
-            <div class="ws-info"><strong>AlarkiusEJ</strong><span>alarkiusej.com</span></div>
-            <div class="ws-dot off"></div>
-          </div>
-        </div>
+        <div class="ws-list" id="wsList"></div>
         <button class="ws-load-theme" onclick="loadTheme()">⟳ Load workspace theme</button>
-        <button class="ws-add-btn" style="margin-top:var(--sp2)" onclick="toast('Connect new workspace coming soon!')">+ Connect workspace</button>
+        <button class="ws-add-btn" style="margin-top:var(--sp2)" onclick="openAddWS()">+ Add Workspace</button>
       </div>
       <!-- Pages -->
       <div>
         <div class="sec-label">Pages <button onclick="addPage()" style="color:var(--pri);font-size:var(--text-xs);background:none;border:none;cursor:pointer">+ Add</button></div>
-        <div class="tree" id="pageTree">
-          <div class="tree-item active" draggable="true" onclick="selectPage(this,'Overview')">
-            <div><strong>Overview</strong><small>Home page</small></div>
-            <span class="tree-grip">⠿</span>
-          </div>
-          <div class="tree-item" draggable="true" onclick="selectPage(this,'Lore & History')">
-            <div><strong>Lore &amp; History</strong><small>World canon</small></div>
-            <span class="tree-grip">⠿</span>
-          </div>
-          <div class="tree-item" draggable="true" onclick="selectPage(this,'Houses')">
-            <div><strong>Houses</strong><small>Noble families</small></div>
-            <span class="tree-grip">⠿</span>
-          </div>
-          <div class="tree-item" draggable="true" onclick="selectPage(this,'Characters')">
-            <div><strong>Characters</strong><small>14 entries</small></div>
-            <span class="tree-grip">⠿</span>
-          </div>
-          <div class="tree-item" draggable="true" onclick="selectPage(this,'Maps &amp; Regions')">
-            <div><strong>Maps &amp; Regions</strong><small>World geography</small></div>
-            <span class="tree-grip">⠿</span>
-          </div>
-        </div>
+        <div class="tree" id="pageTree"></div>
       </div>
       <!-- Status -->
       <div>
@@ -360,19 +365,16 @@ button{cursor:pointer;background:none;border:none}
     </div>
     <div class="canvas-outer t-hibrythia" id="canvasOuter">
       <div class="canvas-inner">
-        <!-- Site nav preview -->
         <div class="c-sitenav">
           <strong id="siteNavBrand">The Hibrythian Saga</strong>
           <nav id="siteNavLinks">
             <a>Lore</a><a>Houses</a><a>Characters</a><a>Maps</a><a>Music</a>
           </nav>
         </div>
-        <!-- Page header -->
         <div class="c-pageheader">
           <h1 id="pageTitle">Overview</h1>
           <p id="pageDesc">The world of Hibryth — a realm of ancient houses, forgotten gods, and living myth.</p>
         </div>
-        <!-- Blocks -->
         <div class="dropzone" id="dropzone">
           <div class="site-block" draggable="true">
             <div class="block-toolbar">
@@ -451,32 +453,143 @@ button{cursor:pointer;background:none;border:none}
 </div>
 
 <script>
-const workspaces = {
-  hibrythia:{label:'The Hibrythian Saga',sub:'thehibrythiansaga.com · Last synced 2 min ago',theme:'t-hibrythia',brand:'The Hibrythian Saga',nav:['Lore','Houses','Characters','Maps','Music'],pages:[{t:'Overview',s:'Home page'},{t:'Lore & History',s:'World canon'},{t:'Houses',s:'Noble families'},{t:'Characters',s:'14 entries'},{t:'Maps & Regions',s:'World geography'}]},
-  naiseikai:{label:'The Naiseikai Universe',sub:'naiseikai.com · Last synced 12 min ago',theme:'t-naiseikai',brand:'Naiseikai Universe',nav:['Worlds','Factions','Entities','Timeline','Lore'],pages:[{t:'Home',s:'Landing'},{t:'The Naiseikai',s:'Core lore'},{t:'Factions',s:'8 entries'},{t:'Entities',s:'Cosmic beings'},{t:'Timeline',s:'Universal history'}]},
-  alarkiusej:{label:'AlarkiusEJ Portfolio',sub:'alarkiusej.com · Last synced 1h ago',theme:'t-hibrythia',brand:'Alarkius Elvya Jay',nav:['About','Works','Music','Contact'],pages:[{t:'About',s:'Author bio'},{t:'Works',s:'Published works'},{t:'Music',s:'Compositions'},{t:'Contact',s:'Get in touch'}]}
+// ── WORKSPACE DATA ──
+const EMOJIS = ['🏰','🌌','✍️','📖','🗺️','⚔️','🌿','🏔️','🌊','🔮','🐉','🌙','⭐','🏛️','🎵'];
+let workspaces = {
+  hibrythia:{label:'The Hibrythian Saga',sub:'thehibrythiansaga.com · Last synced 2 min ago',theme:'t-hibrythia',brand:'The Hibrythian Saga',nav:['Lore','Houses','Characters','Maps','Music'],pages:[{t:'Overview',s:'Home page'},{t:'Lore & History',s:'World canon'},{t:'Houses',s:'Noble families'},{t:'Characters',s:'14 entries'},{t:'Maps & Regions',s:'World geography'}],icon:'🏰',color:'rgba(199,154,72,.15)'},
+  naiseikai:{label:'The Naiseikai Universe',sub:'naiseikai.com · Last synced 12 min ago',theme:'t-naiseikai',brand:'Naiseikai Universe',nav:['Worlds','Factions','Entities','Timeline','Lore'],pages:[{t:'Home',s:'Landing'},{t:'The Naiseikai',s:'Core lore'},{t:'Factions',s:'8 entries'},{t:'Entities',s:'Cosmic beings'},{t:'Timeline',s:'Universal history'}],icon:'🌌',color:'rgba(136,144,232,.15)'},
+  alarkiusej:{label:'AlarkiusEJ Portfolio',sub:'alarkiusej.com · Last synced 1h ago',theme:'t-hibrythia',brand:'Alarkius Elvya Jay',nav:['About','Works','Music','Contact'],pages:[{t:'About',s:'Author bio'},{t:'Works',s:'Published works'},{t:'Music',s:'Compositions'},{t:'Contact',s:'Get in touch'}],icon:'✍️',color:'rgba(76,175,125,.15)'}
 };
-let currentWS='hibrythia';
+let wsOrder = ['hibrythia','naiseikai','alarkiusej'];
+let currentWS = 'hibrythia';
 
-function applyWorkspace(id){
-  const ws=workspaces[id];if(!ws)return;
-  currentWS=id;
-  const co=document.getElementById('canvasOuter');
-  co.className='canvas-outer '+ws.theme;
-  document.getElementById('wsTitle').textContent=ws.label;
-  document.getElementById('wsSubtitle').textContent=ws.sub;
-  document.getElementById('siteNavBrand').textContent=ws.brand;
-  document.getElementById('siteNavLinks').innerHTML=ws.nav.map(n=>`<a>${n}</a>`).join('');
-  const tree=document.getElementById('pageTree');
-  tree.innerHTML=ws.pages.map((p,i)=>`<div class="tree-item${i===0?' active':''}" draggable="true" onclick="selectPage(this,'${p.t}')"><div><strong>${p.t}</strong><small>${p.s}</small></div><span class="tree-grip">⠿</span></div>`).join('');
-  document.getElementById('propsSubtitle').textContent=`${ws.pages[0].t} · ${ws.sub.split(' ·')[0]}`;
+// ── RENDER WORKSPACE LIST ──
+function renderWSList(){
+  const list = document.getElementById('wsList');
+  list.innerHTML = '';
+  wsOrder.forEach(id => {
+    const ws = workspaces[id];
+    const card = document.createElement('div');
+    card.className = 'ws-card' + (id === currentWS ? ' active' : '');
+    card.innerHTML = `
+      <div class="ws-icon" style="background:${ws.color}">${ws.icon}</div>
+      <div class="ws-info"><strong>${ws.label}</strong><span>${ws.sub.split(' ·')[0]}</span></div>
+      <div class="ws-dot${id === currentWS ? '' : ' off'}"></div>`;
+    card.addEventListener('click', () => switchWS(id));
+    // Block browser right-click; show in-app menu instead
+    card.addEventListener('contextmenu', e => { e.preventDefault(); openCtxMenu(e, id); });
+    list.appendChild(card);
+  });
 }
 
-function switchWS(id,el){
-  document.querySelectorAll('.ws-card').forEach(c=>c.classList.remove('active'));
-  el.classList.add('active');
+// ── IN-APP CONTEXT MENU ──
+let ctxTarget = null;
+const ctxMenu = document.getElementById('ctxMenu');
+
+function openCtxMenu(e, id){
+  ctxTarget = id;
+  const x = Math.min(e.clientX, window.innerWidth - 200);
+  const y = Math.min(e.clientY, window.innerHeight - 110);
+  ctxMenu.style.left = x + 'px';
+  ctxMenu.style.top  = y + 'px';
+  ctxMenu.classList.add('open');
+}
+function closeCtxMenu(){ ctxMenu.classList.remove('open'); ctxTarget = null; }
+
+document.getElementById('ctxRename').addEventListener('click', () => {
+  if(!ctxTarget){ closeCtxMenu(); return; }
+  const ws = workspaces[ctxTarget];
+  const name = prompt('Rename workspace:', ws.label);
+  if(name && name.trim()){
+    ws.label = name.trim();
+    if(ctxTarget === currentWS) document.getElementById('wsTitle').textContent = name.trim();
+    renderWSList();
+    toast('Renamed to "' + name.trim() + '"');
+  }
+  closeCtxMenu();
+});
+
+document.getElementById('ctxDelete').addEventListener('click', () => {
+  if(!ctxTarget){ closeCtxMenu(); return; }
+  const ws = workspaces[ctxTarget];
+  if(!confirm('Remove "' + ws.label + '" from the dashboard?\n\nNote: your GitHub repo will NOT be affected.')){
+    closeCtxMenu(); return;
+  }
+  wsOrder = wsOrder.filter(k => k !== ctxTarget);
+  delete workspaces[ctxTarget];
+  if(currentWS === ctxTarget){
+    currentWS = wsOrder[0] || null;
+    if(currentWS) applyWorkspace(currentWS);
+  }
+  renderWSList();
+  toast('"' + ws.label + '" removed from dashboard');
+  closeCtxMenu();
+});
+
+// Close menu on outside click or Escape
+document.addEventListener('click', e => { if(!ctxMenu.contains(e.target)) closeCtxMenu(); });
+document.addEventListener('keydown', e => { if(e.key === 'Escape') closeCtxMenu(); });
+
+// ── ADD WORKSPACE MODAL ──
+let pickedEmoji = '📖';
+function openAddWS(){
+  pickedEmoji = '📖';
+  document.getElementById('wsNameIn').value = '';
+  document.getElementById('wsUrlIn').value = '';
+  const picker = document.getElementById('emojiPicker');
+  picker.innerHTML = EMOJIS.map(e =>
+    `<button onclick="pickEmoji(this,'${e}')" style="width:30px;height:30px;border-radius:6px;border:1px solid var(--border);background:${e===pickedEmoji?'var(--pri-hi)':'var(--surf2)'};font-size:.9rem;cursor:pointer;transition:var(--tr)">${e}</button>`
+  ).join('');
+  document.getElementById('addWSModal').style.display = 'grid';
+}
+function closeAddWS(){ document.getElementById('addWSModal').style.display = 'none'; }
+function pickEmoji(btn, e){
+  pickedEmoji = e;
+  document.querySelectorAll('#emojiPicker button').forEach(b => b.style.background = 'var(--surf2)');
+  btn.style.background = 'var(--pri-hi)';
+}
+function confirmAddWS(){
+  const name = document.getElementById('wsNameIn').value.trim();
+  const url  = document.getElementById('wsUrlIn').value.trim();
+  if(!name){ alert('Please enter a workspace name.'); return; }
+  const id = 'ws_' + Date.now();
+  workspaces[id] = {
+    label: name, sub: (url || 'no url') + ' · Just added',
+    theme: 't-hibrythia', brand: name,
+    nav: ['Home','Lore','About'],
+    pages: [{t:'Home',s:'Landing'},{t:'Lore',s:'World lore'}],
+    icon: pickedEmoji, color: 'rgba(199,154,72,.12)'
+  };
+  wsOrder.push(id);
+  closeAddWS();
+  renderWSList();
+  toast('"' + name + '" added to dashboard');
+}
+document.getElementById('addWSModal').addEventListener('click', e => {
+  if(e.target === document.getElementById('addWSModal')) closeAddWS();
+});
+
+// ── WORKSPACE APPLY ──
+function applyWorkspace(id){
+  const ws = workspaces[id]; if(!ws) return;
+  currentWS = id;
+  const co = document.getElementById('canvasOuter');
+  co.className = 'canvas-outer ' + ws.theme;
+  document.getElementById('wsTitle').textContent = ws.label;
+  document.getElementById('wsSubtitle').textContent = ws.sub;
+  document.getElementById('siteNavBrand').textContent = ws.brand;
+  document.getElementById('siteNavLinks').innerHTML = ws.nav.map(n => `<a>${n}</a>`).join('');
+  const tree = document.getElementById('pageTree');
+  tree.innerHTML = ws.pages.map((p,i) =>
+    `<div class="tree-item${i===0?' active':''}" draggable="true" onclick="selectPage(this,'${p.t}')"><div><strong>${p.t}</strong><small>${p.s}</small></div><span class="tree-grip">⠿</span></div>`
+  ).join('');
+  document.getElementById('propsSubtitle').textContent = ws.pages[0].t + ' · ' + ws.sub.split(' ·')[0];
+  renderWSList();
+}
+
+function switchWS(id){
   applyWorkspace(id);
-  toast('Workspace: '+workspaces[id].label);
+  toast('Workspace: ' + workspaces[id].label);
 }
 
 function loadTheme(){
@@ -490,7 +603,7 @@ function selectPage(el,title){
   document.getElementById('pageTitle').textContent=title;
   document.getElementById('propTitle').value=title;
   const ws=workspaces[currentWS];
-  document.getElementById('propsSubtitle').textContent=`${title} · ${ws.sub.split(' ·')[0]}`;
+  document.getElementById('propsSubtitle').textContent=title+' · '+ws.sub.split(' ·')[0];
 }
 
 function addPage(){
@@ -540,12 +653,6 @@ function setupBlock(block){
 }
 
 document.querySelectorAll('.site-block').forEach(setupBlock);
-document.querySelectorAll('.tree-item').forEach(item=>{
-  item.addEventListener('dragstart',()=>item.classList.add('dragging'));
-  item.addEventListener('dragend',()=>item.classList.remove('dragging'));
-  const tree=document.getElementById('pageTree');
-  item.addEventListener('dragover',e=>{e.preventDefault();const after=item.getBoundingClientRect().top+item.offsetHeight/2>e.clientY;tree.insertBefore(item,after?item:item.nextSibling)});
-});
 
 function doDeploy(){
   toast('Deploying to Cloudflare Pages...');
