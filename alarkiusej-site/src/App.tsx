@@ -10,6 +10,7 @@ import Manifesto from './pages/Manifesto'
 import Policies from './pages/Policies'
 import Contact from './pages/Contact'
 import Tools from './pages/Tools'
+import FindMyBooks from './pages/FindMyBooks'
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
             <Route path="/policies" element={<Policies />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/tools" element={<Tools />} />
+            <Route path="/find-my-books" element={<FindMyBooks />} />
           </Routes>
         </main>
         <Footer />
