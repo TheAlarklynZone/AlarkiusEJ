@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import DisqusComments from '../components/DisqusComments'
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -1454,12 +1455,17 @@ export default function TQCTN() {
       {activeTab === 'characters-aru'    && <LittleBunnyAruTab />}
       {activeTab === 'characters-asami'  && <AsamiKuroseTab />}
 
+      {/* Disqus reviews */}
+      <DisqusComments
+        pageUrl="https://naiseikaiuniverse.com/titles/KarasuToNinja-TQCTN"
+        pageIdentifier="KarasuToNinja-TQCTN"
+      />
+
       {/* Footer nav */}
       <Divider />
       <div className="flex flex-wrap gap-3">
         <Link to="/titles" className="btn-neon-cyan text-xs">← All Titles</Link>
         <Link to="/lore" className="btn-neon-purple text-xs">Lore &amp; Timeline →</Link>
-        
       </div>
 
     </div>
