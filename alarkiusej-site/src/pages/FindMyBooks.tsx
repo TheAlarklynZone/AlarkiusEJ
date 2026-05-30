@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 const BN_URL = 'https://www.barnesandnoble.com/search?q=Alarkius%20Elvya%20Jay&contributorName=alarkius-elvya-jay'
 
 export default function FindMyBooks() {
-  const [count, setCount] = useState(10)
+  const [count, setCount] = useState(5)
 
   useEffect(() => {
     if (count <= 0) {
