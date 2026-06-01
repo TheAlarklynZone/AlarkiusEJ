@@ -11,6 +11,7 @@ import Policies from './pages/Policies'
 import Contact from './pages/Contact'
 import Tools from './pages/Tools'
 import FindMyBooks from './pages/FindMyBooks'
+import BnHibrythianSaga from './pages/BnHibrythianSaga'
 
 export default function App() {
   return (
@@ -29,6 +30,7 @@ export default function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/tools" element={<Tools />} />
             <Route path="/find-my-books" element={<FindMyBooks />} />
+            <Route path="/bn-hibrythian-saga" element={<BnHibrythianSaga />} />
           </Routes>
         </main>
         <Footer />
