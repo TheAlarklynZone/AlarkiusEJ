@@ -8,7 +8,7 @@ const navLinks = [
     children: [
       { label: 'Universe Overview', path: '/universe' },
       { label: 'Lore & Timeline', path: '/lore' },
-      { label: 'Naiseikai Power Scaling', path: '/universe/power-scaling' },
+      { label: 'Power Scaling', path: '/power-scaling' },
     ],
   },
   { label: 'Titles', path: '/titles' },
