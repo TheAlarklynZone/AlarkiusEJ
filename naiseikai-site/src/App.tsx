@@ -4,6 +4,7 @@ import Footer from './components/Footer'
 import CitySkyline from './components/CitySkyline'
 import Home from './pages/Home'
 import Universe from './pages/Universe'
+import PowerScaling from './pages/PowerScaling'
 import Lore from './pages/Lore'
 import Titles from './pages/Titles'
 import Songbook from './pages/Songbook'
@@ -23,6 +24,7 @@ export default function App() {
           <Routes>
             <Route path="/"              element={<Home />} />
             <Route path="/universe"      element={<Universe />} />
+            <Route path="/universe/power-scaling" element={<PowerScaling />} />
             <Route path="/lore"          element={<Lore />} />
             <Route path="/titles"        element={<Titles />} />
             <Route path="/titles/KarasuToNinja-TQCTN" element={<TQCTN />} />

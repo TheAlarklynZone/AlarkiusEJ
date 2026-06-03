@@ -8,6 +8,7 @@ const navLinks = [
     children: [
       { label: 'Universe Overview', path: '/universe' },
       { label: 'Lore & Timeline', path: '/lore' },
+      { label: 'Naiseikai Power Scaling', path: '/universe/power-scaling' },
     ],
   },
   { label: 'Titles', path: '/titles' },
@@ -15,7 +16,7 @@ const navLinks = [
   {
     label: 'More',
     children: [
-      { label: 'Author\'s Note', path: '/author' },
+      { label: "Author's Note", path: '/author' },
       { label: 'Alarkius EJ ↗', path: 'https://www.alarkiusej.com', external: true },
     ],
   },
@@ -84,7 +85,7 @@ export default function Navbar() {
                   </svg>
                 </button>
                 {openDropdown === link.label && (
-                  <div className="absolute top-full left-0 mt-1 w-52 bg-[rgba(8,8,30,0.98)] border border-[rgba(100,80,200,0.3)] rounded-lg shadow-xl shadow-black/50 overflow-hidden backdrop-blur-md">
+                  <div className="absolute top-full left-0 mt-1 w-56 bg-[rgba(8,8,30,0.98)] border border-[rgba(100,80,200,0.3)] rounded-lg shadow-xl shadow-black/50 overflow-hidden backdrop-blur-md">
                     {link.children.map((child) =>
                       child.external ? (
                         <a
