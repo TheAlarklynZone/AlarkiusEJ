@@ -13,6 +13,7 @@ import Tools from './pages/Tools'
 import FindMyBooks from './pages/FindMyBooks'
 import BnHibrythianSaga from './pages/BnHibrythianSaga'
 import BnNaiseikaiUniverse from './pages/BnNaiseikaiUniverse'
+import TimeSystem from './pages/hibrythian-saga/TimeSystem'
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/hibrythian-saga" element={<HibrythianSaga />} />
+            <Route path="/hibrythian-saga/32-16TimeSystem" element={<TimeSystem />} />
             <Route path="/naiseikai-universe" element={<NaiseikaiUniverse />} />
             <Route path="/music" element={<Music />} />
             <Route path="/manifesto" element={<Manifesto />} />
