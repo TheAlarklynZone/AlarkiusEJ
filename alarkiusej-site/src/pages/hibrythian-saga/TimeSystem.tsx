@@ -735,13 +735,16 @@ export default function TimeSystem() {
     function getHetraTime() {
       const now = new Date()
       const realSecondsInDay = now.getHours() * 3600 + now.getMinutes() * 60 + now.getSeconds()
+      const realMs = now.getMilliseconds()
       const realDayFraction = realSecondsInDay / 86400
       const hetraTicksPerDay = 32 * 80 * 80
       const hetraTicks = Math.floor(realDayFraction * hetraTicksPerDay)
-      const hSeconds = hetraTicks % 80
       const hMinutes = Math.floor(hetraTicks / 80) % 80
       const hHours = Math.floor(hetraTicks / (80 * 80))
-      return { hHours, hMinutes, hSeconds }
+      // Seconds: 1 Hetranian second = 80 real seconds.
+      const hSeconds = Math.floor(realSecondsInDay % 80)
+      const hSecFrac = (hSeconds + realMs / 1000) / 80 // smooth sweep over 80s
+      return { hHours, hMinutes, hSeconds, hSecFrac }
     }
 
     function getHourLabel(h: number) {
@@ -806,10 +809,10 @@ export default function TimeSystem() {
     }
 
     function updateClock() {
-      const { hHours, hMinutes, hSeconds } = getHetraTime()
+      const { hHours, hMinutes, hSeconds, hSecFrac } = getHetraTime()
       const hourAngle = ((hHours + hMinutes / 80) / 32) * 360 - 90
       const minAngle = (hMinutes / 80) * 360 - 90
-      const secAngle = (hSeconds / 80) * 360 - 90
+      const secAngle = hSecFrac * 360 - 90
       const cx = 150, cy = 150
       const toRad = (a: number) => (a * Math.PI) / 180
       const handCoords = (angle: number, length: number) => ({
