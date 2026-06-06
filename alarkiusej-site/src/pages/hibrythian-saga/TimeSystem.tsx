@@ -668,7 +668,37 @@ const STYLES = `
   .hetra-cal .hero-stats { gap: var(--space-2); }
   .hetra-cal .stat-pill { min-width: 70px; padding: var(--space-3) var(--space-4); }
   .hetra-cal .dn-events { display: none; }
+
+  /* Hide the full day name text, show short abbreviation via ::before */
   .hetra-cal .cal-day-header span { display: none; }
+  .hetra-cal .cal-day-header {
+    font-size: 0;
+    padding: 4px 2px;
+    letter-spacing: 0;
+  }
+  .hetra-cal .cal-day-header::before {
+    content: attr(data-short);
+    font-size: 9px;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    color: #e8b04a;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  /* Tighter cells */
+  .hetra-cal .cal-cell {
+    min-height: 32px;
+    padding: 2px;
+    font-size: 11px;
+  }
+  .hetra-cal .calendar-grid-wrap {
+    padding: 12px;
+  }
+  .hetra-cal .cal-day-headers,
+  .hetra-cal .cal-grid {
+    gap: 1px;
+  }
 }
 .hetra-cal .year-nav {
   display: flex;
@@ -1137,13 +1167,13 @@ export default function TimeSystem() {
 
                 <div className="calendar-grid-wrap">
                   <div className="cal-day-headers">
-                    <div className="cal-day-header">Hynsday<span>Sun eq.</span></div>
-                    <div className="cal-day-header">Iyonsday<span>Mon eq.</span></div>
-                    <div className="cal-day-header">Bhuseday<span>Tue eq.</span></div>
-                    <div className="cal-day-header">Runesday<span>Wed eq.</span></div>
-                    <div className="cal-day-header">Yhursday<span>Thu eq.</span></div>
-                    <div className="cal-day-header">Draxday<span>Fri eq.</span></div>
-                    <div className="cal-day-header">Sethraday<span>Sat eq.</span></div>
+                    <div className="cal-day-header" data-short="Hyn">Hynsday<span>Sun eq.</span></div>
+                    <div className="cal-day-header" data-short="Iyo">Iyonsday<span>Mon eq.</span></div>
+                    <div className="cal-day-header" data-short="Bhu">Bhuseday<span>Tue eq.</span></div>
+                    <div className="cal-day-header" data-short="Run">Runesday<span>Wed eq.</span></div>
+                    <div className="cal-day-header" data-short="Yhu">Yhursday<span>Thu eq.</span></div>
+                    <div className="cal-day-header" data-short="Drx">Draxday<span>Fri eq.</span></div>
+                    <div className="cal-day-header" data-short="Set">Sethraday<span>Sat eq.</span></div>
                   </div>
                   <div className="cal-grid" id="cal-grid" />
                 </div>
