@@ -1094,11 +1094,11 @@ export default function TimeSystem() {
                       </div>
                       <div className="time-info-card">
                         <span className="ti-label">Day / Night</span>
-                        <span className="ti-val" id="day-night">Day (19h) | Night (13h)</span>
+                        <span className="ti-val" id="day-night">Day (19h) & Night (13h)</span>
                       </div>
                       <div className="time-info-card">
                         <span className="ti-label">Hour Type</span>
-                        <span className="ti-val" id="hour-type">AM</span>
+                        <span className="ti-val" id="hour-type">AM & PM</span>
                       </div>
                       <div className="time-info-card">
                         <span className="ti-label">UCC Offset</span>
