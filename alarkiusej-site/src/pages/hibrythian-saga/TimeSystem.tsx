@@ -570,7 +570,7 @@ const STYLES = `
   height: 7px;
   border-radius: 50%;
   flex-shrink: 0;
-  margin-top: auto;
+  margin-top: 4px;
   background: var(--sdot-color);
   box-shadow: 0 0 5px var(--sdot-color);
   position: relative;
