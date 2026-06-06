@@ -464,47 +464,84 @@ const STYLES = `
   border-radius: 0 var(--radius-md) var(--radius-md) 0;
 }
 .hetra-cal .month-lore-text { font-size: var(--text-sm); color: var(--color-text-muted); font-style: italic; }
-.hetra-cal .cal-day-headers { display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; margin-bottom: 2px; }
+.hetra-cal .cal-day-headers {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0;
+  margin-bottom: 2px;
+  background: color-mix(in srgb, #e8b04a 12%, #141525);
+  border-radius: 6px 6px 0 0;
+  border: 1px solid color-mix(in srgb, #e8b04a 25%, transparent);
+  overflow: hidden;
+}
 .hetra-cal .cal-day-header {
   text-align: center;
-  padding: var(--space-2) var(--space-1);
-  font-family: var(--font-heading);
+  padding: 6px 4px;
+  font-family: 'Cinzel', serif;
   font-size: 11px;
   font-weight: 700;
-  color: var(--color-accent-gold);
+  color: #e8b04a;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  background: var(--color-surface-offset);
-  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  background: transparent;
+  border-radius: 0;
   display: flex;
   flex-direction: column;
   gap: 1px;
+  border-right: 1px solid color-mix(in srgb, #e8b04a 15%, transparent);
+}
+.hetra-cal .cal-day-header:last-child {
+  border-right: none;
 }
 .hetra-cal .cal-day-header span { font-size: 9px; font-weight: 400; color: var(--color-text-faint); text-transform: none; letter-spacing: 0; font-family: var(--font-body); }
-.hetra-cal .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; }
+.hetra-cal .cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0;
+}
+/* Checkerboard */
+.hetra-cal .cal-cell:nth-child(odd) {
+  background: #141525;
+}
+.hetra-cal .cal-cell:nth-child(even) {
+  background: color-mix(in srgb, #e8b04a 5%, #141525);
+}
+.hetra-cal .cal-cell.empty {
+  background: transparent !important;
+}
 .hetra-cal .cal-cell {
   min-height: 58px;
-  padding: var(--space-2);
-  background: var(--color-surface-offset);
-  border-radius: var(--radius-sm);
+  padding: 6px;
+  background: #141525;
+  border-radius: 0;
+  border: 1px solid rgba(255,255,255,0.06);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-heading);
-  font-size: var(--text-sm);
-  color: var(--color-text-muted);
-  border: 1px solid transparent;
-  transition: all var(--transition-interactive);
+  font-family: 'Cinzel', serif;
+  font-size: 14px;
+  color: rgba(255,255,255,0.5);
+  transition: all 0.15s ease;
   cursor: default;
   position: relative;
 }
-.hetra-cal .cal-cell.empty { background: transparent; }
 .hetra-cal .cal-cell.day { color: var(--color-text); }
-.hetra-cal .cal-cell.day:hover { background: var(--color-surface-dynamic); border-color: var(--color-border); }
+.hetra-cal .cal-cell.day:hover {
+  background: rgba(255,255,255,0.08) !important;
+  border-color: rgba(255,255,255,0.15);
+  z-index: 1;
+}
+.hetra-cal .cal-cell.today {
+  background: color-mix(in srgb, #e8b04a 20%, #141525) !important;
+  border-color: #e8b04a;
+  color: #e8b04a;
+  font-weight: 700;
+  z-index: 1;
+}
 .hetra-cal .cal-cell.eclipse-day {
-  background: color-mix(in srgb, var(--color-accent-red) 18%, var(--color-surface-offset));
-  border-color: var(--color-accent-red);
+  background: color-mix(in srgb, #e05060 18%, #141525) !important;
+  border-color: #e05060;
 }
 .hetra-cal .eclipse-indicator {
   width: 5px;
