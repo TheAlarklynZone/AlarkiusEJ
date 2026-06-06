@@ -468,11 +468,11 @@ const STYLES = `
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 0;
-  margin-bottom: 2px;
-  background: color-mix(in srgb, #e8b04a 12%, #141525);
+  margin-bottom: 0;
+  background: #363854;
   border-radius: 6px 6px 0 0;
-  border: 1px solid color-mix(in srgb, #e8b04a 25%, transparent);
   overflow: hidden;
+  border: none;
 }
 .hetra-cal .cal-day-header {
   text-align: center;
@@ -488,7 +488,7 @@ const STYLES = `
   display: flex;
   flex-direction: column;
   gap: 1px;
-  border-right: 1px solid color-mix(in srgb, #e8b04a 15%, transparent);
+  border: none;
 }
 .hetra-cal .cal-day-header:last-child {
   border-right: none;
@@ -498,23 +498,25 @@ const STYLES = `
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 0;
+  border-radius: 0 0 6px 6px;
+  overflow: hidden;
 }
 /* Checkerboard */
 .hetra-cal .cal-cell:nth-child(odd) {
   background: #141525;
 }
 .hetra-cal .cal-cell:nth-child(even) {
-  background: color-mix(in srgb, #e8b04a 5%, #141525);
+  background: #25273d;
 }
 .hetra-cal .cal-cell.empty {
-  background: transparent !important;
+  cursor: default;
 }
 .hetra-cal .cal-cell {
   min-height: 58px;
   padding: 6px;
   background: #141525;
   border-radius: 0;
-  border: 1px solid rgba(255,255,255,0.06);
+  border: none;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -529,19 +531,18 @@ const STYLES = `
 .hetra-cal .cal-cell.day { color: var(--color-text); }
 .hetra-cal .cal-cell.day:hover {
   background: rgba(255,255,255,0.08) !important;
-  border-color: rgba(255,255,255,0.15);
   z-index: 1;
 }
 .hetra-cal .cal-cell.today {
   background: color-mix(in srgb, #e8b04a 20%, #141525) !important;
-  border-color: #e8b04a;
+  border: 1px solid #e8b04a !important;
   color: #e8b04a;
   font-weight: 700;
   z-index: 1;
 }
 .hetra-cal .cal-cell.eclipse-day {
   background: color-mix(in srgb, #e05060 18%, #141525) !important;
-  border-color: #e05060;
+  border: 1px solid #e05060 !important;
 }
 .hetra-cal .eclipse-indicator {
   width: 5px;
