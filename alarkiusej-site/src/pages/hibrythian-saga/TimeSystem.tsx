@@ -510,7 +510,15 @@ const STYLES = `
   background: #1d1f36;
 }
 .hetra-cal .cal-cell.empty {
+  background: #141525 !important;
   cursor: default;
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(255,255,255,0.025) 0px,
+    rgba(255,255,255,0.025) 1px,
+    transparent 1px,
+    transparent 8px
+  ) !important;
 }
 .hetra-cal .cal-cell {
   min-height: 58px;
