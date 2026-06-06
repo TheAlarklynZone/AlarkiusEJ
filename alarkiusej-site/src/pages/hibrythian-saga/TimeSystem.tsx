@@ -1044,7 +1044,7 @@ export default function TimeSystem() {
                 <p className="hero-quote">
                   "All time flows forward. All choices echo outward. And every consequence reshapes the path ahead."
                 </p>
-                <p className="hero-attr">— Aeonia</p>
+                <p className="hero-attr">— Aeonia, The Spirit of Time</p>
                 <div className="hero-stats">
                   <div className="stat-pill"><span className="stat-num">32</span><span className="stat-label">Hours/Day</span></div>
                   <div className="stat-pill"><span className="stat-num">14</span><span className="stat-label">Months/Year</span></div>
@@ -1059,7 +1059,7 @@ export default function TimeSystem() {
               <div className="section-inner">
                 <div className="section-label">Live Hetranian Time</div>
                 <h2 className="section-title">The 32-Hour Clock</h2>
-                <p className="section-desc">1 minute = 80 seconds · 1 hour = 80 minutes · 32 hours per day</p>
+                <p className="section-desc">1 minute = 80 seconds · 1 hour = 80 minutes · 32 hours per day · 19h of Daylight, 13h of Night-time</p>
 
                 <div className="clock-layout">
                   <div className="analog-clock-wrap">
