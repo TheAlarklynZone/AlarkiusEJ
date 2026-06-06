@@ -469,7 +469,7 @@ const STYLES = `
   grid-template-columns: repeat(7, 1fr);
   gap: 0;
   margin-bottom: 0;
-  background: #363854;
+  background: #141525;
   border-radius: 6px 6px 0 0;
   overflow: hidden;
   border: none;
@@ -506,7 +506,7 @@ const STYLES = `
   background: #141525;
 }
 .hetra-cal .cal-cell:nth-child(even) {
-  background: #25273d;
+  background: #1a1c2e;
 }
 .hetra-cal .cal-cell.empty {
   cursor: default;
