@@ -1139,6 +1139,12 @@ export default function TimeSystem() {
         }
         html += `<div class="${cls}">${d}${seasonDot}${isEclipse ? '<div class="eclipse-indicator" title="Red Blood Eclipse · 24:25 PM"></div>' : ''}</div>`
       }
+      // Empty cells after last day (fill out the final row)
+      const totalCells = startDayOfWeek + month.days
+      const trailingEmpty = (7 - (totalCells % 7)) % 7
+      for (let i = 0; i < trailingEmpty; i++) {
+        html += `<div class="cal-cell empty"></div>`
+      }
       grid.innerHTML = html
       buildYearProgress()
     }
