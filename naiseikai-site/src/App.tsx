@@ -7,6 +7,7 @@ import Universe from './pages/Universe'
 import PowerScaling from './pages/PowerScaling'
 import Lore from './pages/Lore'
 import Titles from './pages/Titles'
+import AllCharacters from './pages/AllCharacters'
 import Songbook from './pages/Songbook'
 import Author from './pages/Author'
 
@@ -55,6 +56,7 @@ export default function App() {
             <Route path="/power-scaling" element={<PowerScaling />} />
             <Route path="/lore"          element={<Lore />} />
             <Route path="/titles"        element={<Titles />} />
+            <Route path="/titles/all-characters" element={<AllCharacters />} />
 
             {/* TQCTN */}
             <Route path="/titles/KarasuToNinja-TQCTN" element={<TQCTN />} />
