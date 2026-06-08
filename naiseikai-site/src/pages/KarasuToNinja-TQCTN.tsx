@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import DisqusComments from '../components/DisqusComments'
 
 // ─── Types ───────────────────────────────────────────────────────────────────
@@ -287,7 +287,7 @@ function OverviewTab() {
 
 // ─── Hanako Reina ────────────────────────────────────────────────────────────
 
-function HanakoReinaTab() {
+export function HanakoReinaTab() {
   return (
     <div className="space-y-8">
       <ImgPlaceholder label="/characters/hanako-reina.jpg" aspect="aspect-[3/4]" />
@@ -468,7 +468,7 @@ function HanakoReinaTab() {
 
 // ─── Koa Ruruka ──────────────────────────────────────────────────────────────
 
-function KoaRurukaTab() {
+export function KoaRurukaTab() {
   return (
     <div className="space-y-8">
       <ImgPlaceholder label="/characters/koa-ruruka.jpg" aspect="aspect-[3/4]" />
@@ -652,7 +652,7 @@ function KoaRurukaTab() {
 
 // ─── Haruhi Aoi ──────────────────────────────────────────────────────────────
 
-function HaruhiAoiTab() {
+export function HaruhiAoiTab() {
   return (
     <div className="space-y-8">
       <ImgPlaceholder label="/characters/haruhi-aoi.jpg" aspect="aspect-[3/4]" />
@@ -903,7 +903,7 @@ function HaruhiAoiTab() {
 
 // ─── Little Bunny Aru ─────────────────────────────────────────────────────────
 
-function LittleBunnyAruTab() {
+export function LittleBunnyAruTab() {
   return (
     <div className="space-y-8">
       <ImgPlaceholder label="/characters/little-bunny-aru.png" aspect="aspect-[3/4]" />
@@ -1035,7 +1035,7 @@ function LittleBunnyAruTab() {
 
 // ─── Asami Kurose ─────────────────────────────────────────────────────────────
 
-function AsamiKuroseTab() {
+export function AsamiKuroseTab() {
   return (
     <div className="space-y-8">
       <ImgPlaceholder label="/characters/asami-kurose.jpg" aspect="aspect-[3/4]" />
@@ -1339,6 +1339,16 @@ const CHARACTER_TABS: { key: Tab; label: string; color: string }[] = [
   { key: 'characters-asami',  label: 'Asami Kurose',      color: 'text-[#d49fff]' },
 ]
 
+const CHARACTER_SLUGS: Record<string, string> = {
+  'characters-reina':  'hanako-reina',
+  'characters-ruruka': 'koa-ruruka',
+  'characters-haruhi': 'haruhi-aoi',
+  'characters-aru':    'little-yours-truly-bunny-aru',
+  'characters-asami':  'asami-kurose',
+}
+
+const TITLE_BASE = '/titles/KarasuToNinja-TQCTN'
+
 function CharactersIndex({ onSelect }: { onSelect: (t: Tab) => void }) {
   return (
     <div className="space-y-6">
@@ -1348,14 +1358,14 @@ function CharactersIndex({ onSelect }: { onSelect: (t: Tab) => void }) {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {CHARACTER_TABS.map(({ key, label, color }) => (
-          <button
+          <Link
             key={key}
-            onClick={() => onSelect(key)}
-            className="border border-white/10 rounded-xl p-5 bg-[rgba(255,255,255,0.03)] hover:bg-[rgba(255,255,255,0.07)] transition-all text-left group"
+            to={`${TITLE_BASE}/${CHARACTER_SLUGS[key]}`}
+            className="block border border-white/10 rounded-xl p-5 bg-[rgba(255,255,255,0.03)] hover:bg-[rgba(255,255,255,0.07)] transition-all text-left group"
           >
             <p className={`font-serif text-lg ${color} mb-1 group-hover:underline`}>{label}</p>
             <p className="text-[10px] font-mono text-text-faint">View full profile →</p>
-          </button>
+          </Link>
         ))}
       </div>
     </div>
