@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 // ─── Shared helpers ───────────────────────────────────────────────────────────
@@ -353,16 +354,6 @@ function AsamiKuroseTab() {
     </div>
   )
 }
-
-// ─── Character Index ──────────────────────────────────────────────────────────
-
-const CHARACTER_TABS: { key: Tab; label: string; color: string }[] = [
-  { key: 'characters-reina',  label: 'Hanako Reina',     color: 'text-[#7ef5ff]' },
-  { key: 'characters-ruruka', label: 'Koa Ruruka',        color: 'text-[#d49fff]' },
-  { key: 'characters-haruhi', label: 'Haruhi Aoi',        color: 'text-[#ffaad4]' },
-  { key: 'characters-aru',    label: 'Little Bunny Aru',  color: 'text-[#ffaad4]' },
-  { key: 'characters-asami',  label: 'Asami Kurose',      color: 'text-[#d49fff]' },
-]
 
 
 // ─── Page wrapper ─────────────────────────────────────────────────────────────
