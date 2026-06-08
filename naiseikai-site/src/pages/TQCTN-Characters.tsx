@@ -1,3 +1,4 @@
+import { type ComponentType } from 'react'
 import { Link, useParams, Navigate } from 'react-router-dom'
 import {
   HanakoReinaTab,
@@ -13,7 +14,7 @@ type CharacterEntry = {
   slug: string
   label: string
   color: string
-  Component: () => JSX.Element
+  Component: ComponentType
 }
 
 const CHARACTERS: CharacterEntry[] = [
