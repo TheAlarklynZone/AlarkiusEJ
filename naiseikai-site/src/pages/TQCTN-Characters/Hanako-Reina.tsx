@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import type { ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 
 // ─── Shared helpers ───────────────────────────────────────────────────────────
@@ -15,7 +16,7 @@ function Divider() {
   return <div className="section-divider my-8" />
 }
 
-function IdentityBlock({ icon, title, children }: { icon: string; title: string; children: React.ReactNode }) {
+function IdentityBlock({ icon, title, children }: { icon: string; title: string; children: ReactNode }) {
   const [open, setOpen] = useState(false)
   return (
     <div className="border border-white/10 rounded-xl overflow-hidden mb-3">
@@ -165,7 +166,7 @@ function HanakoReinaTab() {
       <div>
         <h3 className="font-serif text-lg text-text mb-4">She's a Living Legend</h3>
         <div className="callout text-sm text-text-muted leading-relaxed">
-          <p className="italic">"The Quiet Crow came from the Reinishi Family in 1809. It came from the 3rd generation from a dark magician from the name, Karasu Reinishi. When he died, his spirit lingered through the world, in the form of a Crow that couldn't make sound," <em>I recited from the top of my head, and it made Ruruka get shivers as I stared at her</em> "His spirit became too attached to this world, so as time passed, it wandered into the generation of the Reinishi Family, which was now known as The Reina Generation.."</em></p>
+          <p className="italic">"The Quiet Crow came from the Reinishi Family in 1809. It came from the 3rd generation from a dark magician from the name, Karasu Reinishi. When he died, his spirit lingered through the world, in the form of a Crow that couldn't make sound," <em>I recited from the top of my head, and it made Ruruka get shivers as I stared at her</em> "His spirit became too attached to this world, so as time passed, it wandered into the generation of the Reinishi Family, which was now known as The Reina Generation.."</p>
           <p className="mt-3 italic">"and that girl was sitting on the couch next to a ninja who was casted out from her family...." <em>my tone changed back to normal as my eyes' glow faded, which made Ruruka get shivers as she confirmed herself that the legend was real.</em></p>
         </div>
       </div>
