@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react'
-import { Link, useSearchParams } from 'react-router-dom'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import DisqusComments from '../components/DisqusComments'
 
 // ─── Types ───────────────────────────────────────────────────────────────────
@@ -1339,24 +1339,15 @@ const CHARACTER_TABS: { key: Tab; label: string; color: string }[] = [
   { key: 'characters-asami',  label: 'Asami Kurose',      color: 'text-[#d49fff]' },
 ]
 
-// slug → tab key mapping (used for ?character= query param)
-const SLUG_TO_TAB: Record<string, Tab> = {
-  'hanako-reina':                 'characters-reina',
-  'koa-ruruka':                   'characters-ruruka',
-  'haruhi-aoi':                   'characters-haruhi',
-  'little-yours-truly-bunny-aru': 'characters-aru',
-  'asami-kurose':                 'characters-asami',
+const CHARACTER_ROUTES: Record<string, string> = {
+  'characters-reina':  '/titles/KarasuToNinja-TQCTN/Hanako-Reina',
+  'characters-ruruka': '/titles/KarasuToNinja-TQCTN/Koa-Ruruka',
+  'characters-haruhi': '/titles/KarasuToNinja-TQCTN/Haruhi-Aoi',
+  'characters-aru':    '/titles/KarasuToNinja-TQCTN/Your-One-and-Only-Little-Bunny-Aru',
+  'characters-asami':  '/titles/KarasuToNinja-TQCTN/Asami-Kurose',
 }
 
-const TAB_TO_SLUG: Record<string, string> = {
-  'characters-reina':  'hanako-reina',
-  'characters-ruruka': 'koa-ruruka',
-  'characters-haruhi': 'haruhi-aoi',
-  'characters-aru':    'little-yours-truly-bunny-aru',
-  'characters-asami':  'asami-kurose',
-}
-
-function CharactersIndex({ onSelect }: { onSelect: (slug: string) => void }) {
+function CharactersIndex() {
   return (
     <div className="space-y-6">
       <div>
@@ -1365,14 +1356,14 @@ function CharactersIndex({ onSelect }: { onSelect: (slug: string) => void }) {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {CHARACTER_TABS.map(({ key, label, color }) => (
-          <button
+          <Link
             key={key}
-            onClick={() => onSelect(TAB_TO_SLUG[key])}
-            className="block w-full border border-white/10 rounded-xl p-5 bg-[rgba(255,255,255,0.03)] hover:bg-[rgba(255,255,255,0.07)] transition-all text-left group"
+            to={CHARACTER_ROUTES[key]}
+            className="block border border-white/10 rounded-xl p-5 bg-[rgba(255,255,255,0.03)] hover:bg-[rgba(255,255,255,0.07)] transition-all text-left group"
           >
             <p className={`font-serif text-lg ${color} mb-1 group-hover:underline`}>{label}</p>
             <p className="text-[10px] font-mono text-text-faint">View full profile →</p>
-          </button>
+          </Link>
         ))}
       </div>
     </div>
@@ -1387,40 +1378,7 @@ const TOP_TABS: { key: Tab; label: string }[] = [
 ]
 
 export default function TQCTN() {
-  const [searchParams, setSearchParams] = useSearchParams()
-  const [activeTab, setActiveTab] = useState<Tab>(() => {
-    const slug = searchParams.get('character')
-    return (slug && SLUG_TO_TAB[slug]) ? SLUG_TO_TAB[slug] : 'overview'
-  })
-
-  // Sync tab → URL query param
-  const goToCharacter = (slug: string) => {
-    const tab = SLUG_TO_TAB[slug]
-    if (tab) {
-      setActiveTab(tab)
-      setSearchParams({ character: slug }, { replace: false })
-    }
-  }
-
-  const goToTab = (tab: Tab) => {
-    setActiveTab(tab)
-    if (tab === 'overview' || tab === 'characters') {
-      setSearchParams({}, { replace: false })
-    } else {
-      const slug = TAB_TO_SLUG[tab]
-      if (slug) setSearchParams({ character: slug }, { replace: false })
-    }
-  }
-
-  // Keep tab in sync if user navigates back/forward
-  useEffect(() => {
-    const slug = searchParams.get('character')
-    if (slug && SLUG_TO_TAB[slug]) {
-      setActiveTab(SLUG_TO_TAB[slug])
-    } else if (!slug && activeTab.startsWith('characters-')) {
-      setActiveTab('characters')
-    }
-  }, [searchParams])
+  const [activeTab, setActiveTab] = useState<Tab>('overview')
 
   const isCharTab = activeTab.startsWith('characters-')
   const activeCharTab = CHARACTER_TABS.find(c => c.key === activeTab)
@@ -1442,7 +1400,7 @@ export default function TQCTN() {
           return (
             <button
               key={key}
-              onClick={() => goToTab(key)}
+              onClick={() => setActiveTab(key)}
               className={`px-4 py-1.5 rounded-full text-xs font-mono transition-all border ${
                 active
                   ? 'border-[rgba(0,229,255,0.6)] text-[#7ef5ff] bg-[rgba(0,229,255,0.08)]'
@@ -1471,7 +1429,7 @@ export default function TQCTN() {
       {(activeTab === 'characters' || isCharTab) && (
         <div className="flex gap-2 mb-8 flex-wrap">
           <button
-            onClick={() => { setActiveTab('characters'); setSearchParams({}, { replace: false }) }}
+            onClick={() => setActiveTab('characters')}
             className={`px-3 py-1 rounded-full text-[10px] font-mono transition-all border ${
               activeTab === 'characters'
                 ? 'border-white/30 text-text bg-[rgba(255,255,255,0.08)]'
@@ -1483,7 +1441,7 @@ export default function TQCTN() {
           {CHARACTER_TABS.map(({ key, label, color }) => (
             <button
               key={key}
-              onClick={() => goToTab(key)}
+              onClick={() => setActiveTab(key)}
               className={`px-3 py-1 rounded-full text-[10px] font-mono transition-all border ${
                 activeTab === key
                   ? `border-white/30 ${color} bg-[rgba(255,255,255,0.06)]`
@@ -1498,7 +1456,7 @@ export default function TQCTN() {
 
       {/* Content */}
       {activeTab === 'overview' && <OverviewTab />}
-      {activeTab === 'characters' && <CharactersIndex onSelect={goToCharacter} />}
+      {activeTab === 'characters' && <CharactersIndex />}
       {activeTab === 'characters-reina'  && <HanakoReinaTab />}
       {activeTab === 'characters-ruruka' && <KoaRurukaTab />}
       {activeTab === 'characters-haruhi' && <HaruhiAoiTab />}
