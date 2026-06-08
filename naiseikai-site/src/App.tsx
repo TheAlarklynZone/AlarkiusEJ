@@ -10,7 +10,6 @@ import Titles from './pages/Titles'
 import Songbook from './pages/Songbook'
 import Author from './pages/Author'
 import TQCTN from './pages/KarasuToNinja-TQCTN'
-import TQCTNCharacter from './pages/TQCTN-Characters'
 import Nevertheless from './pages/SorenaoAne-Nevertheless'
 import Dullahan from './pages/DuraDekiruKoi-Dullahan'
 import LonelyAndroid from './pages/HitoJinzo2GF-LonelyAndroid'
@@ -29,7 +28,6 @@ export default function App() {
             <Route path="/lore"          element={<Lore />} />
             <Route path="/titles"        element={<Titles />} />
             <Route path="/titles/KarasuToNinja-TQCTN" element={<TQCTN />} />
-            <Route path="/titles/KarasuToNinja-TQCTN/:characterSlug" element={<TQCTNCharacter />} />
             <Route path="/titles/SorenaoAne-Nevertheless" element={<Nevertheless />} />
             <Route path="/titles/DuraDekiruKoi-Dullahan" element={<Dullahan />} />
             <Route path="/titles/HitoJinzo2GF-LonelyAndroid" element={<LonelyAndroid />} />
