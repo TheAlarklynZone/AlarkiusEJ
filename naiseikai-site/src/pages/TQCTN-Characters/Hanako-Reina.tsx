@@ -11,13 +11,9 @@ function ImgPlaceholder({ label, aspect = 'aspect-[3/4]' }: { label: string; asp
   )
 }
 
-// ─── Section divider ─────────────────────────────────────────────────────────
-
 function Divider() {
   return <div className="section-divider my-8" />
 }
-
-// ─── Identity block ───────────────────────────────────────────────────────────
 
 function IdentityBlock({ icon, title, children }: { icon: string; title: string; children: React.ReactNode }) {
   const [open, setOpen] = useState(false)
@@ -41,9 +37,6 @@ function IdentityBlock({ icon, title, children }: { icon: string; title: string;
   )
 }
 
-// ─── Overview Tab ────────────────────────────────────────────────────────────
-
-
 // ─── Breadcrumb ───────────────────────────────────────────────────────────────
 
 function Breadcrumb() {
@@ -61,6 +54,7 @@ function Breadcrumb() {
 }
 
 // ─── Character content ────────────────────────────────────────────────────────
+
 function HanakoReinaTab() {
   return (
     <div className="space-y-8">
@@ -81,12 +75,12 @@ function HanakoReinaTab() {
           {[
             { label: 'First Name', value: 'Hanako' },
             { label: 'Last Name', value: 'Reina' },
+            { label: 'Nickname', value: 'Rei-chan, Hana' },
             { label: 'Gender', value: 'Female / Futa / Intersex (She/Her/Hers)' },
             { label: 'Age', value: '24' },
             { label: 'Birthday', value: 'November 16th, 2076' },
+            { label: 'OC Date of Creation', value: '2025' },
             { label: 'Height', value: '154.94 cm (5\'1")' },
-            { label: 'Sexuality', value: 'From straight to gay (lesbian)' },
-            { label: 'Relationship', value: 'Ruruka\'s girlfriend; Haruhi\'s best friend' },
           ].map(({ label, value }) => (
             <div key={label} className="bg-[rgba(255,255,255,0.03)] border border-white/10 rounded-xl p-3">
               <p className="text-[10px] font-mono text-text-faint mb-0.5">{label}</p>
@@ -101,15 +95,24 @@ function HanakoReinaTab() {
       {/* Nicknames */}
       <div>
         <h3 className="font-serif text-lg text-text mb-3">Nicknames</h3>
-        <div className="space-y-2 text-sm text-text-muted">
-          <p><span className="text-text-faint font-mono text-xs">General — </span>Rei-chan, Hana, Rei-Rei (Asami / Haruhi), Inaha (Haruhi), Hana (Ruruka)</p>
-          <div>
-            <p className="text-text-faint font-mono text-xs mb-1">Little Aru's Nicknames —</p>
-            <div className="flex flex-wrap gap-2">
-              {['Reina-chii', 'Mother Crow', 'Crow Lady', 'Nako Nako', 'Big Dark Emo Bird', 'Crow Mommy #2'].map(n => (
-                <span key={n} className="tag">{n}</span>
-              ))}
-            </div>
+        <div className="space-y-3 text-sm text-text-muted">
+          <div className="neon-card">
+            <p className="text-[10px] font-mono text-text-faint mb-2">General</p>
+            <p>Rei-chan, Hana</p>
+            <ul className="list-disc list-inside mt-2 space-y-1">
+              <li>Rei-Rei by Asami (and sometimes from Haruhi)</li>
+              <li>Hana (used by Ruruka)</li>
+              <li>Inaha from Haruhi</li>
+            </ul>
+          </div>
+          <div className="neon-card">
+            <p className="text-[10px] font-mono text-text-faint mb-2">Aru's Nicknames for Reina!!!</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li>Sometimes Reina-chii, Mother Crow, or Crow Lady from Little Bunny Aru</li>
+              <li>Nako Nako</li>
+              <li>Big Dark Emo Bird from Little Aru if unhinged</li>
+              <li>Crow Mommy #2</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -118,44 +121,12 @@ function HanakoReinaTab() {
 
       {/* Backstory */}
       <div>
-        <h3 className="font-serif text-lg text-text mb-4">Backstory</h3>
+        <h3 className="font-serif text-lg text-text mb-4">Hanako's Backstory</h3>
         <div className="space-y-3 text-sm text-text-muted leading-relaxed">
-          <p>Hanako Reina grew up in an abusive household and was eventually kicked out by her family. She was later laid off from her retail customer service job, then evicted from her home. She stayed in a shelter before finding her footing.</p>
-          <p>She now works at a cat daycare. One evening, she was found crying alone in a park by Koa Ruruka, who took her in. Through Ruruka, she was referred to Haruhi's Usagi Cafe (a Bunny Cafe) for work. In time, she confessed her feelings to Ruruka.</p>
-        </div>
-      </div>
-
-      <Divider />
-
-      {/* Living Legend */}
-      <div>
-        <h3 className="font-serif text-lg text-text mb-4">The Living Legend — The Quiet Crow</h3>
-        <div className="callout space-y-3 text-sm text-text-muted leading-relaxed">
-          <p>
-            She is known in urban legend as the <em>Quiet Crow</em> — a figure belonging to the ancient Reinishi Family,
-            also called the <em>Karasu Reinishi</em>. The lineage she belongs to is known as The Reina Generation.
-            Her presence in the world of yokai carries weight beyond what her gentle exterior suggests.
-          </p>
-          <p>
-            A living legend who walks quietly, speaks softly — but whose very existence rewrites the rules of what a Crow Yokai can be.
-          </p>
-        </div>
-      </div>
-
-      <Divider />
-
-      {/* Anatomy / Age Biology */}
-      <div>
-        <h3 className="font-serif text-lg text-text mb-4">Biology &amp; Anatomy</h3>
-        <div className="space-y-3 text-sm text-text-muted leading-relaxed">
-          <div className="neon-card">
-            <p className="font-mono text-xs text-text-faint mb-2">Age Biology</p>
-            <p>She appears to be 24 forever — yokai aging stops at 18, after which it slows down significantly.</p>
-          </div>
-          <div className="neon-card">
-            <p className="font-mono text-xs text-text-faint mb-2">Anatomy</p>
-            <p>Intersex — carries both male and female biological systems. She was cursed by Karasu to not have reproductive organs (no testes).</p>
-          </div>
+          <p>Hanako Reina, is an estranged girl who grew up in an abusive relationship with her parents. Her parents viewed her as inferior and she was later kicked from the family. Despite her shortcomings, Hanako is very optimistic, and knows what is right or wrong. However, even though people shun her for who she is, it puts a lot of anxiety and stress. She suffers from trauma and PTSD, and often has severe anxiety attacks out of nowhere, and people don't help her despite some that do. It still doesn't change the fact that her emotions are very fragile, easy to break.</p>
+          <p>She was laid off her job, Customer Service from retail, and evicted from her apartment. The only place she could turn to is a free shelter, and works at a cat daycare as a temporary job. The people there are nice and mean no harm to her.</p>
+          <p>One day, however, alone at a park, her cries to herself escaped from her voice (loud but quiet). She was saved by a lovely person by the name, Koa Ruruka, who saw nothing but pity and sadness for Hanako. She took her in to care for her. The first two days, Ruruka recommended Hanako to work a Bunny Cafe, since she noticed that Hanako loves bunnies (Haruhi's Usagi Cafe!).</p>
+          <p>A few months living with Ruruka, Hanako confessed her feelings to Ruruka, unable to contain her emotions for her. She loves her in a romantic way, but Koa dodges that until her feelings for Hanako change.</p>
         </div>
       </div>
 
@@ -165,26 +136,88 @@ function HanakoReinaTab() {
       <div>
         <h3 className="font-serif text-lg text-text mb-4">The Four Identities</h3>
         <IdentityBlock icon="😃" title="The Social Self">
-          <p>Lighthearted and laidback in social settings. She holds back just in case — a practiced softness that hides how much she feels at any given moment.</p>
+          <p>Lighthearted and chill (literally). She opens to those who aren't intrusive or loud. But other than that? She's very laidback with the people she meets. In fact, she's friends with almost everyone in the Usagi Cafe she works at, not just Haruhi, but even regular customers! The people there love how far she has come as a person, from that soft timid girl to a girl with an open personality. She always holds back just in case something happens.</p>
         </IdentityBlock>
         <IdentityBlock icon="🦋" title="The Personal Self">
-          <p>Warm and bubbly with Haruhi and Ruruka. Ruruka craves affection from her deeply. Around Little Aru, Reina becomes an absolute gremlin — chaotic energy fully unlocked.</p>
+          <p>With her closest friends Haruhi and Ruruka (Ruruka being her girlfriend now), Reina becomes warm and bubbly around them. Best friends with Haruhi since she allowed Reina to grow naturally at her own pace. In fact, Haruhi doesn't know this but Reina deeply treasures her for who she is right now, not just her past. But with Ruruka…..<em>oh things are spicy.</em> Ruruka craves affection and touch now that she's trying to change for the better. She often asks Reina for kisses and hugs even if she doesn't. Reina is warm and bubbly around Ruruka because she loves her very much now. In fact, Ruruka doesn't know this but Reina loves her so much, that she would kill anyone who stands in their way (Not Haruhi). Reina is a gremlin whenever Little Aru is around.</p>
         </IdentityBlock>
-        <IdentityBlock icon="🦋" title="Personal Self with Powers">
-          <p>Her powers are passive in daily life. She once took Ruruka on a ride in giant bird form. She pranked Ruruka in small bird form. Her favorite ability? Freezing Touch.</p>
+        <IdentityBlock icon="🦋" title="The Personal Self with her Powers">
+          <p>Reina's powers aren't all that dangerous. She has passive powers that she likes to use daily when the opportunity arises. She took Ruruka on a ride in her giant bird form once. Pranked Ruruka with her small bird form! Often likes to prank Haruhi with Telekinesis. She can also extend her powers to make both her friends feel equal to her if they request of it. Freezing Touch is one of her favorite abilities.</p>
         </IdentityBlock>
         <IdentityBlock icon="👤" title="The Core Self">
-          <p>Silence is how she heals. She doesn't degrade her intersex body — because of Ruruka's acceptance, she's learned to hold herself without shame.</p>
+          <p>The silence that Reina treats to is how she heals herself. It's not just her powers telling her how to heal, it's how she survives, even at a young age. Often cold and quiet, sometimes shrinks when arguments arise, but she never takes it too personally. Despite being intersex with male and female systems, she tries not to degrade her own body or feel insecure about it. Because of Ruruka's words that she accepts her for who she is, Reina is trying her best to treasure her own body for who she is.</p>
+          <p>Sometimes would get….<em>aroused</em> if Ruruka does something…….off putting or….<em>tempting</em>.</p>
         </IdentityBlock>
-        <IdentityBlock icon="👤" title="Core Self with Powers">
-          <p>She holds back deliberately — she doesn't want to hurt Ruruka or Haruhi. Control is an act of love for her.</p>
+        <IdentityBlock icon="👤" title="The Core Self with her Powers">
+          <p>Reina holds back, obviously. But even with these absurd supernatural powers, she doesn't want to hurt Ruruka or Haruhi. Because she's trying to love them equally as they love her for who she is, even if its the front she puts on, or her own hidden self.</p>
         </IdentityBlock>
         <IdentityBlock icon="🤕" title="The Hidden Self">
-          <p>She was victimized by her parents through years of verbal abuse. When the YARC tested her, her anxiety exploded — destroying over 2,300 YARC ward buildings and killing yokai in the process. She carries this quietly.</p>
+          <p>Trauma is the root of her hidden self which is why she retreats to her core self. Ever since a child, she's been victimized by her parents and also from people who abuse her out of nothing. It's not just abuse, but also verbal through gossip and other means, which hurts her soul. Even her own parents (now dead) viewed her as inferior and a tool. Tried to strip her agency by trying to get surgery for both of her "uniqueness." She'd often end up getting sent to different wards from the YARC so that they could test her capabilities as a yokai, not as a human or a person. Each time she goes, her anxiety and emotions would explode, causing massive large scale destructions at the YARC's laboratories and buildings. She's destroyed over 2,300 ward buildings and killed lots of yokai representatives from the YARC.</p>
         </IdentityBlock>
-        <IdentityBlock icon="🤕" title="Hidden Self with Powers">
-          <p>Her powers are tied to her emotional state. Think of it as a pressure cooker — no cap, no limiter. She develops new powers subconsciously. Even she doesn't always know what she's capable of until it happens.</p>
+        <IdentityBlock icon="🤕" title="The Hidden Self with her Powers">
+          <p>Her relationships with her own powers are tied emotionally. A Pressure Cooker. If pushed too far, she would explode in a fit of either: Rage, Grief, Regrets, Burdens….etc. Her powers are extremely dangerous, aside from her passive ones. Think like Mob Psycho 100, but there's no cap or limiter to restrain these powers within Reina. She also develops new powers subconsciously because her powers are like background instruments. They change and add new stuff to her arsenal.</p>
         </IdentityBlock>
+      </div>
+
+      <Divider />
+
+      {/* She's a Living Legend */}
+      <div>
+        <h3 className="font-serif text-lg text-text mb-4">She's a Living Legend</h3>
+        <div className="callout text-sm text-text-muted leading-relaxed">
+          <p className="italic">"The Quiet Crow came from the Reinishi Family in 1809. It came from the 3rd generation from a dark magician from the name, Karasu Reinishi. When he died, his spirit lingered through the world, in the form of a Crow that couldn't make sound," <em>I recited from the top of my head, and it made Ruruka get shivers as I stared at her</em> "His spirit became too attached to this world, so as time passed, it wandered into the generation of the Reinishi Family, which was now known as The Reina Generation.."</em></p>
+          <p className="mt-3 italic">"and that girl was sitting on the couch next to a ninja who was casted out from her family...." <em>my tone changed back to normal as my eyes' glow faded, which made Ruruka get shivers as she confirmed herself that the legend was real.</em></p>
+        </div>
+      </div>
+
+      <Divider />
+
+      {/* Age Biology & Anatomy */}
+      <div>
+        <h3 className="font-serif text-lg text-text mb-4">Biology &amp; Anatomy</h3>
+        <div className="space-y-3 text-sm text-text-muted leading-relaxed">
+          <div className="neon-card">
+            <p className="font-mono text-xs text-text-faint mb-2">👤 Age Biology</p>
+            <p>Reina, despite looking like an adult of 24 years, will remain at that appearance even as she ages. Yokai Blood are different from humans. In a general sense, Yokais age like human babies until age 17. But it stops after the age of 18 (which is adult age), which slows down significantly. This process also applies to Haruhi Aoi.</p>
+          </div>
+          <div className="neon-card">
+            <p className="font-mono text-xs text-text-faint mb-2">👧 Anatomy</p>
+            <p>Reina's anatomy as an intersex is strange yet very unique. Despite being born as a girl, she has both male and female systems. However, the curse that Karasu put on the Reina Generation disallowed her to get pregnant or give kids (because she doesn't have the reproductive organs like testes).</p>
+          </div>
+        </div>
+      </div>
+
+      <Divider />
+
+      {/* Relationships & Personality */}
+      <div>
+        <h3 className="font-serif text-lg text-text mb-4">Relationships &amp; Personality</h3>
+        <div className="space-y-3">
+          <div className="neon-card text-sm text-text-muted">
+            <p className="font-mono text-xs text-text-faint mb-2">Relationships</p>
+            <p>She is happily taken, Koa Ruruka's girlfriend</p>
+          </div>
+          <div className="neon-card text-sm text-text-muted">
+            <p className="font-mono text-xs text-text-faint mb-2">Sexuality</p>
+            <p>From straight to gay (lesbian). Living with Ruruka has opened her up, even when she goes to work at the bunny cafe. She later confessed her love to Ruruka.</p>
+          </div>
+          <div className="neon-card text-sm text-text-muted">
+            <p className="font-mono text-xs text-text-faint mb-2">Personality</p>
+            <p>She's very shy and timid, only speaks up when she can. However, she's optimistic and bright when she opens up to someone she trusts. And when she does, she becomes happy and energetic, wanting to share her interests. Working at the Bunny Cafe Ruruka referred helped her change her personality to be more open.</p>
+          </div>
+          <div className="neon-card text-sm text-text-muted">
+            <p className="font-mono text-xs text-text-faint mb-2">Likes</p>
+            <p>She likes cats and dogs, and bunnies. Music is also something she likes.</p>
+          </div>
+          <div className="neon-card text-sm text-text-muted">
+            <p className="font-mono text-xs text-text-faint mb-2">Dislikes</p>
+            <p>Loud noises and rude people. Toxic traits. Hates it when people sexualize her timid side, or just in general. Extremely violent people will cause her to have panic attacks.</p>
+          </div>
+          <div className="neon-card text-sm text-text-muted">
+            <p className="font-mono text-xs text-text-faint mb-2">Hobbies</p>
+            <p>She enjoys drawing, she likes to write too. Enjoys Manga and Anime.</p>
+          </div>
+        </div>
       </div>
 
       <Divider />
@@ -192,35 +225,16 @@ function HanakoReinaTab() {
       {/* Appearance */}
       <div>
         <h3 className="font-serif text-lg text-text mb-4">Appearance</h3>
-        <div className="space-y-2 text-sm text-text-muted leading-relaxed">
-          <p><span className="text-text-faint font-mono text-xs">Hair — </span>Black with red highlights, medium-long length ending at the shoulders.</p>
-          <p><span className="text-text-faint font-mono text-xs">Eyes — </span>Heterochromatic: brown (right), red (left). Wears an eyepatch over the brown eye.</p>
-          <p><span className="text-text-faint font-mono text-xs">Casual Outfit — </span>White casual off-shoulder dress with navy gray stripes, black mesh bra underneath, black loose shorts.</p>
-        </div>
-      </div>
-
-      <Divider />
-
-      {/* Personality & Traits */}
-      <div>
-        <h3 className="font-serif text-lg text-text mb-4">Personality &amp; Traits</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <div className="space-y-3 text-sm text-text-muted leading-relaxed">
           <div className="neon-card">
-            <p className="font-mono text-xs text-text-faint mb-2">Personality</p>
-            <p className="text-sm text-text-muted">Shy and timid at first. Optimistic and bright once she opens up. Energetic. Loves sharing her interests.</p>
+            <p className="font-mono text-xs text-text-faint mb-2">Appearance</p>
+            <p>She has black hair with red highlights, and it's medium long, where it ends to her shoulders. She has heterochromatic eyes. Brown on her right eye, red on her left. However, she hates the color combination and wears an eyepatch on her brown eye.</p>
           </div>
           <div className="neon-card">
-            <p className="font-mono text-xs text-text-faint mb-2">Likes</p>
-            <p className="text-sm text-text-muted">Cats, dogs, bunnies, music.</p>
+            <p className="font-mono text-xs text-text-faint mb-2">Clothing (Usual / Casual)</p>
+            <p>She wears a white casual off shoulder-dress that has a navy gray stripes as patterns. It goes well with a black mesh bra underneath. She wears black loose shorts underneath that covers her "genitalia" so it won't be exposing. She is very modest about her apparel.</p>
+            <p className="mt-2">She's 154.94 cm tall! (5'1)</p>
           </div>
-          <div className="neon-card">
-            <p className="font-mono text-xs text-text-faint mb-2">Dislikes</p>
-            <p className="text-sm text-text-muted">Loud noises, rude people, toxic traits, people who sexualize her timid side, extremely violent people — these trigger panic attacks.</p>
-          </div>
-        </div>
-        <div className="neon-card mt-3">
-          <p className="font-mono text-xs text-text-faint mb-2">Hobbies</p>
-          <p className="text-sm text-text-muted">Drawing, writing, manga & anime.</p>
         </div>
       </div>
 
@@ -228,20 +242,32 @@ function HanakoReinaTab() {
 
       {/* Name Meaning */}
       <div>
-        <h3 className="font-serif text-lg text-text mb-3">Name Meaning</h3>
-        <div className="callout space-y-2 text-sm text-text-muted font-mono">
-          <p>花心 <span className="text-text">Hanako</span> — 花 = Flower, 子/心 = Heart / Child</p>
-          <p>麗水 <span className="text-text">Reina</span> — 麗 = Beautiful / Lovely, 水 = Water</p>
-          <p className="text-text-faint italic not-italic font-sans mt-2">"A Flower's Heart is as beautiful as water itself"</p>
+        <h3 className="font-serif text-lg text-text mb-3">花心 - Hanako &amp; 麗水 - Reina</h3>
+        <div className="space-y-4 text-sm text-text-muted">
+          <div className="callout">
+            <p className="font-serif text-base text-[#7ef5ff] mb-2">🌸 Hanako (花心) – First Name Breakdown:</p>
+            <p className="font-mono">花 (Hana / はな) = <strong>Flower</strong></p>
+            <p className="font-mono">子/心 (Ko / こ) = <strong>Heart</strong> <em>or</em> <strong>Child</strong></p>
+            <p className="text-text-faint text-xs mt-2">The Kanji for "Ko" doesn't really matter to Hanako as long as it pairs nicely with Flower</p>
+            <p className="italic mt-2">The heart of a flower; delicate, yet essential</p>
+          </div>
+          <div className="callout">
+            <p className="font-serif text-base text-[#d49fff] mb-2">💧 Reina (麗水) – Last Name Breakdown:</p>
+            <p className="font-mono">麗 (Rei / れい) = <strong>Beautiful</strong>, <strong>Lovely</strong></p>
+            <p className="font-mono">水 (Mizu / みず) = <strong>Water</strong></p>
+            <p className="italic mt-2">Beauty that flows like water—formless, adaptive, and enduring</p>
+          </div>
+          <div className="text-center font-mono text-text-faint text-xs py-2">─────⊰ ✦ ⊱─────</div>
+          <blockquote className="border-l-2 border-[#7ef5ff]/40 pl-4 italic text-text-muted">
+            "A Flower's Heart is as beautiful as water itself"
+          </blockquote>
+          <div className="text-center font-mono text-text-faint text-xs py-2">─────⊰ ✦ ⊱─────</div>
         </div>
       </div>
 
     </div>
   )
 }
-
-// ─── Koa Ruruka ──────────────────────────────────────────────────────────────
-
 
 // ─── Page wrapper ─────────────────────────────────────────────────────────────
 
