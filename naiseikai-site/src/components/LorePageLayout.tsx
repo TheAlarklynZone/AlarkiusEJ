@@ -29,7 +29,11 @@ function LoreSideNav({ items, activeId }: { items: NavItem[]; activeId: string }
             onClick={(e) => {
               e.preventDefault()
               const el = document.getElementById(item.id)
-              if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+              if (el) {
+                const NAVBAR_HEIGHT = 80
+                const top = el.getBoundingClientRect().top + window.scrollY - NAVBAR_HEIGHT
+                window.scrollTo({ top, behavior: 'smooth' })
+              }
             }}
             className="text-xs px-2 py-1.5 rounded-md transition-all duration-200 leading-snug"
             style={{
