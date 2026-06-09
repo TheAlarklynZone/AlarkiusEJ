@@ -12,16 +12,16 @@ import Songbook from './pages/Songbook'
 import Author from './pages/Author'
 
 // ─── Lore — The World of Neo-Japan ───────────────────────────────────────────
-import TheWorldOfNeoJapan from './pages/lore/The-World-Of-Neo-Japan'
-import NeoJapanTechnoGeography from './pages/lore/The-World-Of-Neo-Japan/Neo-Japan-Techno-Geography'
-import NeoJapanPrefectures from './pages/lore/The-World-Of-Neo-Japan/Neo-Japan-Prefectures'
-import YokaiCitizens from './pages/lore/The-World-Of-Neo-Japan/Yokai-Citizens-of-Neo-Japan'
-import ReligionOfUjuukyo from './pages/lore/The-World-Of-Neo-Japan/Religion-Of-Ujuukyo'
-import YHCACoalitionAct from './pages/lore/The-World-Of-Neo-Japan/YHCA-YokaiHuman-CoalitionAct'
-import YokaiAssociationRecoveryCenter from './pages/lore/The-World-Of-Neo-Japan/Yokai-Association-Recovery-Center'
-import NinjaYokaiAssociationQuarters from './pages/lore/The-World-Of-Neo-Japan/Ninja-Yokai-Association-Quarters'
-import EducationInNeoJapan from './pages/lore/The-World-Of-Neo-Japan/Education-in-Neo-Japan'
-import MegacorpsAndBrands from './pages/lore/The-World-Of-Neo-Japan/Megacorps-and-Brands'
+import TheWorldOfNeoJapan from './pages/world-lore-and-timeline/The-World-Of-Neo-Japan'
+import NeoJapanTechnoGeography from './pages/world-lore-and-timeline/The-World-Of-Neo-Japan/Neo-Japan-Techno-Geography'
+import NeoJapanPrefectures from './pages/world-lore-and-timeline/The-World-Of-Neo-Japan/Neo-Japan-Prefectures'
+import YokaiCitizens from './pages/world-lore-and-timeline/The-World-Of-Neo-Japan/Yokai-Citizens-of-Neo-Japan'
+import ReligionOfUjuukyo from './pages/world-lore-and-timeline/The-World-Of-Neo-Japan/Religion-Of-Ujuukyo'
+import YHCACoalitionAct from './pages/world-lore-and-timeline/The-World-Of-Neo-Japan/YHCA-YokaiHuman-CoalitionAct'
+import YokaiAssociationRecoveryCenter from './pages/world-lore-and-timeline/The-World-Of-Neo-Japan/Yokai-Association-Recovery-Center'
+import NinjaYokaiAssociationQuarters from './pages/world-lore-and-timeline/The-World-Of-Neo-Japan/Ninja-Yokai-Association-Quarters'
+import EducationInNeoJapan from './pages/world-lore-and-timeline/The-World-Of-Neo-Japan/Education-in-Neo-Japan'
+import MegacorpsAndBrands from './pages/world-lore-and-timeline/The-World-Of-Neo-Japan/Megacorps-and-Brands'
 
 // ─── TQCTN ────────────────────────────────────────────────────────────────────
 import TQCTN from './pages/KarasuToNinja-TQCTN'
@@ -66,21 +66,21 @@ export default function App() {
             <Route path="/"              element={<Home />} />
             <Route path="/universe"      element={<Universe />} />
             <Route path="/power-scaling" element={<PowerScaling />} />
-            <Route path="/lore"          element={<Lore />} />
+            <Route path="/world-lore-and-timeline"          element={<Lore />} />
             <Route path="/titles"        element={<Titles />} />
             <Route path="/titles/all-characters" element={<AllCharacters />} />
 
             {/* Lore — The World of Neo-Japan */}
-            <Route path="/lore/the-world-of-neo-japan" element={<TheWorldOfNeoJapan />} />
-            <Route path="/lore/the-world-of-neo-japan/neo-japan-techno-geography" element={<NeoJapanTechnoGeography />} />
-            <Route path="/lore/the-world-of-neo-japan/neo-japan-prefectures" element={<NeoJapanPrefectures />} />
-            <Route path="/lore/the-world-of-neo-japan/yokai-citizens-of-neo-japan" element={<YokaiCitizens />} />
-            <Route path="/lore/the-world-of-neo-japan/religion-of-ujuukyo" element={<ReligionOfUjuukyo />} />
-            <Route path="/lore/the-world-of-neo-japan/yhca-yokaihuman-coalition-act" element={<YHCACoalitionAct />} />
-            <Route path="/lore/the-world-of-neo-japan/yokai-association-recovery-center" element={<YokaiAssociationRecoveryCenter />} />
-            <Route path="/lore/the-world-of-neo-japan/ninja-yokai-association-quarters" element={<NinjaYokaiAssociationQuarters />} />
-            <Route path="/lore/the-world-of-neo-japan/education-in-neo-japan" element={<EducationInNeoJapan />} />
-            <Route path="/lore/the-world-of-neo-japan/megacorps-and-brands" element={<MegacorpsAndBrands />} />
+            <Route path="/world-lore-and-timeline/the-world-of-neo-japan" element={<TheWorldOfNeoJapan />} />
+            <Route path="/world-lore-and-timeline/the-world-of-neo-japan/neo-japan-techno-geography" element={<NeoJapanTechnoGeography />} />
+            <Route path="/world-lore-and-timeline/the-world-of-neo-japan/neo-japan-prefectures" element={<NeoJapanPrefectures />} />
+            <Route path="/world-lore-and-timeline/the-world-of-neo-japan/yokai-citizens-of-neo-japan" element={<YokaiCitizens />} />
+            <Route path="/world-lore-and-timeline/the-world-of-neo-japan/religion-of-ujuukyo" element={<ReligionOfUjuukyo />} />
+            <Route path="/world-lore-and-timeline/the-world-of-neo-japan/yhca-yokaihuman-coalition-act" element={<YHCACoalitionAct />} />
+            <Route path="/world-lore-and-timeline/the-world-of-neo-japan/yokai-association-recovery-center" element={<YokaiAssociationRecoveryCenter />} />
+            <Route path="/world-lore-and-timeline/the-world-of-neo-japan/ninja-yokai-association-quarters" element={<NinjaYokaiAssociationQuarters />} />
+            <Route path="/world-lore-and-timeline/the-world-of-neo-japan/education-in-neo-japan" element={<EducationInNeoJapan />} />
+            <Route path="/world-lore-and-timeline/the-world-of-neo-japan/megacorps-and-brands" element={<MegacorpsAndBrands />} />
 
             {/* TQCTN */}
             <Route path="/titles/KarasuToNinja-TQCTN" element={<TQCTN />} />
