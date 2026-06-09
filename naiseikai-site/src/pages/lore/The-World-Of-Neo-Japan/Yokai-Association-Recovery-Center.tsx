@@ -39,7 +39,7 @@ export default function YokaiAssociationRecoveryCenter() {
       <div className="mb-4">
         <p className="text-xs font-mono text-text-faint mb-2 uppercase tracking-widest">The Naiseikai Universe's Most Corrupt Organization</p>
         <h1
-          className="font-serif text-4xl sm:text-5xl mb-3"
+          className="font-serif text-3xl sm:text-4xl mb-3"
           style={{ color: ACCENT, textShadow: `0 0 18px ${ACCENT}99, 0 0 40px ${ACCENT}44` }}
         >
           🏥 The Yokai Association Recovery Center
