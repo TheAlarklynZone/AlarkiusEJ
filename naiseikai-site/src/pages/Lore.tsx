@@ -918,6 +918,33 @@ export default function Lore() {
         </div>
       </section>
 
+      {/* ── The World of Neo-Japan Banner ─────────────────────────────────── */}
+      <div className="mb-8">
+        <Link to="/lore/the-world-of-neo-japan" className="block group">
+          <div
+            className="border border-[rgba(126,245,255,0.35)] rounded-xl bg-[rgba(126,245,255,0.04)] hover:bg-[rgba(126,245,255,0.08)] transition-all duration-300 p-5 flex items-center justify-between gap-4"
+            style={{ boxShadow: "0 0 24px rgba(126,245,255,0.06)" }}
+          >
+            <div className="flex items-center gap-4">
+              <div className="w-10 h-10 rounded-lg bg-[rgba(126,245,255,0.12)] border border-[rgba(126,245,255,0.25)] flex items-center justify-center flex-shrink-0">
+                <span className="text-lg">🗾</span>
+              </div>
+              <div>
+                <p className="font-serif text-base text-[#7ef5ff] mb-0.5 group-hover:opacity-90 transition-opacity">
+                  The World of Neo-Japan
+                </p>
+                <p className="text-xs text-text-faint font-mono">
+                  9 entries — geography, prefectures, yokai, religion, law, megacorps &amp; more
+                </p>
+              </div>
+            </div>
+            <span className="text-[#7ef5ff] text-sm font-mono opacity-60 group-hover:opacity-100 group-hover:translate-x-1 transition-all flex-shrink-0">
+              →
+            </span>
+          </div>
+        </Link>
+      </div>
+
       {/* Tab navigation */}
       <div className="mb-6 flex flex-wrap gap-2">
         {subPages.map((p) => (
