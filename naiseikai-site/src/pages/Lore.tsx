@@ -204,7 +204,7 @@ export default function Lore() {
 
       {/* ── The World of Neo-Japan Banner ─────────────────────────────────── */}
       <div className="mb-10">
-        <Link to="/lore/the-world-of-neo-japan" className="block group">
+        <Link to="/world-lore-and-timeline/the-world-of-neo-japan" className="block group">
           <div
             className="border border-[rgba(126,245,255,0.35)] rounded-xl bg-[rgba(126,245,255,0.04)] hover:bg-[rgba(126,245,255,0.08)] transition-all duration-300 p-5 flex items-center justify-between gap-4"
             style={{ boxShadow: "0 0 24px rgba(126,245,255,0.06)" }}
