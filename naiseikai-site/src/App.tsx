@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import ScrollToTop from './components/ScrollToTop'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import CitySkyline from './components/CitySkyline'
@@ -59,6 +60,7 @@ import MasatoRenKillerkun from './pages/GyakuTEN-Characters/Masato-Ren-Killer-ku
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <div className="min-h-screen flex flex-col relative">
         <Navbar />
         <main className="flex-1 relative z-10">
