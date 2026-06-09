@@ -57,7 +57,7 @@ export default function Navbar() {
     >
       <nav className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2 group">
+        <Link to="/" className="flex items-center gap-2 group" data-pwa-tap>
           <span className="font-serif text-xl font-semibold text-text group-hover:text-rose-light transition-colors duration-200">
             AlarkiusEJ 
           </span>
