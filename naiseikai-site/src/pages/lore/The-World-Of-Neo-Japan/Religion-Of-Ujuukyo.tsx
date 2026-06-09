@@ -25,13 +25,13 @@ export default function ReligionOfUjuukyo() {
   return (
     <div className="lore-page-container max-w-4xl mx-auto px-4 py-8 text-white">
       {/* Breadcrumb */}
-      <nav className="text-sm mb-6 opacity-60">
+      <div className="text-sm mb-6 opacity-60">
         <Link to="/lore" className="hover:underline">Lore &amp; Timeline</Link>
         <span className="mx-2">/</span>
         <Link to="/lore/the-world-of-neo-japan" className="hover:underline">The World of Neo-Japan</Link>
         <span className="mx-2">/</span>
         <span style={{ color: ACCENT }}>The Religion of Ujuukyō</span>
-      </nav>
+      </div>
 
       {/* Page Title */}
       <h1 className="text-4xl font-extrabold mb-2" style={{ color: ACCENT, textShadow: `0 0 18px ${ACCENT}99, 0 0 40px ${ACCENT}44` }}>
