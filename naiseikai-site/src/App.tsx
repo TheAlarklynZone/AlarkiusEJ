@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import PWADevTools from './components/PWADevTools'
 import ScrollToTop from './components/ScrollToTop'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
@@ -61,6 +62,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
+      <PWADevTools />
       <div className="min-h-screen flex flex-col relative">
         <Navbar />
         <main className="flex-1 relative z-10">
