@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom';
+import LorePageLayout from '../../../../components/LorePageLayout'
 
 const ACCENT = '#ff6b6b';
 const ACCENT2 = '#7ef5ff';
 
-function SectionHeading({ children }: { children: React.ReactNode }) {
+function SectionHeading({ children, id }: { children: React.ReactNode; id?: string }) {
   return (
     <h2
+      id={id ?? (typeof children === 'string' ? children.toLowerCase().replace(/&amp;/g, 'and').replace(/[&]/g, 'and').replace(/[^a-z0-9 -]/g, '').trim().replace(/ +/g, '-'): undefined)}
       className="font-serif text-2xl font-bold mt-10 mb-3"
       style={{ color: ACCENT, borderBottom: `1px solid ${ACCENT}44`, paddingBottom: '0.4rem' }}
     >
@@ -24,6 +26,7 @@ function SubHeading({ children }: { children: React.ReactNode }) {
 
 export default function YokaiAssociationRecoveryCenter() {
   return (
+    <LorePageLayout>
     <div className="page-container">
 
       {/* Breadcrumb */}
@@ -415,5 +418,6 @@ export default function YokaiAssociationRecoveryCenter() {
       </div>
 
     </div>
+    </LorePageLayout>
   );
 }
