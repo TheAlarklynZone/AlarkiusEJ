@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import PWADevTools from './components/PWADevTools'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
@@ -18,6 +19,7 @@ import TimeSystem from './pages/hibrythian-saga/TimeSystem'
 export default function App() {
   return (
     <BrowserRouter>
+      <PWADevTools />
       <div className="min-h-screen flex flex-col bg-ink">
         <Navbar />
         <main className="flex-1">
