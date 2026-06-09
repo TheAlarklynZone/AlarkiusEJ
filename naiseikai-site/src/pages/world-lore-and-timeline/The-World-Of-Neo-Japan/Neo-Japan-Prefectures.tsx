@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom'
+import LorePageLayout from '../../../../components/LorePageLayout'
 
 export default function NeoJapanPrefectures() {
   return (
+    <LorePageLayout>
     <div className="page-container">
 
       {/* Breadcrumb */}
@@ -33,7 +35,7 @@ export default function NeoJapanPrefectures() {
 
       {/* ── Traditional Prefectures ───────────────────────────────────────── */}
       <section className="mb-10">
-        <h2 className="font-serif text-2xl text-text mb-3">Traditional Prefectures</h2>
+        <h2 id="traditional-prefectures" className="font-serif text-2xl text-text mb-3">Traditional Prefectures</h2>
         <p className="text-sm text-text-muted leading-relaxed mb-6">These are the standard political divisions of Neo-Japan, similar to our Earth but rearranged across the expanded landmass:</p>
 
         <div className="space-y-3">
@@ -121,7 +123,7 @@ export default function NeoJapanPrefectures() {
 
       {/* ── Spiritual Landscapes ──────────────────────────────────────────── */}
       <section className="mb-10">
-        <h2 className="font-serif text-2xl text-text mb-3">Spiritual Landscapes and New Regions</h2>
+        <h2 id="spiritual-landscapes-and-new-regions" className="font-serif text-2xl text-text mb-3">Spiritual Landscapes and New Regions</h2>
         <p className="text-sm text-text-muted leading-relaxed mb-6">These areas exist outside traditional prefecture governance and hold spiritual or supernatural significance:</p>
 
         <div className="space-y-4">
@@ -179,7 +181,7 @@ export default function NeoJapanPrefectures() {
 
       {/* ── Key Differences ───────────────────────────────────────────────── */}
       <section className="mb-10">
-        <h2 className="font-serif text-2xl text-text mb-6">Key Differences from Our Earth</h2>
+        <h2 id="key-differences-from-our-earth" className="font-serif text-2xl text-text mb-6">Key Differences from Our Earth</h2>
         <div className="border border-border rounded-xl bg-surface p-5">
           <ul className="space-y-3 text-sm text-text-muted list-none leading-relaxed">
             <li>• <strong className="text-text">Continental Scale:</strong> Neo-Japan is approximately 40% larger than Japan in our timeline</li>
@@ -213,5 +215,6 @@ export default function NeoJapanPrefectures() {
       </div>
 
     </div>
+    </LorePageLayout>
   )
 }
