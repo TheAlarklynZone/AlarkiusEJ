@@ -1,17 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
-
-// ─── Helpers ──────────────────────────────────────────────────────────────────
-
-/** Slugify heading text into a valid id */
-export function slugify(text: string): string {
-  return text
-    .toLowerCase()
-    .replace(/&amp;/g, 'and')
-    .replace(/[&]/g, 'and')
-    .replace(/[^a-z0-9\s-]/g, '')
-    .trim()
-    .replace(/\s+/g, '-')
-}
+import { useEffect, useRef, useState, type ReactNode } from 'react'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -63,7 +50,7 @@ function LoreSideNav({ items, activeId }: { items: NavItem[]; activeId: string }
 // ─── Layout ───────────────────────────────────────────────────────────────────
 
 interface LorePageLayoutProps {
-  children: React.ReactNode
+  children: ReactNode
 }
 
 export default function LorePageLayout({ children }: LorePageLayoutProps) {
@@ -114,7 +101,6 @@ export default function LorePageLayout({ children }: LorePageLayoutProps) {
   return (
     <>
       <LoreSideNav items={navItems} activeId={activeId} />
-      {/* Shift content left on large screens to make room for the nav */}
       <div ref={containerRef} className="lg:pr-60">
         {children}
       </div>
