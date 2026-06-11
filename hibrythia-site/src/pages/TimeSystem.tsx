@@ -549,14 +549,14 @@ const STYLES = `
 .hetra-cal .cal-cell {
   aspect-ratio: 1 / 1;
   min-height: 60px;
-  padding: 6px;
+  padding: 0;
   background: #1a1814;
   border-radius: 0;
   border: none;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   font-family: 'Cinzel', serif;
   font-size: 13px;
   color: rgba(216,212,204,0.35);
@@ -565,15 +565,24 @@ const STYLES = `
   position: relative;
   overflow: hidden;
 }
-/* Day number — top-right corner */
+/* Day number — top-right corner with dark outlined box */
 .hetra-cal .cal-day-num {
-  display: block;
-  text-align: right;
+  position: absolute;
+  top: 0;
+  right: 0;
   font-family: 'Cinzel', serif;
-  font-size: 13px;
+  font-size: 11px;
+  font-weight: 600;
   line-height: 1;
-  color: rgba(216,212,204,0.6);
-  padding: 2px 4px 0 0;
+  color: rgba(216,212,204,0.75);
+  background: rgba(10,9,7,0.7);
+  border-bottom-left-radius: 4px;
+  border: 1px solid rgba(201,168,76,0.15);
+  border-top: none;
+  border-right: none;
+  padding: 3px 5px;
+  min-width: 22px;
+  text-align: center;
 }
 .hetra-cal .cal-cell.day { color: var(--color-text); }
 .hetra-cal .cal-cell.day:hover {
@@ -623,10 +632,6 @@ const STYLES = `
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 1.4;
-  position: absolute;
-  bottom: 4px;
-  left: 4px;
-  right: 4px;
   justify-content: center;
 }
 .hetra-cal .season-pill::before {
