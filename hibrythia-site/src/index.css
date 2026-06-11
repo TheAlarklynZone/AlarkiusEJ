@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&family=Merriweather:wght@400;700&subset=latin-ext&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -86,6 +86,15 @@ p, li { text-wrap: pretty; max-width: 72ch; }
 /* ── Utility: Cinzel headings ── */
 .font-display { font-family: 'Cinzel', Georgia, serif; }
 .font-body    { font-family: 'Raleway', system-ui, sans-serif; }
+
+/* ── Hetrix currency symbol (Ħ) ── */
+.font-hetrix  { font-family: 'Merriweather', Georgia, serif; }
+.hetrix-mark  {
+  font-family: 'Merriweather', Georgia, serif;
+  font-weight: 700;
+  color: #c9a84c;
+  letter-spacing: 0.03em;
+}
 
 /* ── Anti-piracy notice ── */
 .piracy-notice {
