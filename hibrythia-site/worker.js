@@ -220,6 +220,17 @@ class HeadHandler {
   }
 }
 
+class TitleHandler {
+  constructor(title) {
+    this.title = title;
+  }
+  text(text) {
+    if (this.title && text.lastInTextNode) {
+      text.replace(this.title);
+    }
+  }
+}
+
 // ------------------------------------------------------------
 // Fetch handler
 // ------------------------------------------------------------
@@ -258,6 +269,7 @@ export default {
 
     const transformed = new HTMLRewriter()
       .on("head", new HeadHandler(schema, favicon, pageOG))
+      .on("title", new TitleHandler(pageOG?.title || null))
       .transform(response);
 
     const newHeaders = new Headers(transformed.headers);
