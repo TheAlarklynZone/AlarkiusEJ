@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Base reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+body {
+  min-height: 100dvh;
+  background-color: #0e0d0b;
+  color: #d8d4cc;
+  font-family: 'Raleway', system-ui, sans-serif;
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  line-height: 1.7;
+}
+
+img, picture, svg { display: block; max-width: 100%; }
+input, button, textarea, select { font: inherit; color: inherit; }
+h1,h2,h3,h4,h5,h6 { text-wrap: balance; line-height: 1.15; font-family: 'Cinzel', Georgia, serif; }
+p, li { text-wrap: pretty; max-width: 72ch; }
+
+/* ── Selection ── */
+::selection {
+  background: rgba(201, 168, 76, 0.2);
+  color: #d8d4cc;
+}
+
+/* ── Focus ── */
+:focus-visible {
+  outline: 1px solid rgba(201, 168, 76, 0.6);
+  outline-offset: 3px;
+  border-radius: 0.25rem;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0e0d0b; }
+::-webkit-scrollbar-thumb { background: #2e2b26; border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: #c9a84c; }
+
+/* ── Gold rule divider ── */
+.gold-rule {
+  width: 3rem;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #c9a84c, transparent);
+}
+
+/* ── Reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ── Utility: Cinzel headings ── */
+.font-display { font-family: 'Cinzel', Georgia, serif; }
+.font-body    { font-family: 'Raleway', system-ui, sans-serif; }
