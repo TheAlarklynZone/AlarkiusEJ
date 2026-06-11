@@ -227,12 +227,43 @@ export default function Home() {
         <h2 className="font-display text-xl text-[#d8d4cc] mb-6 tracking-wide">
           Works in The Hibrythian Saga
         </h2>
-        <div className="border border-[#2e2b26] rounded-sm p-6 bg-[#0e0d0b] max-w-[520px]">
-          <p className="font-display text-base text-[#d8d4cc] mb-1">Hibryds — A Grand Voyage</p>
+        {/* Book 1 */}
+        <a
+          href="https://www.barnesandnoble.com/w/hibryds-a-grand-voyage-book-1-alarkius-elvya-jay/1149652259?ean=9798994097663"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block border border-[#2e2b26] rounded-sm p-6 bg-[#0e0d0b] max-w-[520px] hover:border-[#c9a84c]/40 transition-colors duration-200 group"
+        >
+          <p className="font-body text-[10px] text-[#4a4844] tracking-widest uppercase mb-2">Book 1</p>
+          <p className="font-display text-base text-[#f2ebeb] mb-1 group-hover:text-[#c9a84c] transition-colors duration-200">Hibryds — A Grand Voyage</p>
           <p className="font-body text-xs text-[#c9a84c] tracking-widest uppercase">
-            Already out and published to Barnes &amp; Nobles!
+            Already out and published to Barnes &amp; Noble ↗
           </p>
-        </div>
+        </a>
+
+        {/* Vol 0 — Free on site */}
+        <a
+          href="https://www.barnesandnoble.com/w/hibryds-the-hibrythian-genesis-of-everything-alarkius-elvya-jay/1149652816?ean=9798994097687"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block border border-[#2e2b26] rounded-sm p-6 bg-[#0e0d0b] max-w-[520px] hover:border-[#c9a84c]/40 transition-colors duration-200 group"
+        >
+          <p className="font-body text-[10px] text-[#4a4844] tracking-widest uppercase mb-2">Vol. 0 — Prequel</p>
+          <p className="font-display text-base text-[#f2ebeb] mb-1 group-hover:text-[#c9a84c] transition-colors duration-200">Hibryds — The Hibrythian Genesis of Everything</p>
+          <p className="font-body text-xs text-[#c9a84c] tracking-widest uppercase mb-2">
+            Out on Barnes &amp; Noble ↗
+          </p>
+          <p className="font-body text-xs text-[#7a7670]">
+            Also available to read for free on this website →{' '}
+            <a
+              href="/bookshelf/vol0"
+              onClick={e => e.stopPropagation()}
+              className="text-[#c9a84c] hover:underline"
+            >
+              Read here
+            </a>
+          </p>
+        </a>
       </section>
 
       <div className="h-px bg-gradient-to-r from-transparent via-[#2e2b26] to-transparent" aria-hidden="true" />
