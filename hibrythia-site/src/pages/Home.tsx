@@ -8,7 +8,7 @@ export default function Home() {
           An Adventure Fantasy Series
         </p>
         <h1 className="font-display text-[clamp(2.5rem,1rem+4vw,5rem)] text-[#d8d4cc] leading-[1.05]">
-          The Hibrythian<br />Saga
+          The Hibrythian Saga
         </h1>
         <p className="font-body text-base text-[#7a7670] max-w-[52ch]">
           A world of ancient magic, forgotten empires, and living myth.
