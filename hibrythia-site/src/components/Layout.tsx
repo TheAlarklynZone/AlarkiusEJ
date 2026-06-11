@@ -15,7 +15,7 @@ export default function Layout() {
       <header className="sticky top-0 z-50 border-b border-[#2e2b26] bg-[#0e0d0b]/90 backdrop-blur-sm">
         <div className="max-w-[1200px] mx-auto px-5 h-12 flex items-center justify-between">
           {/* Logo mark */}
-          <a href="/" className="flex items-center group" aria-label="The Hibrythian Saga">
+          <a href="/" className="flex items-center group" aria-label="The Hibrythian Saga" data-pwa-tap>
             <span className="font-display text-xs tracking-[0.15em] text-[#c9a84c] uppercase"
               style={{ letterSpacing: '0.18em' }}
             >The Hibrythian Saga </span>
