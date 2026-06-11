@@ -31,7 +31,7 @@ export default function Layout() {
                     end={to === '/'}
                     className={({ isActive }) =>
                       [
-                        'font-body text-[0.65rem] tracking-widest uppercase px-2.5 py-1 rounded-sm transition-all duration-[180ms]',
+                        'font-body text-[0.75rem] tracking-widest uppercase px-2.5 py-1 rounded-sm transition-all duration-[180ms]',
                         isActive
                           ? 'text-[#c9a84c] bg-[#c9a84c]/8'
                           : 'text-[#7a7670] hover:text-[#d8d4cc]',
