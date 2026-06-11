@@ -18,7 +18,7 @@ export default function Home() {
           The Hibrythian Saga
         </h1>
         <p className="font-body text-sm text-[#7a7670] max-w-[56ch] leading-relaxed">
-          Official Website for "Hibryds — A Grand Voyage" and many more books in this series!
+          Official Website for "Hibryds — A Grand Voyage" and many more Books in this Series!
         </p>
         <p className="font-body text-xs text-[#c9a84c]/60">
           © All Rights Reserved | Alarkius Elvya Jay / AlarkiusEJ |{' '}
@@ -38,19 +38,19 @@ export default function Home() {
             href="/lore"
             className="font-body text-xs tracking-widest uppercase px-5 py-2.5 border border-[#c9a84c]/40 text-[#c9a84c] rounded-sm hover:bg-[#c9a84c]/8 hover:border-[#c9a84c]/70 transition-all duration-[180ms]"
           >
-            Explore Lore
+            Explore Our Legends →
           </a>
           <a
             href="/world"
             className="font-body text-xs tracking-widest uppercase px-5 py-2.5 text-[#7a7670] hover:text-[#d8d4cc] transition-colors duration-[180ms]"
           >
-            The World →
+            The World Database →
           </a>
           <a
             href="/characters"
             className="font-body text-xs tracking-widest uppercase px-5 py-2.5 text-[#7a7670] hover:text-[#d8d4cc] transition-colors duration-[180ms]"
           >
-            Characters →
+            Character Profiles →
           </a>
         </div>
       </section>
@@ -61,7 +61,7 @@ export default function Home() {
       <section className="py-10 bg-[#141210] border border-[#2e2b26] rounded-sm px-6 my-10">
         <h2 className="font-display text-lg text-[#d8d4cc] mb-2">💡 What do I do here?</h2>
         <p className="font-body text-sm text-[#7a7670] mb-5 leading-relaxed">
-          Don't know where to start? You can either explore this website, or…
+          Don't know where to start? You can either explore this website, or....
         </p>
         <div className="flex flex-wrap gap-3">
           <a
@@ -74,20 +74,20 @@ export default function Home() {
             href="/lore#issues"
             className="font-body text-xs tracking-widest uppercase px-4 py-2 border border-[#2e2b26] text-[#7a7670] rounded-sm hover:border-[#c9a84c]/30 hover:text-[#d8d4cc] transition-all duration-[180ms]"
           >
-            Check out our Issues
+            Check out our Bookshelf
           </a>
           <a
             href="/32-16TimeSystem"
             className="font-body text-xs tracking-widest uppercase px-4 py-2 border border-[#c9a84c]/30 text-[#c9a84c] rounded-sm hover:bg-[#c9a84c]/8 hover:border-[#c9a84c]/60 transition-all duration-[180ms]"
           >
-            Check Out our Interactive Calendar
+            Check Out our Interactive Time System!
           </a>
         </div>
         <p className="font-body text-xs text-[#4a4844] mt-5 leading-relaxed">
-          All references here that relate to our book, worldbuilding, or quotes, are coded in:{' '}
-          <span className="text-[#c9a84c]">yellow</span>,{' '}
-          <span className="text-[#c9985a]">pastel orange</span>, and{' '}
-          <span className="text-[#888] underline">gray links</span>!
+          All references here that relate to our Books, Worldbuilding, or Quotes, are coded in:{' '}
+          <span className="text-[#c9a84c]">Yellow</span>,{' '}
+          <span className="text-[#c9985a]">Pastel Orange</span>, and{' '}
+          <span className="text-[#888] underline">Gray links</span>!
         </p>
       </section>
 
@@ -134,7 +134,7 @@ export default function Home() {
           There lies a question that is waiting to be answered:
         </p>
         <blockquote className="border-l-2 border-[#c9a84c]/40 pl-5 font-display text-base text-[#c9a84c]/80 italic">
-          What makes a soul whole..? Is it destiny, divinity, or love?
+          What makes a soul whole..? Is it Destiny, Divinity, or Love?
         </blockquote>
       </section>
 
@@ -147,7 +147,7 @@ export default function Home() {
         </h2>
         <p className="font-body text-sm text-[#7a7670] max-w-[68ch] leading-relaxed mb-5">
           The Hibrythian Saga goes under a lot of names. It's not just called The Hibryds Cinematic
-          Universe! This universe contains a lot of different stories aside from our main series —
+          Universe. This universe contains a lot of different stories aside from our main series —
           it's because the world is expansive and constantly growing!
         </p>
         <ul className="font-body text-sm text-[#7a7670] space-y-2 list-disc list-inside mb-5">
@@ -183,7 +183,7 @@ export default function Home() {
             },
             {
               title: 'Hybrid Legacy',
-              body: 'Hibryds are not merely characters. They are symbols. Of spiritual transformation. Of identity found through trial. Of evolution born from pain and blessing.',
+              body: 'Hibryds are not merely characters. They are symbols of spiritual transformationm identity found through trial, and evolution born from pain and blessing.',
             },
             {
               title: 'Worldbuilding',
@@ -284,7 +284,7 @@ export default function Home() {
             },
             {
               genre: 'Urban Fantasy',
-              body: `Hetra in 2245+ is a futuristic urban world where walled city-states protect against monstrous beasts and demons. Modern civilization thrives alongside ancient magic, with skyscrapers like the Skypeak Obelisk towering over streets where Hibryds, supernatural beings, and humans coexist in a world that blends cutting-edge innovation with mystical forces.`,
+              body: `Planet Hetra is set in the year 2245+. A futuristic urban world where walled city-states protect against monstrous beasts and demons. Modern civilization thrives alongside ancient magic, with skyscrapers like the Skypeak Obelisk towering over streets where Hibryds, supernatural beings, and humans coexist in a world that blends cutting-edge innovation with mystical forces.`,
             },
             {
               genre: 'Supernatural Forces',
