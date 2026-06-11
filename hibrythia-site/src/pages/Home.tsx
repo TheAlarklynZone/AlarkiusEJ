@@ -104,24 +104,19 @@ export default function Home() {
           continents to ancient divine realms, this saga dares to walk the line between high fantasy
           and eternal truth. It is the beating heart and series of Alarkius Elvya Jay's works.
         </p>
-        <dl className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-3 font-body text-sm">
-          <div>
-            <dt className="text-[#c9a84c] text-xs tracking-widest uppercase mb-0.5">Genre(s)</dt>
-            <dd className="text-[#7a7670]">Adventure Fantasy | Mythic Fiction | Slice-of-Life Fantasy | Emotional Epic</dd>
-          </div>
-          <div>
-            <dt className="text-[#c9a84c] text-xs tracking-widest uppercase mb-0.5">Tone</dt>
-            <dd className="text-[#7a7670]">Mythopoetic • Heartfelt • Cinematic • Philosophical • Hopeful through darkness</dd>
-          </div>
-          <div>
-            <dt className="text-[#c9a84c] text-xs tracking-widest uppercase mb-0.5">Main Genres</dt>
-            <dd className="text-[#7a7670]">Adventure Fantasy (progressive)</dd>
-          </div>
-          <div>
-            <dt className="text-[#c9a84c] text-xs tracking-widest uppercase mb-0.5">Mixed Genres</dt>
-            <dd className="text-[#7a7670]">Slice of Life (w/ subtle romance) • Action • Superheroes • Magic • Science Fiction</dd>
-          </div>
-        </dl>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 font-body text-sm">
+          {[
+            { label: 'Genre(s)',     value: 'Adventure Fantasy | Mythic Fiction | Slice-of-Life Fantasy | Emotional Epic' },
+            { label: 'Tone',         value: 'Mythopoetic • Heartfelt • Cinematic • Philosophical • Hopeful through darkness' },
+            { label: 'Main Genres',  value: 'Adventure Fantasy (progressive)' },
+            { label: 'Mixed Genres', value: 'Slice of Life (w/ subtle romance) • Action • Superheroes • Magic • Science Fiction' },
+          ].map(({ label, value }) => (
+            <div key={label} className="border border-[#2e2b26] bg-[#0e0d0b] rounded-sm px-5 py-4 flex flex-col gap-1.5 hover:border-[#c9a84c]/40 transition-colors duration-[180ms]">
+              <span className="text-[#c9a84c] text-xs tracking-widest uppercase">{label}</span>
+              <span className="text-[#7a7670] leading-relaxed">{value}</span>
+            </div>
+          ))}
+        </div>
       </section>
 
       <div className="h-px bg-gradient-to-r from-transparent via-[#2e2b26] to-transparent" aria-hidden="true" />
