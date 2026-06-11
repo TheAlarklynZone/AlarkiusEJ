@@ -3,7 +3,6 @@ import { Outlet, NavLink, useLocation } from 'react-router-dom';
 
 const navLinks = [
   { to: '/',           label: 'Home' },
-  { to: '/lore',       label: 'Lore' },
   { to: '/world',      label: 'World' },
   { to: '/characters', label: 'Characters' },
   { to: '/bookshelf',  label: 'Bookshelf' },
