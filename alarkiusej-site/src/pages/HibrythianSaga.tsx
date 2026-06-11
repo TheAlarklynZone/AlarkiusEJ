@@ -113,8 +113,6 @@ export default function HibrythianSaga() {
             </svg>
           </a>
 
-          {/* 32/16-Hour Time System Card */}
-          <Link
         </div>
 
         {/* Tone */}
