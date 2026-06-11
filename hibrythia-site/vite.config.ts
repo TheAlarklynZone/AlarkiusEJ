@@ -8,6 +8,16 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
+      // Network-only: SW passes every request straight through to the network.
+      // This means hard refreshes always get fresh assets from Cloudflare.
+      workbox: {
+        runtimeCaching: [],
+        globPatterns: [],
+        navigateFallback: null,
+        cleanupOutdatedCaches: true,
+        skipWaiting: true,
+        clientsClaim: true,
+      },
       manifest: {
         name: 'The Hibrythian Saga',
         short_name: 'Hibrythia',
