@@ -65,7 +65,7 @@ export default function Home() {
         </p>
         <div className="flex flex-wrap gap-3">
           <a
-            href="/world"
+            href="/bookshelf"
             className="font-body text-xs tracking-widest uppercase px-4 py-2 border border-[#c9a84c]/30 text-[#c9a84c] rounded-sm hover:bg-[#c9a84c]/8 transition-all duration-[180ms]"
           >
             Read our World Introduction
