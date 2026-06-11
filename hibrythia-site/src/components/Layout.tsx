@@ -8,7 +8,6 @@ const navLinks = [
   { to: '/bookshelf',  label: 'Bookshelf' },
 ]
 
-const AUTHOR_SITE_URL = 'https://www.alarkiusej.com/';
 
 export default function Layout() {
   return (
