@@ -6,7 +6,9 @@ const navLinks = [
   { to: '/world',      label: 'World' },
   { to: '/characters', label: 'Characters' },
   { to: '/bookshelf',  label: 'Bookshelf' },
-];
+]
+
+const AUTHOR_SITE_URL = 'https://www.alarkiusej.com/';
 
 export default function Layout() {
   return (
@@ -44,6 +46,14 @@ export default function Layout() {
               ))}
             </ul>
           </nav>
+          <a
+            href="https://www.alarkiusej.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-body text-[0.75rem] tracking-widest uppercase px-2.5 py-1 rounded-sm transition-all duration-[180ms] text-[#7a7670] hover:text-[#c9a84c] ml-1 flex items-center gap-1"
+          >
+            Author Site →
+          </a>
         </div>
       </header>
 
