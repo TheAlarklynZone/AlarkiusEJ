@@ -18,7 +18,7 @@ export default function Layout() {
           <a href="/" className="flex items-center group" aria-label="The Hibrythian Saga">
             <span className="font-display text-xs tracking-[0.15em] text-[#c9a84c] uppercase"
               style={{ letterSpacing: '0.18em' }}
-            >The Hibrythian Saga | Official Website </span>
+            >The Hibrythian Saga </span>
           </a>
 
           {/* Nav */}
@@ -62,7 +62,7 @@ export default function Layout() {
             </p>
             <div className="gold-rule hidden sm:block" aria-hidden="true" />
             <p className="font-body text-[0.6rem] text-[#4a4844] tracking-wider">
-              All Lore &amp; Worldbuilding Rights Reserved
+              All Lore &amp; Worldbuilding Are Rights Reserved.
             </p>
           </div>
 
