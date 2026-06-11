@@ -495,7 +495,7 @@ const STYLES = `
   grid-template-columns: repeat(7, 1fr);
   gap: 0;
   margin-bottom: 0;
-  background: #141525;
+  background: #131210;
   border-radius: 6px 6px 0 0;
   overflow: hidden;
   border: none;
@@ -528,56 +528,68 @@ const STYLES = `
   border-radius: 0 0 6px 6px;
   overflow: hidden;
 }
-/* Checkerboard */
+/* Checker pattern — warm dark tones matching site */
 .hetra-cal .cal-cell:nth-child(odd) {
-  background: #1a1b2e;
+  background: #1a1814;
 }
 .hetra-cal .cal-cell:nth-child(even) {
-  background: #1d1f36;
+  background: #201e19;
 }
 .hetra-cal .cal-cell.empty {
-  background: #141525 !important;
+  background: #161410 !important;
   cursor: default;
   background-image: repeating-linear-gradient(
     135deg,
-    rgba(255,255,255,0.025) 0px,
-    rgba(255,255,255,0.025) 1px,
+    rgba(201,168,76,0.03) 0px,
+    rgba(201,168,76,0.03) 1px,
     transparent 1px,
-    transparent 8px
+    transparent 10px
   ) !important;
 }
 .hetra-cal .cal-cell {
   aspect-ratio: 1 / 1;
   min-height: unset;
   padding: 6px;
-  background: #1a1b2e;
+  background: #1a1814;
   border-radius: 0;
   border: none;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   font-family: 'Cinzel', serif;
-  font-size: 14px;
-  color: rgba(255,255,255,0.5);
+  font-size: 13px;
+  color: rgba(216,212,204,0.35);
   transition: all 0.15s ease;
   cursor: default;
   position: relative;
 }
+/* Day number — top-right corner */
+.hetra-cal .cal-day-num {
+  position: absolute;
+  top: 5px;
+  right: 7px;
+  font-family: 'Cinzel', serif;
+  font-size: 13px;
+  line-height: 1;
+  color: rgba(216,212,204,0.55);
+}
 .hetra-cal .cal-cell.day { color: var(--color-text); }
 .hetra-cal .cal-cell.day:hover {
-  background: rgba(255,255,255,0.08) !important;
+  background: rgba(201,168,76,0.07) !important;
   z-index: 1;
 }
 .hetra-cal .cal-cell.today {
-  background: color-mix(in srgb, #e8b04a 20%, #141525) !important;
-  border: 1px solid #e8b04a !important;
-  color: #e8b04a;
-  font-weight: 700;
+  background: color-mix(in srgb, #c9a84c 18%, #1a1814) !important;
+  border: 1px solid #c9a84c !important;
   z-index: 1;
 }
+.hetra-cal .cal-cell.today .cal-day-num {
+  color: #c9a84c;
+  font-weight: 700;
+}
 .hetra-cal .cal-cell.eclipse-day {
-  background: color-mix(in srgb, #e05060 18%, #141525) !important;
+  background: color-mix(in srgb, #e05060 15%, #1a1814) !important;
   border: 1px solid #e05060 !important;
 }
 .hetra-cal .eclipse-indicator {
@@ -587,53 +599,50 @@ const STYLES = `
   background: var(--color-accent-red);
   position: absolute;
   top: 4px;
-  right: 4px;
+  left: 4px;
 }
-/* Season dot — only on start/end days */
-.hetra-cal .season-dot {
-  --sdot-color: #fff;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  flex-shrink: 0;
-  margin-top: 4px;
-  background: var(--sdot-color);
-  box-shadow: 0 0 5px var(--sdot-color);
-  position: relative;
-  cursor: default;
-}
-.hetra-cal .season-dot::after {
-  content: attr(data-label);
-  position: absolute;
-  bottom: calc(100% + 6px);
-  left: 50%;
-  transform: translateX(-50%);
-  background: #1e2035;
-  color: #e8e6f0;
-  font-family: 'Cinzel', serif;
-  font-size: 10px;
+/* Season pill — replaces dot, shown inline in cell */
+.hetra-cal .season-pill {
+  --spill-color: #fff;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: auto;
+  padding: 2px 6px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--spill-color) 15%, transparent);
+  border: 1px solid color-mix(in srgb, var(--spill-color) 50%, transparent);
+  font-family: 'Raleway', sans-serif;
+  font-size: 9px;
   font-weight: 600;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
+  color: var(--spill-color);
   white-space: nowrap;
-  padding: 4px 8px;
-  border-radius: 4px;
-  border: 1px solid var(--sdot-color);
-  box-shadow: 0 0 8px color-mix(in srgb, var(--sdot-color) 40%, transparent);
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.15s ease;
-  z-index: 10;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.4;
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  justify-content: center;
 }
-.hetra-cal .season-dot:hover::after {
-  opacity: 1;
+.hetra-cal .season-pill::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--spill-color);
+  flex-shrink: 0;
 }
 .hetra-cal .season-legend {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px 20px;
+  gap: 8px 16px;
   padding: 12px 24px;
-  background: var(--hetra-surface-offset, #141525);
-  border-top: 1px solid rgba(255,255,255,0.08);
+  background: #161410;
+  border-top: 1px solid rgba(201,168,76,0.12);
   border-radius: 0 0 8px 8px;
 }
 .hetra-cal .season-legend-item {
@@ -642,7 +651,7 @@ const STYLES = `
   gap: 6px;
   font-family: 'Cinzel', serif;
   font-size: 10px;
-  color: rgba(255,255,255,0.5);
+  color: rgba(216,212,204,0.5);
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
@@ -1178,9 +1187,9 @@ export default function TimeSystem() {
           const label = marker.dot === 'start'
             ? `${marker.season.name} begins`
             : `${marker.season.name} ends`
-          seasonDot = `<div class="season-dot" style="--sdot-color:${marker.season.color}" data-label="${label}"></div>`
+          seasonDot = `<div class="season-pill" style="--spill-color:${marker.season.color}">${label}</div>`
         }
-        html += `<div class="${cls}">${d}${seasonDot}${isEclipse ? '<div class="eclipse-indicator" title="Red Blood Eclipse · 24:25 PM"></div>' : ''}</div>`
+        html += `<div class="${cls}"><span class="cal-day-num">${d}</span>${seasonDot}${isEclipse ? '<div class="eclipse-indicator" title="Red Blood Eclipse · 24:25 PM"></div>' : ''}</div>`
       }
       // Empty cells after last day (fill out the final row)
       const totalCells = startDayOfWeek + month.days
