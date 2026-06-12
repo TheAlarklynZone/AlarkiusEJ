@@ -189,6 +189,12 @@ class HeadHandler {
   }
 
   element(element) {
+    // Inject critical dark bg first — prevents gray flash before CSS loads on desktop
+    element.prepend(
+      '<style>html,body{background-color:#100908!important;margin:0}</style>',
+      { html: true }
+    );
+
     if (this.faviconUrl) {
       element.prepend(`
         <link rel="icon" type="image/png" sizes="192x192" href="${this.faviconUrl}">
