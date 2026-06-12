@@ -12,6 +12,13 @@ import MetaWorldbuilding from '@/pages/MetaWorldbuilding';
 import OurCharacters from '@/pages/OurCharacters';
 import Bookshelf from '@/pages/Bookshelf';
 import Vol0HTHGOE from '@/pages/Bookshelf/Vol0HTHGOE';
+import Vol0EP0 from '@/pages/Bookshelf/Vol0HTHGOE/EP0';
+import Vol0EP1 from '@/pages/Bookshelf/Vol0HTHGOE/EP1';
+import Vol0EP2 from '@/pages/Bookshelf/Vol0HTHGOE/EP2';
+import Vol0EP3 from '@/pages/Bookshelf/Vol0HTHGOE/EP3';
+import Vol0EP4 from '@/pages/Bookshelf/Vol0HTHGOE/EP4';
+import Vol0EP5 from '@/pages/Bookshelf/Vol0HTHGOE/EP5';
+import Vol0EP6 from '@/pages/Bookshelf/Vol0HTHGOE/EP6';
 import TimeSystem from '@/pages/TimeSystem';
 import NotFound from '@/pages/NotFound';
 
@@ -55,6 +62,13 @@ export default function App() {
           <Route path="characters" element={<PageTransition><OurCharacters /></PageTransition>} />
           <Route path="bookshelf" element={<PageTransition><Bookshelf /></PageTransition>} />
           <Route path="bookshelf/vol0" element={<PageTransition><Vol0HTHGOE /></PageTransition>} />
+          <Route path="bookshelf/vol0/ep0" element={<PageTransition><Vol0EP0 /></PageTransition>} />
+          <Route path="bookshelf/vol0/ep1" element={<PageTransition><Vol0EP1 /></PageTransition>} />
+          <Route path="bookshelf/vol0/ep2" element={<PageTransition><Vol0EP2 /></PageTransition>} />
+          <Route path="bookshelf/vol0/ep3" element={<PageTransition><Vol0EP3 /></PageTransition>} />
+          <Route path="bookshelf/vol0/ep4" element={<PageTransition><Vol0EP4 /></PageTransition>} />
+          <Route path="bookshelf/vol0/ep5" element={<PageTransition><Vol0EP5 /></PageTransition>} />
+          <Route path="bookshelf/vol0/ep6" element={<PageTransition><Vol0EP6 /></PageTransition>} />
           <Route path="32-16TimeSystem" element={<PageTransition><TimeSystem /></PageTransition>} />
           <Route path="*" element={<PageTransition><NotFound /></PageTransition>} />
         </Route>
