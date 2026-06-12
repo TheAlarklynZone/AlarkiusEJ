@@ -4,6 +4,8 @@ import Layout from '@/components/Layout';
 import Home from '@/pages/Home';
 import LegendsAndMyths from '@/pages/LegendsAndMyths';
 import OurWorldbuilding from '@/pages/OurWorldbuilding';
+import WorldbuildingContents from '@/pages/WorldbuildingContents';
+import LocalesAndSights from '@/pages/LocalesAndSights';
 import OurCharacters from '@/pages/OurCharacters';
 import Bookshelf from '@/pages/Bookshelf';
 import TimeSystem from '@/pages/TimeSystem';
@@ -18,6 +20,8 @@ export default function App() {
         <Route index element={<Home />} />
         <Route path="lore" element={<LegendsAndMyths />} />
         <Route path="world" element={<OurWorldbuilding />} />
+        <Route path="world/databases" element={<WorldbuildingContents />} />
+        <Route path="world/locales" element={<LocalesAndSights />} />
         <Route path="characters" element={<OurCharacters />} />
         <Route path="bookshelf" element={<Bookshelf />} />
         <Route path="32-16TimeSystem" element={<TimeSystem />} />
@@ -27,4 +31,3 @@ export default function App() {
   </>
   );
 }
-
