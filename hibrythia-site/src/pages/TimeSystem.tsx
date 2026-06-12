@@ -152,7 +152,7 @@ const STYLES = `
   --font-body: 'Lora', 'Georgia', serif;
   --content-default: 1100px;
 
-  background-color: var(--color-bg);
+  background-color: transparent;
   color: var(--color-text);
   font-family: var(--font-body);
   font-size: var(--text-base);
