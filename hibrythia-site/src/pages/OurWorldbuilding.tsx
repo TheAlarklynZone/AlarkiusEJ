@@ -4,7 +4,7 @@ const CATEGORIES = [
   {
     to: '/world/databases',
     label: 'Databases & Systems',
-    description: 'The mechanics behind the world — planet Hetra, multiverse, time systems, powerscaling, currencies, and more.',
+    description: 'The mechanics behind the world — planet Hetra, time systems, powerscaling, currencies, and more.',
     tag: 'Worldbuilding Contents',
   },
   {
@@ -12,6 +12,12 @@ const CATEGORIES = [
     label: 'Locales & Sights',
     description: 'Explore the continents, cities, churches, obelisks, and natural wonders scattered across Hetra.',
     tag: 'Locations & Geography',
+  },
+  {
+    to: '/world/meta',
+    label: 'Meta Worldbuilding',
+    description: 'The cosmic architecture beyond Hetra — multiverses, spiritual realms, and forces outside the known world.',
+    tag: 'Cosmic & Meta',
   },
   {
     to: '/lore',
