@@ -3,6 +3,8 @@
 // Content sourced word-for-word from Notion: alarkiusej/HAXL-The-Hibrythian-Saga
 // ──────────────────────────────────────────────────────────────────────────────
 
+import { Link } from 'react-router-dom';
+
 export default function Home() {
   return (
     <div className="max-w-[1200px] mx-auto px-6">
@@ -34,24 +36,24 @@ export default function Home() {
 
         {/* Nav CTAs */}
         <div className="flex flex-wrap items-center gap-3 pt-1">
-          <a
-            href="/world"
+          <Link
+            to="/world"
             className="font-body text-xs tracking-widest uppercase px-5 py-2.5 border border-[#c9a84c]/40 text-[#c9a84c] rounded-sm hover:bg-[#c9a84c]/8 hover:border-[#c9a84c]/70 transition-all duration-[180ms]"
           >
             Explore Our Legends →
-          </a>
-          <a
-            href="/world"
+          </Link>
+          <Link
+            to="/world"
             className="font-body text-xs tracking-widest uppercase px-5 py-2.5 text-[#7a7670] hover:text-[#d8d4cc] transition-colors duration-[180ms]"
           >
             The World Database →
-          </a>
-          <a
-            href="/characters"
+          </Link>
+          <Link
+            to="/characters"
             className="font-body text-xs tracking-widest uppercase px-5 py-2.5 text-[#7a7670] hover:text-[#d8d4cc] transition-colors duration-[180ms]"
           >
             Character Profiles →
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -64,24 +66,24 @@ export default function Home() {
           Don't know where to start? You can either explore this website, or....
         </p>
         <div className="flex flex-wrap gap-3">
-          <a
-            href="/bookshelf"
+          <Link
+            to="/bookshelf"
             className="font-body text-xs tracking-widest uppercase px-4 py-2 border border-[#c9a84c]/30 text-[#c9a84c] rounded-sm hover:bg-[#c9a84c]/8 transition-all duration-[180ms]"
           >
             Read our World Introduction
-          </a>
-          <a
-            href="/world"
+          </Link>
+          <Link
+            to="/world"
             className="font-body text-xs tracking-widest uppercase px-4 py-2 border border-[#2e2b26] text-[#7a7670] rounded-sm hover:border-[#c9a84c]/30 hover:text-[#d8d4cc] transition-all duration-[180ms]"
           >
             Check out our Bookshelf
-          </a>
-          <a
-            href="/32-16TimeSystem"
+          </Link>
+          <Link
+            to="/32-16TimeSystem"
             className="font-body text-xs tracking-widest uppercase px-4 py-2 border border-[#c9a84c]/30 text-[#c9a84c] rounded-sm hover:bg-[#c9a84c]/8 hover:border-[#c9a84c]/60 transition-all duration-[180ms]"
           >
             Check Out our Interactive Time System!
-          </a>
+          </Link>
         </div>
         <p className="font-body text-xs text-[#4a4844] mt-5 leading-relaxed">
           All references here that relate to our Books, Worldbuilding, or Quotes, are coded in:{' '}
@@ -255,13 +257,13 @@ export default function Home() {
           </p>
           <p className="font-body text-xs text-[#7a7670]">
             Also available to read for free on this website →{' '}
-            <a
-              href="/bookshelf/vol0"
+            <Link
+              to="/bookshelf/vol0"
               onClick={e => e.stopPropagation()}
               className="text-[#c9a84c] hover:underline"
             >
               Read here
-            </a>
+            </Link>
           </p>
         </a>
       </section>
