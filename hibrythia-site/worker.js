@@ -1,6 +1,6 @@
 // ============================================================
-// alaria-aurelia — Author Schema Worker
-// Domain: alarkiusej.com
+// Raeya-Flutters Worker for The Hibrythian Saga (/hibrythia-site)
+// Domain: alarkiusej.com & thehibrythiansaga.com
 // Injects structured data (JSON-LD) + favicon into HTML responses
 // ============================================================
 
