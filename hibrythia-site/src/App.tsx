@@ -1,4 +1,5 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import { useEffect, useRef } from 'react';
 import PWADevTools from '@/components/PWADevTools';
 import Layout from '@/components/Layout';
 import Home from '@/pages/Home';
@@ -13,25 +14,49 @@ import Bookshelf from '@/pages/Bookshelf';
 import TimeSystem from '@/pages/TimeSystem';
 import NotFound from '@/pages/NotFound';
 
+function PageTransition({ children }: { children: React.ReactNode }) {
+  const location = useLocation();
+  const wrapRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = wrapRef.current;
+    if (!el) return;
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(6px)';
+    const raf = requestAnimationFrame(() => {
+      el.style.transition = 'opacity 0.22s ease, transform 0.22s ease';
+      el.style.opacity = '1';
+      el.style.transform = 'translateY(0)';
+    });
+    return () => cancelAnimationFrame(raf);
+  }, [location.pathname]);
+
+  return (
+    <div ref={wrapRef} style={{ opacity: 0 }}>
+      {children}
+    </div>
+  );
+}
+
 export default function App() {
   return (
     <>
-    <PWADevTools />
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="lore" element={<LegendsAndMyths />} />
-        <Route path="world" element={<OurWorldbuilding />} />
-        <Route path="world/databases" element={<WorldbuildingContents />} />
-        <Route path="world/databases/CalendarAndTime" element={<CalendarAndTime />} />
-        <Route path="world/locales" element={<LocalesAndSights />} />
-        <Route path="world/meta" element={<MetaWorldbuilding />} />
-        <Route path="characters" element={<OurCharacters />} />
-        <Route path="bookshelf" element={<Bookshelf />} />
-        <Route path="32-16TimeSystem" element={<TimeSystem />} />
-        <Route path="*" element={<NotFound />} />
-      </Route>
-    </Routes>
-  </>
+      <PWADevTools />
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<PageTransition><Home /></PageTransition>} />
+          <Route path="lore" element={<PageTransition><LegendsAndMyths /></PageTransition>} />
+          <Route path="world" element={<PageTransition><OurWorldbuilding /></PageTransition>} />
+          <Route path="world/databases" element={<PageTransition><WorldbuildingContents /></PageTransition>} />
+          <Route path="world/databases/CalendarAndTime" element={<PageTransition><CalendarAndTime /></PageTransition>} />
+          <Route path="world/locales" element={<PageTransition><LocalesAndSights /></PageTransition>} />
+          <Route path="world/meta" element={<PageTransition><MetaWorldbuilding /></PageTransition>} />
+          <Route path="characters" element={<PageTransition><OurCharacters /></PageTransition>} />
+          <Route path="bookshelf" element={<PageTransition><Bookshelf /></PageTransition>} />
+          <Route path="32-16TimeSystem" element={<PageTransition><TimeSystem /></PageTransition>} />
+          <Route path="*" element={<PageTransition><NotFound /></PageTransition>} />
+        </Route>
+      </Routes>
+    </>
   );
 }
