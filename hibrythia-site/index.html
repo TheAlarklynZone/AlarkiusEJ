@@ -86,18 +86,25 @@
     </div>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <!-- Remove splash from DOM after animation completes. Skip on client-side nav (session already active). -->
+    <!-- Splash: show on hard refresh, soft refresh, or direct URL — NOT on client-side nav -->
     <script>
       (function() {
         var splash = document.getElementById('splash');
-        if (sessionStorage.getItem('hs_loaded')) {
-          // Already loaded in this session — remove splash instantly, no flicker
-          splash && splash.remove();
-        } else {
-          sessionStorage.setItem('hs_loaded', '1');
-          splash && splash.addEventListener('animationend', function(e) {
+        if (!splash) return;
+        // navigation type: 'reload' = soft/hard refresh, 'navigate' = URL bar enter
+        // client-side pushState nav has no navigation entry at all (or type='navigate' but
+        // React hasn't mounted yet so we check if this is a fresh page load via the timing API)
+        var navEntry = performance && performance.getEntriesByType &&
+                       performance.getEntriesByType('navigation')[0];
+        var navType = navEntry ? navEntry.type : 'navigate';
+        // Only show splash on actual page loads (reload or fresh navigate), not SPA transitions
+        // SPA transitions won't trigger this script at all since the HTML isn't re-fetched
+        if (navType === 'reload' || navType === 'navigate') {
+          splash.addEventListener('animationend', function(e) {
             if (e.animationName === 'splashFade') this.remove();
           });
+        } else {
+          splash.remove();
         }
       })();
     </script>
