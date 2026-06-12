@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 const publishedTitles = [
@@ -212,6 +213,9 @@ export default function Titles() {
         </div>
       </section>
 
+      {/* Disqus — Titles page thread */}
+      <TitlesDisqus />
+
       {/* Nav */}
       <div className="section-divider" />
       <div className="flex flex-wrap gap-3">
@@ -219,5 +223,45 @@ export default function Titles() {
         <Link to="/universe" className="btn-neon-purple text-xs">Universe Overview →</Link>
       </div>
     </div>
+  )
+}
+
+function TitlesDisqus() {
+  useEffect(() => {
+    const SHORTNAME = 'naiseikaititles'
+    const script = document.createElement('script')
+    script.src = `https://${SHORTNAME}.disqus.com/embed.js`
+    script.setAttribute('data-timestamp', String(+new Date()))
+    script.async = true
+    ;(document.head || document.body).appendChild(script)
+    return () => {
+      // clean up script on unmount
+      script.remove()
+    }
+  }, [])
+
+  return (
+    <section className="mt-12">
+      <div className="section-divider mb-8" />
+      <div className="mb-6">
+        <span className="neon-sign neon-sign-purple text-[10px] mb-3 inline-block">Community</span>
+        <h2 className="font-serif text-2xl text-text">Discussion</h2>
+        <p className="text-sm text-text-muted mt-1">
+          Talk about the titles, share theories, ask questions — all welcome.
+        </p>
+      </div>
+      <div id="disqus_thread" className="min-h-[200px]" />
+      <noscript>
+        Please enable JavaScript to view the{' '}
+        <a
+          href="https://disqus.com/?ref_noscript"
+          className="text-[#00e5ff] underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          comments powered by Disqus.
+        </a>
+      </noscript>
+    </section>
   )
 }
