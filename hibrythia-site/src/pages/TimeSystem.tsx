@@ -968,6 +968,24 @@ const STYLES = `
   background: color-mix(in srgb, var(--color-accent-gold) 12%, transparent) !important;
   border-color: var(--color-accent-gold) !important;
 }
+@media (max-width: 640px) {
+  .hetra-cal .year-nav {
+    flex-wrap: wrap;
+    gap: 0.5rem 0.75rem;
+    justify-content: center;
+  }
+  .hetra-cal .year-btn {
+    padding: 0.4rem 0.65rem !important;
+    font-size: 0.65rem !important;
+  }
+  .hetra-cal .year-btn#prev-decade,
+  .hetra-cal .year-btn#next-decade {
+    order: 3;
+  }
+  .hetra-cal .year-btn#prev-year  { order: 1; }
+  .hetra-cal .cal-year-display    { order: 2; }
+  .hetra-cal .year-btn#next-year  { order: 4; }
+}
 `
 
 export default function TimeSystem() {
