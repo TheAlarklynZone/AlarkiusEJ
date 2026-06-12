@@ -113,12 +113,7 @@ export default function Layout() {
       </header>
 
       {/* ── Main ── */}
-      <main
-        className="flex-1"
-        style={{
-          background: `linear-gradient(to bottom, #100908 0%, #3a1602 60%, #7a3005 100%)`,
-        }}
-      >
+      <main className="flex-1">
         <Outlet />
       </main>
 
