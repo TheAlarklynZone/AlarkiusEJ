@@ -113,7 +113,17 @@ export default function Layout() {
       </header>
 
       {/* ── Main ── */}
-      <main className="flex-1">
+      <main
+        className="flex-1"
+        style={{
+          backgroundColor: '#100908',
+          backgroundImage: `
+            linear-gradient(rgba(46,16,0,0.8) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(46,16,0,0.8) 1px, transparent 1px)
+          `,
+          backgroundSize: '40px 40px',
+        }}
+      >
         <Outlet />
       </main>
 
