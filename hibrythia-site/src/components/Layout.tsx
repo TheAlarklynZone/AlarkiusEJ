@@ -128,6 +128,8 @@ export default function Layout() {
             `,
             backgroundSize: '40px 40px',
             filter: 'blur(0.6px)',
+            WebkitMaskImage: 'radial-gradient(ellipse 70% 60% at 50% 50%, black 20%, transparent 100%)',
+            maskImage: 'radial-gradient(ellipse 70% 60% at 50% 50%, black 20%, transparent 100%)',
           }}
         />
         <div style={{ position: 'relative', zIndex: 1 }}>

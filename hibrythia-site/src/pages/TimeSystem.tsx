@@ -200,8 +200,9 @@ const STYLES = `
   align-items: center;
   justify-content: center;
   gap: 12px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0 var(--space-6);
+  max-width: 60%;
 }
 .hetra-cal .section-divider::before,
 .hetra-cal .section-divider::after {
