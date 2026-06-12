@@ -1264,6 +1264,13 @@ export default function TimeSystem() {
     prevYearBtn?.addEventListener('click', onPrevYear)
     nextYearBtn?.addEventListener('click', onNextYear)
 
+    const prevDecadeBtn = $('prev-decade')
+    const nextDecadeBtn = $('next-decade')
+    const onPrevDecade = () => buildCalendar(currentMonthIdx, currentYear - 10)
+    const onNextDecade = () => buildCalendar(currentMonthIdx, currentYear + 10)
+    prevDecadeBtn?.addEventListener('click', onPrevDecade)
+    nextDecadeBtn?.addEventListener('click', onNextDecade)
+
     buildClockFaceFor('clock-ticks', 'clock-labels', 32)
     buildClockFaceFor('clock-ticks-16', 'clock-labels-16', 16)
     buildCalendar(0)
@@ -1279,6 +1286,8 @@ export default function TimeSystem() {
       nextBtn?.removeEventListener('click', onNext)
       prevYearBtn?.removeEventListener('click', onPrevYear)
       nextYearBtn?.removeEventListener('click', onNextYear)
+      prevDecadeBtn?.removeEventListener('click', onPrevDecade)
+      nextDecadeBtn?.removeEventListener('click', onNextDecade)
     }
   }, [])
 
@@ -1440,9 +1449,11 @@ export default function TimeSystem() {
 
                 {/* Year navigation */}
                 <div className="year-nav">
-                  <button className="cal-nav-btn year-btn" id="prev-year" aria-label="Previous year">« Prev Year</button>
+                  <button className="cal-nav-btn year-btn" id="prev-decade" aria-label="Previous decade">« -10</button>
+                  <button className="cal-nav-btn year-btn" id="prev-year" aria-label="Previous year">‹ Prev Year</button>
                   <span className="cal-year-display" id="cal-year-display">2245 AD</span>
-                  <button className="cal-nav-btn year-btn" id="next-year" aria-label="Next year">Next Year »</button>
+                  <button className="cal-nav-btn year-btn" id="next-year" aria-label="Next year">Next Year ›</button>
+                  <button className="cal-nav-btn year-btn" id="next-decade" aria-label="Next decade">+10 »</button>
                 </div>
 
                 <div className="calendar-nav">
