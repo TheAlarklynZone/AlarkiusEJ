@@ -57,6 +57,14 @@ export default function Vol0HTHGOE() {
         </p>
       </section>
 
+      {/* Disclaimer */}
+      <div className="mb-10 border border-[#2e2b26] rounded-sm px-5 py-4 bg-[#131210] max-w-[600px]">
+        <p className="font-body text-[9px] tracking-widest uppercase text-[#4a4844] mb-2">Disclaimer</p>
+        <p className="font-body text-xs text-[#7a7670] leading-relaxed">
+          This is a work of fiction. The following chapter(s) is not meant to mock, distort, or blaspheme The Bible or God's Teachings. It is meant to portray the significance of how The Hibrythian Saga started (including this book you are reading).
+        </p>
+      </div>
+
       {/* Buy link */}
       <div className="mb-16 flex gap-4 flex-wrap">
         <a
