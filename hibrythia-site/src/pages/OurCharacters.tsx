@@ -84,7 +84,7 @@ export default function OurCharacters() {
                 <Link
                   key={to}
                   to={to}
-                  className="group block border border-[#2e2b26] rounded-sm px-5 py-4 bg-[#131210] hover:border-[#c9a84c]/40 hover:bg-[#1a1814] transition-all duration-200"
+                  className="group flex flex-col justify-center min-h-[64px] border border-[#2e2b26] rounded-sm px-5 py-4 bg-[#131210] hover:border-[#c9a84c]/40 hover:bg-[#1a1814] transition-all duration-200"
                 >
                   {tag && (
                     <p className="font-body text-[9px] tracking-widest uppercase text-[#4a4844] mb-1.5">{tag}</p>
