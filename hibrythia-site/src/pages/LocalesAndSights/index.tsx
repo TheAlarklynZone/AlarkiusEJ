@@ -197,7 +197,7 @@ export default function LocalesAndSights() {
           <section key={section.category}>
             {/* Section header */}
             <div className="mb-6">
-              <p className="font-body text-[9px] tracking-widest uppercase text-[#c9a84c]/60 mb-2">
+              <p className="font-display text-xl text-[#c9a84c] mb-2">
                 {section.label}
               </p>
               <p className="font-body text-[11px] text-[#4a4844] leading-relaxed">
