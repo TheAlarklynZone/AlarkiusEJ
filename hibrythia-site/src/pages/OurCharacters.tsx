@@ -25,14 +25,20 @@ const SECTIONS = [
     title: 'From The Divine Realm',
     description: 'Beings of the Divine Realm — rulers, guardians, and ancient spirits of immense power.',
     characters: [
-      { to: '/characters/KingNhavah',                        label: 'King Nhavah' },
-      { to: '/characters/QueenLaeyana',                      label: 'Queen Laeyana' },
-      { to: '/characters/AloriaCloudwave',                   label: 'Aloria Cloudwave' },
-      { to: '/characters/NahfiaAlphraey',                    label: 'Nahfia Alphraey' },
-      { to: '/characters/AeoniaTheSpiritOfTime',             label: 'Aeonia, The Spirit of Time',      tag: 'Ancient Spirit' },
-      { to: '/characters/MorhvTheSpiritOfDeath',             label: 'Morhv, The Spirit of Death',      tag: 'Ancient Spirit' },
-      { to: '/characters/RunerusTheEarlywulf',               label: 'Runerus, The Earlywulf Spirit',   tag: 'Ancient Spirit' },
-      { to: '/characters/AuroraRimaeaOfLife',                label: 'Aurora Rimaea, Spirit of Life',   tag: 'Ancient Spirit' },
+      { to: '/characters/KingNhavah',      label: 'King Nhavah' },
+      { to: '/characters/QueenLaeyana',    label: 'Queen Laeyana' },
+      { to: '/characters/AloriaCloudwave', label: 'Aloria Cloudwave' },
+      { to: '/characters/NahfiaAlphraey',  label: 'Nahfia Alphraey' },
+    ],
+  },
+  {
+    title: 'Ancient Spirits of Creation',
+    description: 'The primordial spirits who shaped the foundations of the Hibrythian world.',
+    characters: [
+      { to: '/characters/AeoniaTheSpiritOfTime',  label: 'Aeonia, The Spirit of Time' },
+      { to: '/characters/MorhvTheSpiritOfDeath',  label: 'Morhv, The Spirit of Death' },
+      { to: '/characters/RunerusTheEarlywulf',     label: 'Runerus, The Earlywulf Spirit' },
+      { to: '/characters/AuroraRimaeaOfLife',      label: 'Aurora Rimaea, Spirit of Life' },
     ],
   },
   {
