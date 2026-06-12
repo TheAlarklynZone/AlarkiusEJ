@@ -173,6 +173,12 @@ class HeadHandler {
   }
 
   element(element) {
+    // Inject critical dark bg first — prevents gray flash on desktop
+    element.prepend(
+      '<style>html,body{background-color:#191919!important;margin:0}</style>',
+      { html: true }
+    );
+
     if (this.faviconUrl) {
       element.prepend(`
         <link rel="icon" type="image/png" sizes="192x192" href="${this.faviconUrl}">
