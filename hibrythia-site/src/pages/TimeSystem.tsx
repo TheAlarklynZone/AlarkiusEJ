@@ -969,22 +969,27 @@ const STYLES = `
   border-color: var(--color-accent-gold) !important;
 }
 @media (max-width: 640px) {
+  /* Row 1: ‹ Prev Year  |  2245 AD  |  Next Year ›
+     Row 2:     « -10               +10 »           */
   .hetra-cal .year-nav {
-    flex-wrap: wrap;
-    gap: 0.5rem 0.75rem;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto;
+    gap: 0.4rem 0.5rem;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
   }
+  .hetra-cal .year-btn#prev-year    { grid-column: 1; grid-row: 1; }
+  .hetra-cal .cal-year-display      { grid-column: 2; grid-row: 1; min-width: unset; }
+  .hetra-cal .year-btn#next-year    { grid-column: 3; grid-row: 1; }
+  .hetra-cal .year-btn#prev-decade  { grid-column: 1; grid-row: 2; }
+  .hetra-cal .year-btn#next-decade  { grid-column: 3; grid-row: 2; }
   .hetra-cal .year-btn {
-    padding: 0.4rem 0.65rem !important;
-    font-size: 0.65rem !important;
+    padding: 0.35rem 0.6rem !important;
+    font-size: 0.62rem !important;
+    white-space: nowrap;
   }
-  .hetra-cal .year-btn#prev-decade,
-  .hetra-cal .year-btn#next-decade {
-    order: 3;
-  }
-  .hetra-cal .year-btn#prev-year  { order: 1; }
-  .hetra-cal .cal-year-display    { order: 2; }
-  .hetra-cal .year-btn#next-year  { order: 4; }
 }
 `
 
