@@ -5,6 +5,7 @@ import Home from '@/pages/Home';
 import LegendsAndMyths from '@/pages/LegendsAndMyths';
 import OurWorldbuilding from '@/pages/OurWorldbuilding';
 import WorldbuildingContents from '@/pages/WorldbuildingContents';
+import CalendarAndTime from '@/pages/WorldbuildingContents/CalendarAndTime';
 import LocalesAndSights from '@/pages/LocalesAndSights';
 import MetaWorldbuilding from '@/pages/MetaWorldbuilding';
 import OurCharacters from '@/pages/OurCharacters';
@@ -22,6 +23,7 @@ export default function App() {
         <Route path="lore" element={<LegendsAndMyths />} />
         <Route path="world" element={<OurWorldbuilding />} />
         <Route path="world/databases" element={<WorldbuildingContents />} />
+        <Route path="world/databases/CalendarAndTime" element={<CalendarAndTime />} />
         <Route path="world/locales" element={<LocalesAndSights />} />
         <Route path="world/meta" element={<MetaWorldbuilding />} />
         <Route path="characters" element={<OurCharacters />} />
