@@ -17,11 +17,6 @@ const PAGES = [
         description: 'Climate zones, seasonal cycles, and weather phenomena across Hetra.',
       },
       {
-        to: '/world/databases/TheMultiverseOfMultitudes',
-        label: 'The Multiverse of Multitudes',
-        description: 'The layered multiverse structure and how the planes of existence interact.',
-      },
-      {
         to: '/world/databases/The17DimensionsOfReality',
         label: 'The 17 Dimensions of Reality',
         description: 'A breakdown of all 17 dimensions that compose existence in this universe.',
