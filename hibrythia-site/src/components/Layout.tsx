@@ -113,18 +113,27 @@ export default function Layout() {
       </header>
 
       {/* ── Main ── */}
-      <main
-        className="flex-1"
-        style={{
-          backgroundColor: '#100908',
-          backgroundImage: `
-            linear-gradient(rgba(46,16,0,0.8) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(46,16,0,0.8) 1px, transparent 1px)
-          `,
-          backgroundSize: '40px 40px',
-        }}
-      >
+      <main className="flex-1" style={{ position: 'relative' }}>
+        {/* Grid background with blur */}
+        <div
+          aria-hidden="true"
+          style={{
+            position: 'fixed',
+            inset: 0,
+            zIndex: 0,
+            pointerEvents: 'none',
+            backgroundColor: '#100908',
+            backgroundImage: `
+              linear-gradient(rgba(46,16,0,0.8) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(46,16,0,0.8) 1px, transparent 1px)
+            `,
+            backgroundSize: '40px 40px',
+            filter: 'blur(0.6px)',
+          }}
+        />
+        <div style={{ position: 'relative', zIndex: 1 }}>
         <Outlet />
+        </div>
       </main>
 
       {/* ── Footer ── */}
