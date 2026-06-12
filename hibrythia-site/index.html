@@ -86,11 +86,20 @@
     </div>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <!-- Remove splash from DOM after animation completes -->
+    <!-- Remove splash from DOM after animation completes. Skip on client-side nav (session already active). -->
     <script>
-      document.getElementById('splash').addEventListener('animationend', function(e) {
-        if (e.animationName === 'splashFade') this.remove();
-      });
+      (function() {
+        var splash = document.getElementById('splash');
+        if (sessionStorage.getItem('hs_loaded')) {
+          // Already loaded in this session — remove splash instantly, no flicker
+          splash && splash.remove();
+        } else {
+          sessionStorage.setItem('hs_loaded', '1');
+          splash && splash.addEventListener('animationend', function(e) {
+            if (e.animationName === 'splashFade') this.remove();
+          });
+        }
+      })();
     </script>
   </body>
 </html>
