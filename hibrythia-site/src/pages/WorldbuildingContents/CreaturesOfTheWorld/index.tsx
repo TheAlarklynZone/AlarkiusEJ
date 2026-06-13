@@ -57,12 +57,12 @@ export default function CreaturesOfTheWorld() {
       {/* Hetranian Dragons */}
       <section className="mb-12">
         <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Category I</p>
-        <h2 className="font-display text-xl text-[#f2ebeb] mb-4">Hetranian Dragons</h2>
+        <h2 className="font-display text-base text-[#f2ebeb] mb-4">Hetranian Dragons</h2>
         <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-8">
           Dragons. Who wouldn't like that?! Their size can vary from small to large. You can find these creatures anywhere on Varleqe or the rest of the world. Their most common sightings are near some ruins. There are three types of Dragon species.
         </p>
 
-        <h3 className="font-display text-lg text-[#f2ebeb] mb-5">Dragon Species</h3>
+        <h3 className="font-display text-sm text-[#f2ebeb] mb-5">Dragon Species</h3>
         <div className="space-y-6">
 
           <div className="border-l-2 border-[#2e2b26] pl-5">
@@ -133,18 +133,18 @@ export default function CreaturesOfTheWorld() {
       {/* Beast Creatures */}
       <section className="mb-12">
         <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Category II</p>
-        <h2 className="font-display text-xl text-[#f2ebeb] mb-8">Beast Creatures</h2>
+        <h2 className="font-display text-base text-[#f2ebeb] mb-8">Beast Creatures</h2>
         <div className="space-y-6">
 
           <div className="border-l-2 border-[#2e2b26] pl-5">
-            <h3 className="font-display text-lg text-[#f2ebeb] mb-2">Hetranian Catwolfs</h3>
+            <h3 className="font-display text-sm text-[#f2ebeb] mb-2">Hetranian Catwolfs</h3>
             <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
               Hetranian Catwolfs are a genetic species of the ancient Catrelwulfs (In the past, there used to be a population of 500 Catrelwulfs). However, before the extinction of the Catrelwulf, it has blessed its genetic inheritance to future generations of what we call, Catwolfs. Catwolfs nowadays have all 50/50 appearance of a cat and wolf combined, though they can look entirely different because of how fast they adapt to their surroundings.
             </p>
           </div>
 
           <div className="border-l-2 border-[#2e2b26] pl-5">
-            <h3 className="font-display text-lg text-[#f2ebeb] mb-2">Hetranian Direwolves</h3>
+            <h3 className="font-display text-sm text-[#f2ebeb] mb-2">Hetranian Direwolves</h3>
             <Link to="/world/databases/CreaturesOfTheWorld/HetraDirectWolves" className="font-body text-xs text-[#c9a84c] hover:underline block mb-3">[click here to view design art!]</Link>
             <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-4">
               Hetranian Direwolves are beast creatures, better known as "beasts." They are regional direwolves (some native to the continent of Varleqe) and they come in two separate species. These are a part of the Beast Kingdom.
@@ -166,14 +166,14 @@ export default function CreaturesOfTheWorld() {
           </div>
 
           <div className="border-l-2 border-[#2e2b26] pl-5">
-            <h3 className="font-display text-lg text-[#f2ebeb] mb-2">Hetranian Werewolves</h3>
+            <h3 className="font-display text-sm text-[#f2ebeb] mb-2">Hetranian Werewolves</h3>
             <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
               Hetranian Werewolves are a completely different species from direwolves. Werewolves are anamorphic humanoid creatures that can change their appearance slightly to resemble an average wolf. These creatures are both bipedal and quadruped. They can run at insane speeds and jump to high elevations. These werewolves are hostile towards humans, but not other beasts.
             </p>
           </div>
 
           <div className="border-l-2 border-[#2e2b26] pl-5">
-            <h3 className="font-display text-lg text-[#f2ebeb] mb-2">Hetranian Werecats</h3>
+            <h3 className="font-display text-sm text-[#f2ebeb] mb-2">Hetranian Werecats</h3>
             <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
               Hetraniaen Werecats are cousins of Catwolfs under a similar appearance. Instead, they have features of a vampire, sharp teeth, sharp eyes, and a fur-like coat structure. Werecats only come out at night, and they hate the sunlight. Legend has it that the first werecat got its vampire-like features from its master in the ancient past, who was trying to combine his own genetic code with a Catrelwulf. To much avail, the master successfully turned one of the Catrelwulfs into a Werecat. However, the werecat became hostile to its master and left.
             </p>
@@ -186,11 +186,11 @@ export default function CreaturesOfTheWorld() {
       {/* Dangerous Creatures */}
       <section className="mb-12">
         <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Category III</p>
-        <h2 className="font-display text-xl text-[#f2ebeb] mb-8">Dangerous Creatures</h2>
+        <h2 className="font-display text-base text-[#f2ebeb] mb-8">Dangerous Creatures</h2>
         <div className="space-y-6">
 
           <div className="border-l-2 border-[#2e2b26] pl-5">
-            <h3 className="font-display text-lg text-[#f2ebeb] mb-2">Hetranian Kromocidilians</h3>
+            <h3 className="font-display text-sm text-[#f2ebeb] mb-2">Hetranian Kromocidilians</h3>
             <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-3">
               Hetranian Kromocidilian are a combination of Komodo Dragons and Crocodiles. Kromocidilians can live both on land and water, and are considered one of the seas' most ferocious creatures. Kromocidilians can't always keep their mouths shut since they like to lure in prey and snack on them like a feast. Kromocidilians are also masters of disguise. This is because their skin pigments can blend in with their surroundings at a fast rate. They can come in many species.
             </p>
@@ -202,7 +202,7 @@ export default function CreaturesOfTheWorld() {
           </div>
 
           <div className="border-l-2 border-[#2e2b26] pl-5">
-            <h3 className="font-display text-lg text-[#f2ebeb] mb-2">Hetranian Jaglaegers</h3>
+            <h3 className="font-display text-sm text-[#f2ebeb] mb-2">Hetranian Jaglaegers</h3>
             <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-3">
               Hetranian Jaglaegers are a mixture of Jaguars and Eagles. These Jaglaegers have the head of an eagle and legs and tails of a jaguar with a sharp yellow piercing gaze. They can both run on ground and fly in the air. Jaglaegers can come in regional variants and their fur colors are diverse. Their diet consists of both plants and meat.
             </p>
@@ -215,14 +215,14 @@ export default function CreaturesOfTheWorld() {
           </div>
 
           <div className="border-l-2 border-[#2e2b26] pl-5">
-            <h3 className="font-display text-lg text-[#f2ebeb] mb-2">Buffalosaurus(es)</h3>
+            <h3 className="font-display text-sm text-[#f2ebeb] mb-2">Buffalosaurus(es)</h3>
             <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
               Buffalosauruses are giant buffalo lizards that can be found in the Eulan Kingdom in Eulerich. They have a rough body and with scales as their skin. However, their necks are made out of fur, since they like to use that area to soak in heat from the sun.
             </p>
           </div>
 
           <div className="border-l-2 border-[#2e2b26] pl-5">
-            <h3 className="font-display text-lg text-[#f2ebeb] mb-2">Buffalosaurus Ants</h3>
+            <h3 className="font-display text-sm text-[#f2ebeb] mb-2">Buffalosaurus Ants</h3>
             <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
               Buffaolusaurus Ants are giant lizard-like insects. They have the size of a buffalo's body, scales of a lizard, and six legs. Buffaolusaurus Ants are cousins of Buffalosauruses and are found in the Oelen Kingdom in Eulerich. The citizens of Eulerich use Buffaolusaurus Ants as transportation since these ants can carry weights that surpass their mass. You can find these ants in giant caves they have made. They climb walls so watch out!
             </p>
@@ -235,11 +235,11 @@ export default function CreaturesOfTheWorld() {
       {/* Wildcard Entries */}
       <section className="mb-12">
         <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Category IV</p>
-        <h2 className="font-display text-xl text-[#f2ebeb] mb-8">Wildcard Entries</h2>
+        <h2 className="font-display text-base text-[#f2ebeb] mb-8">Wildcard Entries</h2>
         <div className="space-y-6">
 
           <div className="border-l-2 border-[#2e2b26] pl-5">
-            <h3 className="font-display text-lg text-[#f2ebeb] mb-2">Cloudborn Swans</h3>
+            <h3 className="font-display text-sm text-[#f2ebeb] mb-2">Cloudborn Swans</h3>
             <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-3">
               Cloudborn Swans are a default common species throughout the World of Hetra, and their diversity can range to four different species. These swans originate from the Cloud Abode, but they made their way down to Varleqe, Hetrania, Lynneria, Norrane, and Eulerich to further expand their species. They're also somewhat intelligent! These are the current Swan species aside from the current Cloudborn Swans:
             </p>
@@ -251,14 +251,14 @@ export default function CreaturesOfTheWorld() {
           </div>
 
           <div className="border-l-2 border-[#2e2b26] pl-5">
-            <h3 className="font-display text-lg text-[#f2ebeb] mb-2">Jellurtle-ortises</h3>
+            <h3 className="font-display text-sm text-[#f2ebeb] mb-2">Jellurtle-ortises</h3>
             <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
               Jellurtle-ortises are a combination of jellyfish, turtles, and tortoises, done and gone wrong (correctly), as a lab experiment by a mad scientist. This scientist was trying to achieve the true impossible, Eternal Immortality, since these three animals contain the same genetic code. Now, seas are overpopulating of Jellurtle-ortises. These make fantastic prey for predators. This is also a very fun tongue-twister!
             </p>
           </div>
 
           <div className="border-l-2 border-[#2e2b26] pl-5">
-            <h3 className="font-display text-lg text-[#f2ebeb] mb-2">
+            <h3 className="font-display text-sm text-[#f2ebeb] mb-2">
               <Link to="/world/databases/CreaturesOfTheWorld/Flimpies" className="hover:text-[#c9a84c] transition-colors">Flimpies</Link>
             </h3>
             <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
@@ -270,7 +270,7 @@ export default function CreaturesOfTheWorld() {
           </div>
 
           <div className="border-l-2 border-[#2e2b26] pl-5">
-            <h3 className="font-display text-lg text-[#f2ebeb] mb-2">Strigiocta</h3>
+            <h3 className="font-display text-sm text-[#f2ebeb] mb-2">Strigiocta</h3>
             <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-3">
               A newly discovered species of Octopus-Owls. They have the appearance of an owl and their wings as octopus tendrils (four on each side). These wings both serve as extra limbs and flight, for they are covered in oil-based feathers that work well underwater, on land, and in the air. When on land, those limbs are served as legs and arms for land travelling.
             </p>
@@ -285,21 +285,21 @@ export default function CreaturesOfTheWorld() {
           </div>
 
           <div className="border-l-2 border-[#2e2b26] pl-5">
-            <h3 className="font-display text-lg text-[#f2ebeb] mb-2">Pangolarin Bears</h3>
+            <h3 className="font-display text-sm text-[#f2ebeb] mb-2">Pangolarin Bears</h3>
             <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
               Pangolarin Bears are a cross-species, genetic mutated animal from Pangolins and Polar Bear breeding. Pangolins no longer exist, for their genetic code has been bred into Polar Bears at an excessive rate. These Pangolarin Bears can survive blizzards and even hailstorms in the Alarctic Alpines. Their fur is completely made of reinforced keratin, which is one of the hardest material in the world (this is what human fingernails are made out of).
             </p>
           </div>
 
           <div className="border-l-2 border-[#2e2b26] pl-5">
-            <h3 className="font-display text-lg text-[#f2ebeb] mb-2">Hetranian Pyroleos</h3>
+            <h3 className="font-display text-sm text-[#f2ebeb] mb-2">Hetranian Pyroleos</h3>
             <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
               Hetranian Pyroleos are Fire Lions that are only exclusive to Varleqe. They are insanely dangerous and are impossible to touch. This is because their fur is heat-based sensitive to their surroundings and that they are constantly active. Pyroleos make it easy to survive in the Winter. Some places in Varleqe can reach below -0 degrees (C/F) and this doesn't even affect Pyroleos because their manes are basically a humongous fireplace.
             </p>
           </div>
 
           <div className="border-l-2 border-[#2e2b26] pl-5">
-            <h3 className="font-display text-lg text-[#f2ebeb] mb-2">Hetranian Cranklaenkeys</h3>
+            <h3 className="font-display text-sm text-[#f2ebeb] mb-2">Hetranian Cranklaenkeys</h3>
             <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
               Hetranian Cranklaenkeys are crane-like monkeys. They are bipedal creatures, with arms as wings and their feathers as their fingers, with a fully functional tail of a monkey. Cranklaenkeys are avian and land animals, and they sometimes hang out in forests on the continent of Norrane. However, they are super loud and annoying. These annoying creatures also go by a different title, as "Rosemaries."
             </p>
