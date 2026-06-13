@@ -1,6 +1,6 @@
-# Hibrythia Site — Typography Conventions
-> Reference file for consistent heading sizes across all lore pages.
-> Last updated: June 2026
+# Hibrythia Site — Important Typography Conventions
+> IMPORTANT Reference file for consistent heading sizes across all lore pages. Should be read first before populating Lore!
+> Last updated: June 13 2026 - 4:09 AM
 
 ---
 
