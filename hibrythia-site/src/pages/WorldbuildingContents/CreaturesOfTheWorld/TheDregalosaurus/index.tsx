@@ -64,7 +64,7 @@ export default function TheDregalosaurus() {
                 ['Hydrokinetic Blade(s)', 'Slashes of telekinetically charged air blades.'],
                 ['Hydrokinetic Blasts', 'A telekinetic shield that can be layered one by one. Can decrease destruction and supply air for hyperspace.'],
                 ['Hydrokinetic Energy Beam', 'A gush of powerful boiling water from the breath of a Dregalosaurus.'],
-                ['Hydrokinetic Barrier', 'A water-like bubble that protects its' user.'],
+                ['Hydrokinetic Barrier', 'A water-like bubble that protects its user.'],
               ].map(([name, desc]) => (
                 <div key={name} className="border-l-2 border-[#2e2b26] pl-4">
                   <p className="font-display text-base text-[#f2ebeb] mb-1">{name}</p>
