@@ -39,7 +39,7 @@ const SECTIONS = [
     pages: [
       {
         to: '/world/databases/HetraStandardSystems',
-        label: 'Hetra's Standard Systems',
+        label: "Hetra's Standard Systems",
         description: 'Measurements, units, and standards used in the Hibrythian world.',
       },
       {
