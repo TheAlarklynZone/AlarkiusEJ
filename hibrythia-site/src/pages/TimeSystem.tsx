@@ -1242,7 +1242,7 @@ export default function TimeSystem() {
       if (nameEl) nameEl.textContent = month.name
       if (numEl) numEl.textContent = `Month ${month.num} of 14 · ${month.days} days`
       if (loreEl) loreEl.textContent = month.lore
-      if (yearEl) yearEl.textContent = `${currentYear} AD`
+      if (yearEl) yearEl.textContent = currentYear < 0 ? `${Math.abs(currentYear)} OD` : `${currentYear} AD`
 
       const startDayOfWeek = getMonthStartDay(currentYear, currentMonthIdx)
       const grid = $('cal-grid')
