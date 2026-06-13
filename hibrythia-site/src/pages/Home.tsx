@@ -66,12 +66,14 @@ export default function Home() {
           Don't know where to start? You can either explore this website, or....
         </p>
         <div className="flex flex-wrap gap-3">
-          <Link
-            to="/bookshelf"
+          <a
+            href="https://www.thehibrythiansaga.com/bookshelf/vol0"
+            target="_blank"
+            rel="noopener noreferrer"
             className="font-body text-xs tracking-widest uppercase px-4 py-2 border border-[#c9a84c]/30 text-[#c9a84c] rounded-sm hover:bg-[#c9a84c]/8 transition-all duration-[180ms]"
           >
             Read our World Introduction
-          </Link>
+          </a>
           <Link
             to="/world"
             className="font-body text-xs tracking-widest uppercase px-4 py-2 border border-[#2e2b26] text-[#7a7670] rounded-sm hover:border-[#c9a84c]/30 hover:text-[#d8d4cc] transition-all duration-[180ms]"
