@@ -14,7 +14,7 @@ export default function TheDregalosaurus() {
 
       {/* Hero */}
       <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">IV. Equation of Life › Creatures of The World</p>
-      <h1 className="font-display text-3xl md:text-4xl text-[#f2ebeb] mb-2">The Dregalosaurus</h1>
+      <h1 className="font-display text-2xl md:text-3xl text-[#f2ebeb] mb-2">The Dregalosaurus</h1>
       <p className="font-body text-sm text-[#7a746e] italic mb-8">Beast Hierarchy Kingdom — Rank 1, No. 1</p>
 
       {/* Image placeholder */}
@@ -27,7 +27,7 @@ export default function TheDregalosaurus() {
         {/* Main entry */}
         <section>
           <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">The Beast</p>
-          <h2 className="font-display text-xl text-[#f2ebeb] mb-2">THE DREGALOSAURUS</h2>
+          <h2 className="font-display text-lg text-[#f2ebeb] mb-2">THE DREGALOSAURUS</h2>
           <p className="font-body text-sm text-[#c9a84c] italic mb-6">He calls himself Regaris.</p>
           <div className="space-y-4">
             <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
@@ -50,11 +50,11 @@ export default function TheDregalosaurus() {
         {/* Powers */}
         <section>
           <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Abilities</p>
-          <h2 className="font-display text-xl text-[#f2ebeb] mb-6">Powers</h2>
+          <h2 className="font-display text-lg text-[#f2ebeb] mb-6">Powers</h2>
 
           {/* Hydrokinesis */}
           <div className="border border-[#2e2b26] rounded-sm bg-[#0f0d0c] px-5 py-5 mb-6">
-            <h3 className="font-display text-lg text-[#f2ebeb] mb-3">Hydrokinesis</h3>
+            <h3 className="font-display text-base text-[#f2ebeb] mb-3">Hydrokinesis</h3>
             <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-5">
               The ability to manipulate water-like molecules and turn them into different types of combat through the use of energy beams and telekinetic properties. Hydrokinesis also allows the use of air manipulation to pull water out from it. Regaris has completely mastery over Hydrokinesis.
             </p>
@@ -67,7 +67,7 @@ export default function TheDregalosaurus() {
                 ['Hydrokinetic Barrier', 'A water-like bubble that protects its user.'],
               ].map(([name, desc]) => (
                 <div key={name} className="border-l-2 border-[#2e2b26] pl-4">
-                  <p className="font-display text-base text-[#f2ebeb] mb-1">{name}</p>
+                  <p className="font-display text-sm text-[#f2ebeb] mb-1">{name}</p>
                   <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">{desc}</p>
                 </div>
               ))}
@@ -76,7 +76,7 @@ export default function TheDregalosaurus() {
 
           {/* Sea's Blessing */}
           <div className="border border-[#2e2b26] rounded-sm bg-[#0f0d0c] px-5 py-5 mb-6">
-            <h3 className="font-display text-lg text-[#f2ebeb] mb-1">Sea's Blessing</h3>
+            <h3 className="font-display text-base text-[#f2ebeb] mb-1">Sea's Blessing</h3>
             <p className="font-body text-xs text-[#7a746e] italic mb-3">100-Year Cooldown Power</p>
             <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
               After hibernation of a 10 years, The Dregalosaurus comes out of hiding to bless the seas with newer fish life, manifesting babies and sea-creatures alike.
@@ -85,7 +85,7 @@ export default function TheDregalosaurus() {
 
           {/* Sea's Judgement */}
           <div className="border border-[#2e2b26] rounded-sm bg-[#0f0d0c] px-5 py-5">
-            <h3 className="font-display text-lg text-[#f2ebeb] mb-3">Sea's Judgement</h3>
+            <h3 className="font-display text-base text-[#f2ebeb] mb-3">Sea's Judgement</h3>
             <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
               A power that intimidates foes where they get judged by the sea itself. This power's resolve is to judge those heavily of dire consequences of messing with nature. The foe is casted with a curse where they live for 100 years before the power becomes of use. Seas' Judgement relies on dark matter and energy. In the last year of the 100 years on the last day, the opponent will fall down due to a lightning strike composed of Dark Energy. It takes 100 years for life to flourish and live, but to meddle with it desires a punishment from the power of Seas' Judgement.
             </p>
@@ -98,11 +98,11 @@ export default function TheDregalosaurus() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <Link to="/world/databases/CreaturesOfTheWorld/BeastHierarchyKingdom" className="border border-[#2e2b26] hover:border-[#c9a84c]/40 bg-[#0f0d0c] hover:bg-[#151210] rounded-sm px-5 py-4 transition-colors flex flex-col gap-1">
             <span className="font-body text-[10px] tracking-widest uppercase text-[#4a4844]">← Prev Entry</span>
-            <span className="font-display text-base text-[#f2ebeb]">Beast Hierarchy Kingdom</span>
+            <span className="font-display text-sm text-[#f2ebeb]">Beast Hierarchy Kingdom</span>
           </Link>
           <Link to="/world/databases/CreaturesOfTheWorld/DemonCreatures" className="border border-[#2e2b26] hover:border-[#c9a84c]/40 bg-[#0f0d0c] hover:bg-[#151210] rounded-sm px-5 py-4 transition-colors flex flex-col gap-1 items-end text-right">
             <span className="font-body text-[10px] tracking-widest uppercase text-[#4a4844]">Next Entry →</span>
-            <span className="font-display text-base text-[#f2ebeb]">Demon Creatures</span>
+            <span className="font-display text-sm text-[#f2ebeb]">Demon Creatures</span>
           </Link>
         </div>
 
