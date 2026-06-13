@@ -12,7 +12,7 @@ export default function OurPlanetHetra() {
 
       {/* Hero */}
       <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">V. The Current World of Hibryds</p>
-      <h1 className="font-display text-4xl md:text-5xl text-[#f2ebeb] mb-2">Our Planet Hetra</h1>
+      <h1 className="font-display text-3xl md:text-4xl text-[#f2ebeb] mb-2">Our Planet Hetra</h1>
       <p className="font-body text-sm text-[#7a746e] italic mb-4">Midtheltra · The Third Realm of Hibrytheia</p>
 
       {/* Planet image placeholder */}
@@ -24,7 +24,7 @@ export default function OurPlanetHetra() {
 
         {/* Section 1 — Planet Hetra */}
         <section>
-          <h2 className="font-display text-2xl text-[#f2ebeb] mb-5">Planet Hetra</h2>
+          <h2 className="font-display text-base text-[#f2ebeb] mb-5">Planet Hetra</h2>
           <p className="font-body text-[10px] tracking-widest uppercase text-[#4a4844] mb-4">Solar System / Galaxy — Where are we?</p>
           <div className="space-y-4">
             <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
@@ -46,14 +46,14 @@ export default function OurPlanetHetra() {
 
         {/* Section 2 — Comparison to Earth */}
         <section>
-          <h2 className="font-display text-2xl text-[#f2ebeb] mb-5">Comparison to Earth</h2>
+          <h2 className="font-display text-base text-[#f2ebeb] mb-5">Comparison to Earth</h2>
 
           {/* Comparison image placeholder */}
           <div className="w-full aspect-video bg-[#1a1714] border border-[#2e2b26] rounded-sm flex items-center justify-center mb-8">
             <p className="font-body text-[10px] tracking-widest uppercase text-[#2e2b26]">[ Hetra vs. Earth Comparison — Image Placeholder ]</p>
           </div>
 
-          <h3 className="font-display text-lg text-[#f2ebeb] mb-3">Planet Hetra has a lot of people!</h3>
+          <h3 className="font-display text-base text-[#f2ebeb] mb-3">Planet Hetra has a lot of people!</h3>
           <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-6">
             Planet Hetra is a lot more bigger than Earth, but has similar density, gravity, and mass. Hetra is 3% bigger in terms of numbers, but almost works the same as Earth. The specifications here are calculated from the citizens of Hetra, primarily scientists from the City of Eldreule (on Lynneria).
           </p>
@@ -81,7 +81,7 @@ export default function OurPlanetHetra() {
 
         {/* Section 3 — Zohl's Perspective */}
         <section>
-          <h2 className="font-display text-2xl text-[#f2ebeb] mb-5">Zohl's Perspective of Hetra</h2>
+          <h2 className="font-display text-base text-[#f2ebeb] mb-5">Zohl's Perspective of Hetra</h2>
           <div className="space-y-4">
             <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
               During the process of Early Hetra when Zohl made it, he had placed a Divine Runic Spell that helps regulate Planet Hetra from becoming an oblete spheroid. This Runic Spell helps regulate and balance the natural order of a perfect sphere. But what does this spell regulate? Here's what it does and why Zohl made Planet Hetra a spheroid. Zohl doesn't really care much about physics and scientific numbers. He just creates based off of vibes alone.
@@ -107,7 +107,7 @@ export default function OurPlanetHetra() {
 
         {/* Section 4 — Goldilocks Zone */}
         <section>
-          <h2 className="font-display text-2xl text-[#f2ebeb] mb-4">Goldilock Zone</h2>
+          <h2 className="font-display text-base text-[#f2ebeb] mb-4">Goldilock Zone</h2>
           <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
             The habitable zone is the area around a star where it is not too hot and not too cold for liquid water to exist on the surface of surrounding planets. This distance from the Sun is called the habitable zone, or the Goldilocks zone.
           </p>
@@ -117,7 +117,7 @@ export default function OurPlanetHetra() {
 
         {/* Section 5 — World Seasons */}
         <section>
-          <h2 className="font-display text-2xl text-[#f2ebeb] mb-5">World Seasons</h2>
+          <h2 className="font-display text-base text-[#f2ebeb] mb-5">World Seasons</h2>
           <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-6">
             The seasons in this world closely resemble the counterpart of Earth, however, they are given their own unique names.
           </p>
@@ -140,7 +140,7 @@ export default function OurPlanetHetra() {
 
         {/* Section 6 — Calendar & Year */}
         <section>
-          <h2 className="font-display text-2xl text-[#f2ebeb] mb-5">Calendar and Year Representation</h2>
+          <h2 className="font-display text-base text-[#f2ebeb] mb-5">Calendar and Year Representation</h2>
           <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-6">
             Interpretation of what AD and BC is, including custom month names for this world! There is also a new era range!
           </p>
@@ -160,7 +160,7 @@ export default function OurPlanetHetra() {
             <p className="font-body text-sm text-[#c9a84c]">1 Year = 444 days</p>
           </div>
 
-          <h3 className="font-display text-lg text-[#f2ebeb] mb-4">Year 0 exists in this world!</h3>
+          <h3 className="font-display text-base text-[#f2ebeb] mb-4">Year 0 exists in this world!</h3>
           <p className="font-body text-[10px] tracking-widest uppercase text-[#4a4844] mb-3">Range Example</p>
           <p className="font-body text-xs text-[#7a746e] leading-relaxed italic mb-4">
             These backwards years are estimated as the Era when Planet Hetra was still in formation → cooldown, before life was implemented.
@@ -178,16 +178,16 @@ export default function OurPlanetHetra() {
 
         {/* Section 7 — Symbolisms */}
         <section>
-          <h2 className="font-display text-2xl text-[#f2ebeb] mb-6">Symbolisms on Hetra</h2>
+          <h2 className="font-display text-base text-[#f2ebeb] mb-6">Symbolisms on Hetra</h2>
           <div className="space-y-8">
             <div className="border-l-2 border-[#c9a84c]/30 pl-5">
-              <h3 className="font-display text-lg text-[#f2ebeb] mb-3">Erbgeroger Flower</h3>
+              <h3 className="font-display text-base text-[#f2ebeb] mb-3">Erbgeroger Flower</h3>
               <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
                 The Erbgeroger Flower, also known as the <span className="text-[#c9a84c] italic">"Valley of the Mountains"</span> is a mountain flower that lives on Mount Erbgeroger (in the continent of Rynel). This flower contains mystical luminescence hetryphils that can help produce Silk that is nearly indestructible, near to the level of an Orb Weaver's Silk. This flower is considered sacred as there is only one kind, and is the world's symbolism flower for <span className="text-[#c9a84c] italic">"Unity."</span> It is protected with a magical barrier and no one can set foot into its region.
               </p>
             </div>
             <div className="border-l-2 border-[#c9a84c]/30 pl-5">
-              <h3 className="font-display text-lg text-[#f2ebeb] mb-3">The Oakgnar Grand Tree</h3>
+              <h3 className="font-display text-base text-[#f2ebeb] mb-3">The Oakgnar Grand Tree</h3>
               <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
                 The Oakgnar Grand Tree is over millions years old, and it thrived during the Era of Greungeria. It is composed of three main materials; a single Hexicule Core, Hardwood, and Stonewood. The Hexicule Core keeps the tree intact within the ground, serves as a light beacon, is nearly indestructible, and can regenerate its roots and wood when damaged. The Oakgnar Grand Tree is a symbolism where all the four corners of Hetra (earth) bind together where people are unified despite absolute differences of each other. A worldwide cultural festival will be held a month, yearly, celebrating life and enjoying it to the fullest. The Oakgnar Grand Tree stands as tall as Everest. It still stands to this day!
               </p>
@@ -199,16 +199,16 @@ export default function OurPlanetHetra() {
 
         {/* Section 8 — The Moons */}
         <section>
-          <h2 className="font-display text-2xl text-[#f2ebeb] mb-6">The Moons</h2>
+          <h2 className="font-display text-base text-[#f2ebeb] mb-6">The Moons</h2>
           <div className="space-y-6">
             <div className="border border-[#2e2b26] rounded-sm bg-[#0f0d0c] px-5 py-5">
-              <h3 className="font-display text-lg text-[#f2ebeb] mb-3">Anzeya</h3>
+              <h3 className="font-display text-base text-[#f2ebeb] mb-3">Anzeya</h3>
               <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
                 The size of Anzeya is roughly the size of the continent of Lynneria and is bigger than Zenya, a satellite moon that orbits around. Anzeya is a continental moon and many ores can be found here, including Anzeyanax: a bright green glowing ore that is the planet's signature ore. Anzeya's distance to Hetra is 132,657 huenix (miles — 213,490.747 km) away from Hetra. With a mass that is not too heavy and not too light, it can safely orbit around Hetra at a distance that close.
               </p>
             </div>
             <div className="border border-[#2e2b26] rounded-sm bg-[#0f0d0c] px-5 py-5">
-              <h3 className="font-display text-lg text-[#f2ebeb] mb-3">Zenya</h3>
+              <h3 className="font-display text-base text-[#f2ebeb] mb-3">Zenya</h3>
               <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
                 Zenya, a smaller moon that orbits around Anzeya. Zenya, before becoming a moon, used to be a bright white comet. However, due to the polarity of and gravitational pull of Hetra and Anzeya, the moon became Anzeya's smaller moon.
               </p>
