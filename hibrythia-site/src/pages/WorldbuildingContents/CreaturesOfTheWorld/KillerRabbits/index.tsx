@@ -12,7 +12,7 @@ export default function KillerRabbits() {
       </div>
 
       <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">IV. Equation of Life › Creatures of The World</p>
-      <h1 className="font-display text-3xl md:text-4xl text-[#f2ebeb] mb-2">Killer Rabbits</h1>
+      <h1 className="font-display text-2xl md:text-3xl text-[#f2ebeb] mb-2">Killer Rabbits</h1>
       <p className="font-body text-sm text-[#7a746e] italic mb-8">Werebels · Beast Hierarchy Kingdom — Rank 2, No. 1</p>
 
       <div className="w-full aspect-video bg-[#1a1714] border border-[#2e2b26] rounded-sm flex items-center justify-center mb-12">
@@ -23,7 +23,7 @@ export default function KillerRabbits() {
 
         <section>
           <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Overview</p>
-          <h2 className="font-display text-xl text-[#f2ebeb] mb-4">Killer Rabbits — A Fearsome Foe</h2>
+          <h2 className="font-display text-lg text-[#f2ebeb] mb-4">Killer Rabbits — A Fearsome Foe</h2>
           <div className="space-y-4">
             <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
               Werebels, aka Were Rabbits, also called Killer Rabbits, are bipedal mutations of sterilized rabbits that are escapees of illicit vampire experimentations. These experiments roughly happened in 15 AD, where vampires tried to infuse their DNA with animals of liking and symbolism.
@@ -51,10 +51,10 @@ export default function KillerRabbits() {
         <div className="border-t border-[#1e1c1a]" />
 
         <section>
-          <h2 className="font-display text-xl text-[#f2ebeb] mb-6">Appearance</h2>
+          <h2 className="font-display text-lg text-[#f2ebeb] mb-6">Appearance</h2>
           <div className="space-y-6">
             <div>
-              <h3 className="font-display text-lg text-[#f2ebeb] mb-3">Average Werebel</h3>
+              <h3 className="font-display text-base text-[#f2ebeb] mb-3">Average Werebel</h3>
               <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
                 Werebels are giant! They stand around 7ft'4 in height and 2ft'3 width (length too). Instead of being white albino monsters, their fur is mangled and has a shade of dark brown-black gray. Their eyes' sclera are red with their iris white and a black pupil shade like a very sharp oval. Their ears are still those same rabbit-like ears, but they are sharper and pointier.
               </p>
@@ -64,7 +64,7 @@ export default function KillerRabbits() {
               <p className="font-body text-sm text-[#c9a84c] italic mt-2">If you ever see a Killer Rabbit set down on all fours…run.</p>
             </div>
             <div>
-              <h3 className="font-display text-lg text-[#f2ebeb] mb-3">Alpha Werebel</h3>
+              <h3 className="font-display text-base text-[#f2ebeb] mb-3">Alpha Werebel</h3>
               <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-3">
                 An Alpha Werebel is the Leader of their group and pack. They have a few distinct features that differs from average werebels. These alphas aren't born. They are made.
               </p>
@@ -91,21 +91,21 @@ export default function KillerRabbits() {
 
         <section>
           <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Evolution</p>
-          <h2 className="font-display text-xl text-[#f2ebeb] mb-4">Second Stage Evolution</h2>
+          <h2 className="font-display text-lg text-[#f2ebeb] mb-4">Second Stage Evolution</h2>
           <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-6">
             Werebels evolve into a final stage called a Moonbel. A Moonbel is much more powerful than it's pre-evolution. Their power increases 10 fold and their strength may trifle that of a Wulfwing, however, it is still undetermined to their full extent.
           </p>
 
           <div className="space-y-6">
             <div>
-              <h3 className="font-display text-lg text-[#f2ebeb] mb-3">Moonbel Appearance</h3>
+              <h3 className="font-display text-base text-[#f2ebeb] mb-3">Moonbel Appearance</h3>
               <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
                 Moonbels look a lot more different than their pre-evolved form. Their head almost resembles that of a skull with three piercing sharp eyes (with one eye in the center above the two), washed with dark-black brown and gay-white. Their ears become longer and deformed, as they serve as powerful hearing instruments. Their body becomes slightly bigger, and they have four arms, two on each side. Their tail becomes longer and they can control it with ease, serving as an extra limb. They are a bit darker in color on the brown - gray scale.
               </p>
             </div>
 
             <div>
-              <h3 className="font-display text-lg text-[#f2ebeb] mb-4">How They Evolve</h3>
+              <h3 className="font-display text-base text-[#f2ebeb] mb-4">How They Evolve</h3>
               <p className="font-body text-sm text-[#7a746e] italic mb-4">The Red Blood Eclipse has two phases.</p>
               <div className="space-y-5">
                 <div className="border-l-2 border-[#2e2b26] pl-5">
@@ -162,11 +162,11 @@ export default function KillerRabbits() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <Link to="/world/databases/CreaturesOfTheWorld/DemonCreatures" className="border border-[#2e2b26] hover:border-[#c9a84c]/40 bg-[#0f0d0c] hover:bg-[#151210] rounded-sm px-5 py-4 transition-colors flex flex-col gap-1">
             <span className="font-body text-[10px] tracking-widest uppercase text-[#4a4844]">← Prev Entry</span>
-            <span className="font-display text-base text-[#f2ebeb]">Demon Creatures</span>
+            <span className="font-display text-sm text-[#f2ebeb]">Demon Creatures</span>
           </Link>
           <Link to="/world/databases/CreaturesOfTheWorld/HetraDirectWolves" className="border border-[#2e2b26] hover:border-[#c9a84c]/40 bg-[#0f0d0c] hover:bg-[#151210] rounded-sm px-5 py-4 transition-colors flex flex-col gap-1 items-end text-right">
             <span className="font-body text-[10px] tracking-widest uppercase text-[#4a4844]">Next Entry →</span>
-            <span className="font-display text-base text-[#f2ebeb]">Hetranian Direwolves</span>
+            <span className="font-display text-sm text-[#f2ebeb]">Hetranian Direwolves</span>
           </Link>
         </div>
       </div>
