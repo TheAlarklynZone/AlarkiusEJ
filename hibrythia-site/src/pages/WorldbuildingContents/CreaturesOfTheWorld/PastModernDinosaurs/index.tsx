@@ -12,7 +12,7 @@ export default function PastModernDinosaurs() {
       </div>
 
       <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">IV. Equation of Life › Creatures of The World</p>
-      <h1 className="font-display text-xl md:text-2xl text-[#f2ebeb] mb-6">Past & Modern Day Dinosaurs</h1>
+      <h1 className="font-display text-3xl md:text-4xl text-[#f2ebeb] mb-6">Past & Modern Day Dinosaurs</h1>
 
       <div className="space-y-12">
 
