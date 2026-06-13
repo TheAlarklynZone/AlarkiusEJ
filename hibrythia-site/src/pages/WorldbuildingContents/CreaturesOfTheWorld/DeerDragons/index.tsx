@@ -12,7 +12,7 @@ export default function DeerDragons() {
       </div>
 
       <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">IV. Equation of Life › Creatures of The World</p>
-      <h1 className="font-display text-3xl md:text-4xl text-[#f2ebeb] mb-2">Deer Dragons</h1>
+      <h1 className="font-display text-2xl md:text-3xl text-[#f2ebeb] mb-2">Deer Dragons</h1>
       <p className="font-body text-sm text-[#7a746e] italic mb-8">Deeragons</p>
 
       <div className="w-full aspect-video bg-[#1a1714] border border-[#2e2b26] rounded-sm flex items-center justify-center mb-12">
@@ -24,7 +24,7 @@ export default function DeerDragons() {
 
         <section>
           <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Overview</p>
-          <h2 className="font-display text-xl text-[#f2ebeb] mb-4">Deeragons — Deer Dragons</h2>
+          <h2 className="font-display text-lg text-[#f2ebeb] mb-4">Deeragons — Deer Dragons</h2>
           <div className="space-y-4">
             <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
               Deeragons are a cross-species of Deers and Nulergon Dragons. They are cute and timid creatures, with the body of a deer, a small tail of a dragon, along with huge wings that appear out of its back. Their antlers are made out of carbon-fiber keratin, which is a one-of-a-kind material in all Deeragon species. They all come in different fur variations and they are considered passive-neutral animals. Deeragons are tamable as they only require Luminescent Hetra Berries.
@@ -45,7 +45,7 @@ export default function DeerDragons() {
 
         <section>
           <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Color Variants</p>
-          <h2 className="font-display text-xl text-[#f2ebeb] mb-6">Among the many variations of Deeragons, there are many common colors apparent within their species.</h2>
+          <h2 className="font-display text-lg text-[#f2ebeb] mb-6">Among the many variations of Deeragons, there are many common colors apparent within their species.</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div className="border border-[#2e2b26] rounded-sm bg-[#0f0d0c] px-4 py-4">
               <p className="font-body text-[10px] tracking-widest uppercase text-[#7a746e] mb-3">Common Colors</p>
@@ -71,7 +71,7 @@ export default function DeerDragons() {
         <div className="border-t border-[#1e1c1a]" />
 
         <section>
-          <h2 className="font-display text-xl text-[#f2ebeb] mb-4">Common Wild Locations</h2>
+          <h2 className="font-display text-lg text-[#f2ebeb] mb-4">Common Wild Locations</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             {['Norrane, Outskirt Mountains','Eulerich, Oelen Plains','Varleqe, Greenside Hills','Varleqe, Ribbonfelt'].map(loc=>(
               <p key={loc} className="font-body text-sm text-[#c8c2ba]">— {loc}</p>
@@ -85,11 +85,11 @@ export default function DeerDragons() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <Link to="/world/databases/CreaturesOfTheWorld/Flimpies" className="border border-[#2e2b26] hover:border-[#c9a84c]/40 bg-[#0f0d0c] hover:bg-[#151210] rounded-sm px-5 py-4 transition-colors flex flex-col gap-1">
             <span className="font-body text-[10px] tracking-widest uppercase text-[#4a4844]">← Prev Entry</span>
-            <span className="font-display text-base text-[#f2ebeb]">Flimpies — Ghost Bunnies</span>
+            <span className="font-display text-sm text-[#f2ebeb]">Flimpies — Ghost Bunnies</span>
           </Link>
           <Link to="/world/databases/CreaturesOfTheWorld/PastModernDinosaurs" className="border border-[#2e2b26] hover:border-[#c9a84c]/40 bg-[#0f0d0c] hover:bg-[#151210] rounded-sm px-5 py-4 transition-colors flex flex-col gap-1 items-end text-right">
             <span className="font-body text-[10px] tracking-widest uppercase text-[#4a4844]">Next Entry →</span>
-            <span className="font-display text-base text-[#f2ebeb]">Past & Modern Day Dinosaurs</span>
+            <span className="font-display text-sm text-[#f2ebeb]">Past & Modern Day Dinosaurs</span>
           </Link>
         </div>
       </div>
