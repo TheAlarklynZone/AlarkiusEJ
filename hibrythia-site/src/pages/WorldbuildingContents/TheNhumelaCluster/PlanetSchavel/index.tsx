@@ -14,14 +14,14 @@ export default function PlanetSchavel() {
 
       {/* Hero */}
       <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">V. The Current World of Hibryds</p>
-      <h1 className="font-display text-4xl md:text-5xl text-[#f2ebeb] mb-4">Planet Schavel 🎇</h1>
+      <h1 className="font-display text-3xl md:text-4xl text-[#f2ebeb] mb-4">Planet Schavel 🎇</h1>
       <p className="font-body text-sm text-[#7a746e] italic mb-10">The Fourth and First Planet from The Sun</p>
 
       <div className="space-y-12">
 
         {/* Section 1 */}
         <section>
-          <h2 className="font-display text-2xl text-[#f2ebeb] mb-5">The Fourth and First Planet from The Sun</h2>
+          <h2 className="font-display text-base text-[#f2ebeb] mb-5">The Fourth and First Planet from The Sun</h2>
           <div className="space-y-4">
             <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
               This planet orbits vertically within the Goldilocks Zone the same as Planet Hetra, albeit on a different axis.
@@ -42,7 +42,7 @@ export default function PlanetSchavel() {
 
         {/* Section 2 — Inhabitants */}
         <section>
-          <h2 className="font-display text-2xl text-[#f2ebeb] mb-5">Inhabitants</h2>
+          <h2 className="font-display text-base text-[#f2ebeb] mb-5">Inhabitants</h2>
           <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
             This planet already has inhabitants, some from Planet Hetra. Since space exploration is already possible, transportation between Hetra and Schavel is possible. Since Space Travel is already normalized in this world, it made it possible for Hetranians to emigrate to Schavel. There is a huge lag between Schavel and Hetra's time system because it would take at least two days to get adjusted there. <span className="text-[#c9a84c] italic">"Schavelia-Hetrans"</span> is a term for people who live on Schavel.
           </p>
@@ -52,7 +52,7 @@ export default function PlanetSchavel() {
 
         {/* Section 3 — Specifications */}
         <section>
-          <h2 className="font-display text-2xl text-[#f2ebeb] mb-5">Specifications</h2>
+          <h2 className="font-display text-base text-[#f2ebeb] mb-5">Specifications</h2>
           <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-6">It is the same size as Hetra — and a near identical system.</p>
           <div className="border border-[#2e2b26] rounded-sm bg-[#0f0d0c] px-5 py-5 space-y-2">
             {[
@@ -77,14 +77,14 @@ export default function PlanetSchavel() {
 
           <div className="mt-8 space-y-6">
             <div className="border-l-2 border-[#c9a84c]/30 pl-5">
-              <h3 className="font-display text-lg text-[#f2ebeb] mb-3">Moon Scavnar</h3>
+              <h3 className="font-display text-base text-[#f2ebeb] mb-3">Moon Scavnar</h3>
               <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
                 Moon Scavnar was once a comet. Before Schavel's orbit caught it. Scavnar emits a strange but soft magnetic and orbital wave that bounces towards Schavel and back. Even in orbit around the planet, the moon helps maintain the planet's spherical body. Strangely enough, both Schavel and its moon need each other. Scavnar sits closely to Schavel. If Scavnar is too far, Schavel will lose the "perfect sphere" shape. Also, on Schavel's surface, you can see the moon! A beautiful sight.
               </p>
             </div>
 
             <div className="border-l-2 border-[#c9a84c]/30 pl-5">
-              <h3 className="font-display text-lg text-[#f2ebeb] mb-2">The Time System</h3>
+              <h3 className="font-display text-base text-[#f2ebeb] mb-2">The Time System</h3>
               <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-4">The time system on Schavel is different from Hetra.</p>
               <div className="space-y-1 mb-4">
                 {[
@@ -109,7 +109,7 @@ export default function PlanetSchavel() {
 
         {/* Section 4 — Magic & History */}
         <section>
-          <h2 className="font-display text-2xl text-[#f2ebeb] mb-5">Magic &amp; History</h2>
+          <h2 className="font-display text-base text-[#f2ebeb] mb-5">Magic &amp; History</h2>
           <div className="space-y-4 mb-8">
             <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
               Emigrants from Planet Hetra stem way back from the First Space Age in Hetra's year of 2000. Technology became so advanced that Schavel was literally founded in that year. There was already animal life in Schavel in that year, so it made it a lot more easier for the first few Hetranians to visit that planet.
@@ -123,7 +123,7 @@ export default function PlanetSchavel() {
             </ul>
           </div>
 
-          <h3 className="font-display text-xl text-[#f2ebeb] mb-5">Elemental Fire Magic</h3>
+          <h3 className="font-display text-base text-[#f2ebeb] mb-5">Elemental Fire Magic</h3>
           <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-6">
             On Schavel, Elemental Fire Magic was made and popularized globally. Elemental Fire Magic is a derivative magic from{' '}
             <Link to="/404" className="text-[#c9a84c] hover:underline">Alchemic Magic</Link>{' '}
