@@ -12,7 +12,7 @@ export default function TheNhumelaCluster() {
 
       {/* Hero */}
       <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">V. The Current World of Hibryds</p>
-      <h1 className="font-display text-4xl md:text-5xl text-[#f2ebeb] mb-4">The Nhumela Cluster</h1>
+      <h1 className="font-display text-3xl md:text-4xl text-[#f2ebeb] mb-4">The Nhumela Cluster</h1>
       <p className="font-body text-sm text-[#7a746e] italic mb-2">Home Solar System</p>
       <p className="font-body text-sm text-[#7a746e] leading-relaxed mb-10 max-w-[600px]">
         What's the home system? This page uncovers the galactical location of the series. Our first book is located on the super-planet, Hetra, and is the very center of the Hibryds Cinematic Universe, located in a solar system called The Nhumela Cluster.
@@ -27,7 +27,7 @@ export default function TheNhumelaCluster() {
 
         {/* Section 1 */}
         <section>
-          <h2 className="font-display text-2xl text-[#f2ebeb] mb-4">Solar System / Galaxy — Where are we?</h2>
+          <h2 className="font-display text-base text-[#f2ebeb] mb-4">Solar System / Galaxy — Where are we?</h2>
           <div className="space-y-4">
             <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
               Outside the solar system exists a galaxy where all the stories reside in. It is called, <span className="text-[#c9a84c] italic">"Anadeya's Eye,"</span> where every plot takes place. Anadeya's Eye is shaped as an eye that has a spiraling effect. Now you may begin to ask and wonder, <span className="text-[#c9a84c] italic">"Where is Planet Hetra?"</span>
@@ -42,7 +42,7 @@ export default function TheNhumelaCluster() {
 
         {/* Section 2 */}
         <section>
-          <h2 className="font-display text-2xl text-[#f2ebeb] mb-6">Terminology and Space Objects</h2>
+          <h2 className="font-display text-base text-[#f2ebeb] mb-6">Terminology and Space Objects</h2>
           <div className="space-y-6">
             <div className="border-l-2 border-[#c9a84c]/30 pl-5">
               <h3 className="font-display text-base text-[#f2ebeb] mb-2">Goldilock Zone</h3>
@@ -63,7 +63,7 @@ export default function TheNhumelaCluster() {
 
         {/* Section 3 — Aqualivia Sun */}
         <section>
-          <h2 className="font-display text-2xl text-[#f2ebeb] mb-4">The Aqualivia Sun</h2>
+          <h2 className="font-display text-base text-[#f2ebeb] mb-4">The Aqualivia Sun</h2>
 
           {/* Sun image placeholder */}
           <div className="w-full aspect-video bg-[#1a1714] border border-[#2e2b26] rounded-sm flex items-center justify-center mb-8">
@@ -78,7 +78,7 @@ export default function TheNhumelaCluster() {
 
           <div className="space-y-8">
             <div>
-              <h3 className="font-display text-lg text-[#f2ebeb] mb-3">What is a Passion Star?</h3>
+              <h3 className="font-display text-base text-[#f2ebeb] mb-3">What is a Passion Star?</h3>
               <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
                 A Passion Star is a very rare type of star, where it emits so brightly, it is easy to look at from space, and even from the surface of Planet Hetra (where the series takes place). This star, first spotted by Zohl (who is a Spirit of Creation), found it very beautiful. It's not too harsh, not too cool, as it maintains a very moderate heat signature.
               </p>
@@ -87,13 +87,13 @@ export default function TheNhumelaCluster() {
               </p>
             </div>
             <div>
-              <h3 className="font-display text-lg text-[#f2ebeb] mb-3">Bio-Lyceionic Fusion</h3>
+              <h3 className="font-display text-base text-[#f2ebeb] mb-3">Bio-Lyceionic Fusion</h3>
               <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
                 A process that enacts fusion between elemental particles and a Lyecerianite Core. This is where the energy within keeps at a lyceonic rate. The energy flows like a torrent of water and magma, as it runs at a <strong className="text-[#f2ebeb]">laminar</strong> rate.
               </p>
             </div>
             <div>
-              <h3 className="font-display text-lg text-[#f2ebeb] mb-3">How its color came to be</h3>
+              <h3 className="font-display text-base text-[#f2ebeb] mb-3">How its color came to be</h3>
               <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
                 The Aqualivia Sun's color is very unique! It glows a very iridescent like color of sky blue, teal, with a tint of pink, orange, and red. It's very pretty. This type of sun brings better light source and moderate heat, with less radiation. This allows light on Planet Hetra to be a bit brighter than usual. But why does it look like this?
               </p>
@@ -111,18 +111,18 @@ export default function TheNhumelaCluster() {
 
         {/* Section 4 — Planets */}
         <section>
-          <h2 className="font-display text-2xl text-[#f2ebeb] mb-8">Other Planets in the Nhumela Cluster</h2>
+          <h2 className="font-display text-base text-[#f2ebeb] mb-8">Other Planets in the Nhumela Cluster</h2>
           <div className="space-y-8">
 
             <div className="border border-[#2e2b26] rounded-sm bg-[#0f0d0c] px-5 py-5">
-              <h3 className="font-display text-lg text-[#f2ebeb] mb-3">Planet Netryl</h3>
+              <h3 className="font-display text-base text-[#f2ebeb] mb-3">Planet Netryl</h3>
               <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
                 Netryl is a planet that is closest to the sun. It scorches hot on one side but cold on the other. This planet cannot rotate at all because the cold side gives off a very potent magnetic-pull. It is a rocky planet and its weather-conditions are insane. Dry and scorching on one side, cold on the other. Netryl has no moons.
               </p>
             </div>
 
             <div className="border border-[#2e2b26] rounded-sm bg-[#0f0d0c] px-5 py-5">
-              <h3 className="font-display text-lg text-[#f2ebeb] mb-3">Planet Ackpek</h3>
+              <h3 className="font-display text-base text-[#f2ebeb] mb-3">Planet Ackpek</h3>
               <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
                 Ackpek is the second planet from the sun and is a gas-planet. Its color is a very hued-green gas and mixtures of blue and yellow. It has a red spot near its perfect center. Ackpek has no moons.
               </p>
@@ -130,7 +130,7 @@ export default function TheNhumelaCluster() {
 
             <div className="border border-[#c9a84c]/20 rounded-sm bg-[#0f0d0c] px-5 py-5">
               <div className="flex items-center justify-between mb-3">
-                <h3 className="font-display text-lg text-[#c9a84c]">Planet Hetra</h3>
+                <h3 className="font-display text-base text-[#c9a84c]">Planet Hetra</h3>
                 <span className="font-body text-[9px] tracking-widest uppercase text-[#c9a84c]/50 border border-[#c9a84c]/20 px-2 py-0.5 rounded-sm">Goldilocks Zone</span>
               </div>
               <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-3">
@@ -147,7 +147,7 @@ export default function TheNhumelaCluster() {
 
             <div className="border border-[#c9a84c]/20 rounded-sm bg-[#0f0d0c] px-5 py-5">
               <div className="flex items-center justify-between mb-3">
-                <h3 className="font-display text-lg text-[#c9a84c]">Planet Schavel</h3>
+                <h3 className="font-display text-base text-[#c9a84c]">Planet Schavel</h3>
                 <span className="font-body text-[9px] tracking-widest uppercase text-[#c9a84c]/50 border border-[#c9a84c]/20 px-2 py-0.5 rounded-sm">Vertical Goldilocks Zone</span>
               </div>
               <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-4">
@@ -162,14 +162,14 @@ export default function TheNhumelaCluster() {
             </div>
 
             <div className="border border-[#2e2b26] rounded-sm bg-[#0f0d0c] px-5 py-5">
-              <h3 className="font-display text-lg text-[#f2ebeb] mb-3">Quilk</h3>
+              <h3 className="font-display text-base text-[#f2ebeb] mb-3">Quilk</h3>
               <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
                 The fifth planet from the sun. Quilk is a planet that is made up of compositions of ice, water, and methane. Temperatures can reach below -0 and sometimes even lower to -55 Helphieus. It's extremely cold on this planet. Quilk has no moons.
               </p>
             </div>
 
             <div className="border border-[#2e2b26] rounded-sm bg-[#0f0d0c] px-5 py-5">
-              <h3 className="font-display text-lg text-[#f2ebeb] mb-3">Ackteq</h3>
+              <h3 className="font-display text-base text-[#f2ebeb] mb-3">Ackteq</h3>
               <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
                 Ackteq is the sixth and last planet of the Hibryds-Centauri. Ackteq orbits at an angle of 45 heunix (degrees) around the sun. Ackteq is a bizarre planet, with its core made out of Ackteqrium while its surface is completely gas.
               </p>
