@@ -44,7 +44,7 @@ const SECTIONS = [
       },
       {
         to: '/world/databases/EconomyOfPlanetHetra',
-        label: 'World Currency',
+        label: 'Economy of Planet Hetra',
         description: 'The economic systems, currencies (including Ħ Hetrix), and trade across Hetra.',
       },
       {
