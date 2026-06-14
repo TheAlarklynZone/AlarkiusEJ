@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import LorePageLayout from '@/components/LorePageLayout';
 
 // ─── Subpage types ─────────────────────────────────────────────────────────────
 type SongSection = {
@@ -66,7 +65,6 @@ function SongCard({ song }: { song: SongSection }) {
 // ─── Main page ─────────────────────────────────────────────────────────────────
 export default function AncientGreungeria() {
   return (
-    <LorePageLayout>
     <div className="max-w-[960px] mx-auto px-6 py-16 space-y-16">
 
       {/* Breadcrumb */}
@@ -1102,6 +1100,5 @@ export default function AncientGreungeria() {
       </div>
 
     </div>
-  </LorePageLayout>
   );
 }
