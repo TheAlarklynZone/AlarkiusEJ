@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import LorePageLayout from '@/components/LorePageLayout';
 
 // ─── Subpage types ─────────────────────────────────────────────────────────────
 type SongSection = {
@@ -16,6 +17,7 @@ type SongSection = {
 // ─── Song component ────────────────────────────────────────────────────────────
 function SongCard({ song }: { song: SongSection }) {
   return (
+    <LorePageLayout>
     <div className="border border-[#2e2b26] rounded-sm bg-[#0f0d0c] p-6 space-y-6">
       <div>
         <h3 className="font-display text-lg text-[#f2ebeb] mb-1">{song.title}</h3>
@@ -88,7 +90,7 @@ export default function AncientGreungeria() {
 
       {/* The Father Continent intro */}
       <section className="space-y-5">
-        <h2 className="font-display text-lg text-[#f2ebeb]">The Father Continent</h2>
+        <h2 className="font-display text-lg text-[#f2ebeb]" id="the-father-continent">The Father Continent</h2>
         <div className="font-body text-base text-[#c8c2ba] space-y-4 leading-relaxed">
           <p>Greungeria, the land of the ancient past of Hetra.</p>
           <p>This is where the lands used to be whole and one, before the split.</p>
@@ -120,7 +122,7 @@ export default function AncientGreungeria() {
 
       {/* The Continental Split(s) */}
       <section className="space-y-5">
-        <h2 className="font-display text-lg text-[#f2ebeb]">The Continental Split(s)</h2>
+        <h2 className="font-display text-lg text-[#f2ebeb]" id="the-continental-splits">The Continental Split(s)</h2>
         <div className="font-body text-base text-[#c8c2ba] space-y-4 leading-relaxed">
           <p>After many millennia and more, it became 501 Oldendaye. An asteroid came to Hetra from afar and split the north pole from the main Greungeria Continents. That north pole became known as the{" "}
             <Link to="/404" className="text-[#c9a84c] hover:underline">Alarctic Alpines</Link>,{" "}
@@ -133,7 +135,7 @@ export default function AncientGreungeria() {
 
       {/* The Sylph Massacre of 15 AD */}
       <section className="space-y-5">
-        <h2 className="font-display text-lg text-[#f2ebeb]">The Sylph Massacre of 15 AD</h2>
+        <h2 className="font-display text-lg text-[#f2ebeb]" id="the-sylph-massacre-of-15-ad">The Sylph Massacre of 15 AD</h2>
         <div className="font-body text-base text-[#c8c2ba] space-y-4 leading-relaxed">
           <p>In the Year of 15 AD, a huge war ensued over parts of the world. There were too many Sylphs which upset the balance of nhuemyn kind alike, and the Elves were the ones that started this genocide. Since Vivianya lived back in the past, her protection faded away for the Sylph Race after she had passed. A lot of conflict rose to war, which made the Elves more hasty and effective at their ways of hunting and killing. They&apos;re accusatory, volatile, and menaces. The Elves nearly killed 50% of the Sylph Population which was enough to cause fear into them. The remaining 50% went into hiding.</p>
           <p>Even during the active onslaught, two Sylph Representatives by the name Krentyl and Fahlia called up Queen Laeyana by accessing her Staff Altar out in the wilderness. They complained about the war and asked to be relocated somewhere safe, or, a new realm to reside in. Laeyana had huge pity for the Sylph Race. So she summoned Zohl, Aurora Rimaea, and Aloria to discuss what should happen, since Zohl was the one who made Planet Hetra along side with Aloria (with Rimaea being The Spirit of Life).</p>
@@ -149,7 +151,7 @@ export default function AncientGreungeria() {
 
       {/* The Sylphs' New Home */}
       <section className="space-y-5">
-        <h2 className="font-display text-lg text-[#f2ebeb]">The Sylphs&apos; New Home</h2>
+        <h2 className="font-display text-lg text-[#f2ebeb]" id="the-sylphs-new-home">The Sylphs&apos; New Home</h2>
         <div className="font-body text-base text-[#c8c2ba] space-y-4 leading-relaxed">
           <p><Link to="/404" className="text-[#c9a84c] hover:underline">Nahfia</Link>{" "}
             now has creation powers. Since she isn&apos;t originally a Celestriax or a Lyeceriax, she has both of those Spirit Typing Powers. She wanted to do something nice for the Sylph Line, so instead of keeping them on Hetra, she created habitable formations in space. She calls this place The Sylphrelm, or The Cloud Abode.</p>
@@ -167,7 +169,7 @@ export default function AncientGreungeria() {
       {/* Hetranian Ghrenglish */}
       <section className="space-y-6">
         <div className="space-y-2">
-          <h2 className="font-display text-lg text-[#f2ebeb]">Hetranian Ghrenglish</h2>
+          <h2 className="font-display text-lg text-[#f2ebeb]" id="hetranian-ghrenglish">Hetranian Ghrenglish</h2>
           <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c]">The Ancient Language of Planet Hetra</p>
         </div>
         <div className="font-body text-base text-[#c8c2ba] space-y-4 leading-relaxed">
@@ -521,7 +523,7 @@ export default function AncientGreungeria() {
 
       {/* The Phrase I Love You */}
       <section className="space-y-6">
-        <h2 className="font-display text-lg text-[#f2ebeb]">The Phrase "I Love You"</h2>
+        <h2 className="font-display text-lg text-[#f2ebeb]" id="the-phrase-i-love-you">The Phrase "I Love You"</h2>
         <p className="font-body text-base text-[#c8c2ba]">This common phrase had ancient Ghrenglish variations, which has up to three versions.</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[
@@ -564,7 +566,7 @@ export default function AncientGreungeria() {
 
       {/* Dialectal Splits */}
       <section className="space-y-8">
-        <h2 className="font-display text-lg text-[#f2ebeb]">Dialectal Splits</h2>
+        <h2 className="font-display text-lg text-[#f2ebeb]" id="dialectal-splits">Dialectal Splits</h2>
 
         {/* Varnæn Dialect */}
         <div className="space-y-4">
@@ -665,7 +667,7 @@ export default function AncientGreungeria() {
 
       {/* Pronunciation Guide */}
       <section className="space-y-5">
-        <h2 className="font-display text-lg text-[#f2ebeb]">Pronunciation Guide</h2>
+        <h2 className="font-display text-lg text-[#f2ebeb]" id="pronunciation-guide">Pronunciation Guide</h2>
         <div className="border border-[#2e2b26] bg-[#0f0d0c] rounded-sm overflow-hidden">
           {[
             ["æ", "/æ/ as in \"cat\""],
@@ -696,7 +698,7 @@ export default function AncientGreungeria() {
 
       {/* Sample Vocabulary */}
       <section className="space-y-5">
-        <h2 className="font-display text-lg text-[#f2ebeb]">Sample Vocabulary</h2>
+        <h2 className="font-display text-lg text-[#f2ebeb]" id="sample-vocabulary">Sample Vocabulary</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           {[
             { word: "Home", ghren: "Nhá /nɑː/", note: "Root for comfort/place of origin" },
@@ -740,7 +742,7 @@ export default function AncientGreungeria() {
 
       {/* Pronouns & Honorifics */}
       <section className="space-y-6">
-        <h2 className="font-display text-lg text-[#f2ebeb]">─────⊰ Pronouns & Honorifics</h2>
+        <h2 className="font-display text-lg text-[#f2ebeb]" id="pronouns-honorifics">─────⊰ Pronouns & Honorifics</h2>
 
         <div className="space-y-4">
           <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c]">Personal Pronouns</p>
@@ -794,7 +796,7 @@ export default function AncientGreungeria() {
 
       {/* Structural Use */}
       <section className="space-y-5">
-        <h2 className="font-display text-lg text-[#f2ebeb]">─────⊰ Structural Use</h2>
+        <h2 className="font-display text-lg text-[#f2ebeb]" id="structural-use">─────⊰ Structural Use</h2>
         <p className="font-body text-base text-[#c8c2ba]">Ghrenglish sentence structure typically follows these patterns:</p>
         <div className="space-y-3">
           {[
@@ -817,7 +819,7 @@ export default function AncientGreungeria() {
 
       {/* Sentence Construction Templates */}
       <section className="space-y-6">
-        <h2 className="font-display text-lg text-[#f2ebeb]">Sentence Construction Templates</h2>
+        <h2 className="font-display text-lg text-[#f2ebeb]" id="sentence-construction-templates">Sentence Construction Templates</h2>
 
         {[
           {
@@ -869,7 +871,7 @@ export default function AncientGreungeria() {
 
       {/* Cultural Survivals */}
       <section className="space-y-5">
-        <h2 className="font-display text-lg text-[#f2ebeb]">Cultural Survivals</h2>
+        <h2 className="font-display text-lg text-[#f2ebeb]" id="cultural-survivals">Cultural Survivals</h2>
         <div className="font-body text-base text-[#c8c2ba] space-y-4 leading-relaxed">
           <p><span className="italic">Hnthé Nhá Vaar</span> remains a living idiom used worldwide in Hetra, despite the fall of Ghrenglish. It evokes nostalgia and spiritual calm.</p>
           <p>(hen - the / nha / faar)</p>
@@ -879,7 +881,7 @@ export default function AncientGreungeria() {
 
       {/* Transition to Modern Hetranian English */}
       <section className="space-y-5">
-        <h2 className="font-display text-lg text-[#f2ebeb]">The Transition to Modern Hetranian English</h2>
+        <h2 className="font-display text-lg text-[#f2ebeb]" id="the-transition-to-modern-hetranian-english">The Transition to Modern Hetranian English</h2>
         <div className="font-body text-base text-[#c8c2ba] space-y-4 leading-relaxed">
           <p>Modern Hetranian English developed as a natural evolution from Ancient Ghrenglish, carrying with it a blend of refined Latinic clarity and the melodic casualness reminiscent of Australian English. As a result, the dialect is recognized by:</p>
         </div>
@@ -905,7 +907,7 @@ export default function AncientGreungeria() {
 
       {/* Comparison Table */}
       <section className="space-y-5">
-        <h2 className="font-display text-lg text-[#f2ebeb]">Ghrenglish vs. Hetranian English</h2>
+        <h2 className="font-display text-lg text-[#f2ebeb]" id="ghrenglish-vs-hetranian-english">Ghrenglish vs. Hetranian English</h2>
         <p className="font-body text-sm text-[#7a746e]">This table highlights the evolution and cultural blend that shaped Hetra&apos;s modern tongue while keeping its mythic core intact.</p>
         <div className="border border-[#2e2b26] rounded-sm overflow-hidden">
           <div className="grid grid-cols-3 bg-[#0f0d0c] border-b border-[#2e2b26] px-4 py-2">
@@ -936,7 +938,7 @@ export default function AncientGreungeria() {
       {/* Learning Guide */}
       <section className="space-y-6">
         <div className="space-y-1">
-          <h2 className="font-display text-lg text-[#f2ebeb]">⭐ Learning Guide for Hetranian Ghrenglish</h2>
+          <h2 className="font-display text-lg text-[#f2ebeb]" id="learning-guide-for-hetranian-ghrenglish">⭐ Learning Guide for Hetranian Ghrenglish</h2>
           <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c]">A Beginner&apos;s Guide to the Language of Ancient Hetra</p>
         </div>
 
@@ -1100,5 +1102,6 @@ export default function AncientGreungeria() {
       </div>
 
     </div>
+  </LorePageLayout>
   );
 }
