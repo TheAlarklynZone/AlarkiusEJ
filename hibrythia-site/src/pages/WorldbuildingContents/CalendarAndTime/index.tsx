@@ -405,6 +405,194 @@ export default function CalendarAndTime() {
         </div>
       </section>
 
+
+      <div className="border-t border-[#2e2b26] mb-10" />
+
+      {/* ── Conversations ── */}
+      <section className="mb-12">
+        <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Conversations</p>
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">Conversations</h2>
+        <p className="font-body text-sm text-[#c8c2ba] mb-6">
+          Here are some examples of how the Two-Day difference affects everyday communication across Planet Hetra:
+        </p>
+
+        {/* Example 1 */}
+        <div className="bg-[#0f0d0c] border border-[#2e2b26] rounded-sm p-5 mb-4">
+          <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Example 1 — The Deadline Disaster</p>
+          <div className="space-y-3 font-body text-sm">
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Solen (Varleqe West - UCC -12) via CrystalComm</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"Hey Vael, just finishing up my part of the Guild Report — I'll have it to you by Bhuseday morning, promise!"</p>
+            </div>
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Vael (Eulan Kingdom - UCC +13)</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"...Solen. It is currently Runesday, 14:07 PM here. The Guild Master already asked where it was."</p>
+            </div>
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Solen</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"No — NO — it's still Iyonsday night here, I have time—"</p>
+            </div>
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Vael</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"You had time. Two days ago. I suggest you start writing very fast."</p>
+            </div>
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Solen</p>
+              <p className="text-[#c9a84c] italic pl-3 border-l border-[#c9a84c]/40]">"I hate this planet."</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Example 2 */}
+        <div className="bg-[#0f0d0c] border border-[#2e2b26] rounded-sm p-5 mb-4">
+          <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Example 2 — The Romantic Miscalculation</p>
+          <div className="space-y-3 font-body text-sm">
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Emris (Rynel - UCC +1)</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"I sent her flowers to arrive on Yhursday for our anniversary. I planned it months in advance. I am a GREAT partner."</p>
+            </div>
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Friend Toran (Lynneria - UCC -7)</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"Emris. Where does she live?"</p>
+            </div>
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Emris</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"...Norrane. UCC +6. Why?"</p>
+            </div>
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Toran</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"It is already Draxday evening in Norrane. Your flowers arrived a day late."</p>
+            </div>
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Emris</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"..."</p>
+            </div>
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Toran</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"How are you a cartographer and you still don't do UCC math before romantic gestures."</p>
+            </div>
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Emris</p>
+              <p className="text-[#c9a84c] italic pl-3 border-l border-[#c9a84c]/40]">"Do not speak to me right now."</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Example 3 */}
+        <div className="bg-[#0f0d0c] border border-[#2e2b26] rounded-sm p-5 mb-4">
+          <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Example 3 — Grandmother Doesn't Care About Time Zones</p>
+          <div className="space-y-3 font-body text-sm">
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Neva (Western Varleqe - UCC -10)</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"Grandma, you called at 03:00 AM my time—"</p>
+            </div>
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Gran Dushe (Norrane - UCC +6)</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"It is a perfectly reasonable hour. It is Runesday morning here and the sun is already up."</p>
+            </div>
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Neva</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"It is BHUSEDAY here and it is the MIDDLE OF THE NIGHT."</p>
+            </div>
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Gran Dushe</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"In MY day we did not complain about time. We simply woke up."</p>
+            </div>
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Neva</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"In your day people didn't live on opposite ends of the planet, Gran—"</p>
+            </div>
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Gran Dushe</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"Are you coming to visit or not? I made Ruehoys cake."</p>
+            </div>
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Neva</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"...I'll be there by Sethraday."</p>
+            </div>
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Gran Dushe</p>
+              <p className="text-[#c9a84c] italic pl-3 border-l border-[#c9a84c]/40]">"I will count from MY Sethraday, just so you know."</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Example 4 */}
+        <div className="bg-[#0f0d0c] border border-[#2e2b26] rounded-sm p-5 mb-4">
+          <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Example 4 — Festival of Lights Scheduling</p>
+          <div className="space-y-3 font-body text-sm">
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">City Herald Oswin (Rynel - UCC ±0) — Official CrystalBroadcast</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"Citizens! The Festival of Lights begins at sundown on Draxday, Calderia 15th! All are welcome!"</p>
+            </div>
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Merchant Calla (Varleqe East - UCC -8)</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"Does that mean OUR Draxday or RYNEL's Draxday?"</p>
+            </div>
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Herald Oswin</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"...UCC Standard Draxday."</p>
+            </div>
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Merchant Calla</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"So Yhursday here. Got it."</p>
+            </div>
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Traveler Brix (Eulerich - UCC +10)</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"That's Sethraday for me. Do I just... show up early?"</p>
+            </div>
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Herald Oswin</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"The festival lasts three days. You will catch some of it. Probably."</p>
+            </div>
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Traveler Brix</p>
+              <p className="text-[#c9a84c] italic pl-3 border-l border-[#c9a84c]/40]">"'Probably.' Wonderful. Love this world."</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Example 5 */}
+        <div className="bg-[#0f0d0c] border border-[#2e2b26] rounded-sm p-5 mb-4">
+          <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Example 5 — Night Shift Problems</p>
+          <div className="space-y-3 font-body text-sm">
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Dawnwatch Officer Lenne (Hetrania - UCC -6) — Logging into the Continental Watch Network</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"Iyonsday night shift, clocking in. All quiet on the sky continent."</p>
+            </div>
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Dawnwatch Officer Rethis (Eulerich - UCC +13)</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"Officer Lenne, I am clocking OUT of Bhuseday morning shift. You two are overlapping by eight hours today."</p>
+            </div>
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Lenne</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"Wait, so right now you're finishing a shift that starts the day AFTER mine?"</p>
+            </div>
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Rethis</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"Technically I have already lived through your 'tomorrow.'"</p>
+            </div>
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Lenne</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"...Is it a good day?"</p>
+            </div>
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Rethis</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"Nothing unusual. A minor Moonbel sighting near the eastern ridge."</p>
+            </div>
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Lenne</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"Noted. I'll watch for it in my 'today' then."</p>
+            </div>
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Rethis</p>
+              <p className="text-[#c9a84c] italic pl-3 border-l border-[#c9a84c]/40]">"Good luck. You already know how it ends."</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
       {/* Back nav */}
       <div className="border-t border-[#2e2b26] pt-8 mt-4 flex items-center justify-between">
         <Link
