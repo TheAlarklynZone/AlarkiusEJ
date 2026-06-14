@@ -29,13 +29,13 @@ export default function LearningGuide() {
         <p className="font-body text-sm text-[#c8c2ba]">Ghrenglish uses the Latin alphabet with additional characters:</p>
         <div className="border border-[#2e2b26] bg-[#0f0d0c] rounded-sm overflow-hidden">
           {[
-            ["æ", "/æ/ as in "cat""],
-            ["þ", "/θ/ as in "think""],
-            ["ð", "/ð/ as in "this""],
-            ["Ǧ", "/gʁ/ or hard guttural "g""],
-            ["ø", "/ø/ or /œ/ as in French "peur""],
-            ["'", "Glottal stop or possessive marker"],
-            ["ȝ", "/j/ or /ɣ/ depending on dialect"],
+            ['æ', '/æ/ as in "cat"'],
+            ['þ', '/θ/ as in "think"'],
+            ['ð', '/ð/ as in "this"'],
+            ['Ǧ', '/gʁ/ or hard guttural "g"'],
+            ['ø', '/ø/ or /œ/ as in French "peur"'],
+            ["'", 'Glottal stop or possessive marker'],
+            ['ȝ', '/j/ or /ɣ/ depending on dialect'],
           ].map(([c, g], i) => (
             <div key={i} className="flex gap-4 px-4 py-2.5 border-b border-[#1a1714] last:border-0">
               <p className="font-display text-sm text-[#c9a84c] w-8">{c}</p>
