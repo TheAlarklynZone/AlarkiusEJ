@@ -45,6 +45,7 @@ import TechnologyTransitSystems from '@/pages/WorldbuildingContents/TechnologyTr
 import AncientGreungeria from '@/pages/WorldbuildingContents/AncientGreungeria';
 import LearningGuide from '@/pages/WorldbuildingContents/AncientGreungeria/LearningGuide';
 import ChantOfBeasts from '@/pages/WorldbuildingContents/AncientGreungeria/ChantOfBeasts';
+import TemporalTimeStreamDilation from '@/pages/WorldbuildingContents/TemporalTimeStreamDilation';
 import The17DimensionsOfReality from '@/pages/WorldbuildingContents/The17DimensionsOfReality';
 import TimeSystem from '@/pages/TimeSystem';
 import NotFound from '@/pages/NotFound';
@@ -101,6 +102,7 @@ export default function App() {
           <Route path="world/databases/AncientGreungeria" element={<PageTransition><AncientGreungeria /></PageTransition>} />
           <Route path="world/databases/AncientGreungeria/LearningGuide" element={<PageTransition><LearningGuide /></PageTransition>} />
           <Route path="world/databases/AncientGreungeria/ChantOfBeasts" element={<PageTransition><ChantOfBeasts /></PageTransition>} />
+          <Route path="world/databases/TemporalTimeStreamDilation" element={<PageTransition><TemporalTimeStreamDilation /></PageTransition>} />
           <Route path="world/databases/The17DimensionsOfReality" element={<PageTransition><The17DimensionsOfReality /></PageTransition>} />
           <Route path="world/databases/TheNhuemynDB" element={<PageTransition><TheNhuemynDB /></PageTransition>} />
           <Route path="world/databases/CreaturesOfTheWorld" element={<PageTransition><CreaturesOfTheWorld /></PageTransition>} />
