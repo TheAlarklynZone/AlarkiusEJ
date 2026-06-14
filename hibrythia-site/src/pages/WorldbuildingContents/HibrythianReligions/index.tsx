@@ -400,8 +400,8 @@ export default function HibrythianReligions() {
           <div className="space-y-4">
             {[
               ['Ancient Era (Greungeria)', ['Laeyana gifts magic to the Five Giants', 'Gianquisim emerges as the first organized faith']],
-              ['19 AD — The Sylph Massacre', ['Nahfia creates the Sylphrelm', 'Nahfianism is born']],
-              ['Medieval Era', ['Queen Eira Valthorne reigns and vanishes', 'Valthoreia begins as folk worship, later formalized']],
+              ['3OD - 19 AD — The Sylph Massacre', ['Nahfia creates the Sylphrelm', 'Nahfianism is born']],
+              ['Steampunk Magic Era - ', ['Queen Eira Valthorne reigns and vanishes (circa~23 AD)', 'Valthoreia begins as folk worship, later formalized']],
               ['Modern Era (2245+)', ['Laeyanism dominant in urban centers', 'Gianquisim preserved by cultural orders', 'Valthoreia celebrated widely in winter regions', 'Nahfianism thrives in the isolated Sylphrelm']],
             ].map(([era, events]) => (
               <div key={era as string} className="border-l-2 border-[#2e2b26] pl-5">
