@@ -28,7 +28,7 @@ function RankTier({ rank, label, description, tiers, note }: RankTierProps) {
       {/* Rank badge + label */}
       <div className="flex items-center gap-3 mb-3">
         <span
-          className="font-display text-2xl font-bold"
+          className="font-display text-lg font-bold"
           style={{ color }}
         >
           RANK {rank}
