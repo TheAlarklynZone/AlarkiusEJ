@@ -33,7 +33,7 @@ const dayEvents = [
   { label: "Sunrise",             time: "06:33 – 07:36 AM",            desc: "A strange phenomenon where a hue so bright as green appears and stays for 1:03:59s." },
   { label: "Mornings",            time: "07:39 – 11:55 AM",            desc: "Early breakfast at 8 AM. Lunch between 12 – 13 PM." },
   { label: "Mornoon",             time: "11:55 AM – 13:65 AM",         desc: "An early Morning Noon — the combination of Morning and Afternoon." },
-  { label: "Afternoons / Middays","14:00 – 20:00 PM",                  desc: "People can get a lot done within these hours." },
+  { label: "Afternoons / Middays", time: "14:00 – 20:00 PM",             desc: "People can get a lot done within these hours." },
   { label: "Early Evenings",      time: "20:24 PM – Before Sunset",    desc: "Four hours before sunset and dusk." },
   { label: "Sunset",              time: "24:44 – 25:49 PM",            desc: "Leads into dusk." },
   { label: "Dusk",                time: "26:51 – 27:00 PM",            desc: "" },
@@ -105,7 +105,7 @@ export default function CalendarAndTime() {
           <p className="font-body text-sm text-[#c8c2ba] pl-4 border-l border-[#c9a84c]/40">
             <span className="text-[#f2ebeb] font-semibold">Hetra's second moon, Zenya.</span> Zenya works with the main moon it orbits, <span className="text-[#f2ebeb] font-semibold">Anzeya</span>, which controls the tides. While that happens, Zenya — the satellite moon — controls the time, day, and length of the year.
           </p>
-          <p className="font-body text-sm text-[#c9a84c] italic mt-3">32 hours a day, with great daylight (19 hours), less night hours (13 hours), but a longer year of 444 days!</p>
+          <p className="font-body text-sm text-[#c9a84c] italic mt-3">32 hours a day, with great daylight, less night hours, but a longer year of 444 days!</p>
         </div>
       </section>
 
