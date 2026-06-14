@@ -17,20 +17,20 @@ function LoreSideNav({ items, activeId }: { items: NavItem[]; activeId: string }
       aria-label="Page sections"
       style={{
         position: 'fixed',
-        top: '6rem',
-        // Sit just outside the content column:
-        // content is max-w-4xl (896px) centered → right edge = 50vw + 448px
-        // add 24px gap
-        left: 'calc(50% + 464px)',
+        top: '5.5rem',
+        right: '1.5rem',
         width: '180px',
-        maxHeight: 'calc(100vh - 8rem)',
+        maxHeight: 'calc(100vh - 7rem)',
         overflowY: 'auto',
         zIndex: 40,
         display: 'flex',
         flexDirection: 'column',
         gap: '2px',
       }}
-      className="hidden xl:flex"
+      // Only render when viewport is wide enough that nav doesn't overlap content.
+      // max-w-4xl = 896px content + 24px horizontal padding each side = ~944px.
+      // Need at least 944px + 180px nav + 24px gap = 1148px.
+      className="[@media(min-width:1148px)]:flex hidden"
     >
       <p className="font-body text-[9px] tracking-widest uppercase text-[#4a4844] mb-2 px-2">
         On this page
@@ -77,11 +77,9 @@ export default function LorePageLayout({ children }: LorePageLayoutProps) {
   const [activeId, setActiveId] = useState('');
   const containerRef = useRef<HTMLDivElement>(null);
 
-  // Build nav from h2[id] elements after render
   useEffect(() => {
     const container = containerRef.current;
     if (!container) return;
-
     const headings = Array.from(container.querySelectorAll('h2[id]')) as HTMLHeadingElement[];
     const items: NavItem[] = headings.map((h) => ({
       id: h.id,
@@ -91,26 +89,19 @@ export default function LorePageLayout({ children }: LorePageLayoutProps) {
     if (items.length > 0) setActiveId(items[0].id);
   }, [children]);
 
-  // Intersection observer — highlight active section
   useEffect(() => {
     if (navItems.length < 4) return;
-
     const observers: IntersectionObserver[] = [];
-
     navItems.forEach(({ id }) => {
       const el = document.getElementById(id);
       if (!el) return;
-
       const obs = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) setActiveId(id);
-        },
+        ([entry]) => { if (entry.isIntersecting) setActiveId(id); },
         { rootMargin: '-20% 0px -70% 0px', threshold: 0 }
       );
       obs.observe(el);
       observers.push(obs);
     });
-
     return () => observers.forEach((o) => o.disconnect());
   }, [navItems]);
 
