@@ -42,6 +42,7 @@ import TerminologyLexicon from '@/pages/WorldbuildingContents/TerminologyLexicon
 import ThePowerscalingSystem from '@/pages/WorldbuildingContents/ThePowerscalingSystem';
 import WeatherClimateSeasons from '@/pages/WorldbuildingContents/WeatherClimateSeasons';
 import TechnologyTransitSystems from '@/pages/WorldbuildingContents/TechnologyTransitSystems';
+import AncientGreungeria from '@/pages/WorldbuildingContents/AncientGreungeria';
 import TimeSystem from '@/pages/TimeSystem';
 import NotFound from '@/pages/NotFound';
 
@@ -94,6 +95,7 @@ export default function App() {
           <Route path="world/databases/ThePowerscalingSystem" element={<PageTransition><ThePowerscalingSystem /></PageTransition>} />
           <Route path="world/databases/WeatherClimateSeasons" element={<PageTransition><WeatherClimateSeasons /></PageTransition>} />
           <Route path="world/databases/TechnologyTransitSystems" element={<PageTransition><TechnologyTransitSystems /></PageTransition>} />
+          <Route path="world/databases/AncientGreungeria" element={<PageTransition><AncientGreungeria /></PageTransition>} />
           <Route path="world/databases/TheNhuemynDB" element={<PageTransition><TheNhuemynDB /></PageTransition>} />
           <Route path="world/databases/CreaturesOfTheWorld" element={<PageTransition><CreaturesOfTheWorld /></PageTransition>} />
           <Route path="world/databases/CreaturesOfTheWorld/BeastHierarchyKingdom" element={<PageTransition><BeastHierarchyKingdom /></PageTransition>} />
