@@ -14,7 +14,7 @@ function LoreSideNav({ items, activeId }: { items: NavItem[]; activeId: string }
 
   return (
     <nav
-      className="hidden xl:flex flex-col gap-0.5 fixed top-24 right-5 w-48 z-40"
+      className="hidden xl:flex flex-col gap-0.5 fixed top-24 right-5 w-48 z-40 max-h-[calc(100vh-7rem)] overflow-y-auto"
       aria-label="Page sections"
     >
       <p className="font-body text-[9px] tracking-widest uppercase text-[#4a4844] mb-2 px-2">
