@@ -121,7 +121,7 @@ export default function CalendarAndTime() {
 
         <div className="bg-[#0f0d0c] border border-[#2e2b26] rounded-sm p-5 mb-4">
           <h3 className="font-display text-sm text-[#f2ebeb] mb-3">The Seconds Hand</h3>
-          <p className="font-body text-sm text-[#c8c2ba]">
+          <p className="font-body text-base text-[#c8c2ba]">
             That red hand that has the "S" label is the longest on Hetra's clock and time. It takes <span className="text-[#f2ebeb] font-semibold">80 seconds</span> to complete a full rotation for 1 minute. For each rotation of the second hand, the M Hand moves to the next minute mark.
           </p>
         </div>
@@ -171,7 +171,7 @@ export default function CalendarAndTime() {
           ].map((e, i) => (
             <div key={i} className="flex gap-3 items-center">
               <span className="font-display text-base text-[#c9a84c] w-12 shrink-0">{e.abbr}</span>
-              <span className="font-body text-sm text-[#c8c2ba]">{e.full}</span>
+              <span className="font-body text-base text-[#c8c2ba]">{e.full}</span>
             </div>
           ))}
         </div>
@@ -205,7 +205,7 @@ export default function CalendarAndTime() {
                 <h4 className="font-display text-base text-[#f2ebeb]">{item.era}</h4>
                 <span className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c]">{item.date}</span>
               </div>
-              <p className="font-body text-sm text-[#c8c2ba]">{item.desc}</p>
+              <p className="font-body text-base text-[#c8c2ba]">{item.desc}</p>
             </div>
           ))}
         </div>
@@ -256,13 +256,13 @@ export default function CalendarAndTime() {
           Once every <span className="text-[#f2ebeb] font-semibold">250 years</span>, a strange phenomena occurs where the Moon turns into a Red Blood Eclipse.
         </p>
         <div className="bg-[#0f0d0c] border border-[#2e2b26] rounded-sm p-5 mb-4 space-y-3">
-          <p className="font-body text-sm text-[#c8c2ba]">
+          <p className="font-body text-base text-[#c8c2ba]">
             When the sun shines brightly at its peak on a very warm day, the moon blocks it. <span className="text-[#f2ebeb] font-semibold">Anzeya</span>, the planet's main moon, blocks the sun, along with the smaller satellite moon, <span className="text-[#f2ebeb] font-semibold">Zenya</span>.
           </p>
-          <p className="font-body text-sm text-[#c8c2ba]">
+          <p className="font-body text-base text-[#c8c2ba]">
             When the sun's rays hit against the moon, due to effects of solar scattering, Anzeya brightens up from behind where it becomes semi-translucent. Zenya — a moon that glows green — refracts back the sun's light onto Anzeya.
           </p>
-          <p className="font-body text-sm text-[#c8c2ba]">
+          <p className="font-body text-base text-[#c8c2ba]">
             This effect displaces all other colors except Red with a tint of Green onto both moons, where it becomes a <span className="text-[#f2ebeb] font-semibold">Blood Red Eclipse</span>.
           </p>
         </div>
@@ -273,7 +273,7 @@ export default function CalendarAndTime() {
           </div>
           <div className="bg-[#0f0d0c] border border-[#c9a84c]/20 rounded-sm px-4 py-3">
             <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-1">This Lunar Event Triggers Something Dangerous…</p>
-            <p className="font-body text-sm text-[#c8c2ba]">The Evolution of Werebels into Moonbels (Killer Rabbits)</p>
+            <p className="font-body text-base text-[#c8c2ba]">The Evolution of Werebels into Moonbels (Killer Rabbits)</p>
           </div>
         </div>
       </section>
@@ -296,7 +296,7 @@ export default function CalendarAndTime() {
                 <span className="font-body text-[10px] tracking-widest uppercase text-[#7a746e]">Named after {d.name}</span>
                 <span className="font-body text-[10px] tracking-widest uppercase text-[#4a4844]">≈ {d.equiv}</span>
               </div>
-              <p className="font-body text-sm text-[#c8c2ba]">{d.note}</p>
+              <p className="font-body text-base text-[#c8c2ba]">{d.note}</p>
             </div>
           ))}
         </div>
@@ -333,7 +333,7 @@ export default function CalendarAndTime() {
                 <span className="font-display text-base text-[#f2ebeb]">{e.label}</span>
                 <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c]">{e.time}</p>
               </div>
-              {e.desc && <p className="font-body text-sm text-[#c8c2ba]">{e.desc}</p>}
+              {e.desc && <p className="font-body text-base text-[#c8c2ba]">{e.desc}</p>}
             </div>
           ))}
         </div>
@@ -364,7 +364,7 @@ export default function CalendarAndTime() {
                 <span className="font-display text-base text-[#f2ebeb]">{tz.continent}</span>
                 <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c]">{tz.ucc}</p>
               </div>
-              {tz.note && <p className="font-body text-sm text-[#c8c2ba]">{tz.note}</p>}
+              {tz.note && <p className="font-body text-base text-[#c8c2ba]">{tz.note}</p>}
             </div>
           ))}
         </div>
@@ -384,9 +384,9 @@ export default function CalendarAndTime() {
             Planet Hetra's massive size (3% larger than Earth) combined with its 32-hour day cycle creates a unique temporal distribution across its surface. With the UCC system spanning from <span className="text-[#f2ebeb] font-semibold">UCC +12 to UCC -12</span>, there's a <span className="text-[#f2ebeb] font-semibold">24-hour differential</span> between the furthest time zones. Since a full day is 32 hours, and the time zone spread covers 24 hours of difference, this means:
           </p>
           <div className="space-y-1 pl-4 border-l border-[#c9a84c]/30">
-            <p className="font-body text-sm text-[#c8c2ba]">When it's <span className="text-[#f2ebeb]">Hynsday 08:00 AM</span> in Rynel (UCC ±0)</p>
-            <p className="font-body text-sm text-[#c8c2ba]">It could be <span className="text-[#f2ebeb]">Iyonsday 20:00 PM</span> in Eulan Kingdom (UCC +12)</p>
-            <p className="font-body text-sm text-[#c8c2ba]">And <span className="text-[#f2ebeb]">Sethraday 16:00 PM</span> in western Varleqe (UCC -12)</p>
+            <p className="font-body text-base text-[#c8c2ba]">When it's <span className="text-[#f2ebeb]">Hynsday 08:00 AM</span> in Rynel (UCC ±0)</p>
+            <p className="font-body text-base text-[#c8c2ba]">It could be <span className="text-[#f2ebeb]">Iyonsday 20:00 PM</span> in Eulan Kingdom (UCC +12)</p>
+            <p className="font-body text-base text-[#c8c2ba]">And <span className="text-[#f2ebeb]">Sethraday 16:00 PM</span> in western Varleqe (UCC -12)</p>
           </div>
         </div>
 
@@ -399,7 +399,7 @@ export default function CalendarAndTime() {
           ].map((item, i) => (
             <div key={i} className="bg-[#0f0d0c] border border-[#2e2b26] rounded-sm p-4">
               <h4 className="font-display text-base text-[#f2ebeb] mb-2">{item.title}</h4>
-              <p className="font-body text-sm text-[#c8c2ba]">{item.desc}</p>
+              <p className="font-body text-base text-[#c8c2ba]">{item.desc}</p>
             </div>
           ))}
         </div>
