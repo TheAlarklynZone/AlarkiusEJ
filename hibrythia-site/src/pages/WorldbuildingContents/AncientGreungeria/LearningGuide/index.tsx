@@ -166,7 +166,7 @@ export default function LearningGuide() {
             <p className="font-body text-base text-[#c9a84c] italic">&ldquo;Hnthé Nhá Vaar&rdquo; — It&apos;s never far from home.</p>
           </blockquote>
         </div>
-      </section>
+      </div>
 
       <div className="border-t border-[#2e2b26]" />
 
