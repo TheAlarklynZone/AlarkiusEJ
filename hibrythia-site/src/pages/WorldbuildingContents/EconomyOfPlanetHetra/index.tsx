@@ -33,7 +33,7 @@ export default function EconomyOfPlanetHetra() {
         <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">
           Currency System
         </p>
-        <h2 className="font-display text-lg text-[#f2ebeb] mb-4" id="the-currency-system-hetrix-amp-hetryl">
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-4" id="the-currency-system-hetrix-hetryl">
           The Currency System — Hetrix &amp; Hetryl
         </h2>
         <p className="font-body text-sm text-[#c8c2ba] mb-8">
@@ -157,7 +157,7 @@ export default function EconomyOfPlanetHetra() {
         <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">
           Economic Scale
         </p>
-        <h2 className="font-display text-lg text-[#f2ebeb] mb-4" id="world-net-worth-amp-economic-scale">
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-4" id="world-net-worth-economic-scale">
           World Net Worth &amp; Economic Scale
         </h2>
 
@@ -179,7 +179,7 @@ export default function EconomyOfPlanetHetra() {
         <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">
           Regional Economies
         </p>
-        <h2 className="font-display text-lg text-[#f2ebeb] mb-6" id="regional-economies-amp-wages">
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-6" id="regional-economies-wages">
           Regional Economies &amp; Wages
         </h2>
         <p className="font-body text-sm text-[#c8c2ba] mb-6">
@@ -274,7 +274,7 @@ export default function EconomyOfPlanetHetra() {
         <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">
           Monetary Symbolism
         </p>
-        <h2 className="font-display text-lg text-[#f2ebeb] mb-4" id="the-erbgeroger-flower-amp-monetary-symbolism">
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-4" id="the-erbgeroger-flower-monetary-symbolism">
           The Erbgeroger Flower &amp; Monetary Symbolism
         </h2>
         <p className="font-body text-sm text-[#c8c2ba] mb-4">
@@ -292,7 +292,7 @@ export default function EconomyOfPlanetHetra() {
         <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">
           Collector&apos;s Market
         </p>
-        <h2 className="font-display text-lg text-[#f2ebeb] mb-6" id="rare-currency-amp-collectoraposs-market">
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-6" id="rare-currency-collectors-market">
           Rare Currency &amp; Collector&apos;s Market
         </h2>
 
