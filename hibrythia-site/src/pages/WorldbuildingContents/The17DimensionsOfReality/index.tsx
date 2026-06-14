@@ -37,7 +37,6 @@ export default function The17DimensionsOfReality() {
       </nav>
 
       {/* Gold rule */}
-      <div className="w-full h-px bg-[#c9a84c]/30 mb-6" aria-hidden="true" />
 
       {/* Section label */}
       <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">I. The Cosmic Foundation</p>
