@@ -34,7 +34,7 @@ export default function LearningGuide() {
             ['ð', '/ð/ as in "this"'],
             ['Ǧ', '/gʁ/ or hard guttural "g"'],
             ['ø', '/ø/ or /œ/ as in French "peur"'],
-            ["'", 'Glottal stop or possessive marker'],
+            ['\'', 'Glottal stop or possessive marker'],
             ['ȝ', '/j/ or /ɣ/ depending on dialect'],
           ].map(([c, g], i) => (
             <div key={i} className="flex gap-4 px-4 py-2.5 border-b border-[#1a1714] last:border-0">
@@ -104,7 +104,7 @@ export default function LearningGuide() {
           {[
             ["Spæc Maezja!", "/spæk ˈmaɪz.jə/", "Speak Magic!"],
             ["Nhá líveska þyn mæra.", "/nɑʻ ˈliʻ.vɛs.kə θɪn ˈmæ.ɾə/", "May home breathe your hope."],
-            ["Færrün'vahr æn cild þa Void'hænn.", "/ˈfæɾ.ʁʊn.vɑʻr æn kɪld ðə vɔɪd.hæn/", "Fire-faded like a child of the Void."],
+            ['Færrün\'vahr æn cild þa Void\'hænn.', "/ˈfæɾ.ʁʊn.vɑʻr æn kɪld ðə vɔɪd.hæn/", "Fire-faded like a child of the Void."],
           ].map(([phrase, ipa, trans], i) => (
             <div key={i} className="px-4 py-3 border-b border-[#1a1714] last:border-0 space-y-0.5">
               <p className="font-body text-sm text-[#f2ebeb] italic">{phrase}</p>
@@ -125,11 +125,11 @@ export default function LearningGuide() {
           </div>
           {[
             ["Hello", "Hælla"],
-            ["Goodbye", "Dohn'sæ"],
-            ["Thank you", "Mærra'lióma"],
-            ["You're welcome", "Þou'sæ lióma"],
-            ["My name is…", "Ín'sæ næuma es…"],
-            ["Where are you from?", "Whæ þou hæve'pæar?"],
+            ["Goodbye", 'Dohn\'sæ'],
+            ["Thank you", 'Mærra\'lióma'],
+            ['You\'re welcome', 'Þou\'sæ lióma'],
+            ["My name is…", 'Ín\'sæ næuma es…'],
+            ["Where are you from?", 'Whæ þou hæve\'pæar?'],
             ["Peace be with you", "Sólrenn þyn hæm"],
           ].map(([en, gh], i) => (
             <div key={i} className="grid grid-cols-2 px-4 py-2.5 border-b border-[#1a1714] last:border-0 hover:bg-[#151210] transition-colors">
