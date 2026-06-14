@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import LorePageLayout from '@/components/LorePageLayout';
 
 const months = [
   { name: "The Month of Viviambel",  num: "1st",  days: 31,  note: "" },
@@ -52,6 +53,7 @@ const timezones = [
 
 export default function CalendarAndTime() {
   return (
+    <LorePageLayout>
     <div className="min-h-screen bg-[#100908] text-[#c8c2ba] px-6 py-12 max-w-4xl mx-auto">
 
       {/* Breadcrumb */}
@@ -85,7 +87,7 @@ export default function CalendarAndTime() {
       {/* ── Time Overview ── */}
       <section className="mb-12">
         <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Overview</p>
-        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">Time</h2>
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-4" id="time">Time</h2>
         <p className="font-body text-sm text-[#c8c2ba] mb-3">
           A construct of reality and how all things linearly progress through time. Unlike how Earth has a 24/12 hour system, Planet Hetra uses a <span className="text-[#f2ebeb] font-semibold">32/16 Hour Time system</span>, with <span className="text-[#f2ebeb] font-semibold">14 months</span> in one year. The sun rises in the north-east and sets down at the north-west. Days and nights are a bit longer.
         </p>
@@ -114,7 +116,7 @@ export default function CalendarAndTime() {
       {/* ── Seconds, Minutes, Hours ── */}
       <section className="mb-12">
         <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Time Units</p>
-        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">Seconds, Minutes, Hours…</h2>
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-4" id="seconds-minutes-hours">Seconds, Minutes, Hours…</h2>
         <p className="font-body text-sm text-[#c8c2ba] mb-6">
           It's almost the same as Earth's measurements, but time expands a bit more here.
         </p>
@@ -159,7 +161,7 @@ export default function CalendarAndTime() {
       {/* ── Calendar & Eras ── */}
       <section className="mb-12">
         <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Calendar</p>
-        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">Calendar and Year Representation</h2>
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-4" id="calendar-and-year-representation">Calendar and Year Representation</h2>
         <p className="font-body text-sm text-[#c8c2ba] mb-4">
           Interpretation of what AD and BC is, including custom month names for this world. There is also a new era range.
         </p>
@@ -216,7 +218,7 @@ export default function CalendarAndTime() {
       {/* ── The Hetranian Almanac ── */}
       <section className="mb-12">
         <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Almanac</p>
-        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">The Hetranian Almanac</h2>
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-4" id="the-hetranian-almanac">The Hetranian Almanac</h2>
         <p className="font-body text-sm text-[#c8c2ba] mb-6">
           This calendar was first implemented in the year <span className="text-[#f2ebeb] font-semibold">2 AD</span> (1 OD – 2 AD), where The Five Giants made a world calendar called The Hetranian Calendar. It has <span className="text-[#f2ebeb] font-semibold">14 months</span>. The first five months of the calendar are named after The Five Giants. The other eight months are named after each of The Five Giants' companions (each of them had one or two pets).
         </p>
@@ -251,7 +253,7 @@ export default function CalendarAndTime() {
       {/* ── Red Blood Eclipse ── */}
       <section className="mb-12">
         <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Phenomenon</p>
-        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">A Strange Occurrence — The Red Blood Eclipse</h2>
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-4" id="a-strange-occurrence-the-red-blood-eclipse">A Strange Occurrence — The Red Blood Eclipse</h2>
         <p className="font-body text-sm text-[#c8c2ba] mb-4">
           Once every <span className="text-[#f2ebeb] font-semibold">250 years</span>, a strange phenomena occurs where the Moon turns into a Red Blood Eclipse.
         </p>
@@ -283,7 +285,7 @@ export default function CalendarAndTime() {
       {/* ── Days of the Week ── */}
       <section className="mb-12">
         <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">The Week</p>
-        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">The Days of the Week</h2>
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-4" id="the-days-of-the-week">The Days of the Week</h2>
         <p className="font-body text-sm text-[#c8c2ba] mb-6">
           Within the world of the Hibrythian Saga, there are custom days named after <span className="text-[#f2ebeb] font-semibold">The Seven Architects</span> — important figures who helped create beautiful churches around the world. They were master builders who used magic to help construct these wonderful buildings, popping up on each of the seven days to help each other complete churches in designated locations. When the Five Giants took notice of their craftsmanship, they wanted to use their names for the days of the week. Thus, this is how weeks started when the Hetranian Calendar was implemented.
         </p>
@@ -307,7 +309,7 @@ export default function CalendarAndTime() {
       {/* ── Day & Night ── */}
       <section className="mb-12">
         <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Day &amp; Night</p>
-        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">The Day and Night</h2>
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-4" id="the-day-and-night">The Day and Night</h2>
 
         {/* Image placeholder */}
         <div className="w-full aspect-video bg-[#1a1714] border border-[#2e2b26] rounded-sm flex items-center justify-center mb-6">
@@ -347,7 +349,7 @@ export default function CalendarAndTime() {
       {/* ── Time Zones ── */}
       <section className="mb-12">
         <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Time Zones</p>
-        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">Time Zones — UCC</h2>
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-4" id="time-zones-ucc">Time Zones — UCC</h2>
         <p className="font-body text-sm text-[#c8c2ba] mb-6">
           Local Time Zones on Hetra are represented by <span className="text-[#f2ebeb] font-semibold">UCC — The Universal Celestial Clock</span>. The world has a lot of sunlight, and within the zones, there is still light before night reaches.
         </p>
@@ -411,7 +413,7 @@ export default function CalendarAndTime() {
       {/* ── Conversations ── */}
       <section className="mb-12">
         <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Conversations</p>
-        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">Conversations</h2>
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-4" id="conversations">Conversations</h2>
         <p className="font-body text-sm text-[#c8c2ba] mb-6">
           Here are some examples of how the Two-Day difference affects everyday communication across Planet Hetra:
         </p>
@@ -610,5 +612,6 @@ export default function CalendarAndTime() {
       </div>
 
     </div>
+  </LorePageLayout>
   );
 }
