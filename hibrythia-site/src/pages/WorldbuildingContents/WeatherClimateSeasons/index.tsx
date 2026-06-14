@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
+import LorePageLayout from '@/components/LorePageLayout';
 
 export default function WeatherClimateSeasons() {
   return (
+    <LorePageLayout>
     <div className="min-h-screen bg-[#100908] text-[#c8c2ba] px-6 py-12 max-w-4xl mx-auto">
 
       {/* Breadcrumb */}
@@ -24,7 +26,7 @@ export default function WeatherClimateSeasons() {
         <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">
           Overview
         </p>
-        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-4" id="planet-hetraaposs-weather-system">
           Planet Hetra&apos;s Weather System
         </h2>
         <p className="font-body text-sm text-[#c8c2ba] mb-8">
@@ -35,7 +37,7 @@ export default function WeatherClimateSeasons() {
         <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">
           Temperature Metric
         </p>
-        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-4" id="temperature-metric">
           Temperature Metric
         </h2>
 
@@ -83,7 +85,7 @@ export default function WeatherClimateSeasons() {
         <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">
           World Seasons
         </p>
-        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-4" id="world-seasons">
           World Seasons
         </h2>
         <p className="font-body text-sm text-[#c8c2ba] mb-6">
@@ -122,7 +124,7 @@ export default function WeatherClimateSeasons() {
         <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">
           Phenomenons
         </p>
-        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-4" id="a-strange-phenomenon">
           A Strange Phenomenon
         </h2>
         <p className="font-body text-sm text-[#c8c2ba]">
@@ -139,7 +141,7 @@ export default function WeatherClimateSeasons() {
         <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">
           Ocean Currents
         </p>
-        <h2 className="font-display text-lg text-[#f2ebeb] mb-6">
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-6" id="ocean-currents">
           Ocean Currents
         </h2>
 
@@ -216,5 +218,6 @@ export default function WeatherClimateSeasons() {
       </div>
 
     </div>
+  </LorePageLayout>
   );
 }
