@@ -26,7 +26,7 @@ export default function WeatherClimateSeasons() {
         <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">
           Overview
         </p>
-        <h2 className="font-display text-lg text-[#f2ebeb] mb-4" id="planet-hetraaposs-weather-system">
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-4" id="planet-hetras-weather-system">
           Planet Hetra&apos;s Weather System
         </h2>
         <p className="font-body text-sm text-[#c8c2ba] mb-8">
@@ -122,7 +122,7 @@ export default function WeatherClimateSeasons() {
       {/* ── A Strange Phenomenon ── */}
       <section className="mb-12">
         <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">
-          Phenomenons
+          Phenomenon
         </p>
         <h2 className="font-display text-lg text-[#f2ebeb] mb-4" id="a-strange-phenomenon">
           A Strange Phenomenon
