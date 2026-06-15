@@ -99,7 +99,7 @@ export default function Home() {
 
       {/* ── THE HIBRYTHIAN MANIFESTO ──────────────────────────────────────── */}
       <section className="py-14">
-        <h2 className="font-display text-xl text-[#d8d4cc] mb-5 tracking-wide">
+        <h2 className="font-display text-lg text-[#d8d4cc] mb-5 tracking-wide">
           The Hibrythian Manifesto
         </h2>
         <p className="font-body text-sm text-[#7a7670] max-w-[72ch] leading-relaxed mb-6">
@@ -127,7 +127,7 @@ export default function Home() {
 
       {/* ── UNIVERSAL PREMISE ─────────────────────────────────────────────── */}
       <section className="py-14">
-        <h2 className="font-display text-xl text-[#d8d4cc] mb-5 tracking-wide">
+        <h2 className="font-display text-lg text-[#d8d4cc] mb-5 tracking-wide">
           Universal Premise
         </h2>
         <p className="font-body text-sm text-[#7a7670] max-w-[68ch] leading-relaxed mb-4">
@@ -146,7 +146,7 @@ export default function Home() {
 
       {/* ── MULTIPLE TITLES & BRANDING ────────────────────────────────────── */}
       <section className="py-14">
-        <h2 className="font-display text-xl text-[#d8d4cc] mb-5 tracking-wide">
+        <h2 className="font-display text-lg text-[#d8d4cc] mb-5 tracking-wide">
           Multiple Titles and Branding Names
         </h2>
         <p className="font-body text-sm text-[#7a7670] max-w-[68ch] leading-relaxed mb-5">
@@ -176,7 +176,7 @@ export default function Home() {
 
       {/* ── THE PILLARS ───────────────────────────────────────────────────── */}
       <section className="py-14">
-        <h2 className="font-display text-xl text-[#d8d4cc] mb-8 tracking-wide">
+        <h2 className="font-display text-lg text-[#d8d4cc] mb-8 tracking-wide">
           The Pillars of the Hibrythian Saga
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-[#2e2b26]">
@@ -206,7 +206,7 @@ export default function Home() {
 
       {/* ── THEMES THAT MATTER ────────────────────────────────────────────── */}
       <section className="py-14">
-        <h2 className="font-display text-xl text-[#d8d4cc] mb-6 tracking-wide">
+        <h2 className="font-display text-lg text-[#d8d4cc] mb-6 tracking-wide">
           Themes That Matter
         </h2>
         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-2 font-body text-sm text-[#7a7670]">
@@ -228,7 +228,7 @@ export default function Home() {
 
       {/* ── WORKS IN THE SAGA ─────────────────────────────────────────────── */}
       <section className="py-14">
-        <h2 className="font-display text-xl text-[#d8d4cc] mb-6 tracking-wide">
+        <h2 className="font-display text-lg text-[#d8d4cc] mb-6 tracking-wide">
           Works in The Hibrythian Saga
         </h2>
         {/* Book 1 */}
@@ -274,7 +274,7 @@ export default function Home() {
 
       {/* ── NARRATIVE GENRES ──────────────────────────────────────────────── */}
       <section className="py-14">
-        <h2 className="font-display text-xl text-[#d8d4cc] mb-8 tracking-wide">
+        <h2 className="font-display text-lg text-[#d8d4cc] mb-8 tracking-wide">
           Narrative Genres
         </h2>
         <div className="space-y-8">
@@ -308,7 +308,7 @@ export default function Home() {
 
       {/* ── WORLDBUILDING GENRES ──────────────────────────────────────────── */}
       <section className="py-14">
-        <h2 className="font-display text-xl text-[#d8d4cc] mb-8 tracking-wide">
+        <h2 className="font-display text-lg text-[#d8d4cc] mb-8 tracking-wide">
           Worldbuilding Genres
         </h2>
         <div className="space-y-8">
@@ -352,7 +352,7 @@ export default function Home() {
 
       {/* ── SOCIALS ───────────────────────────────────────────────────────── */}
       <section className="py-14">
-        <h2 className="font-display text-xl text-[#d8d4cc] mb-4 tracking-wide">
+        <h2 className="font-display text-lg text-[#d8d4cc] mb-4 tracking-wide">
           Socials and @s
         </h2>
         <p className="font-body text-sm text-[#7a7670] max-w-[64ch] leading-relaxed mb-5">
@@ -387,3 +387,4 @@ export default function Home() {
     </div>
   );
 }
+
