@@ -14,7 +14,7 @@ export default function HibrythianReligions() {
         <div>
           <h1 className="font-display text-3xl md:text-4xl text-[#f2ebeb] mb-4">Hibrythian Religions</h1>
           <h2 className="font-display text-lg text-[#f2ebeb] mb-3">The Four Major Faiths of Hetra</h2>
-          <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
             Religion across Hetra and its surrounding realms has evolved through millennia, branching from primordial divine sources into distinct belief systems that shape cultures, magic, and the hearts of its people. These four faiths — <strong className="text-[#f2ebeb]">Laeyanism</strong>, <strong className="text-[#f2ebeb]">Gianquisim</strong>, <strong className="text-[#f2ebeb]">Valthoreia</strong>, and <strong className="text-[#f2ebeb]">Nahfianism</strong> — represent the spiritual landscape of The Hibrythian Saga.
           </p>
         </div>
@@ -31,7 +31,7 @@ export default function HibrythianReligions() {
           <div className="border border-[#2e2b26] hover:border-[#c9a84c]/40 bg-[#0f0d0c] hover:bg-[#151210] rounded-sm px-6 py-6 transition-colors space-y-5">
             <div>
               <h3 className="font-display text-sm text-[#f2ebeb] mb-2">Overview</h3>
-              <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
+              <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
                 Laeyanism is the worship of <Link to="/characters/QueenLaeyana" className="text-[#c9a84c] hover:underline">Queen Laeyana</Link>, the <strong className="text-[#f2ebeb]">Goddess of Magic</strong> and one of the ancient Lhumerials who exists within 10 dimensions. As the primordial source of magic on Hetra, Laeyana is revered not as a distant, unknowable god, but as the <strong className="text-[#f2ebeb]">living wellspring</strong> from which all arcane power flows. There aren&apos;t many people who follow Laeyanism. But those who do are called <strong className="text-[#f2ebeb]">Laeyanists</strong>.
               </p>
             </div>
@@ -46,7 +46,7 @@ export default function HibrythianReligions() {
                 ].map(([title, desc]) => (
                   <div key={title} className="flex gap-3">
                     <span className="text-[#c9a84c] mt-[3px] shrink-0">—</span>
-                    <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]"><strong className="text-[#f2ebeb]">{title}</strong> — {desc}</p>
+                    <p className="font-body text-base text-[#c8c2ba] leading-relaxed"><strong className="text-[#f2ebeb]">{title}</strong> — {desc}</p>
                   </div>
                 ))}
               </div>
@@ -62,7 +62,7 @@ export default function HibrythianReligions() {
                 ].map(([title, desc]) => (
                   <div key={title} className="flex gap-3">
                     <span className="text-[#c9a84c] mt-[3px] shrink-0">—</span>
-                    <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]"><strong className="text-[#f2ebeb]">{title}</strong> — {desc}</p>
+                    <p className="font-body text-base text-[#c8c2ba] leading-relaxed"><strong className="text-[#f2ebeb]">{title}</strong> — {desc}</p>
                   </div>
                 ))}
               </div>
@@ -71,13 +71,13 @@ export default function HibrythianReligions() {
               <h4 className="font-display text-base text-[#f2ebeb] mb-3">Followers</h4>
               <div className="space-y-1">
                 {['Mages, scholars, and magic users across all of Hetra','Academic institutions and magical universities','The Divine Order of the Arcane — A monastic order dedicated to studying Laeyana\'s teachings'].map(f => (
-                  <div key={f} className="flex gap-3"><span className="text-[#c9a84c] shrink-0">—</span><p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">{f}</p></div>
+                  <div key={f} className="flex gap-3"><span className="text-[#c9a84c] shrink-0">—</span><p className="font-body text-base text-[#c8c2ba] leading-relaxed">{f}</p></div>
                 ))}
               </div>
             </div>
             <div>
               <h4 className="font-display text-base text-[#f2ebeb] mb-2">Sacred Symbols</h4>
-              <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">The Galactic Orb · The Five-Pointed Star (each point a type of magic) · <span className="text-[#c9a84c]">Colors: Gold, silver, and deep violet</span></p>
+              <p className="font-body text-base text-[#c8c2ba] leading-relaxed">The Galactic Orb · The Five-Pointed Star (each point a type of magic) · <span className="text-[#c9a84c]">Colors: Gold, silver, and deep violet</span></p>
             </div>
             <blockquote className="border-l-2 border-[#c9a84c]/40 pl-4">
               <p className="font-body text-sm text-[#c9a84c] leading-[1.85] italic">
@@ -102,7 +102,7 @@ export default function HibrythianReligions() {
           <div className="border border-[#2e2b26] hover:border-[#c9a84c]/40 bg-[#0f0d0c] hover:bg-[#151210] rounded-sm px-6 py-6 transition-colors space-y-5">
             <div>
               <h3 className="font-display text-sm text-[#f2ebeb] mb-2">Overview</h3>
-              <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
+              <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
                 Gianquisim is the ancient worship of <strong className="text-[#f2ebeb]">The Five Giants of Greungeria</strong> — primordial beings who once walked Hetra and held mastery over the five types of magic bestowed by Queen Laeyana. This is the <strong className="text-[#f2ebeb]">Old Faith</strong>, practiced by traditionalists, historians, and those who honor the world&apos;s mythic past. Those who still follow this ancient faith are called <strong className="text-[#f2ebeb]">Gianquists</strong>.
               </p>
             </div>
@@ -118,7 +118,7 @@ export default function HibrythianReligions() {
                 ].map(([name, role], i) => (
                   <div key={name} className="flex gap-3">
                     <span className="font-display text-sm text-[#c9a84c] shrink-0">{i + 1}.</span>
-                    <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]"><strong className="text-[#f2ebeb]">{name}</strong> — {role}</p>
+                    <p className="font-body text-base text-[#c8c2ba] leading-relaxed"><strong className="text-[#f2ebeb]">{name}</strong> — {role}</p>
                   </div>
                 ))}
               </div>
@@ -134,7 +134,7 @@ export default function HibrythianReligions() {
                 ].map(([title, desc]) => (
                   <div key={title} className="flex gap-3">
                     <span className="text-[#c9a84c] mt-[3px] shrink-0">—</span>
-                    <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]"><strong className="text-[#f2ebeb]">{title}</strong> — {desc}</p>
+                    <p className="font-body text-base text-[#c8c2ba] leading-relaxed"><strong className="text-[#f2ebeb]">{title}</strong> — {desc}</p>
                   </div>
                 ))}
               </div>
@@ -150,14 +150,14 @@ export default function HibrythianReligions() {
                 ].map(([title, desc]) => (
                   <div key={title} className="flex gap-3">
                     <span className="text-[#c9a84c] mt-[3px] shrink-0">—</span>
-                    <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]"><strong className="text-[#f2ebeb]">{title}</strong> — {desc}</p>
+                    <p className="font-body text-base text-[#c8c2ba] leading-relaxed"><strong className="text-[#f2ebeb]">{title}</strong> — {desc}</p>
                   </div>
                 ))}
               </div>
             </div>
             <div>
               <h4 className="font-display text-base text-[#f2ebeb] mb-2">Sacred Symbols</h4>
-              <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">The Quintet Seal (five interlocking circles) · Stone Tablets carved with Ghrenglish scripture · <span className="text-[#c9a84c]">Colors: Brown, bronze, deep green, charcoal, amber</span></p>
+              <p className="font-body text-base text-[#c8c2ba] leading-relaxed">The Quintet Seal (five interlocking circles) · Stone Tablets carved with Ghrenglish scripture · <span className="text-[#c9a84c]">Colors: Brown, bronze, deep green, charcoal, amber</span></p>
             </div>
             <blockquote className="border-l-2 border-[#c9a84c]/40 pl-4">
               <p className="font-body text-sm text-[#c9a84c] leading-[1.85] italic">
@@ -182,7 +182,7 @@ export default function HibrythianReligions() {
           <div className="border border-[#2e2b26] hover:border-[#c9a84c]/40 bg-[#0f0d0c] hover:bg-[#151210] rounded-sm px-6 py-6 transition-colors space-y-5">
             <div>
               <h3 className="font-display text-sm text-[#f2ebeb] mb-2">Overview</h3>
-              <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
+              <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
                 Valthoreia is the modern worship of <strong className="text-[#f2ebeb]">Queen Eira Valthorne</strong>, the <strong className="text-[#f2ebeb]">Winter Moon Monarch</strong> — a powerful queen from ancient times who was deified after her mysterious disappearance. This is a <strong className="text-[#f2ebeb]">mortal-turned-divine</strong> faith, relatable and beloved by common folk, especially in northern and winter regions. Valthoreia is still one of the strongest religions currently in Modern Hetra. The people are called <strong className="text-[#f2ebeb]">Valthoreians</strong>. Valthoreia is the current modern religion on Planet Hetra.
               </p>
               <p className="font-body text-sm text-[#7a746e] leading-[1.85] mt-2 italic">
@@ -200,7 +200,7 @@ export default function HibrythianReligions() {
                 ].map(([title, desc]) => (
                   <div key={title} className="flex gap-3">
                     <span className="text-[#c9a84c] mt-[3px] shrink-0">—</span>
-                    <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]"><strong className="text-[#f2ebeb]">{title}</strong> — {desc}</p>
+                    <p className="font-body text-base text-[#c8c2ba] leading-relaxed"><strong className="text-[#f2ebeb]">{title}</strong> — {desc}</p>
                   </div>
                 ))}
               </div>
@@ -216,7 +216,7 @@ export default function HibrythianReligions() {
                 ].map(([title, desc]) => (
                   <div key={title} className="flex gap-3">
                     <span className="text-[#c9a84c] mt-[3px] shrink-0">—</span>
-                    <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]"><strong className="text-[#f2ebeb]">{title}</strong> — {desc}</p>
+                    <p className="font-body text-base text-[#c8c2ba] leading-relaxed"><strong className="text-[#f2ebeb]">{title}</strong> — {desc}</p>
                   </div>
                 ))}
               </div>
@@ -230,13 +230,13 @@ export default function HibrythianReligions() {
                   'Winter travelers, hunters, and those who brave the Alarctic Alpines',
                   'The Frostguard Clergy — Priests and priestesses who tend the Alarctic Ice Palace',
                 ].map(f => (
-                  <div key={f} className="flex gap-3"><span className="text-[#c9a84c] shrink-0">—</span><p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">{f}</p></div>
+                  <div key={f} className="flex gap-3"><span className="text-[#c9a84c] shrink-0">—</span><p className="font-body text-base text-[#c8c2ba] leading-relaxed">{f}</p></div>
                 ))}
               </div>
             </div>
             <div>
               <h4 className="font-display text-base text-[#f2ebeb] mb-2">Sacred Symbols</h4>
-              <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">The Crescent Moon · The Frostbloom (symbol of guidance and remembrance) · <span className="text-[#c9a84c]">Colors: Icy blue, silver, white, and deep indigo</span></p>
+              <p className="font-body text-base text-[#c8c2ba] leading-relaxed">The Crescent Moon · The Frostbloom (symbol of guidance and remembrance) · <span className="text-[#c9a84c]">Colors: Icy blue, silver, white, and deep indigo</span></p>
             </div>
             <blockquote className="border-l-2 border-[#c9a84c]/40 pl-4">
               <p className="font-body text-sm text-[#c9a84c] leading-[1.85] italic">
@@ -261,7 +261,7 @@ export default function HibrythianReligions() {
           <div className="border border-[#2e2b26] hover:border-[#c9a84c]/40 bg-[#0f0d0c] hover:bg-[#151210] rounded-sm px-6 py-6 transition-colors space-y-5">
             <div>
               <h3 className="font-display text-sm text-[#f2ebeb] mb-2">Overview</h3>
-              <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
+              <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
                 Nahfianism is the spiritual practice of <strong className="text-[#f2ebeb]">the Sylphs</strong>, centered on <Link to="/characters/NahfiaAlphraey" className="text-[#c9a84c] hover:underline">Nahfia, The Spirit of Sylphs</Link> — the divine being who created the Sylphrelm (Cloud Abode) and saved the Sylph race from extinction. This faith is unique to Sylph culture, emphasizing healing, peace, song, and community. Sylphs alike, not just humans from Hetra, are called <strong className="text-[#f2ebeb]">Nahfians</strong>.
               </p>
             </div>
@@ -276,7 +276,7 @@ export default function HibrythianReligions() {
                 ].map(([title, desc]) => (
                   <div key={title} className="flex gap-3">
                     <span className="text-[#c9a84c] mt-[3px] shrink-0">—</span>
-                    <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]"><strong className="text-[#f2ebeb]">{title}</strong> — {desc}</p>
+                    <p className="font-body text-base text-[#c8c2ba] leading-relaxed"><strong className="text-[#f2ebeb]">{title}</strong> — {desc}</p>
                   </div>
                 ))}
               </div>
@@ -293,7 +293,7 @@ export default function HibrythianReligions() {
                 ].map(([title, desc]) => (
                   <div key={title} className="flex gap-3">
                     <span className="text-[#c9a84c] mt-[3px] shrink-0">—</span>
-                    <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]"><strong className="text-[#f2ebeb]">{title}</strong> — {desc}</p>
+                    <p className="font-body text-base text-[#c8c2ba] leading-relaxed"><strong className="text-[#f2ebeb]">{title}</strong> — {desc}</p>
                   </div>
                 ))}
               </div>
@@ -307,17 +307,17 @@ export default function HibrythianReligions() {
                   'The Song Keepers — Sylphs who preserve sacred songs and teach them to the young',
                   'The Rainbow Wardens — Guardians of the Rainbow Funnels',
                 ].map(f => (
-                  <div key={f} className="flex gap-3"><span className="text-[#c9a84c] shrink-0">—</span><p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">{f}</p></div>
+                  <div key={f} className="flex gap-3"><span className="text-[#c9a84c] shrink-0">—</span><p className="font-body text-base text-[#c8c2ba] leading-relaxed">{f}</p></div>
                 ))}
               </div>
             </div>
             <div>
               <h4 className="font-display text-base text-[#f2ebeb] mb-2">Sacred Symbols</h4>
-              <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">The Rainbow Spiral · The Cloud Lotus (blooms only in the Sylphrelm) · <span className="text-[#c9a84c]">Colors: Sky blue, lavender, mint green, pale gold</span></p>
+              <p className="font-body text-base text-[#c8c2ba] leading-relaxed">The Rainbow Spiral · The Cloud Lotus (blooms only in the Sylphrelm) · <span className="text-[#c9a84c]">Colors: Sky blue, lavender, mint green, pale gold</span></p>
             </div>
             <div>
               <h4 className="font-display text-base text-[#f2ebeb] mb-2">The Seven Virtues of Nahfia</h4>
-              <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">Compassion · Patience · Harmony · Gentleness · Healing · Song · Community</p>
+              <p className="font-body text-base text-[#c8c2ba] leading-relaxed">Compassion · Patience · Harmony · Gentleness · Healing · Song · Community</p>
             </div>
             <div>
               <h4 className="font-display text-base text-[#f2ebeb] mb-3">Religious Figures</h4>
@@ -326,7 +326,7 @@ export default function HibrythianReligions() {
                   'High Priestess Aloe Frey — Leader of the Southwing Sylphs and spiritual guide',
                   'The Sylph Council — Five leaders who also serve as religious authorities',
                 ].map(f => (
-                  <div key={f} className="flex gap-3"><span className="text-[#c9a84c] shrink-0">—</span><p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">{f}</p></div>
+                  <div key={f} className="flex gap-3"><span className="text-[#c9a84c] shrink-0">—</span><p className="font-body text-base text-[#c8c2ba] leading-relaxed">{f}</p></div>
                 ))}
               </div>
             </div>
@@ -356,7 +356,7 @@ export default function HibrythianReligions() {
                   'Gianquisim honors Vivianya, who practiced Sylph Magic — a bridge to Nahfianism.',
                   'Valthoreia may invoke Laeyana\'s name in ritual magic, acknowledging her as the source.',
                 ].map((t, i) => (
-                  <div key={i} className="flex gap-3"><span className="text-[#c9a84c] shrink-0">—</span><p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">{t}</p></div>
+                  <div key={i} className="flex gap-3"><span className="text-[#c9a84c] shrink-0">—</span><p className="font-body text-base text-[#c8c2ba] leading-relaxed">{t}</p></div>
                 ))}
               </div>
             </div>
@@ -368,7 +368,7 @@ export default function HibrythianReligions() {
                   'Old Faith vs. New — Gianquisim followers sometimes clash with Valthoreia believers over "mortal deification."',
                   'Sylph Isolationism — Nahfianism is rarely practiced outside the Sylphrelm, leading to misunderstandings.',
                 ].map((t, i) => (
-                  <div key={i} className="flex gap-3"><span className="text-[#c9a84c] shrink-0">—</span><p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">{t}</p></div>
+                  <div key={i} className="flex gap-3"><span className="text-[#c9a84c] shrink-0">—</span><p className="font-body text-base text-[#c8c2ba] leading-relaxed">{t}</p></div>
                 ))}
               </div>
             </div>
@@ -385,7 +385,7 @@ export default function HibrythianReligions() {
               ].map(([faith, region]) => (
                 <div key={faith} className="flex gap-3">
                   <span className="font-display text-sm text-[#c9a84c] shrink-0 w-28">{faith}</span>
-                  <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">{region}</p>
+                  <p className="font-body text-base text-[#c8c2ba] leading-relaxed">{region}</p>
                 </div>
               ))}
             </div>
@@ -409,7 +409,7 @@ export default function HibrythianReligions() {
                 {(events as string[]).map(e => (
                   <div key={e} className="flex gap-2 mb-1">
                     <span className="text-[#c9a84c] shrink-0">—</span>
-                    <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">{e}</p>
+                    <p className="font-body text-base text-[#c8c2ba] leading-relaxed">{e}</p>
                   </div>
                 ))}
               </div>
