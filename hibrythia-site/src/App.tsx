@@ -28,10 +28,10 @@ import TheErbgerogerFlower from '@/pages/LocalesAndSights/TheErbgerogerFlower';
 import TheEulerianCatalogs from '@/pages/LocalesAndSights/TheEulerianCatalogs';
 import TheTreeOfElenia from '@/pages/LocalesAndSights/TheTreeOfElenia';
 import TheOakgnarGrandTree from '@/pages/LocalesAndSights/TheOakgnarGrandTree';
-import TheVarleqianWaterfallPage from '@/pages/LocalesAndSights/TheVarleqianWaterfall';
 import TheLostCityOfLhavaria from '@/pages/LocalesAndSights/TheLostCityOfLhavaria';
 import TheAlarcticIcePalace from '@/pages/LocalesAndSights/TheAlarcticIcePalace';
 import AlarcticAlpines from '@/pages/LocalesAndSights/AlarcticAlpines';
+import TheContinentOfVarleqe from '@/pages/LocalesAndSights/TheContinentOfVarleqe';
 import TheContinentOfEulerich from '@/pages/LocalesAndSights/TheContinentOfEulerich';
 import TheSkyContinentOfHetrania from '@/pages/LocalesAndSights/TheSkyContinentOfHetrania';
 import TheContinentOfLynneria from '@/pages/LocalesAndSights/TheContinentOfLynneria';
@@ -139,14 +139,14 @@ export default function App() {
           <Route path="world/locales/lynneria" element={<PageTransition><TheContinentOfLynneria /></PageTransition>} />
           <Route path="world/locales/norrane" element={<PageTransition><TheContinentOfNorrane /></PageTransition>} />
           <Route path="world/locales/rynel" element={<PageTransition><TheContinentOfRynel /></PageTransition>} />
-          <Route path="world/locales/varleqe" element={<PageTransition><TheVarleqianWaterfall /></PageTransition>} />
+          <Route path="world/locales/varleqe" element={<PageTransition><TheContinentOfVarleqe /></PageTransition>} />
           <Route path="world/locales/HetraSEAPSpaceProgram" element={<PageTransition><HetraSEAPSpaceProgram /></PageTransition>} />
           <Route path="world/locales/skypeak-obelisk" element={<PageTransition><TheSkypeakObelisk /></PageTransition>} />
           <Route path="world/locales/erbgeroger-flower" element={<PageTransition><TheErbgerogerFlower /></PageTransition>} />
           <Route path="world/locales/eulerian-catalogs" element={<PageTransition><TheEulerianCatalogs /></PageTransition>} />
           <Route path="world/locales/tree-of-elenia" element={<PageTransition><TheTreeOfElenia /></PageTransition>} />
           <Route path="world/locales/oakgnar-grand-tree" element={<PageTransition><TheOakgnarGrandTree /></PageTransition>} />
-          <Route path="world/locales/varleqian-waterfall" element={<PageTransition><TheVarleqianWaterfallPage /></PageTransition>} />
+          <Route path="world/locales/varleqian-waterfall" element={<PageTransition><TheVarleqianWaterfall /></PageTransition>} />
           <Route path="world/locales/lost-city-lhavaria" element={<PageTransition><TheLostCityOfLhavaria /></PageTransition>} />
           <Route path="world/locales/alarctic-ice-palace" element={<PageTransition><TheAlarcticIcePalace /></PageTransition>} />
           <Route path="world/meta" element={<PageTransition><MetaWorldbuilding /></PageTransition>} />
