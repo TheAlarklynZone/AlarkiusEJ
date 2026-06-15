@@ -14,7 +14,7 @@ export default function TheHynnianChurch() {
           The Hynnian Church is built by Hynnia, one of The Seven Architects back in the Greungerian Era.
           His church was built via magic, and it was on the first day of the week. This church was built
           on the Continent of Eulerich, specifically in The Kingdom of Eulan, which sits within the
-          boundary of the main city of Eulanis.
+          boundary of the main city of Eulanis. The first day of the week is called Hynsday.
         </p>
       </div>
 
