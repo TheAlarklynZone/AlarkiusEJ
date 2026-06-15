@@ -14,7 +14,7 @@ export default function TheContinentOfEulerich() {
         <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Locales &amp; Sights</p>
         <h1 className="font-display text-3xl md:text-4xl text-[#f2ebeb] mb-4">The Continent of Eulerich</h1>
         <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-          Eulerich is a supercontinent east of Varleqe, Hetrania, Lynneria, and Norrane. Eulerich is home to the Eulerians, a race that is highly intelligent in ancient technology and ancient magic. Eulerich will only be mentioned in the first novel of the series, but the arc will come later in the series!
+          Eulerich is a supercontinent east of Varleqe, Hetrania, Lynneria, and Norrane. Eulerich is home to the Eulerians, a race that is highly intelligent in ancient technology and ancient magic. Eulerich will only be mentioned in the first novel of the series, but the arc will come later in the series! You can check out the map here!
         </p>
       </div>
 
@@ -79,6 +79,9 @@ export default function TheContinentOfEulerich() {
           <h3 className="font-display text-sm text-[#f2ebeb] mb-3">Oelenis</h3>
           <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
             Oelenis is the major city of the Oelen Kingdom. Located near the border of Eulerich. Oelenis takes up the size of a huge volcanic island and a forest away from the Cold Rigid Sea. Oelenis has ports and ships that ship off to sea on the west that gets to the Alarctic Frost, the South Pole for research on Alarctic Ores.
+          </p>
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+            Oelenis is founded by King Gorvich Eckhart and Queen Fahlia Eckhart. Fahlia Eckhart married into Eckhart&apos;s family side, taking his name. Her sister is Queen Anika Briehale.
           </p>
           <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
             The paying wages in Oelenis, reported by well known professions goes up to around <span className="font-body text-[#f2ebeb]">&#294;20.65 hetrix ($14.75 USD)</span>. There are a lot of different professions, but the main popular ones are Carpentry, Smithing, Cartography, and Oceanography.
