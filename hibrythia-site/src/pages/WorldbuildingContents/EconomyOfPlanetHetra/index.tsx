@@ -61,7 +61,7 @@ export default function EconomyOfPlanetHetra() {
                 { bill: "Ħ15",  usd: "$10.00 USD",     note: "—" },
                 { bill: "Ħ35",  usd: "$20.00 USD",     note: "—" },
                 { bill: "Ħ55",  usd: "$50.00 USD",     note: "—" },
-                { bill: "Ħ75",  usd: "Custom Hetrix",  note: "Unique to Hetra — no Earth equivalent" },
+                { bill: "Ħ75",  usd: "Earth's rare \"$2\" Bill",  note: "Custom Hetrix" },
                 { bill: "Ħ150", usd: "$100.00 USD",    note: "Highest standard denomination" },
               ].map((row, i) => (
                 <tr key={i} className="border-b border-[#2e2b26]/50 hover:bg-[#0f0d0c] transition-colors">
@@ -361,4 +361,5 @@ export default function EconomyOfPlanetHetra() {
     </div>
   );
 }
+
 
