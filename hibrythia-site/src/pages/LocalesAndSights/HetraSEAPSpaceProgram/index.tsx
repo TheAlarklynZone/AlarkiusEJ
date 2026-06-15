@@ -31,7 +31,7 @@ export default function HetraSEAPSpaceProgram() {
       <div className="space-y-4">
         <h2 className="font-display text-lg text-[#f2ebeb] mb-4">Overview</h2>
         <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-          The <strong>Hetranian Space Exploration &amp; Aeronautics Program</strong>, commonly known as <strong>HetraSEAP</strong>, is the leading interplanetary space agency of Planet Hetra. Headquartered in the city of <strong>New Rynels</strong> on the continent of Rynel, HetraSEAP operates as a government-funded program responsible for the exploration and documentation of the <strong>Nhumela Cluster</strong>, the home solar system of Planet Hetra.
+          The <strong>Hetranian Space Exploration &amp; Aeronautics Program</strong>, commonly known as <strong>HetraS.E.A.P</strong>, is the leading interplanetary space agency of Planet Hetra. Headquartered in the city of <strong>New Rynels</strong> on the continent of Rynel, HetraSEAP operates as a government-funded program responsible for the exploration and documentation of the <strong>Nhumela Cluster</strong>, the home solar system of Planet Hetra.
         </p>
         <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
           With access to cutting-edge technology and close collaboration with scientific institutions, most notably the scientists of <strong>Eldreule</strong> (City of Science, Lynneria), HetraSEAP has been central to normalizing space travel across the solar system. As of the current year <strong>2245 A.D.</strong>, interplanetary transportation between Hetra and its neighboring inhabited planet, <strong>Planet Schavel</strong>, is a routine part of life.
