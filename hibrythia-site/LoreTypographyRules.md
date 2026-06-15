@@ -1,6 +1,6 @@
 # Hibrythia Site — Important Typography Conventions
 > IMPORTANT Reference file for consistent heading sizes, body paragraph sizes across all lore pages.
-> Last updated: June 14 2026 - 4:51 PM
+> Last updated: June 15 2026
 
 ---
 
@@ -68,6 +68,56 @@
 
 ---
 
+## Bottom Nav Cards (Back + Next)
+
+Every lore page that belongs to a themed group (e.g. Seven Wonders, Churches, Continents, Cosmic Foundation) must have a bottom nav row at the very end of the page content, inside the BodyWidth960 wrapper.
+
+### Layout Rule
+- `← Back` card is on the **left** — links to the parent index page (e.g. Locales & Sights, World Databases)
+- `Next →` card is on the **right** — links to the next page in the themed sequence
+- They sit at opposite ends using `justify-between` within the 960 body width
+- If the page is the **last** in its sequence, omit the Next card (Back card only, left-aligned)
+
+### When to add a Next card
+Add a `Next →` card whenever the theme/group the page belongs to has more than one entry and the current page is not the last. Examples:
+- Seven Wonders of the World (7 pages in sequence)
+- The Churches of the World (7 churches in sequence)
+- I. The Cosmic Foundation (multiple lore entries in sequence)
+- Continent pages (ordered sequence)
+
+### Copy-paste template
+
+```tsx
+{/* Bottom Nav */}
+<div className="flex items-start justify-between pt-8 border-t border-[#2e2b26] mt-16">
+  <Link
+    to="/world/locales"
+    className="group flex items-center gap-3 px-5 py-4 rounded-xl border border-[#2e2b26] bg-[#1a1714] hover:border-[#c9a84c]/40 hover:bg-[#1f1c18] transition-all duration-200 max-w-[45%]"
+  >
+    <span className="text-[#c9a84c] text-lg">←</span>
+    <div>
+      <p className="font-display text-xs text-[#4a4844] uppercase tracking-wider mb-0.5">Back</p>
+      <p className="font-display text-sm text-[#f2ebeb]">Locales &amp; Sights</p>
+    </div>
+  </Link>
+
+  <Link
+    to="/world/locales/next-page-slug"
+    className="group flex items-center gap-3 px-5 py-4 rounded-xl border border-[#2e2b26] bg-[#1a1714] hover:border-[#c9a84c]/40 hover:bg-[#1f1c18] transition-all duration-200 max-w-[45%] text-right"
+  >
+    <div>
+      <p className="font-display text-xs text-[#4a4844] uppercase tracking-wider mb-0.5">Next</p>
+      <p className="font-display text-sm text-[#f2ebeb]">Next Page Title</p>
+    </div>
+    <span className="text-[#c9a84c] text-lg">→</span>
+  </Link>
+</div>
+```
+
+> The gold divider (`border-t border-[#2e2b26]`) is only on the nav row — never add a standalone gold horizontal rule at the top of the page.
+
+---
+
 ## Color Reference
 
 | Token        | Hex       | Usage                          |
@@ -89,7 +139,7 @@ Single-quoted strings containing apostrophes break the TypeScript parser.
 
 ```tsx
 // BREAKS BUILD
-{ label: 'Hetra’s Standard Systems' }
+{ label: 'Hetra's Standard Systems' }
 
 // SAFE — use double quotes
 { label: "Hetra's Standard Systems" }
