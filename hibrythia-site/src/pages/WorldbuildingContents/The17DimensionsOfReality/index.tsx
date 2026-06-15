@@ -70,7 +70,7 @@ export default function The17DimensionsOfReality() {
                   className="flex items-center gap-4 border border-[#2e2b26] bg-[#0f0d0c] rounded-sm px-4 py-3 hover:border-[#c9a84c]/40 hover:bg-[#151210] transition-all"
                 >
                   <span className="font-display text-sm text-[#c9a84c] w-6 shrink-0">{d.num}</span>
-                  <span className="font-body text-sm text-[#c8c2ba]">{d.label}</span>
+                  <span className="font-body text-base text-[#c8c2ba]">{d.label}</span>
                 </div>
               ))}
             </div>
@@ -86,7 +86,7 @@ export default function The17DimensionsOfReality() {
                   className="flex items-start gap-4 border border-[#2e2b26] bg-[#0f0d0c] rounded-sm px-4 py-3 hover:border-[#c9a84c]/40 hover:bg-[#151210] transition-all"
                 >
                   <span className="font-display text-sm text-[#c9a84c] w-7 shrink-0">{d.num}</span>
-                  <span className="font-body text-sm text-[#c8c2ba] leading-relaxed">{d.label}</span>
+                  <span className="font-body text-base text-[#c8c2ba] leading-relaxed">{d.label}</span>
                 </div>
               ))}
             </div>
@@ -111,13 +111,13 @@ export default function The17DimensionsOfReality() {
           <div className="border border-[#2e2b26] bg-[#0f0d0c] rounded-sm p-5">
             <h3 className="font-display text-sm text-[#f2ebeb] mb-4">As Dimensional Particles</h3>
             <ul className="flex flex-col gap-3">
-              <li className="font-body text-sm text-[#c8c2ba] leading-relaxed pl-4 border-l border-[#2e2b26]">
+              <li className="font-body text-base text-[#c8c2ba] leading-relaxed pl-4 border-l border-[#2e2b26]">
                 Quwarkels are the smallest measurable units that compose dimensional planes (Length, Width, Depth, Time, Space, Matter, Illusion, Probability, Perception, and Reality)
               </li>
-              <li className="font-body text-sm text-[#c8c2ba] leading-relaxed pl-4 border-l border-[#2e2b26]">
+              <li className="font-body text-base text-[#c8c2ba] leading-relaxed pl-4 border-l border-[#2e2b26]">
                 Each dimension has its own distinct &quot;flavor&quot; or type of Quwarkel&mdash;Time Quwarkels, Matter Quwarkels, Probability Quwarkels, etc.
               </li>
-              <li className="font-body text-sm text-[#c8c2ba] leading-relaxed pl-4 border-l border-[#2e2b26]">
+              <li className="font-body text-base text-[#c8c2ba] leading-relaxed pl-4 border-l border-[#2e2b26]">
                 When dimensions interact or overlap, their respective Quwarkels resonate together, creating observable dimensional phenomena
               </li>
             </ul>
@@ -127,16 +127,16 @@ export default function The17DimensionsOfReality() {
           <div className="border border-[#2e2b26] bg-[#0f0d0c] rounded-sm p-5">
             <h3 className="font-display text-sm text-[#f2ebeb] mb-4">As Probability Anchors</h3>
             <ul className="flex flex-col gap-3">
-              <li className="font-body text-sm text-[#c8c2ba] leading-relaxed pl-4 border-l border-[#2e2b26]">
+              <li className="font-body text-base text-[#c8c2ba] leading-relaxed pl-4 border-l border-[#2e2b26]">
                 At any given moment, infinite probabilities exist in a state of quantum flux (as governed by Dimension 8: Probability)
               </li>
-              <li className="font-body text-sm text-[#c8c2ba] leading-relaxed pl-4 border-l border-[#2e2b26]">
+              <li className="font-body text-base text-[#c8c2ba] leading-relaxed pl-4 border-l border-[#2e2b26]">
                 Quwarkels actively &quot;lock in&quot; which probability becomes actualized reality
               </li>
-              <li className="font-body text-sm text-[#c8c2ba] leading-relaxed pl-4 border-l border-[#2e2b26]">
+              <li className="font-body text-base text-[#c8c2ba] leading-relaxed pl-4 border-l border-[#2e2b26]">
                 When a choice is made or an event occurs, Quwarkels collapse the wave of possibilities into a single concrete outcome
               </li>
-              <li className="font-body text-sm text-[#c8c2ba] leading-relaxed pl-4 border-l border-[#2e2b26]">
+              <li className="font-body text-base text-[#c8c2ba] leading-relaxed pl-4 border-l border-[#2e2b26]">
                 This anchoring function is why reality feels solid and consistent despite the existence of infinite parallel possibilities
               </li>
             </ul>
@@ -147,7 +147,7 @@ export default function The17DimensionsOfReality() {
         {/* Dimensional Barriers */}
         <div className="border border-[#2e2b26] bg-[#0f0d0c] rounded-sm p-5">
           <h3 className="font-display text-sm text-[#f2ebeb] mb-3">Dimensional Barriers</h3>
-          <p className="font-body text-sm text-[#c8c2ba] leading-relaxed">
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
             The ancient Hetranian monks and astrologists who attempted to breach the Dream Dimension encountered barriers composed of stabilized Quwarkels. These Quwarkel structures maintain the separation between dimensional planes. Successful interdimensional travel would require the ability to manipulate Quwarkels themselves&mdash;a technology that remains beyond reach even in the current era.
           </p>
         </div>
@@ -181,13 +181,13 @@ export default function The17DimensionsOfReality() {
               <p className="font-body text-[10px] tracking-widest uppercase text-[#2e2b26]">[ Queen Laeyana &mdash; Image Placeholder ]</p>
             </div>
             <h3 className="font-display text-base text-[#f2ebeb] mb-3">Queen Laeyana</h3>
-            <p className="font-body text-sm text-[#c8c2ba] leading-relaxed mb-3">
+            <p className="font-body text-base text-[#c8c2ba] leading-relaxed mb-3">
               Queen Laeyana is a Lhumerial, a being that exists within the 10-D, and is the Queen of all Magic. Laeyana can take on as many forms as she pleases, and often times gifts individuals with the power of magic (or a specific type of magic). There is also a high chance that when a baby is of before birth, she will bestow them with magic, giving a unique ability before being born into the world. Laeyana is a powerful, magic Lhumeria.
             </p>
-            <p className="font-body text-sm text-[#c8c2ba] leading-relaxed mb-3">
+            <p className="font-body text-base text-[#c8c2ba] leading-relaxed mb-3">
               Queen Laeyana, often referred to as the &quot;Goddess&quot; of Magic, is a popular idol to the many born-magic individuals, who read from texts and history. Around the world, there are Staff Altars that have a symbol and a plaque that symbolizes the presence of Queen Laeyana. Some have encountered Staff Altars, and sometimes will gain magic powers if they touch it.&mdash;&mdash;&mdash;this is an example of how magic can manifest onto someone through external sources.
             </p>
-            <p className="font-body text-sm text-[#c8c2ba] leading-relaxed">
+            <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
               Laeyana&apos;s current home resides in the Divine Realm, where she takes on the form of a Greenforest Sylph. Many spirits, who create worlds, will often ask for a fair share of powers from her, so that they can gift to individuals on their worlds.
             </p>
           </div>
@@ -198,10 +198,10 @@ export default function The17DimensionsOfReality() {
               <p className="font-body text-[10px] tracking-widest uppercase text-[#2e2b26]">[ King Nhavah &mdash; Image Placeholder ]</p>
             </div>
             <h3 className="font-display text-base text-[#f2ebeb] mb-3">King Nhavah</h3>
-            <p className="font-body text-sm text-[#c8c2ba] leading-relaxed mb-3">
+            <p className="font-body text-base text-[#c8c2ba] leading-relaxed mb-3">
               King Nhavah is another Lhumerian that is also 10-D. King Nhavah is the creator of the Divine Realm, which has the form of a Stellar Zaratan in that realm. Not only he is the creator of the DR, he&apos;s regarded as the King of Spirits. The God of Spirits. The Creator of Spirits.
             </p>
-            <p className="font-body text-sm text-[#c8c2ba] leading-relaxed">
+            <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
               Many of the Spirits that were manifested with their own spirit and personality stems from the King&apos;s powers. However, these spirits that the King creates are only omniscient (all-knowing) and omnipotent (all-powerful). The King fears that if he creates a spirit with all the 3 omnis, their personality will become twisted and thus turning them into Sphouls.
             </p>
           </div>
