@@ -22,6 +22,13 @@ import Flimpies from '@/pages/WorldbuildingContents/CreaturesOfTheWorld/Flimpies
 import DeerDragons from '@/pages/WorldbuildingContents/CreaturesOfTheWorld/DeerDragons';
 import PastModernDinosaurs from '@/pages/WorldbuildingContents/CreaturesOfTheWorld/PastModernDinosaurs';
 import LocalesAndSights from '@/pages/LocalesAndSights';
+import AlarcticAlpines from '@/pages/LocalesAndSights/AlarcticAlpines';
+import TheContinentOfEulerich from '@/pages/LocalesAndSights/TheContinentOfEulerich';
+import TheSkyContinentOfHetrania from '@/pages/LocalesAndSights/TheSkyContinentOfHetrania';
+import TheContinentOfLynneria from '@/pages/LocalesAndSights/TheContinentOfLynneria';
+import TheContinentOfNorrane from '@/pages/LocalesAndSights/TheContinentOfNorrane';
+import TheContinentOfRynel from '@/pages/LocalesAndSights/TheContinentOfRynel';
+import TheVarleqianWaterfall from '@/pages/LocalesAndSights/TheVarleqianWaterfall';
 import MetaWorldbuilding from '@/pages/MetaWorldbuilding';
 import OurCharacters from '@/pages/OurCharacters';
 import Bookshelf from '@/pages/Bookshelf';
@@ -117,6 +124,13 @@ export default function App() {
           <Route path="world/databases/CreaturesOfTheWorld/DeerDragons" element={<PageTransition><DeerDragons /></PageTransition>} />
           <Route path="world/databases/CreaturesOfTheWorld/PastModernDinosaurs" element={<PageTransition><PastModernDinosaurs /></PageTransition>} />
           <Route path="world/locales" element={<PageTransition><LocalesAndSights /></PageTransition>} />
+          <Route path="world/locales/alarctic-alpines" element={<PageTransition><AlarcticAlpines /></PageTransition>} />
+          <Route path="world/locales/eulerich" element={<PageTransition><TheContinentOfEulerich /></PageTransition>} />
+          <Route path="world/locales/hetrania" element={<PageTransition><TheSkyContinentOfHetrania /></PageTransition>} />
+          <Route path="world/locales/lynneria" element={<PageTransition><TheContinentOfLynneria /></PageTransition>} />
+          <Route path="world/locales/norrane" element={<PageTransition><TheContinentOfNorrane /></PageTransition>} />
+          <Route path="world/locales/rynel" element={<PageTransition><TheContinentOfRynel /></PageTransition>} />
+          <Route path="world/locales/varleqe" element={<PageTransition><TheVarleqianWaterfall /></PageTransition>} />
           <Route path="world/meta" element={<PageTransition><MetaWorldbuilding /></PageTransition>} />
           <Route path="characters" element={<PageTransition><OurCharacters /></PageTransition>} />
           <Route path="bookshelf" element={<PageTransition><Bookshelf /></PageTransition>} />
