@@ -73,10 +73,12 @@
 Every lore page that belongs to a themed group (e.g. Seven Wonders, Churches, Continents, Cosmic Foundation) must have a bottom nav row at the very end of the page content, inside the BodyWidth960 wrapper.
 
 ### Layout Rule
-- `← Back` card is on the **left** — links to the parent index page (e.g. Locales & Sights, World Databases)
+- `← Back` card is on the **left** — links to the **previous page in the sequence** (e.g. the church before this one, the previous locale, etc.)
+  - Exception: the **first page** in a sequence links back to the parent index (e.g. Locales & Sights, World Databases)
 - `Next →` card is on the **right** — links to the next page in the themed sequence
 - They sit at opposite ends using `justify-between` within the 960 body width
-- If the page is the **last** in its sequence, omit the Next card (Back card only, left-aligned)
+- If the page is the **last** in its sequence, omit the Next card (Back card only — back links to parent index, not the previous page)
+- The Back card label should match the actual page title (e.g. "The Runthian Church"), not a generic section name — unless it's the first page linking up to the parent section
 
 ### When to add a Next card
 Add a `Next →` card whenever the theme/group the page belongs to has more than one entry and the current page is not the last. Examples:
@@ -184,3 +186,4 @@ If you see basic grammar error structures or minor spelling mistakes (not custom
 - Images use a placeholder div until the author adds them manually.
 - Do not add lore to character/world pages until explicitly asked.
 - README.md files are hands-off unless explicitly requested.
+
