@@ -40,7 +40,7 @@ export default function TheSkypeakObelisk() {
 
       {/* Hexicule Power System */}
       <div className="space-y-6">
-        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">Hexicule Power System</h2>
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">The Hexicule Power System</h2>
         <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
           The Skypeak Obelisk operates on Hexicules. Hexicules are magic crystals that help serve as a fundamental core when it comes to buildings or inventions. They can be used as a variety of things, like batteries, engines, and technological inventions.
         </p>
