@@ -64,7 +64,7 @@ const SECTIONS = [
       {
         title: 'HetraS.E.A.P — Space Program',
         desc: 'Hetra\'s pioneering space exploration program, pushing the boundaries of what civilizations on this world can achieve.',
-        path: '/world/locales/hetra-seap',
+        path: '/world/locales/HetraSEAPSpaceProgram',
         icon: '🚀',
       },
     ],
