@@ -88,19 +88,7 @@
           (e.ctrlKey && e.shiftKey && ['k','K'].includes(e.key)) // Firefox console
         ) { e.preventDefault(); e.stopPropagation(); return false; }
       });
-      // Detect devtools open via window size diff
-      // Skip if running inside an iframe/web panel (e.g. Vivaldi) — size diff is expected there
-      (function devtoolsBlock() {
-        if (window.self !== window.top) return; // inside iframe — skip
-        var threshold = 160;
-        function check() {
-          if (window.outerWidth - window.innerWidth > threshold ||
-              window.outerHeight - window.innerHeight > threshold) {
-            document.body.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100vh;background:#100908;color:#c9a84c;font-family:Georgia,serif;font-size:1rem;letter-spacing:0.2em;text-transform:uppercase;">Access Denied</div>';
-          }
-        }
-        setInterval(check, 1000);
-      })();
+
     </script>
   </head>
   <body>
