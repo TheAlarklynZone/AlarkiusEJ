@@ -13,7 +13,7 @@ export default function MagicDatabase() {
         {/* Page Title — HdTextDSize */}
         <div>
           <h1 className="font-display text-3xl md:text-4xl text-[#f2ebeb] mb-4">Magic Database</h1>
-          <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
             Magic comes from <strong className="text-[#f2ebeb]">Three Sources</strong> in the entire world; one of which is Queen Laeyana.
           </p>
         </div>
@@ -25,10 +25,10 @@ export default function MagicDatabase() {
           <div>
             <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-2">The First Source</p>
             <h2 className="font-display text-lg text-[#f2ebeb] mb-3">The Sources of Magic</h2>
-            <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
+            <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
               <Link to="/characters/QueenLaeyana" className="text-[#c9a84c] hover:underline">Queen Laeyana</Link> is a Lhumerial (Lhumerian), a being that exists within 10 dimensions, and is the Queen of Magic. She is one of the main sources of Magic.
             </p>
-            <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mt-2">
+            <p className="font-body text-base text-[#c8c2ba] leading-relaxed mt-2">
               Here&apos;s a list of what she is the owner of:
             </p>
           </div>
@@ -36,7 +36,7 @@ export default function MagicDatabase() {
           {/* Lost Magic */}
           <div className="border border-[#2e2b26] bg-[#0f0d0c] rounded-sm px-6 py-6">
             <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">─────⊰ Lost Magic</p>
-            <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-5">
+            <p className="font-body text-base text-[#c8c2ba] leading-relaxed mb-5">
               These two types of magic are lost to civilization and are no longer practiced, as these two are very rare and scarce uses of power. Also known as Ancient Magic.
             </p>
             <div className="space-y-5">
@@ -44,10 +44,10 @@ export default function MagicDatabase() {
                 <h4 className="font-display text-base text-[#f2ebeb] mb-2">
                   <span className="text-[#c9a84c]">&laquo;</span>{' '}Witchcraft{' '}<span className="text-[#c9a84c]">&raquo;</span>
                 </h4>
-                <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-2">
+                <p className="font-body text-base text-[#c8c2ba] leading-relaxed mb-2">
                   Witchcraft was once a beautiful type of magic that specialized in revitalizing nature, which was once called Sorcery, or Nature Magic. Its presence prevailed from <strong className="text-[#f2ebeb]">100 OD to 1607 AD</strong>.
                 </p>
-                <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
+                <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
                   However, in the year of <strong className="text-[#f2ebeb]">1558 AD</strong>, a demon creature got a hold of said magic and cursed it into having dark and vile spells that are used to harm and kill people. It became very popular in those years, that is before other demons had to abandon the power. It is now lost to this day. But in some parts of the world, like Amberwick, there houses knowledge and spells of Witchcraft, from before its curse and after its curse.
                 </p>
               </div>
@@ -55,7 +55,7 @@ export default function MagicDatabase() {
                 <h4 className="font-display text-base text-[#f2ebeb] mb-2">
                   <span className="text-[#c9a84c]">&laquo;</span>{' '}Amberian Magic{' '}<span className="text-[#c9a84c]">&raquo;</span>
                 </h4>
-                <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
+                <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
                   Lost Magic from the Town of Amberwick. There is only one human from the long past that possesses this power and he still lives to this day. Amberian Magic was born in <strong className="text-[#f2ebeb]">205 OD</strong>.
                 </p>
               </div>
@@ -65,7 +65,7 @@ export default function MagicDatabase() {
           {/* The Four Types */}
           <div>
             <h3 className="font-display text-sm text-[#f2ebeb] mb-2">The Four Types of Magic</h3>
-            <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-6">
+            <p className="font-body text-base text-[#c8c2ba] leading-relaxed mb-6">
               These types of Magic are the types of powers that Queen Laeyana bestows among those who seek adventure and ambition, and also those who are deemed worthy of that type of power.
             </p>
 
@@ -84,7 +84,7 @@ export default function MagicDatabase() {
                 ].map(([name, desc]) => (
                   <div key={name} className="border-l-2 border-[#2e2b26] pl-4">
                     <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-1">{name}</p>
-                    <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">{desc}</p>
+                    <p className="font-body text-base text-[#c8c2ba] leading-relaxed">{desc}</p>
                   </div>
                 ))}
               </div>
@@ -107,7 +107,7 @@ export default function MagicDatabase() {
                 ].map(([name, desc]) => (
                   <div key={name} className="border-l-2 border-[#2e2b26] pl-4">
                     <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-1">{name}</p>
-                    <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">{desc}</p>
+                    <p className="font-body text-base text-[#c8c2ba] leading-relaxed">{desc}</p>
                   </div>
                 ))}
               </div>
@@ -129,7 +129,7 @@ export default function MagicDatabase() {
                 ].map(([name, desc]) => (
                   <div key={name} className="border-l-2 border-[#2e2b26] pl-4">
                     <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-1">{name}</p>
-                    <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">{desc}</p>
+                    <p className="font-body text-base text-[#c8c2ba] leading-relaxed">{desc}</p>
                   </div>
                 ))}
               </div>
@@ -141,7 +141,7 @@ export default function MagicDatabase() {
                 <span className="text-[#c9a84c]">&laquo;</span>{' '}Infernal Magic{' '}<span className="text-[#c9a84c]">&raquo;</span>
               </h4>
               <p className="font-body text-sm text-[#7a746e] leading-[1.85] mb-3">One of the strongest types of magic, if combined with Combat Magic. Rarely used in individuals since there are parts of it that are dangerous. Infernal Magic gets a power boost of <strong className="text-[#f2ebeb]">20 times</strong>.</p>
-              <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-4">
+              <p className="font-body text-base text-[#c8c2ba] leading-relaxed mb-4">
                 Without proper training, immobility hits right after, which lasts for an hour or so. Tiredness, stress, soreness, and sometimes slight petrification happens. Petrification doesn&apos;t fully petrify — think of it like a hard shell.
               </p>
               <div className="space-y-3">
@@ -156,7 +156,7 @@ export default function MagicDatabase() {
                 ].map(([name, desc]) => (
                   <div key={name} className="border-l-2 border-[#2e2b26] pl-4">
                     <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-1">{name}</p>
-                    <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">{desc}</p>
+                    <p className="font-body text-base text-[#c8c2ba] leading-relaxed">{desc}</p>
                   </div>
                 ))}
               </div>
@@ -165,17 +165,17 @@ export default function MagicDatabase() {
 
           {/* Divine Magician note */}
           <blockquote className="border-l-2 border-[#c9a84c]/40 pl-4">
-            <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] italic">
+            <p className="font-body text-base text-[#c8c2ba] leading-relaxed italic">
               When an individual holds or possesses five sets of Laeyana&apos;s Magic, they earn the title, <strong className="text-[#f2ebeb]">&ldquo;Divine Magician.&rdquo;</strong> There are Four Types of Magic that Laeyana herself gives to worthy individuals, while there are a few that remain hidden and kept secret from humanity.
             </p>
-            <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] italic mt-2">
+            <p className="font-body text-base text-[#c8c2ba] leading-relaxed italic mt-2">
               In the year of <strong className="text-[#f2ebeb]">2 AD</strong>, There were Five Giants who possessed knowledge of each of the five types of magic, which you can read on our page,{' '}
               <Link to="/world/databases/OurPlanetHetra" className="text-[#c9a84c] hover:underline">Planet Hetra</Link>.
             </p>
           </blockquote>
 
           <div className="border border-[#2e2b26] bg-[#0f0d0c] rounded-sm px-5 py-4">
-            <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
+            <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
               The amount of magic is unknown because when you have Alchemic Magic, you can alter or make new types of magic, or sub-elemental powers for a specific type of magic. There are many new iterations of magic that are used to make new forms.
             </p>
           </div>
@@ -188,7 +188,7 @@ export default function MagicDatabase() {
           <div>
             <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-2">The Second Source</p>
             <h2 className="font-display text-lg text-[#f2ebeb] mb-3">Cosmic Magic</h2>
-            <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
+            <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
               There is another source of magic, however, it is untethered from the entire continuity of The Hibryoverse. It is called Cosmic Magic and its source is from The Cosmic Train,{' '}
               <Link to="/404" className="text-[#c9a84c] hover:underline">Calypso</Link>. Cosmic Magic has the power to influence the properties of interstellar particles such as magic stardust and cosmic stardust from across multiverses and universes.
             </p>
@@ -206,7 +206,7 @@ export default function MagicDatabase() {
               ].map(([name, desc]) => (
                 <div key={name} className="border-l-2 border-[#2e2b26] pl-4">
                   <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-1">{name}</p>
-                  <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">{desc}</p>
+                  <p className="font-body text-base text-[#c8c2ba] leading-relaxed">{desc}</p>
                 </div>
               ))}
             </div>
@@ -220,7 +220,7 @@ export default function MagicDatabase() {
           <div>
             <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-2">The Third Source</p>
             <h2 className="font-display text-lg text-[#f2ebeb] mb-3">Sylph Magic</h2>
-            <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
+            <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
               Sylph Magic is a default magic power for Sylphs since these are powers that all Sylphs have. Sylph Magic has two sets, one being Healing Magic, and the other being Tranquil Magic. This type of Magic comes from{' '}
               <Link to="/characters/NahfiaAlphraey" className="text-[#c9a84c] hover:underline">Nahfia, The Spirit of Sylphs</Link>.
             </p>
@@ -229,7 +229,7 @@ export default function MagicDatabase() {
           {/* Physical Abilities */}
           <div className="border border-[#2e2b26] bg-[#0f0d0c] rounded-sm px-6 py-5">
             <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">─────⊰ Physical Abilities</p>
-            <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
+            <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
               All Sylphs have extraordinary speed and strength (it ranges), because that is where they prioritize their talents into. When they fly, their flight speed is measured in BPS (Beats Per Seconds — Hummingbird Speed). Their speed can only go up to Mach 1–2 by limit. M5 if they undergo vigorous training. Their reflexes and reaction time are one of the fastest, which outpaces a cat&apos;s and a fly&apos;s. They can also fly backwards and diagonal directions when needed.
             </p>
           </div>
@@ -237,12 +237,12 @@ export default function MagicDatabase() {
           {/* Vocal Abilities */}
           <div className="border border-[#2e2b26] bg-[#0f0d0c] rounded-sm px-6 py-5">
             <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">─────⊰ Vocal Abilities</p>
-            <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-3">
+            <p className="font-body text-base text-[#c8c2ba] leading-relaxed mb-3">
               The vocal range for Sylphs are all over the place. It can be low or high depending on the context. These vocal abilities are what make their music and songs elegant and atmospheric since it carries weight, longevity, and sweetness. This is used in Fairy Lullaby.
             </p>
             <div className="border-l-2 border-[#2e2b26] pl-4">
               <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-1">Multi-Voice Harmony (MVH)</p>
-              <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">One Voice can be split into multi-layers in one throat and track. This allows them to sing in different octaves while having one main voice act as the lead singer.</p>
+              <p className="font-body text-base text-[#c8c2ba] leading-relaxed">One Voice can be split into multi-layers in one throat and track. This allows them to sing in different octaves while having one main voice act as the lead singer.</p>
             </div>
           </div>
 
@@ -258,7 +258,7 @@ export default function MagicDatabase() {
               ].map(([name, desc]) => (
                 <div key={name} className="border-l-2 border-[#2e2b26] pl-4">
                   <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-1">{name}</p>
-                  <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">{desc}</p>
+                  <p className="font-body text-base text-[#c8c2ba] leading-relaxed">{desc}</p>
                 </div>
               ))}
             </div>
@@ -277,7 +277,7 @@ export default function MagicDatabase() {
               ].map(([name, desc]) => (
                 <div key={name} className="border-l-2 border-[#2e2b26] pl-4">
                   <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-1">{name}</p>
-                  <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">{desc}</p>
+                  <p className="font-body text-base text-[#c8c2ba] leading-relaxed">{desc}</p>
                 </div>
               ))}
             </div>
@@ -290,7 +290,7 @@ export default function MagicDatabase() {
         <section className="space-y-6">
           <div>
             <h2 className="font-display text-lg text-[#f2ebeb] mb-3">Derived Magic / Altered Magic</h2>
-            <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
+            <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
               Derived Magic is basically human-knowledge made magic that became an alteration of the original source from which it came from.
             </p>
           </div>
@@ -304,7 +304,7 @@ export default function MagicDatabase() {
               ].map(([name, desc]) => (
                 <div key={name} className="border-l-2 border-[#2e2b26] pl-4">
                   <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-1">{name}</p>
-                  <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">{desc}</p>
+                  <p className="font-body text-base text-[#c8c2ba] leading-relaxed">{desc}</p>
                 </div>
               ))}
             </div>
