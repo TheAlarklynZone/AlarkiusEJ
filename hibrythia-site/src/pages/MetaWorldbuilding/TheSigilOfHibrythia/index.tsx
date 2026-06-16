@@ -78,7 +78,7 @@ export default function TheSigilOfHibrythia() {
           Hibrytheia, The Sigil of Life
         </h1>
         <p className="font-body text-base text-[#c8c2ba] leading-relaxed max-w-[680px]">
-          Hibrythieon, otherwise known as The Sigil of Life (or The World Sigil), is an energy field that connects and supports The Six Realms in the Hibryoverse Continuity. The entire Crest of Life is contained inside the Continuity Frame — a frame that prevents Continuity Traversal to the other Primes.
+          Hibrytheia, otherwise known as The Sigil of Life (or The World Sigil), is an energy field that connects and supports The Six Realms in the Hibryoverse Continuity. The entire Crest of Life is contained inside the Continuity Frame — a frame that prevents Continuity Traversal to the other Primes.
         </p>
       </div>
 
