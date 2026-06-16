@@ -1,6 +1,6 @@
 // ============================================================
-// Raeya-Flutters Worker for The Hibrythian Saga (/hibrythia-site)
-// Domain: alarkiusej.com & thehibrythiansaga.com
+// Hanako-Reina — Author Schema Worker for NaiseikaiUniverse
+// Domain: alarkiusej.com & naiseikaiuniverse.com
 // Injects structured data (JSON-LD) + favicon into HTML responses
 // ============================================================
 
@@ -37,6 +37,7 @@ const PERSON_NODE = {
           "https://www.linkedin.com/in/alarkiusej/",
           "https://github.com/AlarkiusJay",
           "https://github.com/TheAlarklynZone",
+          "https://github.com/AlarklynDB",    
           "https://www.thehibrythiansaga.com/",
           "https://www.naiseikaiuniverse.com/",
           "https://www.barnesandnoble.com/search?q=Alarkius%20Elvya%20Jay&contributorName=alarkius-elvya-jay",
@@ -167,32 +168,16 @@ function escapeScriptJson(value) {
 // HTMLRewriter handlers
 // ------------------------------------------------------------
 
-// Page-specific OG overrides keyed by pathname
-const PAGE_OG = {
-  "/32-16TimeSystem": {
-    title: "The 32/16-Hour Time System | The Hibrythian Saga",
-    description: "Explore the Hetranian Calendar — 32-hour days, 14 months, 444 days per year. An interactive lore tool for The Hibrythian Saga.",
-    image: "https://i.ibb.co/kgRVHnXw/32-16-clock-banner.png",
-  },
-};
-
-function getPageOG(pathname) {
-  // Strip trailing slash for matching
-  const key = pathname.replace(/\/$/, "") || "/";
-  return PAGE_OG[key] || null;
-}
-
 class HeadHandler {
-  constructor(schema, faviconUrl, pageOG) {
+  constructor(schema, faviconUrl) {
     this.schema = schema;
     this.faviconUrl = faviconUrl;
-    this.pageOG = pageOG;
   }
 
   element(element) {
-    // Inject critical dark bg first — prevents gray flash before CSS loads on desktop
+    // Inject critical dark bg first — prevents gray flash on desktop
     element.prepend(
-      '<style>html,body{background-color:#100908!important;margin:0}</style>',
+      '<style>html,body{background-color:#0d0b12!important;margin:0}</style>',
       { html: true }
     );
 
@@ -205,35 +190,11 @@ class HeadHandler {
       `, { html: true });
     }
 
-    if (this.pageOG) {
-      const og = this.pageOG;
-      element.append(`
-        <meta property="og:title" content="${og.title}" />
-        <meta property="og:description" content="${og.description}" />
-        <meta property="og:image" content="${og.image}" />
-        <meta property="og:url" content="https://www.thehibrythiansaga.com${og.url || ''}" />
-        <meta name="twitter:title" content="${og.title}" />
-        <meta name="twitter:description" content="${og.description}" />
-        <meta name="twitter:image" content="${og.image}" />
-      `, { html: true });
-    }
-
     if (this.schema) {
       element.append(
         `<script type="application/ld+json">${escapeScriptJson(this.schema)}</script>`,
         { html: true }
       );
-    }
-  }
-}
-
-class TitleHandler {
-  constructor(title) {
-    this.title = title;
-  }
-  text(text) {
-    if (this.title && text.lastInTextNode) {
-      text.replace(this.title);
     }
   }
 }
@@ -272,11 +233,9 @@ export default {
 
     const schema  = getSchemaByHostname(hostname);
     const favicon = getFaviconByHostname(hostname);
-    const pageOG  = getPageOG(url.pathname);
 
     const transformed = new HTMLRewriter()
-      .on("head", new HeadHandler(schema, favicon, pageOG))
-      .on("title", new TitleHandler(pageOG?.title || null))
+      .on("head", new HeadHandler(schema, favicon))
       .transform(response);
 
     const newHeaders = new Headers(transformed.headers);
