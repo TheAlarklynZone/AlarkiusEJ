@@ -49,6 +49,12 @@ import TheContinentOfRynel from '@/pages/LocalesAndSights/TheContinentOfRynel';
 import TheVarleqianWaterfall from '@/pages/LocalesAndSights/TheVarleqianWaterfall';
 import MetaWorldbuilding from '@/pages/MetaWorldbuilding';
 import TheSigilOfHibrythia from '@/pages/MetaWorldbuilding/TheSigilOfHibrythia';
+import TheDivineRealm from '@/pages/MetaWorldbuilding/TheSigilOfHibrythia/TheDivineRealm';
+import TheSylphrelm from '@/pages/MetaWorldbuilding/TheSigilOfHibrythia/TheSylphrelm';
+import TheStygianRealm from '@/pages/MetaWorldbuilding/TheSigilOfHibrythia/TheStygianRealm';
+import TheExtreuluxRealm from '@/pages/MetaWorldbuilding/TheSigilOfHibrythia/TheExtreuluxRealm';
+import Ellhumhellm from '@/pages/MetaWorldbuilding/TheSigilOfHibrythia/Ellhumhellm';
+import IllusiaThePlaneOfDreams from '@/pages/MetaWorldbuilding/TheSigilOfHibrythia/IllusiaThePlaneOfDreams';
 import CharacterProfiles from '@/pages/CharacterProfiles';
 import PhilstraRhys from '@/pages/CharacterProfiles/PhilstraRhys';
 import Bookshelf from '@/pages/Bookshelf';
@@ -171,6 +177,12 @@ export default function App() {
           <Route path="world/locales/sethranian-church" element={<PageTransition><TheSethranianChurch /></PageTransition>} />
           <Route path="world/meta" element={<PageTransition><MetaWorldbuilding /></PageTransition>} />
           <Route path="world/meta/TheSigilOfHibrythia" element={<PageTransition><TheSigilOfHibrythia /></PageTransition>} />
+          <Route path="world/meta/TheSigilOfHibrythia/TheDivineRealm" element={<PageTransition><TheDivineRealm /></PageTransition>} />
+          <Route path="world/meta/TheSigilOfHibrythia/TheSylphrelm" element={<PageTransition><TheSylphrelm /></PageTransition>} />
+          <Route path="world/meta/TheSigilOfHibrythia/TheStygianRealm" element={<PageTransition><TheStygianRealm /></PageTransition>} />
+          <Route path="world/meta/TheSigilOfHibrythia/TheExtreuluxRealm" element={<PageTransition><TheExtreuluxRealm /></PageTransition>} />
+          <Route path="world/meta/TheSigilOfHibrythia/Ellhumhellm" element={<PageTransition><Ellhumhellm /></PageTransition>} />
+          <Route path="world/meta/TheSigilOfHibrythia/IllusiaThePlaneOfDreams" element={<PageTransition><IllusiaThePlaneOfDreams /></PageTransition>} />
           <Route path="characters" element={<PageTransition><CharacterProfiles /></PageTransition>} />
           <Route path="characters/PhilstraRhys" element={<PageTransition><PhilstraRhys /></PageTransition>} />
           <Route path="bookshelf" element={<PageTransition><Bookshelf /></PageTransition>} />
