@@ -170,7 +170,7 @@ export default function App() {
           <Route path="world/locales/draxian-sky-church" element={<PageTransition><TheDraxianSkyChurch /></PageTransition>} />
           <Route path="world/locales/sethranian-church" element={<PageTransition><TheSethranianChurch /></PageTransition>} />
           <Route path="world/meta" element={<PageTransition><MetaWorldbuilding /></PageTransition>} />
-          <Route path="world/meta/sigil" element={<PageTransition><TheSigilOfHibrythia /></PageTransition>} />
+          <Route path="world/meta/TheSigilOfHibrythia" element={<PageTransition><TheSigilOfHibrythia /></PageTransition>} />
           <Route path="characters" element={<PageTransition><CharacterProfiles /></PageTransition>} />
           <Route path="characters/PhilstraRhys" element={<PageTransition><PhilstraRhys /></PageTransition>} />
           <Route path="bookshelf" element={<PageTransition><Bookshelf /></PageTransition>} />
@@ -189,6 +189,7 @@ export default function App() {
     </>
   );
 }
+
 
 
 
