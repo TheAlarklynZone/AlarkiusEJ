@@ -96,6 +96,18 @@
         "publisher": { "@id": "https://www.alarkiusej.com/#brand" }
       },
       {
+      "@type": "MusicAlbum",
+      "@id": "https://www.alarkiusej.com/#album-2",
+      "name": "Alarkius Elvya Jay",
+      "url": "https://www.youtube.com/@TheHibrythianSaga",
+      "description": "AlarkiusEJ's Music, but on YouTube, for The Hibrythian Saga.",
+      "byArtist": { "@id": "https://www.alarkiusej.com/#author" },
+      "datePublished": "",
+      "numTracks": ,
+      "genre": ["Original Sound Tracks", "Orchestral", "Film" , "Book Music"],
+      "inAlbum": null
+      }  
+      {
         "@type": "WebSite",
         "@id": "https://www.thehibrythiansaga.com/#website",
         "url": "https://www.thehibrythiansaga.com/",
