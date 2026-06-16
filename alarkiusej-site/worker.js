@@ -1,5 +1,5 @@
 // ============================================================
-// alaria-aurelia — Author Schema Worker
+// Author Schema Worker for AlarkiusEJ
 // Domain: alarkiusej.com
 // Injects structured data (JSON-LD) + favicon into HTML responses
 // ============================================================
@@ -37,6 +37,7 @@ const PERSON_NODE = {
           "https://www.linkedin.com/in/alarkiusej/",
           "https://github.com/AlarkiusJay",
           "https://github.com/TheAlarklynZone",
+          "https://github.com/AlarklynDB",    
           "https://www.thehibrythiansaga.com/",
           "https://www.naiseikaiuniverse.com/",
           "https://www.barnesandnoble.com/search?q=Alarkius%20Elvya%20Jay&contributorName=alarkius-elvya-jay",
@@ -176,7 +177,7 @@ class HeadHandler {
   element(element) {
     // Inject critical dark bg first — prevents gray flash on desktop
     element.prepend(
-      '<style>html,body{background-color:#191919!important;margin:0}</style>',
+      '<style>html,body{background-color:#0d0b12!important;margin:0}</style>',
       { html: true }
     );
 
@@ -239,6 +240,9 @@ export default {
 
     const newHeaders = new Headers(transformed.headers);
     newHeaders.set("content-type", "text/html; charset=UTF-8");
+    // Allow same-origin iframes (e.g. Vivaldi web panels) while blocking third-party embeds
+    newHeaders.set("X-Frame-Options", "SAMEORIGIN");
+    newHeaders.set("Content-Security-Policy", "frame-ancestors 'self'");
 
     return new Response(transformed.body, {
       status: transformed.status,
