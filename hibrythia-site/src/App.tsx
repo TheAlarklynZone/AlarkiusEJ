@@ -49,6 +49,7 @@ import TheContinentOfRynel from '@/pages/LocalesAndSights/TheContinentOfRynel';
 import TheVarleqianWaterfall from '@/pages/LocalesAndSights/TheVarleqianWaterfall';
 import MetaWorldbuilding from '@/pages/MetaWorldbuilding';
 import CharacterProfiles from '@/pages/CharacterProfiles';
+import PhilstraRhys from '@/pages/CharacterProfiles/PhilstraRhys';
 import Bookshelf from '@/pages/Bookshelf';
 import Vol0HTHGOE from '@/pages/Bookshelf/Vol0HTHGOE';
 import Vol0EP0 from '@/pages/Bookshelf/Vol0HTHGOE/EP0';
@@ -169,6 +170,7 @@ export default function App() {
           <Route path="world/locales/sethranian-church" element={<PageTransition><TheSethranianChurch /></PageTransition>} />
           <Route path="world/meta" element={<PageTransition><MetaWorldbuilding /></PageTransition>} />
           <Route path="characters" element={<PageTransition><CharacterProfiles /></PageTransition>} />
+          <Route path="characters/PhilstraRhys" element={<PageTransition><PhilstraRhys /></PageTransition>} />
           <Route path="bookshelf" element={<PageTransition><Bookshelf /></PageTransition>} />
           <Route path="bookshelf/vol0" element={<PageTransition><Vol0HTHGOE /></PageTransition>} />
           <Route path="bookshelf/vol0/ep0" element={<PageTransition><Vol0EP0 /></PageTransition>} />
@@ -185,5 +187,6 @@ export default function App() {
     </>
   );
 }
+
 
 
