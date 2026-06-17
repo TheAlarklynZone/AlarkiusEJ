@@ -130,11 +130,11 @@ export default function TheDivineRealm() {
         </div>
       </div>
 
-      {/* Celestriax Lyeceriax Nexzylniax */}
+      {/* Celestriax Lyeceriax Nexzylkrai */}
       <div>
-        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">Celestriax, Lyeceriax &amp; Nexzylniax</h2>
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">Celestriax, Lyeceriax &amp; Nexzylkrai</h2>
         <p className="font-body text-base text-[#c8c2ba] leading-relaxed mb-6">
-          The Divine Realm houses two types of Spirits. These Spirits are divided into two groups: Celestriax and Lyeceriax. Each of these spirits have Galacticites on their chests.
+          The Divine Realm houses two types of Spirits, with an addition of one. These Spirits are divided into two groups: Celestriax and Lyeceriax. Each of these spirits have Galacticites on their chests.
         </p>
 
         {/* Galacticite */}
@@ -149,7 +149,7 @@ export default function TheDivineRealm() {
           {[
             { name: "Lyeceriax", sub: "Fluid Spirits", pronun: "Lie · seer/cer · i · ax/axe" },
             { name: "Celestriax", sub: "Core Spirits", pronun: "" },
-            { name: "Nexzylniax", sub: "Nexus / Axis Spirits", pronun: "" },
+            { name: "Nexzylkrai", sub: "Nexus / Axis Spirits", pronun: "" },
           ].map((s) => (
             <div key={s.name} className="px-5 py-4 rounded-xl border border-[#2e2b26] bg-[#1a1714]">
               <p className="font-display text-base text-[#f2ebeb] mb-1">{s.name}</p>
@@ -201,11 +201,11 @@ export default function TheDivineRealm() {
             </p>
           </div>
 
-          {/* Nexzylniax */}
+          {/* Nexzylkrai */}
           <div className="px-5 py-5 rounded-xl border border-[#2e2b26] bg-[#1a1714]">
-            <h3 className="font-display text-sm text-[#f2ebeb] mb-3">Nexzylniax — Nexus / Axis Spirits</h3>
+            <h3 className="font-display text-sm text-[#f2ebeb] mb-3">Nexzylkrai — Nexus / Axis Spirits</h3>
             <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-              These Spirits are not like the other two. Spirits who don&apos;t choose either of those roles are given the Nexzylniax Role. Nexzylniax means the centre, the nexus, the axis. It can also mean neutrality. Unlike the other two, these Spirits have the ability to switch to their other two counterparts&apos; powers. This ability is called the <span className="text-[#f2ebeb]">Trithereal Authority</span>. They can switch from their own role as a Nexzylniax into either Celestriax or Lyeceriax when the opportunity deems fit! Nahfia Alphraey is one of these Spirits.
+              These Spirits are not like the other two. Spirits who don&apos;t choose either of those roles are given the Nexzylkrai Role. Nexzylkrai means the centre, the nexus, the axis. It can also mean neutrality. Unlike the other two, these Spirits have the ability to switch to their other two counterparts&apos; powers. This ability is called the <span className="text-[#f2ebeb]">Trithereal Authority</span>. They can switch from their own role as a Nexzylkrai into either Celestriax or Lyeceriax when the opportunity deems fit! Nahfia Alphraey is one of these Spirits.
             </p>
           </div>
         </div>
@@ -242,7 +242,7 @@ export default function TheDivineRealm() {
             },
             {
               name: "Nahfia Alphraey",
-              desc: "The creator of the Sylph Race, and also the founder of the Sylphrelm. She is the first Spirit to become the source of Sylph Magic, whom was blessed to have mastery over it by Queen Laeyana. Nahfia is a Trithereal Spirit — meaning she can take on three ethereal forms: Celestriax (Core), Lyeceriax (Fluid), and Nexzylniax (Axis).",
+              desc: "The creator of the Sylph Race, and also the founder of the Sylphrelm. She is the first Spirit to become the source of Sylph Magic, whom was blessed to have mastery over it by Queen Laeyana. Nahfia is a Trithereal Spirit — meaning she can take on three ethereal forms: Celestriax (Core), Lyeceriax (Fluid), and Nexzylkrai (Axis).",
             },
           ].map((spirit) => (
             <div key={spirit.name} className="px-5 py-5 rounded-xl border border-[#2e2b26] bg-[#1a1714]">
