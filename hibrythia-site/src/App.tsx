@@ -55,6 +55,7 @@ import TheStygianRealm from '@/pages/MetaWorldbuilding/TheSigilOfHibrythia/TheSt
 import TheExtreuluxRealm from '@/pages/MetaWorldbuilding/TheSigilOfHibrythia/TheExtreuluxRealm';
 import Ellhumhellm from '@/pages/MetaWorldbuilding/TheSigilOfHibrythia/Ellhumhellm';
 import IllusiaThePlaneOfDreams from '@/pages/MetaWorldbuilding/TheSigilOfHibrythia/IllusiaThePlaneOfDreams';
+import TheMultiverseOfMultitudes from '@/pages/MetaWorldbuilding/TheMultiverseOfMultitudes';
 import CharacterProfiles from '@/pages/CharacterProfiles';
 import PhilstraRhys from '@/pages/CharacterProfiles/PhilstraRhys';
 import Bookshelf from '@/pages/Bookshelf';
@@ -176,6 +177,7 @@ export default function App() {
           <Route path="world/locales/draxian-sky-church" element={<PageTransition><TheDraxianSkyChurch /></PageTransition>} />
           <Route path="world/locales/sethranian-church" element={<PageTransition><TheSethranianChurch /></PageTransition>} />
           <Route path="world/meta" element={<PageTransition><MetaWorldbuilding /></PageTransition>} />
+          <Route path="world/meta/TheMultiverseOfMultitudes" element={<PageTransition><TheMultiverseOfMultitudes /></PageTransition>} />
           <Route path="world/meta/TheSigilOfHibrythia" element={<PageTransition><TheSigilOfHibrythia /></PageTransition>} />
           <Route path="world/meta/TheSigilOfHibrythia/divine-realm" element={<PageTransition><TheDivineRealm /></PageTransition>} />
           <Route path="world/meta/TheSigilOfHibrythia/sylphrelm" element={<PageTransition><TheSylphrelm /></PageTransition>} />
