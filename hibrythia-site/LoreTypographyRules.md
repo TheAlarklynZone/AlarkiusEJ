@@ -187,3 +187,24 @@ If you see basic grammar error structures or minor spelling mistakes (not custom
 - Do not add lore to character/world pages until explicitly asked.
 - README.md files are hands-off unless explicitly requested.
 
+---
+
+## Live Link Rule — ALWAYS CHECK FIRST
+
+> **Always check if there is a live link before building or wiring routes. If there is, rewire and fix up instances to match. Repo subpage folder names and route slugs may differ from the live version.**
+
+Before wiring any new route in App.tsx:
+1. Ask Alaria if a live URL exists for the page, OR check `thehibrythiansaga.com` / `naiseikaiuniverse.com` / `alarkiusej.com` directly.
+2. If a live URL is confirmed, use **that URL slug** as the `path=` value in App.tsx — not the folder/component name.
+3. Update all `to=` links inside every related page file to match the live slug too.
+
+```tsx
+// Example — folder is named TheDivineRealm but live URL slug is divine-realm
+// WRONG
+<Route path="world/meta/TheSigilOfHibrythia/TheDivineRealm" .../>
+
+// CORRECT (matches live)
+<Route path="world/meta/TheSigilOfHibrythia/divine-realm" .../>
+```
+
+
