@@ -57,6 +57,7 @@ import Ellhumhellm from '@/pages/MetaWorldbuilding/TheSigilOfHibrythia/Ellhumhel
 import IllusiaThePlaneOfDreams from '@/pages/MetaWorldbuilding/TheSigilOfHibrythia/IllusiaThePlaneOfDreams';
 import TheMultiverseOfMultitudes from '@/pages/MetaWorldbuilding/TheMultiverseOfMultitudes';
 import TheCosmicTrainFromBeyond from '@/pages/MetaWorldbuilding/TheCosmicTrainFromBeyond';
+import TheOuterbounds from '@/pages/MetaWorldbuilding/TheOuterbounds';
 import CharacterProfiles from '@/pages/CharacterProfiles';
 import PhilstraRhys from '@/pages/CharacterProfiles/PhilstraRhys';
 import Bookshelf from '@/pages/Bookshelf';
@@ -180,6 +181,7 @@ export default function App() {
           <Route path="world/meta" element={<PageTransition><MetaWorldbuilding /></PageTransition>} />
           <Route path="world/meta/TheMultiverseOfMultitudes" element={<PageTransition><TheMultiverseOfMultitudes /></PageTransition>} />
           <Route path="world/meta/TheCosmicTrainFromBeyond" element={<PageTransition><TheCosmicTrainFromBeyond /></PageTransition>} />
+          <Route path="world/meta/TheOuterbounds" element={<PageTransition><TheOuterbounds /></PageTransition>} />
           <Route path="world/meta/TheSigilOfHibrythia" element={<PageTransition><TheSigilOfHibrythia /></PageTransition>} />
           <Route path="world/meta/TheSigilOfHibrythia/divine-realm" element={<PageTransition><TheDivineRealm /></PageTransition>} />
           <Route path="world/meta/TheSigilOfHibrythia/sylphrelm" element={<PageTransition><TheSylphrelm /></PageTransition>} />
