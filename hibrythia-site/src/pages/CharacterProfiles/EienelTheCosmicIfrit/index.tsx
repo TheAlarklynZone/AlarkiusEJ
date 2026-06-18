@@ -255,16 +255,19 @@ export default function EienelTheCosmicIfrit() {
 
       {/* ── Bottom Nav ── */}
       <div className="flex items-start justify-between pt-8 border-t border-[#2e2b26] mt-16">
-        <Link
-          to="/characters"
-          className="max-w-[45%] flex flex-col gap-1 group"
-        >
-          <span className="font-display text-xs text-[#6b6560] uppercase tracking-widest group-hover:text-[#c9a84c] transition-colors">
-            ← Back
-          </span>
-          <span className="font-display text-sm text-[#f2ebeb] group-hover:text-[#c9a84c] transition-colors">
-            Characters
-          </span>
+        <Link to="/characters" className="group flex items-center gap-3 px-5 py-4 rounded-xl border border-[#2e2b26] bg-[#1a1714] hover:border-[#c9a84c]/40 hover:bg-[#1f1c18] transition-all duration-200 max-w-[45%]">
+          <span className="text-[#c9a84c] text-lg">&#8592;</span>
+          <div>
+            <p className="font-display text-xs text-[#4a4844] uppercase tracking-wider mb-0.5">Back to</p>
+            <p className="font-display text-sm text-[#f2ebeb]">Characters</p>
+          </div>
+        </Link>
+        <Link to="/characters/QueenRachnaea" className="group flex items-center gap-3 px-5 py-4 rounded-xl border border-[#2e2b26] bg-[#1a1714] hover:border-[#c9a84c]/40 hover:bg-[#1f1c18] transition-all duration-200 max-w-[45%] text-right justify-end">
+          <div>
+            <p className="font-display text-xs text-[#4a4844] uppercase tracking-wider mb-0.5">Next</p>
+            <p className="font-display text-sm text-[#f2ebeb]">Queen Rachnaea</p>
+          </div>
+          <span className="text-[#c9a84c] text-lg">&#8594;</span>
         </Link>
       </div>
 
