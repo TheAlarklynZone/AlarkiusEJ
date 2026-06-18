@@ -63,6 +63,7 @@ import PhilstraRhys from '@/pages/CharacterProfiles/PhilstraRhys';
 import RaeyaFlutters from '@/pages/CharacterProfiles/RaeyaFlutters';
 import KydelRhunes from '@/pages/CharacterProfiles/KydelRhunes';
 import ZohlCelestreule from '@/pages/CharacterProfiles/ZohlCelestreule';
+import EienelTheCosmicIfrit from '@/pages/CharacterProfiles/EienelTheCosmicIfrit';
 import Bookshelf from '@/pages/Bookshelf';
 import Vol0HTHGOE from '@/pages/Bookshelf/Vol0HTHGOE';
 import Vol0EP0 from '@/pages/Bookshelf/Vol0HTHGOE/EP0';
@@ -197,6 +198,7 @@ export default function App() {
           <Route path="characters/RaeyaFlutters" element={<PageTransition><RaeyaFlutters /></PageTransition>} />
           <Route path="characters/KydelRhunes" element={<PageTransition><KydelRhunes /></PageTransition>} />
           <Route path="characters/ZohlCelestreule" element={<PageTransition><ZohlCelestreule /></PageTransition>} />
+          <Route path="characters/EienelTheCosmicIfrit" element={<PageTransition><EienelTheCosmicIfrit /></PageTransition>} />
           <Route path="bookshelf" element={<PageTransition><Bookshelf /></PageTransition>} />
           <Route path="bookshelf/vol0" element={<PageTransition><Vol0HTHGOE /></PageTransition>} />
           <Route path="bookshelf/vol0/ep0" element={<PageTransition><Vol0EP0 /></PageTransition>} />
