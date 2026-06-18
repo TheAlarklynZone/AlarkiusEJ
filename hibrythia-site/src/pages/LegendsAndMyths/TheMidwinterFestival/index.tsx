@@ -9,24 +9,27 @@ export default function TheMidwinterFestival() {
   return (
     <div className="max-w-[960px] mx-auto px-6 py-20 space-y-16">
 
-      {/* Breadcrumb */}
-      <nav className="flex items-center gap-2 font-body text-[10px] tracking-widest uppercase text-[#4a4844]">
-        <Link to="/lore" className="hover:text-[#c9a84c] transition-colors">Legends &amp; Myths</Link>
-        <span>/</span>
-        <span className="text-[#7a746e]">The Midwinter Festival</span>
-      </nav>
+      
 
-      {/* Hero */}
-      <div>
-        <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">
-          Legends of The Past
-        </p>
-        <h1 className="font-display text-3xl md:text-4xl text-[#f2ebeb] mb-4">
-          The Midwinter Festival
-        </h1>
-        <p className="font-body text-base text-[#c9a84c] italic leading-relaxed">
-          &ldquo;Queen Eira&apos;s Festival&rdquo;
-        </p>
+      <div>  {/* Breadcrumb */}
+        <nav className="flex items-center gap-2 font-body text-[10px] tracking-widest uppercase text-[#4a4844]">
+          <Link to="/lore" className="hover:text-[#c9a84c] transition-colors">Legends &amp; Myths</Link>
+          <span>/</span>
+          <span className="text-[#7a746e]">The Midwinter Festival</span>
+        </nav>
+
+        {/* Hero */}
+        <div>
+          <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">
+            Legends of The Past
+          </p>
+          <h1 className="font-display text-3xl md:text-4xl text-[#f2ebeb] mb-4">
+            The Midwinter Festival
+          </h1>
+          <p className="font-body text-base text-[#c9a84c] italic leading-relaxed">
+            &ldquo;Queen Eira&apos;s Festival&rdquo;
+          </p>
+        </div>
       </div>
 
       {/* Section: A Festivity in the Longest Month */}
