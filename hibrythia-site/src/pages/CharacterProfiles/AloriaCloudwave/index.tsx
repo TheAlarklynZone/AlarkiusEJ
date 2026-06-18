@@ -268,7 +268,7 @@ export default function AloriaCloudwave() {
       {/* Bottom Nav Cards */}
       <div className="flex items-start justify-between pt-8 border-t border-[#2e2b26] mt-16">
         <Link
-          to="/characters/queen-laeyana"
+          to="/characters/QueenLaeyana"
           className="group flex items-center gap-3 bg-[#1a1714] border border-[#2e2b26] hover:border-[#c9a84c]/40 rounded-xl px-5 py-4 transition-colors max-w-[45%]"
         >
           <span className="text-[#c9a84c] text-lg">&#8592;</span>
