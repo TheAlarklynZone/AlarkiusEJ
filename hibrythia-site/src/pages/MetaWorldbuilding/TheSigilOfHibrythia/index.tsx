@@ -62,24 +62,27 @@ export default function TheSigilOfHibrythia() {
   return (
     <div className="max-w-[960px] mx-auto px-6 py-20 space-y-16">
 
-      {/* Breadcrumb */}
-      <nav className="flex items-center gap-2 font-body text-[10px] tracking-widest uppercase text-[#4a4844]">
-        <Link to="/world/meta" className="hover:text-[#c9a84c] transition-colors">Meta Worldbuilding</Link>
-        <span>/</span>
-        <span className="text-[#7a746e]">The Sigil of Hibrytheia</span>
-      </nav>
+      
 
-      {/* Hero */}
-      <div>
-        <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">
-          Meta Worldbuilding
-        </p>
-        <h1 className="font-display text-3xl md:text-4xl text-[#f2ebeb] mb-4">
-          Hibrytheia, The Sigil of Life
-        </h1>
-        <p className="font-body text-base text-[#c8c2ba] leading-relaxed max-w-[680px]">
-          Hibrythieon, otherwise known as The Sigil of Life (or The World Sigil), is an energy field that connects and supports The Six Realms in the Hibryoverse Continuity. The entire Crest of Life is contained inside the Continuity Frame — a frame that prevents Continuity Traversal to the other Primes.
-        </p>
+      <div>  {/* Breadcrumb */}
+        <nav className="flex items-center gap-2 font-body text-[10px] tracking-widest uppercase text-[#4a4844]">
+          <Link to="/world/meta" className="hover:text-[#c9a84c] transition-colors">Meta Worldbuilding</Link>
+          <span>/</span>
+          <span className="text-[#7a746e]">The Sigil of Hibrytheia</span>
+        </nav>
+
+        {/* Hero */}
+        <div>
+          <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">
+            Meta Worldbuilding
+          </p>
+          <h1 className="font-display text-3xl md:text-4xl text-[#f2ebeb] mb-4">
+            Hibrytheia, The Sigil of Life
+          </h1>
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed max-w-[680px]">
+            Hibrythieon, otherwise known as The Sigil of Life (or The World Sigil), is an energy field that connects and supports The Six Realms in the Hibryoverse Continuity. The entire Crest of Life is contained inside the Continuity Frame — a frame that prevents Continuity Traversal to the other Primes.
+          </p>
+        </div>
       </div>
 
       {/* Other Names */}
