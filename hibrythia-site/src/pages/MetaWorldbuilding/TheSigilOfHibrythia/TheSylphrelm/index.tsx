@@ -4,41 +4,44 @@ export default function TheSylphrelm() {
   return (
     <div className="max-w-[960px] mx-auto px-6 py-20 space-y-16">
 
-      {/* Breadcrumb */}
-      <p className="font-display text-xs text-[#4a4844] uppercase tracking-wider">
-        <Link to="/world/meta" className="hover:text-[#c9a84c] transition-colors">Meta Worldbuilding</Link>
-        {" / "}
-        <Link to="/world/meta/TheSigilOfHibrythia" className="hover:text-[#c9a84c] transition-colors">The Sigil of Hibrytheia</Link>
-        {" / "}
-        <span className="text-[#c9a84c]">The Sylphrelm</span>
-      </p>
+      
 
-      {/* Hero */}
-      <div>
-        <h1 className="font-display text-3xl md:text-4xl text-[#f2ebeb] mb-6">The Sylphrelm</h1>
-        <p className="font-display text-xs text-[#4a4844] uppercase tracking-wider mb-6">The Cloud Abode — The Second Realm of Hibrytheia</p>
-        <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-          The Sylphrelm is a mystical realm on the northern outskirts of space, created by one of the Spirits of Creation, Nahfia, who was hand selected by Zohl and Vivianya. The realm itself is a very large, planetary-like body, home to many mystical beings — Sylphs, Air Spirits, Faes, and more.
-        </p>
-        <p className="font-body text-base text-[#c8c2ba] leading-relaxed mt-4">
-          It is not round like Planet Hetra, doesn&apos;t spin on its axis, and doesn&apos;t revolve around a star. It is a flat, asteroid-like mass that has a top surface with a gravitational pull similar to that of Hetra, which keeps the citizens and cities from floating into space. Even though the gravity keeps everything at bay, there is a huge round bubble-like shield that envelops the entire mass, which helps give sunlight, air, and many other mystical properties.
+      <div>  {/* Breadcrumb */}
+        <p className="font-display text-xs text-[#4a4844] uppercase tracking-wider">
+          <Link to="/world/meta" className="hover:text-[#c9a84c] transition-colors">Meta Worldbuilding</Link>
+          {" / "}
+          <Link to="/world/meta/TheSigilOfHibrythia" className="hover:text-[#c9a84c] transition-colors">The Sigil of Hibrytheia</Link>
+          {" / "}
+          <span className="text-[#c9a84c]">The Sylphrelm</span>
         </p>
 
-        <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
-          {[
-            { label: "Westward Province", desc: "In the North-Western Parts of the Space-Time Continuum." },
-            { label: "Central Abode", desc: "Due North — the hub of the Rainbow Funnels and home of the Sylph Council." },
-            { label: "Eastward Province", desc: "In the North-Eastern Parts of the Space-Time Continuum." },
-          ].map((p) => (
-            <div key={p.label} className="px-5 py-4 rounded-xl border border-[#2e2b26] bg-[#1a1714]">
-              <p className="font-display text-base text-[#f2ebeb] mb-1">{p.label}</p>
-              <p className="font-body text-sm text-[#c8c2ba] leading-relaxed">{p.desc}</p>
-            </div>
-          ))}
+        {/* Hero */}
+        <div>
+          <h1 className="font-display text-3xl md:text-4xl text-[#f2ebeb] mb-6">The Sylphrelm</h1>
+          <p className="font-display text-xs text-[#4a4844] uppercase tracking-wider mb-6">The Cloud Abode — The Second Realm of Hibrytheia</p>
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+            The Sylphrelm is a mystical realm on the northern outskirts of space, created by one of the Spirits of Creation, Nahfia, who was hand selected by Zohl and Vivianya. The realm itself is a very large, planetary-like body, home to many mystical beings — Sylphs, Air Spirits, Faes, and more.
+          </p>
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed mt-4">
+            It is not round like Planet Hetra, doesn&apos;t spin on its axis, and doesn&apos;t revolve around a star. It is a flat, asteroid-like mass that has a top surface with a gravitational pull similar to that of Hetra, which keeps the citizens and cities from floating into space. Even though the gravity keeps everything at bay, there is a huge round bubble-like shield that envelops the entire mass, which helps give sunlight, air, and many other mystical properties.
+          </p>
+
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+            {[
+              { label: "Westward Province", desc: "In the North-Western Parts of the Space-Time Continuum." },
+              { label: "Central Abode", desc: "Due North — the hub of the Rainbow Funnels and home of the Sylph Council." },
+              { label: "Eastward Province", desc: "In the North-Eastern Parts of the Space-Time Continuum." },
+            ].map((p) => (
+              <div key={p.label} className="px-5 py-4 rounded-xl border border-[#2e2b26] bg-[#1a1714]">
+                <p className="font-display text-base text-[#f2ebeb] mb-1">{p.label}</p>
+                <p className="font-body text-sm text-[#c8c2ba] leading-relaxed">{p.desc}</p>
+              </div>
+            ))}
+          </div>
+          <p className="font-body text-sm text-[#7a746e] leading-relaxed mt-4">
+            Key Inspiration: Asgard (Marvel/Norse)
+          </p>
         </div>
-        <p className="font-body text-sm text-[#7a746e] leading-relaxed mt-4">
-          Key Inspiration: Asgard (Marvel/Norse)
-        </p>
       </div>
 
       {/* Sylph Massacre */}
