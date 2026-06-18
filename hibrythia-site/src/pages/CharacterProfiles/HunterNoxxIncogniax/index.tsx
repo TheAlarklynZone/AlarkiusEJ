@@ -210,7 +210,7 @@ export default function HunterNoxxIncogniax() {
           <div>
             <SectionAnchor label="Discovery of Prime-1" />
             <div className="space-y-4 font-body text-base text-[#c8c2ba] leading-relaxed">
-              <p>While traversing the Dreamverse, Noxx observed the sleeping mind of <span className="text-[#f2ebeb]">Freya Silvers</span> from DEMS-878, confirming his theory that he could remain incognito while surveilling individuals across different Dead Earth Memory Shards. But his most significant discovery came by accident: when attempting to astral-project to another universe within the Dreamverse, a fluctuation in the realm caused his consciousness to breach the boundaries of his own continuity entirely.</p>
+              <p>While traversing the Dreamverse, Noxx observed the sleeping mind of <span className="text-[#f2ebeb]">Freya Silvers</span> from DEMS-878, confirming his theory that he could remain Incogniax while surveilling individuals across different Dead Earth Memory Shards. But his most significant discovery came by accident: when attempting to astral-project to another universe within the Dreamverse, a fluctuation in the realm caused his consciousness to breach the boundaries of his own continuity entirely.</p>
               <p>His mind was thrust into <span className="text-[#f2ebeb]">Prime-1: The Hibryoverse</span>&mdash;a separate, thriving continuity protected by a Non-Euclidean Strip and crowned as the primary narrative universe of <em>The Hibrythian Saga</em>. There, he witnessed a planet in its formation stages before the Dreamverse&apos;s recoil effect snapped him back to his original universe.</p>
               <p>This revelation changed everything. Noxx had found a new target&mdash;a universe without a Llyndel Nova to stop him, though it did contain <span className="text-[#f2ebeb]">Kydel Rhunes</span>, a variant who could potentially grow even more powerful than his nemesis.</p>
               <p>According to <span className="text-[#f2ebeb]">Aeonia, the Omnibound Spirit of Time</span>, Hunter Noxx represents a threat level surpassing even that of Eienel, the Cosmic Ifrit. His eventual arrival in the Hibryoverse is not a question of <em>if</em>, but <em>when</em>&mdash;delayed only by the vast temporal differences between the septillion-year-old Dead Shard Continuity and the comparatively young Hibryoverse.</p>
@@ -235,8 +235,8 @@ export default function HunterNoxxIncogniax() {
           <div>
             <h3 className="font-display text-sm text-[#f2ebeb] mb-3">Origin of the Alias</h3>
             <div className="space-y-4 font-body text-base text-[#c8c2ba] leading-relaxed">
-              <p>The name <em>Incognito</em> was born in the Dream Realm, Illusia, itself&mdash;a self-bestowed title that reflects both Hunter Noxx&apos;s methods and his nature as an unseen threat.</p>
-              <p>During his early explorations of the Dreamverse, Noxx discovered a crucial advantage: his astral form remained completely invisible and undetectable to dreamers. He could freely invade sleeping minds, observe their deepest thoughts, memories, and fears, and catalog their psychological patterns&mdash;all while remaining utterly incognito. The dreamers could not perceive him, interact with him, or even sense his presence.</p>
+              <p>The name <em>Incogniax</em> was born in the Dream Realm, Illusia, itself&mdash;a self-bestowed title that reflects both Hunter Noxx&apos;s methods and his nature as an unseen threat.</p>
+              <p>During his early explorations of the Dreamverse, Noxx discovered a crucial advantage: his astral form remained completely invisible and undetectable to dreamers. He could freely invade sleeping minds, observe their deepest thoughts, memories, and fears, and catalog their psychological patterns&mdash;all while remaining utterly Incogniax. The dreamers could not perceive him, interact with him, or even sense his presence.</p>
               <p>Time flows aberrantly in the Dreamverse, allowing Noxx to conduct surveillance that would take years in real-time within what amounts to mere hours of observation. He tested this ability extensively on <span className="text-[#f2ebeb]">Freya Silvers</span> from DEMS-878, confirming that he could watch, learn, and strategize without any risk of detection or confrontation.</p>
               <p>This invisible, untouchable status within the dream realm&mdash;combined with his eventual accidental breach into Prime-1 (The Hibryoverse), where he witnessed planetary formation before being forcibly rebounded&mdash;led Noxx to adopt a new identity for his multiversal operations.</p>
               <p>He would no longer be merely <em>Hunter Noxx</em>, the failed revolutionary of DEMS-24.</p>
@@ -246,7 +246,7 @@ export default function HunterNoxxIncogniax() {
 
           <div>
             <SectionAnchor label="Symbolism and Threat" />
-            <p className="font-body text-base text-[#c8c2ba] leading-relaxed">The alias serves as both a practical descriptor and a psychological weapon. As Incognito, Noxx operates in the shadows between continuities, gathering intelligence, inflicting terror through psychic attacks, and preparing for an eventual physical manifestation in Prime-1. His enemies cannot anticipate his moves because they cannot observe him. By the time they realize he is watching, it may already be too late.</p>
+            <p className="font-body text-base text-[#c8c2ba] leading-relaxed">The alias serves as both a practical descriptor and a psychological weapon. As Incogniax, Noxx operates in the shadows between continuities, gathering intelligence, inflicting terror through psychic attacks, and preparing for an eventual physical manifestation in Prime-1. His enemies cannot anticipate his moves because they cannot observe him. By the time they realize he is watching, it may already be too late.</p>
             <p className="font-body text-base text-[#c8c2ba] leading-relaxed mt-4">When he finally arrives in the Hibryoverse in person, the name will carry the weight of all the nightmares he has seeded and all the fears he has cultivated from across the boundaries of existence.</p>
           </div>
         </div>
@@ -300,7 +300,7 @@ export default function HunterNoxxIncogniax() {
               <div>
                 <p className="font-display text-sm text-[#f2ebeb] mb-2">Forms of Shapeshifting</p>
                 <div className="space-y-3">
-                  <SubPower name="Subatomic Control" desc="Incognito can freely control the particles, atoms, and DNA within himself to shapeshift into any material as possible, while remaining in the same human form. He can be as hard as diamond, soft as gallium, and dense as tungsten." />
+                  <SubPower name="Subatomic Control" desc="Incogniax can freely control the particles, atoms, and DNA within himself to shapeshift into any material as possible, while remaining in the same human form. He can be as hard as diamond, soft as gallium, and dense as tungsten." />
                   <SubPower name="Invisibility" desc="The power to become invisible to the naked eye. Can confuse other foes or simply vanish from thin air." />
                   <SubPower name="Intangibility" desc="The power to phase and walk through solid objects. This can ignore energy." />
                 </div>
