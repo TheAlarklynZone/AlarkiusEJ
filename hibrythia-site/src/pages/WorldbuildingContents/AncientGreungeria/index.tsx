@@ -4,18 +4,21 @@ export default function AncientGreungeria() {
   return (
     <div className="max-w-[960px] mx-auto px-6 py-16 space-y-16">
 
-      {/* Breadcrumb */}
-      <nav className="font-body text-[10px] tracking-widest uppercase text-[#4a4844] flex gap-2 items-center">
-        <Link to="/world/databases" className="hover:text-[#c9a84c] transition-colors">World Databases</Link>
-        <span>/</span>
-        <span className="text-[#7a746e]">Ancient Greungeria</span>
-      </nav>
+      
 
-      {/* Header */}
-      <div className="space-y-3">
-        <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c]">II. Ancient History</p>
-        <h1 className="font-display text-3xl md:text-4xl text-[#f2ebeb]">⌛ Ancient Greungeria</h1>
-        <p className="font-body text-[10px] tracking-widest uppercase text-[#4a4844]">The Father Continent</p>
+      <div>  {/* Breadcrumb */}
+        <nav className="font-body text-[10px] tracking-widest uppercase text-[#4a4844] flex gap-2 items-center">
+          <Link to="/world/databases" className="hover:text-[#c9a84c] transition-colors">World Databases</Link>
+          <span>/</span>
+          <span className="text-[#7a746e]">Ancient Greungeria</span>
+        </nav>
+
+        {/* Header */}
+        <div className="space-y-3">
+          <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c]">II. Ancient History</p>
+          <h1 className="font-display text-3xl md:text-4xl text-[#f2ebeb]">⌛ Ancient Greungeria</h1>
+          <p className="font-body text-[10px] tracking-widest uppercase text-[#4a4844]">The Father Continent</p>
+        </div>
       </div>
 
       {/* Image placeholder */}
