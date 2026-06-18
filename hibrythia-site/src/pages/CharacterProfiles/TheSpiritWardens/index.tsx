@@ -56,7 +56,7 @@ export default function TheSpiritWardens() {
       <div className="space-y-6">
         <h2 className="font-display text-lg text-[#f2ebeb] mb-4">Where they Originated!</h2>
         <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-          One of Zohl&apos;s tasks was to create a Spiritqual, a cave or den that is powerful enough to be indestructible and can house spirits. After that, he cloned himself 12 times, all perfect clones with their own mindset and personality. The Spiritqual is located in an underground cave, on the floating continent, Hetrania.
+          One of Zohl&apos;s tasks was to create a Spiritqual, a cave or den that is powerful enough to be indestructible and can house spirits. After that, he cloned himself 12 times, all perfect clones with their own mindset and personality. The Spiritqual is located in an underground cave, on the floating continent of Hetrania.
         </p>
         <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
           The Spirit Wardens are clones of Zohl. There are 12 Wardens, all perfect clones with their own mindset and personality.
