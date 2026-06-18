@@ -4,21 +4,24 @@ export default function TheSkypeakObelisk() {
   return (
     <div className="max-w-[960px] mx-auto px-6 py-20 space-y-16">
 
-      {/* Breadcrumb */}
-      <p className="font-body text-[10px] tracking-widest uppercase text-[#4a4844]">
-        Locales &amp; Sights / The Skypeak Obelisk
-      </p>
+      
 
-      {/* Hero */}
-      <div className="space-y-4">
-        <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Locales &amp; Sights</p>
-        <h1 className="font-display text-3xl md:text-4xl text-[#f2ebeb] mb-4">The Skypeak Obelisk</h1>
+      <div>  {/* Breadcrumb */}
+        <p className="font-body text-[10px] tracking-widest uppercase text-[#4a4844]">
+          Locales &amp; Sights / The Skypeak Obelisk
+        </p>
 
-        {/* Callout */}
-        <div className="border border-[#2e2b26] rounded-sm px-5 py-4 bg-[#0f0d0c]">
-          <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-            <span className="font-display text-[#f2ebeb]">The Skypeak Obelisk</span> is the center of attraction in the city of Grelladore, in Nharvenile, a country north of Riverchnaut. It is a floating building in the sky that has over 200 floors, standing at 900 floors max &mdash; looming over the entire city and outranking the highest building in Eldreule.
-          </p>
+        {/* Hero */}
+        <div className="space-y-4">
+          <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Locales &amp; Sights</p>
+          <h1 className="font-display text-3xl md:text-4xl text-[#f2ebeb] mb-4">The Skypeak Obelisk</h1>
+
+          {/* Callout */}
+          <div className="border border-[#2e2b26] rounded-sm px-5 py-4 bg-[#0f0d0c]">
+            <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+              <span className="font-display text-[#f2ebeb]">The Skypeak Obelisk</span> is the center of attraction in the city of Grelladore, in Nharvenile, a country north of Riverchnaut. It is a floating building in the sky that has over 200 floors, standing at 900 floors max &mdash; looming over the entire city and outranking the highest building in Eldreule.
+            </p>
+          </div>
         </div>
       </div>
 
