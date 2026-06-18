@@ -67,7 +67,7 @@ export default function AuroraRimaeaOfLife() {
       {/* Opening Quote */}
       <div className="border-l-4 border-[#c9a84c] pl-6">
         <p className="font-body text-base text-[#c9a84c] italic leading-relaxed">
-          "Beauty among all things are of elegance."
+          "Beauty among all Things are of Elegance."
         </p>
         <p className="font-body text-xs text-[#7a746e] mt-2">— Rimaea</p>
       </div>
