@@ -53,7 +53,7 @@ export default function AloriaCloudwave() {
               <ul className="list-disc list-inside font-body text-base text-[#c8c2ba] leading-relaxed space-y-1 ml-2">
                 <li>Recurring Character</li>
                 <li>Support Character</li>
-                <li>A Divine Spirit of Creation</li>
+                <li>One of The Spirits of Creation</li>
               </ul>
             </div>
             <div className="border-t border-[#2e2b26] pt-3 space-y-1">
