@@ -69,6 +69,7 @@ import EphelTheMoonbel from '@/pages/CharacterProfiles/EphelTheMoonbel';
 import HunterNoxxIncogniax from '@/pages/CharacterProfiles/HunterNoxxIncogniax';
 import KingNhavah from '@/pages/CharacterProfiles/KingNhavah';
 import QueenLaeyana from '@/pages/CharacterProfiles/QueenLaeyana';
+import AloriaCloudwave from '@/pages/CharacterProfiles/AloriaCloudwave';
 import Bookshelf from '@/pages/Bookshelf';
 import Vol0HTHGOE from '@/pages/Bookshelf/Vol0HTHGOE';
 import Vol0EP0 from '@/pages/Bookshelf/Vol0HTHGOE/EP0';
@@ -209,6 +210,7 @@ export default function App() {
           <Route path="characters/HunterNoxxIncogniax" element={<PageTransition><HunterNoxxIncogniax /></PageTransition>} />
           <Route path="characters/KingNhavah" element={<PageTransition><KingNhavah /></PageTransition>} />
           <Route path="characters/QueenLaeyana" element={<PageTransition><QueenLaeyana /></PageTransition>} />
+          <Route path="characters/aloria-cloudwave" element={<PageTransition><AloriaCloudwave /></PageTransition>} />
           <Route path="bookshelf" element={<PageTransition><Bookshelf /></PageTransition>} />
           <Route path="bookshelf/vol0" element={<PageTransition><Vol0HTHGOE /></PageTransition>} />
           <Route path="bookshelf/vol0/ep0" element={<PageTransition><Vol0EP0 /></PageTransition>} />
@@ -225,6 +227,7 @@ export default function App() {
     </>
   );
 }
+
 
 
 
