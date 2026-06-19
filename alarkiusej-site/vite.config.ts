@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
-import Prerender from 'vite-plugin-prerender'
 
 export default defineConfig({
   plugins: [
@@ -55,23 +54,6 @@ export default defineConfig({
           }
         ]
       }
-    }),
-    Prerender({
-      staticDir: './dist',
-      routes: [
-        '/',
-        '/about',
-        '/hibrythian-saga',
-        '/naiseikai-universe',
-        '/music',
-        '/manifesto',
-        '/policies',
-        '/contact',
-        '/tools',
-        '/find-my-books',
-        '/bn-hibrythian-saga',
-        '/bn-naiseikai-universe',
-      ]
     })
   ]
 })
