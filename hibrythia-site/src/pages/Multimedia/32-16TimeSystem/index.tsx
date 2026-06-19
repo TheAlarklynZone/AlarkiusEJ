@@ -1347,7 +1347,7 @@ export default function TimeSystem() {
               <div className="section-inner">
                 <div className="section-label">Live Hetranian Time</div>
                 <h2 className="section-title">The 32-Hour Clock</h2>
-                <p className="section-desc">1 minute = 80 seconds · 1 hour = 80 minutes · 32 hours per day · 19h of Daylight, 13h of Night-time</p>
+                <p className="section-desc">1 minute = 80 seconds · 1 hour = 80 minutes · 32 hours per day · 19h of Day & 13h of Night</p>
 
                 {/* Two clocks centered */}
                 <div className="clocks-row">
