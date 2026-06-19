@@ -31,17 +31,17 @@ const MUSIC = [
   {
     videoId: "eln-ozQG_HU",
     title: "Melodic Harmony | The Town of Lenoria",
-    date: "Nov 2024",
+    date: "Nov 17, 2024",
   },
   {
-    videoId: "Y8TxUCWQPkM",
-    title: "The Hibrythian Saga | Book Series + Worldbuilding Trailer [UPDATED]",
-    date: "Aug 2024",
+    videoId: "jMQ1ef43joY",
+    title: "The Queen's Anthem (Queen Rachnaea's Theme) [FULLY REMASTERED]",
+    date: "Jan 16, 2025",
   },
   {
     videoId: "ma9cGvODp-8",
     title: "Kharphan | The City of Techmahology | A City Soundtrack",
-    date: "Dec 2023",
+    date: "Dec 02, 2023",
   },
   {
     videoId: "qnj7k-KRPpM",
@@ -51,12 +51,12 @@ const MUSIC = [
   {
     videoId: "utiBxJiYJuI",
     title: "Fluttering Skies (Raeya's Theme) [Remastered]",
-    date: "Oct 2023",
+    date: "Oct 21, 2023",
   },
   {
     videoId: "apvGBmP8wro",
     title: "Wulfwing Legacy (Kydel's Theme) [Remastered]",
-    date: "Oct 2023",
+    date: "Oct 21, 2023",
   },
 ];
 
