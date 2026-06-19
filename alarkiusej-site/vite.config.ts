@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
-import { vitePrerender } from 'vite-plugin-prerender'
+import Prerender from 'vite-plugin-prerender'
 
 export default defineConfig({
   plugins: [
@@ -56,7 +56,7 @@ export default defineConfig({
         ]
       }
     }),
-    vitePrerender({
+    Prerender({
       staticDir: './dist',
       routes: [
         '/',
