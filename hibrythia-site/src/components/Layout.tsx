@@ -6,6 +6,7 @@ const navLinks = [
   { to: '/world',      label: 'World' },
   { to: '/characters', label: 'Characters' },
   { to: '/bookshelf',  label: 'Bookshelf' },
+  { to: '/multimedia', label: 'Multimedia' },
 ]
 
 export default function Layout() {
