@@ -38,12 +38,6 @@ export default function Home() {
         <div className="flex flex-wrap items-center gap-3 pt-1">
           <Link
             to="/world"
-            className="font-body text-xs tracking-widest uppercase px-5 py-2.5 border border-[#c9a84c]/40 text-[#c9a84c] rounded-sm hover:bg-[#c9a84c]/8 hover:border-[#c9a84c]/70 transition-all duration-[180ms]"
-          >
-            Explore Our Legends →
-          </Link>
-          <Link
-            to="/world"
             className="font-body text-xs tracking-widest uppercase px-5 py-2.5 text-[#7a7670] hover:text-[#d8d4cc] transition-colors duration-[180ms]"
           >
             The World Database →
