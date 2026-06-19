@@ -19,7 +19,7 @@ export default function BnHibrythianSaga() {
     <div className="min-h-screen flex flex-col items-center justify-center bg-ink gap-6 px-6 text-center">
       <h1 className="font-serif text-3xl text-text">The Hibrythian Saga</h1>
       <p className="text-text-muted text-sm max-w-sm">
-        Taking you to the series on Barnes &amp; Noble. One moment!
+        Taking you to our series on Barnes &amp; Noble. One moment please!
       </p>
       <div className="w-20 h-20 rounded-full border-4 border-rose-light flex items-center justify-center">
         <span className="text-rose-light text-3xl font-bold font-serif">{count}</span>
