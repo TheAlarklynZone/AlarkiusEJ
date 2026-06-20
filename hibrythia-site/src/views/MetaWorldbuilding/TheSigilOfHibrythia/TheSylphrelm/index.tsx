@@ -312,6 +312,22 @@ export default function TheSylphrelm() {
         </div>
       </div>
 
+      {/* Subpages */}
+      <div>
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-6">Sylphrelm — Related Pages</h2>
+        <Link
+          to="/world/meta/TheSigilOfHibrythia/sylphrelm/anthem-of-healing-and-peace"
+          className="group flex items-center gap-4 px-5 py-5 rounded-xl border border-[#2e2b26] bg-[#1a1714] hover:border-[#c9a84c]/40 hover:bg-[#1f1c18] transition-all duration-200"
+        >
+          <span className="text-2xl">🎶</span>
+          <div>
+            <p className="font-display text-base text-[#f2ebeb] group-hover:text-[#c9a84c] transition-colors">The Anthem of Healing and Peace</p>
+            <p className="font-body text-sm text-[#7a746e] leading-relaxed mt-0.5">A Lyrical Anthem sung by the Sylphs and Wind Spirits of the Sylphrelm — in Modern English &amp; Aeþerlen Dialect</p>
+          </div>
+          <span className="ml-auto text-[#c9a84c] text-lg opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+        </Link>
+      </div>
+
       {/* Bottom Nav */}
       <div className="flex items-start justify-between pt-8 border-t border-[#2e2b26] mt-16">
         <Link
