@@ -5,7 +5,7 @@
 // shim's NavLink/useLocation (aliased from react-router-dom).
 // ============================================================
 import { useState, useEffect } from 'react'
-import { NavLink, useLocation } from 'react-router-dom'
+import { NavLink, Link, useLocation } from 'react-router-dom'
 
 const navLinks = [
   { to: '/',           label: 'Home' },
@@ -55,14 +55,17 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
-          <a
-            href="https://www.alarkiusej.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-body text-[0.75rem] tracking-widest uppercase px-2.5 py-1 rounded-sm transition-all duration-[180ms] text-[#7a7670] hover:text-[#c9a84c] ml-1 flex items-center gap-1"
+          <NavLink
+            to="/community"
+            className={({ isActive }) =>
+              [
+                'font-body text-[0.75rem] tracking-widest uppercase px-2.5 py-1 rounded-sm transition-all duration-[180ms] ml-1 flex items-center gap-1',
+                isActive ? 'text-[#c9a84c]' : 'text-[#7a7670] hover:text-[#c9a84c]',
+              ].join(' ')
+            }
           >
             Community Hub
-          </a>
+          </NavLink>
         </nav>
 
         {/* Mobile Hamburger */}
@@ -104,14 +107,17 @@ export default function Navbar() {
             </li>
           ))}
           <li>
-            <a
-              href="https://www.alarkiusej.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block font-body text-sm tracking-widest uppercase px-3 py-2.5 rounded-sm text-[#7a7670] hover:text-[#c9a84c] transition-all duration-[180ms]"
+            <NavLink
+              to="/community"
+              className={({ isActive }) =>
+                [
+                  'block font-body text-sm tracking-widest uppercase px-3 py-2.5 rounded-sm transition-all duration-[180ms]',
+                  isActive ? 'text-[#c9a84c]' : 'text-[#7a7670] hover:text-[#c9a84c]',
+                ].join(' ')
+              }
             >
               Community Hub
-            </a>
+            </NavLink>
           </li>
         </ul>
       </div>
