@@ -12,6 +12,7 @@ const MEDIA_CARDS = [
     label: "Interactive Map",
     desc: "A live, interactive map of Planet Hetra and its continents.",
     available: false,
+    highlight: true,
   },
   {
     to: "/multimedia/PlanetHetraInteractive",
@@ -87,7 +88,7 @@ export default function Multimedia() {
       <div className="space-y-4">
         <h2 className="font-display text-lg text-[#f2ebeb] mb-6">Interactive Experiences</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {MEDIA_CARDS.map(({ to, label, desc, available }) => (
+          {MEDIA_CARDS.map(({ to, label, desc, available, highlight }) => (
             <Link
               key={to}
               to={to}
@@ -100,6 +101,10 @@ export default function Multimedia() {
                 {available ? (
                   <span className="font-body text-[9px] tracking-widest uppercase text-[#c9a84c] border border-[#c9a84c]/30 rounded-sm px-2 py-0.5">
                     Live
+                  </span>
+                ) : highlight ? (
+                  <span className="font-body text-[9px] tracking-widest uppercase text-red-400 border border-red-500/50 rounded-sm px-2 py-0.5 shadow-[0_0_6px_rgba(239,68,68,0.6)] animate-pulse">
+                    Coming Soon
                   </span>
                 ) : (
                   <span className="font-body text-[9px] tracking-widest uppercase text-[#4a4844] border border-[#2e2b26] rounded-sm px-2 py-0.5">
