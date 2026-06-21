@@ -38,13 +38,13 @@ export default function Home() {
         <div className="flex flex-wrap items-center gap-3 pt-1">
           <Link
             to="/world"
-            className="font-body text-xs tracking-widest uppercase px-5 py-2.5 text-[#7a7670] hover:text-[#d8d4cc] transition-colors duration-[180ms]"
+            className="font-body text-xs tracking-widest uppercase px-4 py-2 border border-[#c9a84c]/30 text-[#c9a84c] rounded-sm hover:bg-[#c9a84c]/8 transition-all duration-[180ms]"
           >
             The World Database →
           </Link>
           <Link
             to="/characters"
-            className="font-body text-xs tracking-widest uppercase px-5 py-2.5 text-[#7a7670] hover:text-[#d8d4cc] transition-colors duration-[180ms]"
+            className="font-body text-xs tracking-widest uppercase px-4 py-2 border border-[#c9a84c]/30 text-[#c9a84c] rounded-sm hover:bg-[#c9a84c]/8 transition-all duration-[180ms]"
           >
             Character Profiles →
           </Link>
