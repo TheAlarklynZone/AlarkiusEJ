@@ -61,7 +61,7 @@ export default function Navbar() {
             rel="noopener noreferrer"
             className="font-body text-[0.75rem] tracking-widest uppercase px-2.5 py-1 rounded-sm transition-all duration-[180ms] text-[#7a7670] hover:text-[#c9a84c] ml-1 flex items-center gap-1"
           >
-            Author Site →
+            Community Hub
           </a>
         </nav>
 
@@ -110,7 +110,7 @@ export default function Navbar() {
               rel="noopener noreferrer"
               className="block font-body text-sm tracking-widest uppercase px-3 py-2.5 rounded-sm text-[#7a7670] hover:text-[#c9a84c] transition-all duration-[180ms]"
             >
-              Author Site →
+              Community Hub
             </a>
           </li>
         </ul>
