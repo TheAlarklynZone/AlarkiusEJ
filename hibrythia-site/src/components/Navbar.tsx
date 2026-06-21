@@ -59,7 +59,7 @@ export default function Navbar() {
             to="/community"
             className={({ isActive }) =>
               [
-                'font-body text-[0.75rem] tracking-widest uppercase px-2.5 py-1 rounded-sm transition-all duration-[180ms] ml-1 flex items-center gap-1',
+                'font-body text-[0.75rem] tracking-widest uppercase px-2.5 py-1 rounded-sm transition-all duration-[180ms]',
                 isActive ? 'text-[#c9a84c]' : 'text-[#7a7670] hover:text-[#c9a84c]',
               ].join(' ')
             }
