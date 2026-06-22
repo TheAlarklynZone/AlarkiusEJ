@@ -408,6 +408,14 @@ export default function CalendarAndTime() {
 
       <div className="border-t border-[#2e2b26] mb-10" />
 
+      {/* ── View Calendar card ── */}
+      <div className="flex justify-end mb-6">
+        <a href="/32-16TimeSystem" className="group flex flex-col text-left border border-[#2e2b26] rounded-sm px-4 py-3 bg-[#131210] hover:border-[#c9a84c]/40 hover:bg-[#1a1814] transition-all duration-200 w-fit">
+          <span className="font-body text-[9px] tracking-widest uppercase text-[#4a4844] mb-1">Interactive</span>
+          <span className="font-display text-xs text-[#f2ebeb] group-hover:text-[#c9a84c] transition-colors">View Calendar →</span>
+        </a>
+      </div>
+
       {/* ── Conversations ── */}
       <section className="mb-12">
         <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Conversations</p>
@@ -607,13 +615,10 @@ export default function CalendarAndTime() {
             </div>
             <span className="text-[#c9a84c] text-lg">→</span>
           </Link>
-        <a href="/32-16TimeSystem" className="group flex flex-col text-left border border-[#2e2b26] rounded-sm px-4 py-3 bg-[#131210] hover:border-[#c9a84c]/40 hover:bg-[#1a1814] transition-all duration-200 inline-flex w-fit">
-          <span className="font-body text-[9px] tracking-widest uppercase text-[#4a4844] mb-1">Interactive</span>
-          <span className="font-display text-xs text-[#f2ebeb] group-hover:text-[#c9a84c] transition-colors">View Calendar →</span>
-        </a>
       </div>
 
     </div>
   );
 }
+
 
