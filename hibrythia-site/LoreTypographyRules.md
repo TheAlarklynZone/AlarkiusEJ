@@ -306,19 +306,35 @@ Never use a plain `<img>` tag alone. Every art image must be wrapped with the Li
 import React, { useState } from 'react'; // make sure React is imported for useEffect
 
 function Lightbox({ src, alt, onClose }: { src: string; alt: string; onClose: () => void }) {
+  const [visible, setVisible] = React.useState(false);
+
+  // Fade in on mount
+  React.useEffect(() => {
+    requestAnimationFrame(() => setVisible(true));
+  }, []);
+
   // Lock body scroll while open
   React.useEffect(() => {
     document.body.style.overflow = 'hidden';
     return () => { document.body.style.overflow = ''; };
   }, []);
 
+  function handleClose() {
+    setVisible(false);
+    setTimeout(onClose, 200);
+  }
+
   return (
     <div
-      className="fixed inset-0 z-[200] flex items-center justify-center bg-black/92 backdrop-blur-sm"
-      onClick={onClose}
+      // pt-24 keeps image below navbar, pb-12 px-10 gives breathing room on all sides
+      // z-index 9999 — do NOT use z-[200], navbar beats it
+      className="fixed inset-0 flex items-center justify-center backdrop-blur-sm pt-24 pb-12 px-10"
+      style={{ zIndex: 9999, backgroundColor: `rgba(0,0,0,${visible ? 0.92 : 0})`, transition: 'background-color 200ms ease' }}
+      onClick={handleClose}
     >
+      {/* X button — absolute top-16 so it clears the navbar height */}
       <button
-        onClick={onClose}
+        onClick={handleClose}
         className="absolute top-16 right-4 text-white/80 hover:text-white transition-colors bg-black/60 rounded-full w-8 h-8 flex items-center justify-center text-base leading-none border border-white/20"
         aria-label="Close"
       >
@@ -327,7 +343,14 @@ function Lightbox({ src, alt, onClose }: { src: string; alt: string; onClose: ()
       <img
         src={src}
         alt={alt}
-        className="max-w-[95vw] max-h-[95vh] rounded-lg shadow-2xl object-contain"
+        className="rounded-lg shadow-2xl object-contain"
+        style={{
+          maxWidth: '95vw',
+          maxHeight: '95vh',
+          opacity: visible ? 1 : 0,
+          transform: visible ? 'scale(1)' : 'scale(0.96)',
+          transition: 'opacity 200ms ease, transform 200ms ease',
+        }}
         onClick={(e) => e.stopPropagation()}
       />
     </div>
@@ -354,7 +377,12 @@ function Lightbox({ src, alt, onClose }: { src: string; alt: string; onClose: ()
 ```
 
 ### Rules
-- Always use `h-auto object-cover` — never `aspect-video` for real art images.
-- The Lightbox overlay closes on click-outside or the ✕ button.
+- Always use `h-auto object-cover` on the thumbnail — never `aspect-video` for real art images.
+- Lightbox overlay uses `style={{ zIndex: 9999 }}` — do NOT use Tailwind `z-[200]`, the navbar will beat it.
+- The ✕ button must be `absolute top-16` (not `fixed`) so it sits below the navbar and inside the same stacking context as the overlay.
+- Overlay padding is `pt-24 pb-12 px-10` — `pt-24` clears the navbar, the rest gives breathing room around the image.
+- Fade in/out animation: `visible` state drives `opacity` and `scale` on the image + `backgroundColor` on the overlay. `handleClose` flips `visible` then calls `onClose` after 200ms.
+- Scroll lock: `document.body.style.overflow = 'hidden'` on mount, cleaned up on unmount.
+- Clicking outside the image (on the overlay) closes it. Clicking the image itself does NOT close it (`e.stopPropagation()`).
 - If a page has multiple images, one shared `lightbox` state handles all of them.
 - Remove the old placeholder div entirely when real art is provided. Do not keep both.
