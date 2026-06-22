@@ -4,6 +4,8 @@
 
 **Everything must be consistent!!!**
 
+If Alarkius has made a recent change in any repo within hibrythia-site, you are to go along or continue with changes. Do not revert recent changes done by Alarkius unless asked.
+
 ---
 
 ## Body Width
