@@ -1,5 +1,34 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+
+function Lightbox({ src, alt, onClose }: { src: string; alt: string; onClose: () => void }) {
+  const [visible, setVisible] = React.useState(false);
+  React.useEffect(() => { requestAnimationFrame(() => setVisible(true)); }, []);
+  React.useEffect(() => {
+    document.body.style.overflow = 'hidden';
+    return () => { document.body.style.overflow = ''; };
+  }, []);
+  function handleClose() { setVisible(false); setTimeout(onClose, 200); }
+  return (
+    <div
+      className="fixed inset-0 flex items-center justify-center backdrop-blur-sm pt-24 pb-12 px-10"
+      style={{ zIndex: 9999, backgroundColor: `rgba(0,0,0,${visible ? 0.92 : 0})`, transition: 'background-color 200ms ease' }}
+      onClick={handleClose}
+    >
+      <button
+        onClick={handleClose}
+        className="absolute top-16 right-4 text-white/80 hover:text-white transition-colors bg-black/60 rounded-full w-8 h-8 flex items-center justify-center text-base leading-none border border-white/20"
+        aria-label="Close"
+      >✕</button>
+      <img
+        src={src} alt={alt}
+        className="rounded-lg shadow-2xl object-contain"
+        style={{ maxWidth: '95vw', maxHeight: '95vh', opacity: visible ? 1 : 0, transform: visible ? 'scale(1)' : 'scale(0.96)', transition: 'opacity 200ms ease, transform 200ms ease' }}
+        onClick={(e) => e.stopPropagation()}
+      />
+    </div>
+  );
+}
 
 function PowerToggle({ title, color = '#c9a84c', children }: { title: string; color?: string; children: React.ReactNode }) {
   const [open, setOpen] = useState(false);
@@ -31,8 +60,11 @@ function SubPower({ name, desc }: { name: string; desc: string }) {
 }
 
 export default function KydelRhunes() {
+  const [lightbox, setLightbox] = useState<{ src: string; alt: string } | null>(null);
   return (
     <div className="max-w-[960px] mx-auto px-6 py-20 space-y-16">
+
+      {lightbox && <Lightbox src={lightbox.src} alt={lightbox.alt} onClose={() => setLightbox(null)} />}
 
       {/* Breadcrumb */}
       <div>
@@ -464,8 +496,18 @@ export default function KydelRhunes() {
 
         {/* Direwolf */}
         <div className="border border-[#2e2b26] rounded-xl bg-[#131210] p-6 space-y-4">
-          <div className="w-full aspect-video bg-[#1a1714] border border-[#2e2b26] rounded-xl flex items-center justify-center">
-            <p className="font-body text-xs text-[#4a4844] uppercase tracking-widest">Image — Kydel Direwolf Form</p>
+          <div
+            className="w-full rounded-xl overflow-hidden border border-[#2e2b26] cursor-zoom-in group relative"
+            onClick={() => setLightbox({ src: 'https://i.ibb.co/gbbDjqZs/Kydel-Starr-Direwolf-Form.png', alt: 'Kydel Rhunes — Direwolf Form' })}
+          >
+            <img
+              src="https://i.ibb.co/gbbDjqZs/Kydel-Starr-Direwolf-Form.png"
+              alt="Kydel Rhunes — Direwolf Form"
+              className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+            />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
+              <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-200 font-body text-xs text-white tracking-widest uppercase bg-black/50 px-3 py-1.5 rounded-full">Click to expand</span>
+            </div>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-3">
             {[
