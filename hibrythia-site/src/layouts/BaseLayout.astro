@@ -214,6 +214,33 @@ const canonical = new URL(path, 'https://www.thehibrythiansaga.com').href
       })();
     </script>
     <script is:inline src="/lightbox-controls.js"></script>
+    <!-- Prevent gray flash on SPA internal navigation -->
+    <script is:inline>
+      (function () {
+        var DARK = '#100908';
+        // Patch history pushState/replaceState to flash a dark cover
+        function flashCover() {
+          var el = document.getElementById('nav-flash-cover');
+          if (!el) {
+            el = document.createElement('div');
+            el.id = 'nav-flash-cover';
+            el.style.cssText = 'position:fixed;inset:0;z-index:9998;background:' + DARK + ';pointer-events:none;opacity:0;transition:opacity 120ms ease';
+            document.body.appendChild(el);
+          }
+          el.style.opacity = '1';
+          requestAnimationFrame(function () {
+            requestAnimationFrame(function () {
+              el.style.opacity = '0';
+            });
+          });
+        }
+        var _push = history.pushState.bind(history);
+        var _replace = history.replaceState.bind(history);
+        history.pushState = function () { flashCover(); return _push.apply(history, arguments); };
+        history.replaceState = function () { flashCover(); return _replace.apply(history, arguments); };
+        window.addEventListener('popstate', flashCover);
+      })();
+    </script>
 </body>
 </html>
 
