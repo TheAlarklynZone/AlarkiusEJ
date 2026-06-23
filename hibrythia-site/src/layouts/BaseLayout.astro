@@ -138,13 +138,17 @@ const canonical = new URL(path, 'https://www.thehibrythiansaga.com').href
             document.documentElement.classList.add('splash-seen');
           }
         } catch (e) {}
+        // On every Astro ViewTransition (not a real reload), immediately suppress splash
+        document.addEventListener('astro:before-swap', function () {
+          document.documentElement.classList.add('splash-seen');
+        });
       })();
     </script>
   </head>
 
   <body>
     <!-- Splash overlay — pure HTML/CSS, removes itself via animation -->
-    <div id="splash" aria-hidden="true">
+    <div id="splash" aria-hidden="true" transition:persist>
       <span id="splash-logo">The Hibrythian Saga</span>
     </div>
 
