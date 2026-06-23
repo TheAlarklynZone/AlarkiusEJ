@@ -7,7 +7,7 @@ function DisqusComments() {
       (window as any).DISQUS.reset({
         reload: true,
         config: function (this: any) {
-          this.page.url = 'https://thehibrythiansaga.com/bookshelf'
+          this.page.url = 'https://www.thehibrythiansaga.com/bookshelf'
           this.page.identifier = 'hibrythian-saga-bookshelf'
         },
       })
@@ -15,13 +15,13 @@ function DisqusComments() {
     }
     const d = document
     const s = d.createElement('script')
-    s.src = 'https://the-hibrythian-saga.disqus.com/embed.js'
+    s.src = 'https://hibrythiansagatitles.disqus.com/embed.js'
     s.setAttribute('data-timestamp', String(+new Date()))
     ;(d.head || d.body).appendChild(s)
   }, [])
 
   return (
-    <section className="mt-16 max-w-[720px] mx-auto px-6">
+    <section className="mt-16 max-w-[960px] mx-auto px-6">
       <div className="border-t border-[#2e2b26] mb-10" />
       <h2 className="font-display text-lg text-[#f2ebeb] mb-6">Comments &amp; Reviews</h2>
       <div id="disqus_thread" />
