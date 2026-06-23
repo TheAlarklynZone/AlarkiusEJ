@@ -89,24 +89,6 @@ const canonical = new URL(path, 'https://www.thehibrythiansaga.com').href
     />
     <title>{title}</title>
 
-    <!-- View Transition: dark fade between pages -->
-    <style is:global>
-      ::view-transition-old(root) {
-        animation: vtFadeOut 160ms ease-out forwards;
-      }
-      ::view-transition-new(root) {
-        animation: vtFadeIn 200ms ease-in forwards;
-      }
-      @keyframes vtFadeOut {
-        from { opacity: 1; }
-        to   { opacity: 0; }
-      }
-      @keyframes vtFadeIn {
-        from { opacity: 0; }
-        to   { opacity: 1; }
-      }
-    </style>
-
     <!-- Splash screen: dark overlay, fades out so no gray flash -->
     <style>
       :root { color-scheme: dark; }
@@ -171,7 +153,7 @@ const canonical = new URL(path, 'https://www.thehibrythiansaga.com').href
     <div class="min-h-dvh flex flex-col bg-[#100908]">
       <Navbar client:load />
 
-      <main class="flex-1" style="position: relative; background-color: #100908;">
+      <main transition:animate="fade" class="flex-1" style="position: relative; background-color: #100908;">
         {/* Grid background with blur — absolute so footer is untouched */}
         <div
           aria-hidden="true"
