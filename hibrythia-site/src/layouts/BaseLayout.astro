@@ -10,6 +10,7 @@
 // metadata per page (the whole point of going SSG).
 // ============================================================
 import '../index.css'
+import { ViewTransitions } from 'astro:transitions'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import PWADevTools from '../components/PWADevTools'
@@ -52,6 +53,7 @@ const canonical = new URL(path, 'https://www.thehibrythiansaga.com').href
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     <meta name="theme-color" content="#0e0d0b" />
+    <ViewTransitions fallback="none" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -86,6 +88,24 @@ const canonical = new URL(path, 'https://www.thehibrythiansaga.com').href
       rel="stylesheet"
     />
     <title>{title}</title>
+
+    <!-- View Transition: dark fade between pages -->
+    <style is:global>
+      ::view-transition-old(root) {
+        animation: vtFadeOut 160ms ease-out forwards;
+      }
+      ::view-transition-new(root) {
+        animation: vtFadeIn 200ms ease-in forwards;
+      }
+      @keyframes vtFadeOut {
+        from { opacity: 1; }
+        to   { opacity: 0; }
+      }
+      @keyframes vtFadeIn {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+      }
+    </style>
 
     <!-- Splash screen: dark overlay, fades out so no gray flash -->
     <style>
