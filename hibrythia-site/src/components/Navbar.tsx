@@ -8,11 +8,11 @@ import { useState, useEffect } from 'react'
 import { NavLink, Link, useLocation } from 'react-router-dom'
 
 const navLinks = [
-  { to: '/',           label: 'Home' },
-  { to: '/world',      label: 'World' },
-  { to: '/characters', label: 'Characters' },
-  { to: '/bookshelf',  label: 'Bookshelf' },
-  { to: '/multimedia', label: 'Multimedia' },
+  { to: '/',           label: 'Home',       end: true  },
+  { to: '/world',      label: 'World',      end: false },
+  { to: '/characters', label: 'Characters', end: false },
+  { to: '/bookshelf',  label: 'Bookshelf',  end: false },
+  { to: '/multimedia', label: 'Multimedia', end: false },
 ]
 
 export default function Navbar() {
@@ -36,11 +36,11 @@ export default function Navbar() {
         {/* Desktop Nav */}
         <nav aria-label="Main navigation" className="hidden md:flex items-center gap-0.5">
           <ul className="flex items-center gap-0.5" role="list">
-            {navLinks.map(({ to, label }) => (
+            {navLinks.map(({ to, label, end }) => (
               <li key={to}>
                 <NavLink
                   to={to}
-                  end={to === '/'}
+                  end={end}
                   className={({ isActive }) =>
                     [
                       'font-body text-[0.75rem] tracking-widest uppercase px-2.5 py-1 rounded-sm transition-all duration-[180ms]',
@@ -90,11 +90,11 @@ export default function Navbar() {
         }`}
       >
         <ul className="px-5 py-4 space-y-1" role="list">
-          {navLinks.map(({ to, label }) => (
+          {navLinks.map(({ to, label, end }) => (
             <li key={to}>
               <NavLink
                 to={to}
-                end={to === '/'}
+                end={end}
                 className={({ isActive }) =>
                   [
                     'block font-body text-sm tracking-widest uppercase px-3 py-2.5 rounded-sm transition-all duration-[180ms]',
@@ -126,3 +126,4 @@ export default function Navbar() {
     </header>
   )
 }
+
