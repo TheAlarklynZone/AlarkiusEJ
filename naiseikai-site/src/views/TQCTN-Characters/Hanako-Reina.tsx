@@ -229,7 +229,7 @@ function HanakoReinaTab() {
         <div className="space-y-3 text-sm text-text-muted leading-relaxed">
           <div className="neon-card">
             <p className="font-mono text-xs text-text-faint mb-2">Appearance</p>
-            <p>She has black hair with red highlights, and it's medium long, where it ends to her shoulders. She has heterochromatic eyes. Brown on her right eye, red on her left. However, she hates the color combination and wears an eyepatch on her brown eye.</p>
+            <p>She has black hair with red highlights, and it's medium long, where it ends to her shoulders. She has heterochromatic eyes. Brown on her right eye , red on her left. However, she hates the color combination and wears an ice-patch (eye-patch) on her brown eye. Her ice patch is made of packed ice and acts as a one way mirror for Hanako. She can see through it, but other people can’t. It is tucked beneath her bangs.</p>
           </div>
           <div className="neon-card">
             <p className="font-mono text-xs text-text-faint mb-2">Clothing (Usual / Casual)</p>
