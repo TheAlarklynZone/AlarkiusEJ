@@ -7,7 +7,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://alarkiusej.com',
+  site: 'https://www.alarkiusej.com',
 
   // Static Site Generation — every page outputs real HTML at build time.
   // This is the whole point of the migration: crawlable inner pages.
